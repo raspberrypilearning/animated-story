@@ -5,7 +5,7 @@ window.onload = function () {
 
   // Rising text observer
   
-  // Sticky header observer
+  // Header observer
 
   // Snail observer
 

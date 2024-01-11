@@ -15,13 +15,16 @@ main {
   padding-left: 20vw;
 }
 
+h1 {
+    margin: 0px;
+}
+
 img {
   width: 50vw;
   padding-left: 9vw;
 }
 
 .bottomImage {
-  padding-top: 0%;
   background-image: url("garden.jpeg");
   background-position: fixed;
   background-position-y: bottom;
@@ -30,11 +33,16 @@ img {
   z-index: 1;
 }
 
+#headerTrigger {
+    padding-top: 1%;
+}
+
 section {
   height: 100vh;
 }
 
 #bounce {
+  padding: 0px;
   width: 80vw;
   position: fixed;
   bottom: 0;
@@ -78,16 +86,18 @@ section {
 
 .snail {
   opacity: 0;
+  margin: 1;
   transform: translateX(-80%);
   transition: all 2s ease-out;
   transition-delay: 0.4s;
   z-index: 2;
   height: 20vh;
+  position: relative;
 }
 
 .startCrawl {
   opacity: 1;
-  transform: translateX(25vw);
+  transform: translateX(25%);
 }
 
 p {

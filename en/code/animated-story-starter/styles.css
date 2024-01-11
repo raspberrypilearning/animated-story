@@ -14,9 +14,18 @@ body {
 main {
 }
 
+
+h1 {
+    margin:0;
+}
+
 img {
   width: 50vw;
   padding-left: 9vw;
+}
+
+#headerTrigger {
+    padding-top: 1%;
 }
 
 section {
@@ -24,6 +33,7 @@ section {
 }
 
 #bounce {
+  padding: 0px;
   width: 100%;
   position: fixed;
   bottom: 0;
