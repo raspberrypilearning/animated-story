@@ -1,30 +1,14 @@
-## Lazy-loading images
+window.onload = function () {
+  // Hide bounce observer
+  const bounceObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      console.log("BOUNCE TRIGGER IN VIEWPORT");
+      document.getElementById("bounce").style.opacity = 0;
+    }
+  });
+  bounceObserver.observe(document.getElementById("hideBounce"));
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Improve browser performance by only loading images when they are needed.
-</div>
-<div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
-</div>
-</div>
-
---- task ---
-
-Another step of tasks to complete.
-
---- /task ---
-
---- task ---
-
-Code to Add:
-
-HTML
-
-CSS
-
-JS
-
+  // Image observer
   const lazyImages = document.querySelectorAll("img");
   const imageObserver = new IntersectionObserver((entries) => {
     entries.forEach(
@@ -43,11 +27,9 @@ JS
   });
   lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
-Can use:
-**Test:**
-**Choose:**
-**Tip:**
+  // Rising text observer
 
---- /task ---
+  // Header observer
 
---- save ---
+  // Snail observer
+};

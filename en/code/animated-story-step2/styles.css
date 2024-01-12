@@ -11,17 +11,11 @@ body {
   flex-direction: column;
 }
 
-#snailContainer {
-    margin: 0;
-    font-size: 0;
-}
-
 main {
-  padding-left: 20vw;
 }
 
 h1 {
-    margin: 0;
+    margin:0;
 }
 
 img {
@@ -39,7 +33,7 @@ section {
 
 #bounce {
   padding: 0px;
-  width: 80vw;
+  width: 100%;
   position: fixed;
   bottom: 0;
   text-align: center;
@@ -67,44 +61,14 @@ section {
   }
 }
 
-.rise {
-  animation: rising 2s ease;
-}
-
-@keyframes rising {
-  from {
-    transform: translateY(20%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-
-.snail {
-  opacity: 0;
-  transform: translateX(-20%);
-  transition: all 2s ease-out;
-  transition-delay: 0.4s;
-  height: 20vh;
-  margin-top: 80vh;
-  position: relative;
-  padding-left: 0;
-}
-
-.startCrawl {
-  opacity: 1;
-  transform: translateX(25%);
-}
-
 p {
-  font-size: 3cqh;
+  font-size: 50px;
   padding-left: 9vw;
 }
 
 .garden {
   background-image: url("garden.jpeg");
   background-size: cover;
-  background-attachment: fixed;
   background-position-y: bottom;
 }
 
@@ -115,9 +79,7 @@ p {
   top: 0;
   display: flex;
   flex-direction: column;
-  position: fixed;
   height: 100%;
-  width: 20vw;
   font-size: 3cqw;
   font-weight: 900;
 }
@@ -148,8 +110,8 @@ p {
   top: 0;
   left: 1rem;
   padding-left: 2rem;
+  margin-top: 1px;
   line-height: 2;
-  z-index: 1;
   transition: all 300ms;
 
   &.enabled {

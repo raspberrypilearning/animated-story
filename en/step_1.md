@@ -11,9 +11,10 @@ In this project, <mark> short project description </mark>
 <mark>Objectives in language that learners will understand</mark>
 
 You will:
-+ 
-+ 
-+ 
++ Track the position of elements
++ Animate elements when they come into view
++ Create your own html page
++ Set images to load only when they are needed
 
 --- no-print ---
 --- task ---
