@@ -25,7 +25,7 @@ img {
 }
 
 #headerTrigger {
-    padding-top: 1%;
+    height: 1px;
 }
 
 section {
@@ -70,7 +70,6 @@ p {
 .topImage {
   background-image: url("garden.jpeg");
   background-size: cover;
-  background-position: fixed;
   background-position-y: bottom;
 }
 

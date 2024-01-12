@@ -11,6 +11,11 @@ body {
   flex-direction: column;
 }
 
+#snailContainer {
+    margin: 0;
+    font-size: 0;
+}
+
 main {
   padding-left: 20vw;
 }
@@ -34,7 +39,7 @@ img {
 }
 
 #headerTrigger {
-    padding-top: 1%;
+    height: 1px;
 }
 
 section {
@@ -43,7 +48,7 @@ section {
 
 #bounce {
   padding: 0px;
-  width: 80vw;
+  width: 100%;
   position: fixed;
   bottom: 0;
   text-align: center;
@@ -86,13 +91,13 @@ section {
 
 .snail {
   opacity: 0;
-  margin: 1;
-  transform: translateX(-80%);
+  transform: translateX(-20%);
   transition: all 2s ease-out;
   transition-delay: 0.4s;
   z-index: 2;
   height: 20vh;
   position: relative;
+  padding-left: 0;
 }
 
 .startCrawl {
@@ -108,7 +113,6 @@ p {
 .topImage {
   background-image: url("garden.jpeg");
   background-size: cover;
-  background-position: fixed;
   background-attachment: fixed;
   background-position-y: bottom;
 }

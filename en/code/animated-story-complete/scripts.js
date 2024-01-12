@@ -14,16 +14,15 @@ window.onload = function () {
     entries.forEach(
       (entry) => {
         if (entry.isIntersecting) {
-          console.log(entry);
+          console.log(entry.target);
           setTimeout(
             () => (entry.target.src = entry.target.getAttribute("data-src")),
             1000
           );
-          console.log(entry.target);
           imageObserver.unobserve(entry.target);
         }
       },
-      { threshold: -1 }
+      { threshold: 1 }
     );
   });
   lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
@@ -57,7 +56,7 @@ window.onload = function () {
         document.getElementById("snail").classList.add("startCrawl");
       }
     },
-    { threshold: 0.53 }
+    { threshold: 1 }
   );
   snailObserver.observe(document.getElementById("snail"));
 };
