@@ -1,13 +1,7 @@
 ## Lazy-loading images
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 Improve browser performance by only loading images when they are needed.
-</div>
-<div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
-</div>
-</div>
+<iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/animated-story-step3" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 --- task ---
 

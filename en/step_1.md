@@ -1,14 +1,10 @@
 ## Introduction
 
-In this project, <mark> short project description </mark>
-
-<mark>Boxout (wherever wanted/needed) </mark>
+In this project, you will use HTML, CSS and JavaScript to create an interactive story with features that are triggered when the user scrolls. 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Term**</span> description of term or interesting phrase.
+Websites often use <span style="color: #0faeb0">**interactive**</span> features to make the online experience more fun and interesting.
 </p>
-
-<mark>Objectives in language that learners will understand</mark>
 
 You will:
 + Track the position of elements
@@ -18,18 +14,25 @@ You will:
 
 --- no-print ---
 --- task ---
+
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Description of what to do or think about when looking at the example.
+Explore the Animated Story. 
+
++ Scroll down on the page to watch the images load
++ Click on the links on the navbar at the side to see the different pages
++ Scroll down the page to see the different interactive features.
+
+<iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/animated-story-complete" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 </div>
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/485673032/?autostart=false" frameborder="0"></iframe>
 </div>
-</div>
+
+**TODO** Check the height of complete project and update height of embed.
+
 --- /task ---
 --- /no-print ---
 
 --- print-only ---
-![Completed project](images/showcase_static.png)
+![Completed project](images/showcase_static.png) **TODO**
 --- /print-only ---
