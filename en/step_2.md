@@ -16,7 +16,7 @@ Your starter project contains:
 + the images you will use in the project
 + a JavaScript file that you will develop throughout the project.
 
-### console.log()
+### Console log
 
 `console.log()` is a used to output messages that tell you what the JavaScript code is doing.
 
@@ -45,7 +45,7 @@ Add the observer that checks if the element with the attribute `id=hideBounce` h
 
 --- code ---
 ---
-language: js
+language: javascript
 filename: scripts.js
 line_numbers: true
 line_number_start: 1
