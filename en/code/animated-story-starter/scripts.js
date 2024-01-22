@@ -1,12 +1,9 @@
-window.onload = function () {
-  // Hide bounce observer
+// Hide bounce observer
 
-  // Image observer
+// Image observer
 
-  // Rising text observer
-  
-  // Header observer
+// Rising text observer
 
-  // Snail observer
+// Header observer
 
-};
+// Snail observer
