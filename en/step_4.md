@@ -1,7 +1,12 @@
 ## Add a new page
 
-Add an introductory sentence. What will learners achieve by the end of this step?
+In this step, you will add a new web page and navigation bar to your website.
+
 <iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/animated-story-step4" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
+
+### Add a navbar
+
+If you have completed the welcome-to-antarctica project, then you will know how to create a navbar.
 
 --- task ---
 

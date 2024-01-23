@@ -100,7 +100,9 @@ line_highlights: 11
 
 --- /code ---
 
-The constant `lazyImages` holds an array of all `<img>` elements in the page (`document`).
+The constant `lazyImages` holds an array of all `<img>` elements in the page.
+
+In the code, the page is called the `document`.
 
 --- /task ---
 
@@ -249,4 +251,4 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 --- /task ---
 
-Next you are going to add a new web page to your website.
+Next you are going to add a new web page and navigation bar to your website.

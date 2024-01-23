@@ -38,21 +38,26 @@ You can now open the console using Cmd + Option + C.
 
 --- /task ---
 
-### Watch for something entering the viewport
+JavaScript can be used to watch ('observe') an array of html elements with a specific `id=` or `class=` attribute and output something to the Console when an observed element appears in the viewport.
 
-JavaScript can be used to watch ('observe') html elements with a specific `id=` or `class=` attribute and output something to the Console when an observed element appears in the viewport.
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+A collection of items is called an <span style="color: #0faeb0">**array**</span>.
+</p>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 The <span style="color: #0faeb0">**viewport**</span> is the area of the webpage that is currently visible in the browser.
 </p>
 
+
+### Create a new intersection observer called bounceObserver
+
+`bounceObserver` is used to watch ('observe') an array of elements (`entries`).
+
 --- task ---
 
 Open the `scripts.js` file.
 
-Create an observer called `bounceObsever`. 
-
-It checks if an element with the attribute `id=hideBounce` has entered the viewport (`isIntersecting`).
+Create an observer called `bounceObsever`.
 
 --- code ---
 ---
@@ -60,7 +65,99 @@ language: js
 filename: scripts.js
 line_numbers: true
 line_number_start: 1
-line_highlights: 2-7
+line_highlights: 2-4
+
+// Hide bounce observer
+const bounceObserver = new IntersectionObserver((entries) => {
+
+});
+
+// Image observer
+
+--- /code ---
+
+**Tip:** Separate the different observers using a line break (in this case, on line 5).
+
+--- /task ---
+
+### Tell bounceObserver to observe
+
+--- task ---
+
+Call `bounceObserver` to `observe` all elements in the `document` (page) with the attribute `id=hideBounce`. 
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 1
+line_highlights: 5
+---
+
+// Hide bounce observer
+const bounceObserver = new IntersectionObserver((entries) => {
+  
+});
+bounceObserver.observe(document.getElementById("hideBounce"));
+
+// Image observer
+
+--- /code ---
+
+**Tip:** The line break on line 3 will contain the 'callback'. The callback is the code that runs when the observer sees an element enter the viewport.
+
+--- /task ---
+
+### Create the callback
+
+--- task ---
+
+Check `if` the first element in the `entries` array (with the attribute `id=hideBounce`) has entered the viewport. 
+
+The `isIntersecting` method is used to check this.
+
+**TODO** Would an image help here (perhaps showing the page extending beyond bottom of the screen (viewport) with images below the viewport)?
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 1
+line_highlights: 3-5
+---
+
+// Hide bounce observer
+const bounceObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+
+  }
+});
+bounceObserver.observe(document.getElementById("hideBounce"));
+
+// Image observer
+
+--- /code ---
+ 
+**Tip:** There is only one element in the entries array, so it is addressed directly using `entries[0]`
+--- /task ---
+
+### Output something to Console
+
+If the element with the attribute `id=hideBounce` has entered the viewport, you can output a message to the Console for testing.
+
+--- task ---
+
+Output a test message to the Console.
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 1
+line_highlights: 4
 ---
 
 // Hide bounce observer
@@ -75,13 +172,11 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 --- /code ---
  
-**Tip:** Separate the different observers using a space (in this case, on line 8).
-
 Open the Console.
 
 Click the **Run** button to see the changes you have made. 
 
-When you scroll down, the message "BOUNCE TRIGGER IN VIEWPORT" will appear in the console.
+When you scroll down, the message "BOUNCE TRIGGER IN VIEWPORT" will appear in the Console.
 
 --- /task ---
 
@@ -99,7 +194,9 @@ Close all your brackets and curly braces.
 title: The structure of the `bounceObserver` intersection observer
 ---
 
-`entries` is an array of all elements on the webpage with the `id=hideBounce` attribute (there is only one). 
+`entries` is a collection of all elements on the webpage with the `id=hideBounce` attribute (there is only one). 
+
+A collection of items is called an 'array'.
 
 `bounceObserver` is set to observe when the first (and only) item in the `entries` array comes into the viewport.
 
@@ -113,15 +210,17 @@ The index page has some bouncing text at the bottom telling you to 'SCROLL DOWN'
 
 --- task ---
 
-Scroll down. You will see that the 'SCROLL DOWN' text gets in the way of other content. 
+**Test:** Scroll down. You will see that the 'SCROLL DOWN' text gets in the way of other content. 
 
 --- /task --- 
 
-The element with the `id=hideBounce` has been used to trigger a `console.log()` message. It can also be used to hide the bouncing 'SCROLL DOWN' text, which has the attribute `id=bounce`.
+You can do more than output messages to the Console.
+
+You can hide the bouncing 'SCROLL DOWN' text, by changing the value of its `opacity` property.
 
 --- task ---
 
-Add the JavaScript code to change the value of the `opacity` property of the bouncing text.
+Change the value of the `opacity` property of the bouncing text element, which has the attribute `id=bounce`.
 
 Setting the opacity value to `0` makes it invisible.
 
@@ -152,8 +251,6 @@ Click the **Run** button to see the changes you have made.
 When you scroll down, the bouncing text 'SCROLL DOWN' will disappear!
 
 --- /task ---
-
-**TODO** DEBUG steps
 
 ## Save your project
 
