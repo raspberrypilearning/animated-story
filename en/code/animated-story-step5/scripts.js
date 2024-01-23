@@ -13,7 +13,6 @@ const imageObserver = new IntersectionObserver((entries) => {
   entries.forEach(
     (entry) => {
       if (entry.isIntersecting) {
-        console.log(entry.target);
         setTimeout(
           () => (entry.target.src = entry.target.getAttribute("data-src")),
           1000
@@ -21,7 +20,6 @@ const imageObserver = new IntersectionObserver((entries) => {
         imageObserver.unobserve(entry.target);
       }
     },
-    { threshold: 1 }
   );
 });
 lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));

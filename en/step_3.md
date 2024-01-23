@@ -18,6 +18,8 @@ When the page loads, the only image that has to be loaded is `spinner.gif`.
 
 This is because the `src` attribute for all image elements in `index.html` is set to to `spinner.gif`. 
 
+### Add a new attribute to each image element
+
 --- task ---
 
 Open the `index.html` file.
@@ -72,9 +74,9 @@ All the images are still `spinner.gif`
 
 --- /task ---
 
-### Lazy load
+### Observe each image element
 
-You can use JavaScript to observe each `<img>` element and, when it enters the viewport, change the value of its `src` attribute (currently `spinner.gif`) to the value of its `data-src` attribute (the image you want to load).
+You can use JavaScript to observe each `<img>` element.
 
 --- task ---
 
@@ -98,11 +100,15 @@ line_highlights: 11
 
 --- /code ---
 
-The constant `lazyImages` is set to an array of all `<img>` elements in the page (`document`).
+The constant `lazyImages` holds an array of all `<img>` elements in the page (`document`).
 
 --- /task ---
 
-Create an observer that checks all `<img>` elements in the array enters the viewport,  stored in the `lazyImages` array
+### Create the observer
+
+Create an observer that observes all `<img>` elements in the `lazyImages` array and sees if they enter the viewport. 
+
+If one of them does, the value of its `src` attribute (currently `spinner.gif`) is changed to the value of its `data-src` attribute (the image you want to load).
 
 --- task ---
 
@@ -114,48 +120,47 @@ language: js
 filename: scripts.js
 line_numbers: true
 line_number_start: 10
-line_highlights: 11-27
+line_highlights: 12-23
 ---
 
 // Image observer
-  const lazyImages = document.querySelectorAll("img");
-  const imageObserver = new IntersectionObserver((entries) => {
-    entries.forEach(
-      (entry) => {
-        if (entry.isIntersecting) {
-          console.log(entry.target);
-          setTimeout(
-            () => (entry.target.src = entry.target.getAttribute("data-src")),
-            1000
-          );
-          imageObserver.unobserve(entry.target);
-        }
-      },
-      { threshold: 1 }
-    );
-  });
+const lazyImages = document.querySelectorAll("img");
+const imageObserver = new IntersectionObserver((entries) => {
+  entries.forEach(
+    (entry) => {
+      if (entry.isIntersecting) {
+        setTimeout(
+          () => (entry.target.src = entry.target.getAttribute("data-src")),
+          1000
+        );
+      }
+    }
+  );
+});
 
 // Rising text observer
 
 --- /code ---
 
-Click the **Run** button to see the changes you have made.
+--- collapse ---
 
-When you scroll down, the message "BOUNCE TRIGGER IN VIEWPORT" will appear in the console.
+---
+title: Why is there a setTimeout?
+---
+
+The imageObserver uses `setTimeout` with a value of `1000` (ms). This adds a one-second pause before the value of the `src` attribute is swapped for the value of the `data-src` attribute. 
+
+If this was not there then the swap might happen too quickly for you to see!
+
+--- /collapse ---
 
 --- /task ---
 
-**TODO** DEBUG STEPS
+### Call the observer
 
-**TODO** ...
-
-
-You need to observe all `<img>` elements stored in the `lazyImages` array
+You need to observe all `<img>` elements stored in the `lazyImages` array.
 
 --- task ---
-
-
-**TODO** Get the order right.
 
 Call `imageObserver` for each `<img>` entry in the `lazyImages` array.
 
@@ -165,30 +170,83 @@ language: js
 filename: scripts.js
 line_numbers: true
 line_number_start: 10
-line_highlights: 27
+line_highlights: 24
 ---
 
 // Image observer
-  const lazyImages = document.querySelectorAll("img");
-  const imageObserver = new IntersectionObserver((entries) => {
-    entries.forEach(
-      (entry) => {
-        if (entry.isIntersecting) {
-          console.log(entry.target);
-          setTimeout(
-            () => (entry.target.src = entry.target.getAttribute("data-src")),
-            1000
-          );
-          imageObserver.unobserve(entry.target);
-        }
-      },
-      { threshold: 1 }
-    );
-  });
-  lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
+const lazyImages = document.querySelectorAll("img");
+const imageObserver = new IntersectionObserver((entries) => {
+  entries.forEach(
+    (entry) => {
+      if (entry.isIntersecting) {
+        setTimeout(
+          () => (entry.target.src = entry.target.getAttribute("data-src")),
+          1000
+        );
+      }
+    }
+  );
+});
+lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
+
+// Rising text observer
+
+--- /code ---
+
+Click the **Run** button to see the changes you have made.
+
+Scroll down and watch each image load when it enters the viewport (after a one-second pause).
+
+--- /task ---
+
+**Debug:**
+
+Make sure it is `img`, not `<img>` in the brackets on line 11. 
+
+Check there is a comma `,` after line 17. 
+
+There is a semicolon `;` at end of lines 19, 22, 23 and 24.
+
+### Stop observing
+
+You should stop observing the image elements after their `src` attribute is changed to the value of their `data-src` attribute.
+
+This avoids memory or performance issues.
+
+--- task ---
+
+Add the `unobserve()` method to the observer callback.
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 10
+line_highlights: 20
+---
+
+// Image observer
+const lazyImages = document.querySelectorAll("img");
+const imageObserver = new IntersectionObserver((entries) => {
+  entries.forEach(
+    (entry) => {
+      if (entry.isIntersecting) {
+        setTimeout(
+          () => (entry.target.src = entry.target.getAttribute("data-src")),
+          1000
+        );
+        imageObserver.unobserve(entry.target);
+      }
+    }
+  );
+});
+lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 // Rising text observer
 
 --- /code ---
 
 --- /task ---
+
+Next you are going to add a new web page to your website.

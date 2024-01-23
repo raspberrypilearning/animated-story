@@ -17,7 +17,6 @@ window.onload = function () {
     entries.forEach(
       (entry) => {
         if (entry.isIntersecting) {
-          console.log(entry);
           // USING setTimeout HERE (with Arrow syntax) SO THEY CAN SEE the change HAPPEN! Arrow syntax is equivalent of using the function keyword: setTimeout(function () { (entry.target.src = entry.target.getAttribute("data-src")),
           setTimeout(
             () => (entry.target.src = entry.target.getAttribute("data-src")),

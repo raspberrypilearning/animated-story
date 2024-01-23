@@ -75,7 +75,7 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 --- /code ---
  
-**Tip:** Separate the different observer functions using a space.
+**Tip:** Separate the different observers using a space (in this case, on line 8).
 
 Open the Console.
 
@@ -85,9 +85,27 @@ When you scroll down, the message "BOUNCE TRIGGER IN VIEWPORT" will appear in th
 
 --- /task ---
 
-**TODO** DEBUG STEPS
+**Debug:**
 
-**TODO** Add collapse explaining the structure of the observer
+Check your spelling of `IntersectionObserver`. It should have two capital letters.
+
+There must be a semicolon at the end of lines 4, 6 and 7.
+
+Close all your brackets and curly braces.
+
+--- collapse ---
+
+---
+title: The structure of the `bounceObserver` intersection observer
+---
+
+`entries` is an array of all elements on the webpage with the `id=hideBounce` attribute (there is only one). 
+
+`bounceObserver` is set to observe when the first (and only) item in the `entries` array comes into the viewport.
+
+When it does, the observer 'callback' outputs a message to the Console.
+
+--- /collapse ---
 
 ### Hide text
 

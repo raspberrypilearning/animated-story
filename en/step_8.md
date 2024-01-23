@@ -9,6 +9,9 @@ Summary or upgrade project task
 </div>
 </div>
 
+
+You can remove the setTiemout in image Observer, as you don't want people to see the spinner image if they don't have to.
+
 --- collapse ---
 
 ---
