@@ -51,7 +51,7 @@ The <span style="color: #0faeb0">**viewport**</span> is the area of the webpage 
 
 ### Create a new intersection observer called bounceObserver
 
-`bounceObserver` is used to watch ('observe') an array of elements (`entries`).
+Your `bounceObserver` is used to watch ('observe') an array of elements (`entries`).
 
 --- task ---
 
@@ -200,11 +200,11 @@ Close all your brackets and curly braces.
 title: The structure of the `bounceObserver` intersection observer
 ---
 
-`entries` is a collection of all elements on the webpage with the `id=hideBounce` attribute (there is only one). 
+On line 2, `entries` is a collection of all elements on the webpage with the `id=hideBounce` attribute (there is only one). 
 
 A collection of items is called an 'array'.
 
-`bounceObserver` is set to observe when the first (and only) item in the `entries` array comes into the viewport.
+The `bounceObserver` is set to observe when the first (and only) item in the `entries` array comes into the viewport.
 
 When it does, the observer 'callback' outputs a message to the Console.
 
