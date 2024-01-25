@@ -14,9 +14,9 @@ When a web page loads, all images are loaded and this can use lots of bandwidth.
 The amount of data (bits) that can be transferred over a computer connection is called the <span style="color: #0faeb0">**bandwidth**</span>. Using lots of bandwidth can cost people money, so reducing the use of bandwidth makes websites more user-friendly.
 </p>
 
-When the page loads, the only image that has to be loaded is `spinner.gif`.
+The `src` attribute for all image elements in `index.html` is set to to `spinner.gif`. 
 
-This is because the `src` attribute for all image elements in `index.html` is set to to `spinner.gif`. 
+This means that when the page loads, the only image that has to be loaded is `spinner.gif`.
 
 ### Add a new attribute to each image element
 
@@ -94,7 +94,7 @@ line_highlights: 11
 ---
 
 // Image observer
-  const lazyImages = document.querySelectorAll("img");
+const lazyImages = document.querySelectorAll("img");
 
 // Rising text observer
 
@@ -104,17 +104,19 @@ The constant `lazyImages` holds an array of all `<img>` elements in the page.
 
 In the code, the page is called the `document`.
 
+**Tip:** Separate the different observers using a line break (in this case, on line 12).
+
 --- /task ---
 
-### Create the observer
+### Create a new intersection observer called imageObserver
 
-Create an observer that observes all `<img>` elements in the `lazyImages` array and sees if they enter the viewport. 
-
-If one of them does, the value of its `src` attribute (currently `spinner.gif`) is changed to the value of its `data-src` attribute (the image you want to load).
+`imageObserver` is used to watch ('observe') an array of elements (`entries`).
 
 --- task ---
 
-Create an observer called `imageObserver`. 
+Open the `scripts.js` file.
+
+Create an observer called `imageObsever`.
 
 --- code ---
 ---
@@ -122,7 +124,103 @@ language: js
 filename: scripts.js
 line_numbers: true
 line_number_start: 10
-line_highlights: 12-23
+line_highlights: 12-14
+
+// Image observer
+const lazyImages = document.querySelectorAll("img");
+const imageObserver = new IntersectionObserver((entries) => {
+
+});
+
+// Rising text observer
+
+--- /code ---
+
+**Tip:** The line break on line 13 will contain the callback.
+
+--- /task ---
+
+### Tell imageObserver to observe
+
+Call `imageObserver` to `observe` each `<img>` element in the `document`.
+
+--- task ---
+
+Use a `forEach` loop to observe each image element (held in the `lazyImages` array).
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 10
+line_highlights: 15
+---
+
+// Image observer
+const lazyImages = document.querySelectorAll("img");
+const imageObserver = new IntersectionObserver((entries) => {
+  
+});
+lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
+
+// Rising text observer
+
+--- /code ---
+
+--- /task ---
+
+### Create the callback
+
+The callback needs to check every image it has observed.
+
+--- task ---
+
+Use a `forEach` loop to call the action relevant to each image that the observer has 'observed'.
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 10
+line_highlights: 13-17
+---
+
+// Image observer
+const lazyImages = document.querySelectorAll("img");
+const imageObserver = new IntersectionObserver((entries) => {
+  entries.forEach(
+    (entry) => {
+      
+    }
+  );
+});
+lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
+
+// Rising text observer
+
+--- /code ---
+ 
+ **Tip:** Unlike bounceObserver, imageObserver needs to check every entry in the array, so a `forEach` loop is required.
+
+ **Tip:** The line break on line 15 will contain the action to be carried out on each observed image (`entry`).
+
+--- /task ---
+
+The `isIntersecting` method is used to check if an `<img>` element (`entry`) has entered the viewport. 
+
+--- task ---
+
+Create a conditional statement to check if an observed entry in the array is in the viewport.
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 10
+line_highlights: 15-17
 ---
 
 // Image observer
@@ -131,40 +229,26 @@ const imageObserver = new IntersectionObserver((entries) => {
   entries.forEach(
     (entry) => {
       if (entry.isIntersecting) {
-        setTimeout(
-          () => (entry.target.src = entry.target.getAttribute("data-src")),
-          1000
-        );
+        
       }
     }
   );
 });
+lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 // Rising text observer
 
 --- /code ---
 
---- collapse ---
-
----
-title: Why is there a setTimeout?
----
-
-The imageObserver uses `setTimeout` with a value of `1000` (ms). This adds a one-second pause before the value of the `src` attribute is swapped for the value of the `data-src` attribute. 
-
-If this was not there then the swap might happen too quickly for you to see!
-
---- /collapse ---
+**Tip:** The line break on line 16 will contain the action to be carried out on an image (`entry`) that has entered the viewport.
 
 --- /task ---
 
-### Call the observer
-
-You need to observe all `<img>` elements stored in the `lazyImages` array.
+If an image in the array is in the viewport, the value of its `src` attribute (currently `spinner.gif`) is changed to the value of its `data-src` attribute (the image you want to load).
 
 --- task ---
 
-Call `imageObserver` for each `<img>` entry in the `lazyImages` array.
+Create the action to replace the spinner image (in `src`) with the image in the `data-src` attribute.
 
 --- code ---
 ---
@@ -172,7 +256,7 @@ language: js
 filename: scripts.js
 line_numbers: true
 line_number_start: 10
-line_highlights: 24
+line_highlights: 16-19
 ---
 
 // Image observer
@@ -194,6 +278,18 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 // Rising text observer
 
 --- /code ---
+
+--- collapse ---
+
+---
+title: Why is there a setTimeout?
+---
+
+The imageObserver uses `setTimeout` with a value of `1000` (ms). This adds a one-second pause before the value of the `src` attribute is swapped for the value of the `data-src` attribute. 
+
+If this was not there then the swap might happen too quickly for you to see!
+
+--- /collapse ---
 
 Click the **Run** button to see the changes you have made.
 
@@ -217,7 +313,7 @@ This avoids memory or performance issues.
 
 --- task ---
 
-Add the `unobserve()` method to the observer callback.
+Add the `unobserve()` method to the callback.
 
 --- code ---
 ---

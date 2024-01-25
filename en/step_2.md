@@ -105,19 +105,24 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 --- /code ---
 
-**Tip:** The line break on line 3 will contain the 'callback'. The callback is the code that runs when the observer sees an element enter the viewport.
+**Tip:** The line break on line 3 will contain the callback.
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> The <span style="color: #0faeb0">**callback**</span> is the code that runs when the observer sees an element enter the viewport.
+</p>
 
 --- /task ---
 
 ### Create the callback
 
---- task ---
-
-Check `if` the first element in the `entries` array (with the attribute `id=hideBounce`) has entered the viewport. 
+The callback will start by checking `if` the first element in the `entries` array (with the attribute `id=hideBounce`) has entered the viewport. 
 
 The `isIntersecting` method is used to check this.
 
 **TODO** Would an image help here (perhaps showing the page extending beyond bottom of the screen (viewport) with images below the viewport)?
+
+--- task ---
+
+Start the callback with a conditional statement.
 
 --- code ---
 ---
@@ -141,15 +146,16 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 --- /code ---
  
 **Tip:** There is only one element in the entries array, so it is addressed directly using `entries[0]`
+
 --- /task ---
 
 ### Output something to Console
 
-If the element with the attribute `id=hideBounce` has entered the viewport, you can output a message to the Console for testing.
+If the condition is met (the element with the attribute `id=hideBounce` has entered the viewport), you can output a message to the Console for testing.
 
 --- task ---
 
-Output a test message to the Console.
+Add an action when the `if` condition is met that outputs a test message to the Console.
 
 --- code ---
 ---
@@ -220,7 +226,7 @@ You can hide the bouncing 'SCROLL DOWN' text, by changing the value of its `opac
 
 --- task ---
 
-Change the value of the `opacity` property of the bouncing text element, which has the attribute `id=bounce`.
+Add an action when the `if` condition is met that changes the value of the `opacity` property of the bouncing text element, which has the attribute `id=bounce`.
 
 Setting the opacity value to `0` makes it invisible.
 
@@ -251,6 +257,10 @@ Click the **Run** button to see the changes you have made.
 When you scroll down, the bouncing text 'SCROLL DOWN' will disappear!
 
 --- /task ---
+
+**Debug:**
+
+There must be a semicolon at the end of line 5.
 
 ## Save your project
 
