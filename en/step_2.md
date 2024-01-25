@@ -145,7 +145,7 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 --- /code ---
  
-**Tip:** There is only one element in the entries array, so it is addressed directly using `entries[0]`
+**Tip:** There is only one element in the entries array, so it is addressed directly using `entries[0]`.
 
 --- /task ---
 
