@@ -18,7 +18,7 @@ Your starter project contains:
 
 ### Console log
 
-`console.log()` is used to output messages that tell you what the JavaScript code is doing.
+The `console.log()` method is used to output messages that tell you what the JavaScript code is doing.
 
 You can use `console.log()` for testing and debugging your code.
 
