@@ -90,11 +90,11 @@ p {
   top: 0;
   display: flex;
   flex-direction: column;
-  position: fixed;
   height: 100%;
-  width: 20vw;
   font-size: 3cqw;
   font-weight: 900;
+  position: fixed;
+  width: 20vw;
 }
 
 .navigation a:hover {
@@ -123,8 +123,9 @@ p {
   top: 0;
   left: 1rem;
   padding-left: 2rem;
-  margin-top: 1px;
   line-height: 2;
+  margin-top: 1px;
+  z-index: 1;
   transition: all 300ms;
 
   &.enabled {

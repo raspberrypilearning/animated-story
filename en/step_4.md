@@ -10,32 +10,68 @@ If you have completed the welcome-to-antarctica project, then you will know how 
 
 --- task ---
 
-Another step of tasks to complete.
+Open the `index.html` file.
 
---- /task ---
+Find the <body> tag.
 
---- task ---
+Add the <nav> tags below it with an unordered list containing two list items - one for each link to be shown in the navbar.
 
-Code to Add:
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 10
+line_highlights: 11, 16
+---
 
-HTML // Add to index.html
-
+  <body>
     <nav class="navigation">
       <ul>
         <li><a href="index.html">Intro</a></li>
         <li><a href="sammy.html">Sammy</a></li>
       </ul>
     </nav>
+    <main>
 
-    // Create sammy.html and then add to sammy.html :
+--- /code ---
+
+Click the **Run** button to see your changes. 
+
+The navigation links will appear at the top.
+
+--- /task ---
+
+### Create a new webpage
+
+--- task ---
+
++ **Click:** the '+ Add file' button
+
+![The 'Add file' button.](images/addFile.png)
+
++ Name your new file `sammy.html` and click the 'Add file' button.
+
+--- /task ---
+
+--- task ---
+
+Add the html to `sammy.html`.
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 1
+---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animation test</title>
-    <script type="text/javascript" src="scripts.js"></script>
+    <title>Sammy</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -52,28 +88,95 @@ HTML // Add to index.html
       </section>
     </main>
   </body>
+  <script type="text/javascript" src="scripts.js"></script>
 </html>
 
-CSS
+--- /code ---
+
+--- /task ---
+
+### Position the navbar on the left
+
+To make this website feel more like a book, you can place the navbar on the left.
+
+--- task ---
+
+Open the `style.css` file and find the `.navigation` selector
+
+Add the `position` and `width` properties to the `.navigation` selector.
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 72
+line_highlights: 82-83
+---
+
+/* NAV BAR */
+
 .navigation {
   background-color: #49d4cf;
   top: 0;
   display: flex;
   flex-direction: column;
-  position: fixed; // This one
   height: 100%;
-  width: 20vw; // This one
   font-size: 3cqw;
   font-weight: 900;
+  position: fixed;
+  width: 20vw;
 }
+
+--- /code ---
+
+**Click the Run button** to see your changes.
+
+The navbar should be positioned on the left.
+
+--- /task ---
+
+The 'SCROLL DOWN' text is not centered any more because the navbar is styled to take up 20% of the width of the viewport (using the `width: 20vw` property).
+
+--- task ---
+
+Add a `padding-left` property to the `main` selector.
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 14
+line_highlights: 15
+---
 
 main {
   padding-left: 20vw;
 }
 
+--- /code ---
+
+--- /task ---
+
+You can change the width of an element so it stretches a percentage of the viewport width, rather than 100% of its parent element.
+
+--- task ---
+
+Change the width property of the `#bounce` selector to `80vw` (80% of the viewport width).
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 31
+line_highlights: 33
+---
+
 #bounce {
   padding: 0px;
-  width: 80vw; // This one
+  width: 80vw;
   position: fixed;
   bottom: 0;
   text-align: center;
@@ -85,18 +188,46 @@ main {
   opacity: 1;
 }
 
-p {
-  font-size: 3cqh;
-}
+--- /code ---
 
+**Click the Run button** to see your changes.
 
-JS
-
-Can use:
-**Test:**
-**Choose:**
-**Tip:**
+The 'SCROLL DOWN' text should be positioned centrally.
 
 --- /task ---
 
---- save ---
+### Size the font with a calculated query
+
+The font size is currently set to a fixed size of 50 pixels (`50px`).
+
+You can use `cqw` instead of `px` to size elements.
+
+--- task ---
+
+Change the `font-size` property of the `p` selector to `3cqh`.
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 60
+line_highlights: 61
+---
+
+p {
+  font-size: 3cqh;
+  padding-left: 9vw;
+}
+
+--- /code ---
+
+**Click the Run button** to see your changes.
+
+Resize the **height** of the editor preview to see your font size change!
+
+--- /task ---
+
+Your website is looking awesome! 
+
+Next you will add a cool animation to the text to grab people's attention!
