@@ -4,7 +4,7 @@ In this step you will add a cool animation to the text to grab people's attentio
 
 <iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/animated-story-step5" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Fix the garden image
+### Fix the garden image position
 
 --- task ---
 
@@ -97,7 +97,7 @@ line_highlights: 22-24
 
 **Click the Run button** to see your changes.
 
-Scroll down to see the heading.
+Scroll down to see the story text.
 
 --- /task ---
 
@@ -109,7 +109,7 @@ Create an animation to apply to the story text.
 
 Open the `style.css` file.
 
-Find the /* Animations */ comment.
+Find the `/* Animations */` comment.
 
 Add a keyframes animation called `rising`.
 
@@ -164,7 +164,9 @@ line_highlights: 47-49
 
 --- /code ---
 
-The selector has one `animation` property set to call the keyframes animation `rising`. It is set to last for two seconds (`2s`) and use the `ease` transition.
+The selector has one `animation` property set to call the keyframes animation `rising` you created earlier. 
+
+The animation is set to last for two seconds (`2s`) and use the `ease` transition.
 
 **Tip:** You can add this anywhere in the css file, but it makes sense to add it close to the code for the keyframes animation.
 
@@ -174,9 +176,9 @@ The selector has one `animation` property set to call the keyframes animation `r
 
 The `p` element has the `id=rise` attribute.
 
-You will now create a JavaScript intersection observer with a callback that adds the rise class to an element with the attribute `id=rise` if it enters the viewport.
+You will now create a JavaScript intersection observer with a callback that adds the `rise` class to an element with the attribute `id=rise` if it enters the viewport.
 
-A JavaScript intersection observer can use this attribute to target this `p` element so that when it enters the viewport, the `.rise` class can be added.
+The JavaScript intersection observer will use this attribute to target the `p` element, so when it enters the viewport the `.rise` class can be added to it.
 
 --- task ---
 

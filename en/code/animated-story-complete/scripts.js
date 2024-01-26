@@ -42,9 +42,8 @@ headingObserver.observe(document.getElementById("headingTrigger"));
 
 // Snail observer
 const snailObserver = new IntersectionObserver(
-  ([entry]) => {
-    if (entry.isIntersecting) {
-      console.log("SNAIL!");
+  (entries) => {
+    if (entries[0].isIntersecting) {
       document.getElementById("snail").classList.add("startCrawl");
     }
   },
