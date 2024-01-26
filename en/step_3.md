@@ -4,7 +4,7 @@ In this step, you will improve browser performance by only loading images when t
 
 <iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/animated-story-step3" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Why lazy load?
+### Why lazy load?
 
 Images can have large file sizes. 
 
@@ -24,7 +24,7 @@ This means that when the page loads, the only image that has to be loaded is `sp
 
 Open the `index.html` file.
 
-For each `<img>` element, add a `data-src` attribute and set it's value to the correct image.
+For each `<img>` element, add a `data-src` attribute and set its value to the correct image.
 
 --- code ---
 ---

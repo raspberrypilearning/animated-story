@@ -16,7 +16,7 @@ Your starter project contains:
 + the images you will use in the project
 + a JavaScript file that you will develop throughout the project.
 
-### Console log
+### Console log
 
 The `console.log()` method is used to output messages that tell you what the JavaScript code is doing.
 
@@ -198,7 +198,7 @@ Close all your brackets and curly braces.
 --- collapse ---
 
 ---
-title: The structure of the `bounceObserver` intersection observer
+title: The structure of the bounceObserver intersection observer
 ---
 
 On line 2, `entries` is a collection of all elements on the webpage with the `id=hideBounce` attribute (there is only one). 
