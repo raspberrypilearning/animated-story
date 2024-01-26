@@ -49,14 +49,14 @@ window.onload = function () {
   );
   riseObserver.observe(document.getElementById("riser")); // Is riser being attached to <p> a good idea or move it to lower in <p>? Maybe I need to put p n a div and use the height of the div for the trigger % - the same for .snail?
 
-  // HEADER COLOUR CHANGES // Can I combine this with BounceObserver? It uses negation, so can show when enters, it triggers bounce to opacity 1 and then when it leaves view port it triggers colour change. But the other one wants a disconnect. Defo make the link between in and out of VP though.
-  const headerElement = document.getElementById("bounceTrigger");
-  const headerObserver = new IntersectionObserver(([entry]) => {
-    headerElement.classList.toggle("enabled", !entry.isIntersecting);
-    // EXPLAIN WHY WE WOULD NOT WANT TO USE A DISCONNECT ON headerObserver. Maybe show them:?
-    // headerObserver.disconnect();
+  // HEADING COLOUR CHANGES // Can I combine this with BounceObserver? It uses negation, so can show when enters, it triggers bounce to opacity 1 and then when it leaves view port it triggers colour change. But the other one wants a disconnect. Defo make the link between in and out of VP though.
+  const headingElement = document.getElementById("bounceTrigger");
+  const headingObserver = new IntersectionObserver(([entry]) => {
+    headingElement.classList.toggle("enabled", !entry.isIntersecting);
+    // EXPLAIN WHY WE WOULD NOT WANT TO USE A DISCONNECT ON headingObserver. Maybe show them:?
+    // headingObserver.disconnect();
   });
-  headerObserver.observe(document.getElementById("headerTrigger"));
+  headingObserver.observe(document.getElementById("headingTrigger"));
 
   // CRAWLING SNAIL
   const snailObserver = new IntersectionObserver(

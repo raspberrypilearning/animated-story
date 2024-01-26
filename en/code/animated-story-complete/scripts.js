@@ -25,25 +25,20 @@ const imageObserver = new IntersectionObserver((entries) => {
 lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 // Rising text observer
-const riseObserver = new IntersectionObserver(
-  ([entry]) => {
-    if (entry.isIntersecting) {
-      console.log("RISE TRIGGER IN VIEWPORT");
-      console.log(entry);
-      entry.target.classList.add("rise");
-    }
-  },
-  { rootMargin: "100% 0% 0% 0%" }
-);
+const riseObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    entries[0].target.classList.add("rise");
+  }
+});
 riseObserver.observe(document.getElementById("rise"));
 
-// Header observer
-const headerObserver = new IntersectionObserver(([entry]) => {
+// Heading observer
+const headingObserver = new IntersectionObserver(([entry]) => {
   document
     .querySelector("h1")
     .classList.toggle("enabled", !entry.isIntersecting);
 });
-headerObserver.observe(document.getElementById("headerTrigger"));
+headingObserver.observe(document.getElementById("headingTrigger"));
 
 // Snail observer
 const snailObserver = new IntersectionObserver(

@@ -28,8 +28,6 @@ Explore the Animated Story.
 </div>
 </div>
 
-**TODO** Check the height of complete project and update height of embed.
-
 --- /task ---
 --- /no-print ---
 

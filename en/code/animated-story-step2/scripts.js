@@ -11,6 +11,6 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 // Rising text observer
 
-// Header observer
+// Heading observer
 
 // Snail observer

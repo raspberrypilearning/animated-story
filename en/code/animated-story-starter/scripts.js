@@ -4,6 +4,6 @@
 
 // Rising text observer
 
-// Header observer
+// Heading observer
 
 // Snail observer

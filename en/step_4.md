@@ -4,17 +4,17 @@ In this step, you will add a new web page and navigation bar to your website.
 
 <iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/animated-story-step4" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Add a navbar
+### Add a navbar
 
-If you have completed the welcome-to-antarctica project, then you will know how to create a navbar.
+If you have completed the ***Welcome to antarctica*** project, then you will know how to create a navbar.
 
 --- task ---
 
 Open the `index.html` file.
 
-Find the <body> tag.
+Find the `<body>` tag.
 
-Add the <nav> tags below it with an unordered list containing two list items - one for each link to be shown in the navbar.
+Add the `<nav>` tags below it with an unordered list (`ul`) containing two list items (`li`) - one for each link to be shown in the navbar.
 
 --- code ---
 ---
@@ -22,7 +22,7 @@ language: html
 filename: index.html
 line_numbers: true
 line_number_start: 10
-line_highlights: 11, 16
+line_highlights: 11-16
 ---
 
   <body>
@@ -61,7 +61,7 @@ Add the html to `sammy.html`.
 --- code ---
 ---
 language: html
-filename: index.html
+filename: sammy.html
 line_numbers: true
 line_number_start: 1
 ---
@@ -110,8 +110,8 @@ Add the `position` and `width` properties to the `.navigation` selector.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 72
-line_highlights: 82-83
+line_number_start: 71
+line_highlights: 81-82
 ---
 
 /* NAV BAR */
@@ -211,8 +211,8 @@ Change the `font-size` property of the `p` selector to `3cqh`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 60
-line_highlights: 61
+line_number_start: 61
+line_highlights: 62
 ---
 
 p {

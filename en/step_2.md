@@ -24,17 +24,16 @@ You can use `console.log()` for testing and debugging your code.
 
 --- task ---
 
-**Tip** To open the Console:
+Open the Console.
 
-Most browsers will let you right click on a page and 'Inspect' an element. This brings up developer tools, including the Console.
+**Tip:** Most browsers will let you right click on a page and 'Inspect' an element. This brings up developer tools, including the Console.
 
 Some helpful keyboard shortcuts:
 
 + Chrome: Cmd + Option + J (on a Mac) or Ctrl + Shift + J (on Windows)
 + Firefox: Cmd + Option + K (on a Mac) or Ctrl + Shift + J (on Windows)
 + Microsoft Edge: Control + Shift + I
-+ Safari: First, enable the 'Develop menu'. To do this, click 'Safari' in the Mac menu bar and select 'Settings.' Click on 'Advanced', tick the checkbox next to 'Show features for web developers' and then close the window.
-You can now open the console using Cmd + Option + C.
++ Safari: First, enable the 'Develop menu'. To do this, click 'Safari' in the Mac menu bar and select 'Settings.' Click on 'Advanced', tick the checkbox next to 'Show features for web developers' and then close the window. You can now open the console using Cmd + Option + C.
 
 --- /task ---
 

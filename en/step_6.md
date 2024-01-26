@@ -14,7 +14,7 @@ Another step of tasks to complete.
 Code to Add:
 
 HTML // below </section> :
-      <div id="headerTrigger" class="headerTrigger"></div>
+      <div id="headingTrigger" class="headingTrigger"></div>
 
     // below </p> :
       <section class="garden"></section>
@@ -47,13 +47,13 @@ CSS
 }
 
 JS
-  // Header observer
-  const headerObserver = new IntersectionObserver(([entry]) => {
+  // Heading observer
+  const headingObserver = new IntersectionObserver(([entry]) => {
     document
       .querySelector("h1")
       .classList.toggle("enabled", !entry.isIntersecting);
   });
-  headerObserver.observe(document.getElementById("headerTrigger"));
+  headingObserver.observe(document.getElementById("headingTrigger"));
 
   // Snail observer
   const snailObserver = new IntersectionObserver(

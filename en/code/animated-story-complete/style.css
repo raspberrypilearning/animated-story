@@ -63,10 +63,6 @@ section {
   }
 }
 
-.rise {
-  animation: rising 2s ease;
-}
-
 @keyframes rising {
   from {
     transform: translateY(20%);
@@ -74,6 +70,10 @@ section {
   to {
     transform: translateY(0%);
   }
+}
+
+.rise {
+  animation: rising 2s ease;
 }
 
 .snail {
@@ -100,8 +100,8 @@ p {
 .garden {
   background-image: url("garden.jpeg");
   background-size: cover;
-  background-attachment: fixed;
   background-position-y: bottom;
+  background-attachment: fixed;
 }
 
 /* NAV BAR */
@@ -138,7 +138,7 @@ p {
   color: rgb(0, 0, 0);
 }
 
-.header {
+.heading {
   color: black;
   background-color: white;
   top: 0;
