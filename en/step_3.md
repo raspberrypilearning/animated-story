@@ -125,6 +125,7 @@ filename: scripts.js
 line_numbers: true
 line_number_start: 10
 line_highlights: 12-14
+---
 
 // Image observer
 const lazyImages = document.querySelectorAll("img");
