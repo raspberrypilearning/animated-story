@@ -110,8 +110,8 @@ Add the `position` and `width` properties to the `.navigation` selector.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 71
-line_highlights: 81-82
+line_number_start: 75
+line_highlights: 85-86
 ---
 
 /* NAV BAR */
@@ -211,8 +211,8 @@ Change the `font-size` property of the `p` selector to `3cqh`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 61
-line_highlights: 62
+line_number_start: 63
+line_highlights: 64
 ---
 
 p {

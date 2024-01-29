@@ -15,8 +15,8 @@ Add the `background-attachment: fixed` property to the `.garden` selector.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 79
-line_highlights: 83
+line_number_start: 68
+line_highlights: 72
 ---
 
 .garden {
@@ -109,7 +109,7 @@ Create an animation to apply to the story text.
 
 Open the `style.css` file.
 
-Find the `/* Animations */` comment.
+Find the `/* ANIMATIONS */` comment.
 
 Add a keyframes animation called `rising`.
 
@@ -119,10 +119,10 @@ language: css
 filename: style.css
 line_numbers: true
 line_number_start: 45
-line_highlights: 47-54
+line_highlights: 47-55
 ---
 
-/* Animations */
+/* ANIMATIONS */
 
 @keyframes rising {
   from {
@@ -151,10 +151,10 @@ language: css
 filename: style.css
 line_numbers: true
 line_number_start: 45
-line_highlights: 47-49
+line_highlights: 47-50
 ---
 
-/* Animations */
+/* ANIMATIONS */
 
 .rise {
   animation: rising 2s ease;
@@ -174,9 +174,9 @@ The animation is set to last for two seconds (`2s`) and use the `ease` transitio
 
 ### Use JavaScript to trigger the animation
 
-The `p` element has the `id=rise` attribute.
+The `p` element has the `id="rise"` attribute.
 
-You will now create a JavaScript intersection observer with a callback that adds the `rise` class to an element with the attribute `id=rise` if it enters the viewport.
+You will now create a JavaScript intersection observer with a callback that adds the `rise` class to an element with the attribute `id="rise"` if it enters the viewport.
 
 The JavaScript intersection observer will use this attribute to target the `p` element, so when it enters the viewport the `.rise` class can be added to it.
 
@@ -185,7 +185,7 @@ The JavaScript intersection observer will use this attribute to target the `p` e
 Create an intersection observer called `riseObserver`.
 
 **Tip:** This intersection observer is similar to `bounceObserver` that you created in an earlier step. There are two main differences:
-+ `riseObserver` watches for elements with the attribute `id=rise`
++ `riseObserver` watches for elements with the attribute `id="rise"`
 + `riseObserver` adds the `class=rise` to intersecting elements.
 
 --- code ---

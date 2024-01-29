@@ -84,7 +84,7 @@ const bounceObserver = new IntersectionObserver((entries) => {
 
 --- task ---
 
-Call `bounceObserver` to `observe` all elements in the `document` (page) with the attribute `id=hideBounce`. 
+Call `bounceObserver` to `observe` all elements in the `document` (page) with the attribute `"id="hideBounce"`. 
 
 --- code ---
 ---
@@ -114,7 +114,7 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 ### Create the callback
 
-The callback will start by checking `if` the first element in the `entries` array (with the attribute `id=hideBounce`) has entered the viewport. 
+The callback will start by checking `if` the first element in the `entries` array (with the attribute `id="hideBounce"`) has entered the viewport. 
 
 The `isIntersecting` method is used to check this.
 
@@ -151,7 +151,7 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 ### Output something to Console
 
-If the condition is met (the element with the attribute `id=hideBounce` has entered the viewport), you can output a message to the Console for testing.
+If the condition is met (the element with the attribute `id="hideBounce"` has entered the viewport), you can output a message to the Console for testing.
 
 --- task ---
 
@@ -200,7 +200,7 @@ Close all your brackets and curly braces.
 title: The structure of the bounceObserver intersection observer
 ---
 
-On line 2, `entries` is a collection of all elements on the webpage with the `id=hideBounce` attribute (there is only one). 
+On line 2, `entries` is a collection of all elements on the webpage with the `id="hideBounce"` attribute (there is only one). 
 
 A collection of items is called an 'array'.
 
@@ -226,7 +226,7 @@ You can hide the bouncing 'SCROLL DOWN' text, by changing the value of its `opac
 
 --- task ---
 
-Add an action when the `if` condition is met that changes the value of the `opacity` property of the bouncing text element, which has the attribute `id=bounce`.
+Add an action when the `if` condition is met that changes the value of the `opacity` property of the bouncing text element, which has the attribute `id="bounce"`.
 
 Setting the opacity value to `0` makes it invisible.
 

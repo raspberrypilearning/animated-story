@@ -47,6 +47,8 @@ section {
   opacity: 1;
 }
 
+/* ANIMATIONS */
+
 @keyframes bounce {
   0%,
   20%,
@@ -76,6 +78,20 @@ section {
   animation: rising 2s ease;
 }
 
+p {
+  font-size: 3cqh;
+  padding-left: 9vw;
+}
+
+.garden {
+  background-image: url("garden.jpeg");
+  background-size: cover;
+  background-position-y: bottom;
+  background-attachment: fixed;
+}
+
+/* SNAIL */
+
 .snail {
   opacity: 0;
   transform: translateX(-20%);
@@ -90,18 +106,6 @@ section {
 .startCrawl {
   opacity: 1;
   transform: translateX(25%);
-}
-
-p {
-  font-size: 3cqh;
-  padding-left: 9vw;
-}
-
-.garden {
-  background-image: url("garden.jpeg");
-  background-size: cover;
-  background-position-y: bottom;
-  background-attachment: fixed;
 }
 
 /* NAV BAR */
@@ -137,6 +141,8 @@ p {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
+/* HEADING */
 
 .heading {
   color: black;

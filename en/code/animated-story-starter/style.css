@@ -41,6 +41,8 @@ section {
   opacity: 1;
 }
 
+/* ANIMATIONS */
+
 @keyframes bounce {
   0%,
   20%,
@@ -67,6 +69,8 @@ p {
   background-size: cover;
   background-position-y: bottom;
 }
+
+/* SNAIL */
 
 /* NAV BAR */
 
@@ -99,6 +103,8 @@ p {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
+/* HEADING */
 
 .heading {
   color: black;

@@ -42,7 +42,7 @@ section {
   opacity: 1;
 }
 
-/* Animations */
+/* ANIMATIONS */
 
 .rise {
   animation: rising 2s ease;
@@ -85,6 +85,8 @@ p {
   background-attachment: fixed;
 }
 
+/* SNAIL */
+
 /* NAV BAR */
 
 .navigation {
@@ -118,6 +120,8 @@ p {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
+/* HEADING */
 
 .heading {
   color: black;

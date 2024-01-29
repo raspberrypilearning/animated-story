@@ -12,7 +12,7 @@ An empty `<div>` can be used as the trigger for the heading animation.
 
 Open the `sammy.html` file.
 
-Add a `<div>` above the `<h1>` and give it the attribute `id=headingTrigger`.
+Add a `<div>` element above the `<h1>` element and give it the attribute `id="headingTrigger"`.
 
 --- code ---
 ---
@@ -27,7 +27,6 @@ line_highlights: 21
       <div id="headingTrigger"></div>
       <h1 id="hideBounce" class="heading">Sammy <br />The<br />Snail</h1>
 
-
 --- /code ---
 
 --- /task ---
@@ -37,6 +36,8 @@ line_highlights: 21
 An intersection observer will watch for the `id` of the `<div>` you just made.
 
 If the `<div>` **leaves** the viewport, the callback adds the `enabled` class to the `<div>`.
+
+The `enabled` class changes the colours of the heading's font and background. It also sets the `position: sticky` property, so the heading stays in its current location (at the top) when the `enabled` class is added.
 
 The toggle method is used to turn the effect on or off as the div leaves and enters the viewport.
 
@@ -65,6 +66,24 @@ headingObserver.observe(document.getElementById("headingTrigger"));
 
 --- /code ---
 
+Click the **Run** button to see the changes you have made.
+
+--- collapse ---
+
+---
+title: Why does the text go behind the heading?
+---
+
+You can use the `z-index` property to make elements appear in front of or behind each other. You can think of z-index as layers. Find the `.heading` selector at the end of the `style.css` file. The selector styles the heading so its z-index is `1`, meaning it's z-index is higher than the other elements', (which are set to `0` by default) meaning it appears in front of them, on the top layer.
+
+**Try** setting the `z-index` property of the `.heading` selector to `-1` and then click the **Run** button to see the changes you have made.  You will see that the story text appears in front of the heading. Set it back to `1` when you are finished.
+
+--- /collapse ---
+
+--- /task ---
+
+**Debug:** Make sure you have `!` before `entries[0].isIntersecting`.
+
 --- collapse ---
 
 ---
@@ -75,29 +94,92 @@ The logical not `!` operator is used with the `isIntersecting` method in the cal
 
 --- /collapse ---
 
---- /task ---
-
 ### Add an image for the character
+
+This page is about one of the story characters: Sammy the snail.
+
+You can add an image of Sammy to the page.
 
 --- task ---
 
-HTML
+Open the `sammy.html` file.
 
-    // below </p> :
-      <section class="garden"></section>
-      <div class="bottomImage">
-        <img id="snail" class="snail" src="snail.svg" data-src="snail.svg" alt="" />
-      </div>
+Add a new section with the attribute `class="garden"`. This creates a background for the snail image to appear on.
 
-**TODO** Add alt text (and to all images?)
+--- code ---
+---
+language: html
+filename: sammy.html
+line_numbers: true
+line_number_start: 25
+line_highlights: 26-28
+---
+
+      </p>
+      <section class="garden">
+        
+      </section>
+
+--- /code ---
+
+--- /task ---
+
+Add the snail image. 
+
+--- task ---
+
+Add the `<img>` element with the attributes `id="snail"` and `class="snail"`.
+
+--- code ---
+---
+language: html
+filename: sammy.html
+line_numbers: true
+line_number_start: 25
+line_highlights: 27
+---
+
+      </p>
+      <section class="garden">
+        <img id="snail" class="snail" src="snail.svg" data-src="snail.svg" alt="A cartoon snail" />
+      </section>
+
+--- /code ---
+
+--- /task ---
+
+--- collapse ---
+
+---
+title: Why are 'src' and 'data-src' both set to 'snail.svg'?
+---
+
+The `src` and `data-src` attribute values are the same, because `imageObserver` will act on this `<img>` element, but we do not want the image to change.
+
+--- /collapse ---
 
 --- /task ---
 
 ### Style the character image
 
+The snail will appear from the left and move to the middle. It will also 'fade in'.
+
 --- task ---
 
-CSS
+Open the `style.css` file.
+
+Find the `/* SNAIL */` comment.
+
+Add the `.snail` selector.
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 88
+line_highlights: 90-100
+---
 
 .snail {
   opacity: 0;
@@ -110,54 +192,145 @@ CSS
   padding-left: 0;
 }
 
+/* NAV BAR */
+
+--- /code ---
+
+--- collapse ---
+
+---
+title: How is the image styled?
+---
+
+The `.snail` selector styles the image with `0` opacity, making it invisible. It also moves the image left to 25% of the width of its parent element.
+
+Its height is styled to be 20% of the viewport height (`20vh`). This means it will resize as the browser window height changes.
+
+--- /collapse ---
+
 --- /task ---
 
-### Create a startCrawl selector to show and move the character
+### Show and move the character image
+
+To animate the image, it will change its opacity to 1, making it fully visible. It will also move right by 25% of the width of its parent element.
 
 --- task ---
 
-CSS
+Add the `.startCrawl` selector.
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 88
+line_highlights: 101-105
+---
+
+/* SNAIL */
+
+.snail {
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: all 2s ease-out;
+  transition-delay: 0.4s;
+  height: 20vh;
+  margin-top: 80vh;
+  position: relative;
+  padding-left: 0;
+}
 
 .startCrawl {
   opacity: 1;
   transform: translateX(25%);
 }
 
+/* NAV BAR */
+
+--- /code ---
+
 --- /task ---
 
 ### Trigger the startCrawl animation
 
+An intersection observer will watch for an element with the attribute `id="snail"`.
+
+If the element enters the viewport (`isIntersecting`), the callback adds the `startCrawl` class to the element that has the `id="snail"` attribute.
+
 --- task ---
 
-JS
+Open the `scripts.js` file.
+
+Create an intersection observer called `snailObserver`.
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 41
+line_highlights: 42-47
+---
 
 // Snail observer
-const snailObserver = new IntersectionObserver(
-  (entries) => {
-    if (entries[0].isIntersecting) {
-      document.getElementById("snail").classList.add("startCrawl");
-    }
+const snailObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    entries[0].target.classList.add("startCrawl");
   }
-);
+});
 snailObserver.observe(document.getElementById("snail"));
+
+--- /code ---
+
+Click the **Run** button to see the changes you have made.
+
+As soon as the snail enters the viewport, the animation starts.
 
 --- /task ---
 
 ### Set a threshold
 
+Options can be added to the callback, so it only triggers when a percentage of the element is intersecting.
+
 --- task ---
 
-JS
+Add an option to the callback so it only triggers when 100% of the snail image is in the viewport.
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 41
+line_highlights: 46-48
+---
 
 // Snail observer
-const snailObserver = new IntersectionObserver(
-  (entries) => {
-    if (entries[0].isIntersecting) {
-      document.getElementById("snail").classList.add("startCrawl");
-    }
-  },
-  { threshold: 1 }
+const snailObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    entries[0].target.classList.add("startCrawl");
+  }
+},
+{ threshold: 1 }
 );
 snailObserver.observe(document.getElementById("snail"));
+
+--- /code ---
+
+--- collapse ---
+
+---
+title: What are the 'threshold' options?
+---
+
+Threshold values range from `0` to `1` 
+`1` means that every single pixel of the element has to be in the viewport for the callback to run. 
+`0` is the default value and means that just one pixel must be intersecting for the callback to run.
+
+--- /collapse ---
+
+Click the **Run** button to see the changes you have made.
+
+The whole image needs to be in the viewport for the animation to start.
 
 --- /task ---
