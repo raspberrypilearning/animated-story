@@ -33,20 +33,17 @@ const riseObserver = new IntersectionObserver((entries) => {
 riseObserver.observe(document.getElementById("rise"));
 
 // Heading observer
-const headingObserver = new IntersectionObserver(([entry]) => {
-  document
-    .querySelector("h1")
-    .classList.toggle("enabled", !entry.isIntersecting);
+const headingObserver = new IntersectionObserver((entries) => {
+  document.querySelector("h1").classList.toggle("enabled", !entries[0].isIntersecting);
 });
 headingObserver.observe(document.getElementById("headingTrigger"));
 
 // Snail observer
-const snailObserver = new IntersectionObserver(
-  (entries) => {
-    if (entries[0].isIntersecting) {
-      document.getElementById("snail").classList.add("startCrawl");
-    }
-  },
-  { threshold: 1 }
+const snailObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    document.getElementById("snail").classList.add("startCrawl");
+  }
+},
+{ threshold: 1 }
 );
 snailObserver.observe(document.getElementById("snail"));
