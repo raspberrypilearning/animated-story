@@ -2,6 +2,7 @@
 const riseObserver = new IntersectionObserver((entries) => {
   if (entries[0].isIntersecting) {
     entries[0].target.classList.add("rise");
+    riseObserver.unobserve(entries[0].target);
   }
 });
 riseObserver.observe(document.getElementById("rise"));
@@ -16,6 +17,7 @@ headingObserver.observe(document.getElementById("headingTrigger"));
 const snailObserver = new IntersectionObserver((entries) => {
   if (entries[0].isIntersecting) {
     entries[0].target.classList.add("startCrawl");
+    snailObserver.unobserve(entries[0].target);
   }
 },
 { threshold: 1 }

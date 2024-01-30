@@ -3,6 +3,7 @@ const bounceObserver = new IntersectionObserver((entries) => {
   if (entries[0].isIntersecting) {
     console.log("BOUNCE TRIGGER IN VIEWPORT");
     document.getElementById("bounce").style.opacity = 0;
+    bounceObserver.unobserve(entries[0].target);
   }
 });
 bounceObserver.observe(document.getElementById("hideBounce"));

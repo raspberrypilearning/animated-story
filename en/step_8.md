@@ -340,17 +340,156 @@ const imageObserver = new IntersectionObserver((entries) => {
 });
 lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
-// Rising text observer
-
 --- /code ---
 
 --- /task ---
 
 ### Further improve performance
 
-**TODO** Add the `unobserve` method to other intersection observer callbacks.
+You have used the `unobserve` method in `imageObserver`.
 
-unobserve(entry.target);
+Add the `unobserve` method to other intersection observer callbacks.
+
+--- task ---
+
+Open the `scripts.js` file.
+
+Add the `unobserve` method to the callback in `bounceObserver`.
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 1
+line_highlights: 6
+---
+
+// Hide bounce observer
+const bounceObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    console.log("BOUNCE TRIGGER IN VIEWPORT");
+    document.getElementById("bounce").style.opacity = 0;
+    bounceObserver.unobserve(entries[0].target);
+  }
+});
+bounceObserver.observe(document.getElementById("hideBounce"));
+
+--- /code---
+
+--- /task ---
+
+--- task ---
+
+Open the `sammy.js` file.
+
+Add the `unobserve` method to the callback in `riseObserver`.
+
+--- code ---
+---
+language: js
+filename: sammy.js
+line_numbers: true
+line_number_start: 1
+line_highlights: 5
+---
+
+// Rising text observer
+const riseObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    entries[0].target.classList.add("rise");
+    riseObserver.unobserve(entries[0].target);
+  }
+});
+riseObserver.observe(document.getElementById("rise"));
+
+--- /code---
+
+--- /task ---
+
+--- task ---
+
+Add the `unobserve` method to the callback in `snailObserver`.
+
+--- code ---
+---
+language: js
+filename: sammy.js
+line_numbers: true
+line_number_start: 16
+line_highlights: 20
+---
+
+// Snail observer
+const snailObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    entries[0].target.classList.add("startCrawl");
+    snailObserver.unobserve(entries[0].target);
+  }
+},
+{ threshold: 1 }
+);
+snailObserver.observe(document.getElementById("snail"));
+
+--- /code---
+
+--- /task ---
+
+--- task ---
+
+Open the `bella.js` file.
+
+Add the `unobserve` method to the callback in `riseObserver`.
+
+--- code ---
+---
+language: js
+filename: bella.js
+line_numbers: true
+line_number_start: 1
+line_highlights: 5
+---
+
+// Rising text observer
+const riseObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    entries[0].target.classList.add("rise");
+    riseObserver.unobserve(entries[0].target);
+  }
+});
+riseObserver.observe(document.getElementById("rise"));
+
+--- /code---
+
+--- /task ---
+
+--- task ---
+
+Add the `unobserve` method to the callback in `butterflyObserver`.
+
+--- code ---
+---
+language: js
+filename: bella.js
+line_numbers: true
+line_number_start: 16
+line_highlights: 20
+---
+
+// Butterfly observer
+const butterflyObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    entries[0].target.classList.add("startFly");
+    butterflyObserver.unobserve(entries[0].target);
+  }
+},
+{ threshold: 1 }
+);
+butterflyObserver.observe(document.getElementById("butterfly"));
+
+--- /code---
+
+--- /task ---
 
 --- collapse ---
 
