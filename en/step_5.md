@@ -212,6 +212,8 @@ line_highlights: 28
   <script type="text/javascript" src="scripts.js"></script>
   <script type="text/javascript" src="sammy.js"></script>
 
+--- /code ---
+
 --- /task ---
 
 In `sammy.html`, the `p` element has the `id="rise"` attribute.
