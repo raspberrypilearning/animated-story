@@ -1,9 +1,7 @@
 ## Upgrade your project
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-
 If you have time, you can: 
+
 + add another page for a second character from the `index.html` intro page
 + remove the `setTimeout` from `imageObserver`
 + improve browser performance by using `unobserve`.
@@ -12,11 +10,11 @@ If you have time, you can:
 
 --- task ---
 
-+ **Click:** the '+ Add file' button
+**Click:** the '+ Add file' button.
 
 ![The 'Add file' button.](images/addFile.png)
 
-+ Name your new file `bella.html` and click the 'Add file' button.
+Name your new file `bella.html` and click the 'Add file' button.
 
 --- /task ---
 
