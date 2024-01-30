@@ -190,6 +190,8 @@ line_highlights:
   <script type="text/javascript" src="scripts.js"></script>
   <script type="text/javascript" src="bella.js"></script>
 
+--- /code ---
+
 --- /task ---
 
 --- task ---
