@@ -56,6 +56,7 @@ section {
   80%,
   100% {
     transform: translateY(-10px);
+    transform: translateX(50%);
   }
   10% {
     transform: translateY(-20px);
@@ -64,13 +65,13 @@ section {
     transform: translateY(-10px);
   }
   40% {
-    transform: translateY(-5px);
+    transform: translateY(-45px);
   }
   60% {
     transform: translateY(-20px);
   }
   70% {
-    transform: translateY(-15px);
+    transform: translateY(-65px);
   }
 }
 
@@ -134,20 +135,19 @@ p {
 }
 
 .butterfly {
-  opacity: 0.5;
+  opacity: 0;
   transform: translateX(-20%);
   transition: all 2s ease-out;
-  transition-delay: 0.4s; /* TODO - REMOVE THIS, IT'S REDUNDANT */
   height: 20vh;
-  margin-top: 75vh;
+  width: 20vh;
+  margin-top: 80vh;
   position: relative;
   padding-left: 0;
-  animation: fly 2s infinite;
 }
 
 .startFly {
   opacity: 1;
-  transform: translateX(25%);
+  animation: fly 2s infinite;
 }
 
 /* NAV BAR */

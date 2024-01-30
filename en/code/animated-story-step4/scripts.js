@@ -23,9 +23,3 @@ const imageObserver = new IntersectionObserver((entries) => {
   );
 });
 lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
-
-// Rising text observer
-
-// Heading observer
-
-// Snail observer

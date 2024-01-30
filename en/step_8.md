@@ -3,7 +3,10 @@
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
-If you have time, you can add another page for a second character from the index.html intro page.
+If you have time, you can: 
++ add another page for a second character from the index.html intro page
++ remove the setTimeout from imageObserver
++ improve browser performance by using unobserve.
 
 </div>
 <div>
@@ -13,13 +16,27 @@ If you have time, you can add another page for a second character from the index
 
 ### Add a new page
 
+--- task ---
+
 **Click:** the '+ Add file' button
 
 ![The 'Add file' button.](images/addFile.png)
 
 Name your new file `bella.html` and click the 'Add file' button.
 
-Change the nav bar on all pages to include a new link:
+--- /task ---
+
+--- task ---
+
+Open the file `sammy.html` and copy all the html (Ctrl + C) 
+
+Open the `bella.html` file and paste the html into it.
+
+--- /task ---
+
+--- task ---
+
+Change the nav bar on **all three** pages to include a new link:
 
 --- code ---
 ---
@@ -38,7 +55,13 @@ line_highlights:
 
 --- /code ---
 
-Change the `<h1>` text:
+--- /task ---
+
+--- task ---
+
+Open `bella.html`
+
+ Change the `<h1>` text:
 
 --- code ---
 ---
@@ -52,6 +75,10 @@ line_highlights:
 <h1 id="hideBounce" class="heading">Bella <br />The<br />Butterfly</h1>
 
 --- /code ---
+
+--- /task ---
+
+--- task ---
 
 Add story text about Bella the Butterfly. 
 
@@ -72,6 +99,10 @@ In a sunlit garden, Bella the Butterfly danced from bloom to bloom, her wings pa
 
 --- /code ---
 
+--- /task ---
+
+--- task ---
+
 Add the image of Bella.
 
 --- code ---
@@ -87,7 +118,83 @@ line_highlights:
 
 --- /code ---
 
-Open the `style.css` file and copy the snail selector underneath the `.startCrawl` selector.
+--- /task ---
+
+You should create a new JavaScript file with scripts required by this page.
+
+--- task ---
+
+Create a new JavaScript file that will contain the scripts relevant to `bella.html`.
+
++ **Click:** the '+ Add file' button
+
+![The 'Add file' button.](images/addFile.png)
+
++ Name your new file `bella.js` and click the 'Add file' button.
+
+--- /task ---
+
+--- task ---
+
+Open the `sammy.js` file.
+
+Copy the contents of `sammy.js` to `bella.js`.
+
+--- /task ---
+
+
+--- task ---
+
+Change `snailObserver` to `butterflyObserver`.
+
+--- code ---
+---
+language: js
+filename: bella.js
+line_numbers: true
+line_number_start: 15
+line_highlights: 15, 16, 18, 23
+---
+
+// Butterfly observer
+const butterflyObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    entries[0].target.classList.add("startFly");
+  }
+},
+{ threshold: 1 }
+);
+butterflyObserver.observe(document.getElementById("butterfly"));
+
+--- /code ---
+
+--- /task ---
+
+You need to link the `bella.js` file from `bella.html`.
+
+--- task ---
+
+Open the `bella.html` file.
+
+Change the src attribute of the second script element from `src="sammy.js"` to `src="bella.js"`.
+
+--- code ---
+---
+language: html
+filename: bella.html
+line_numbers: false
+line_number_start:
+line_highlights: 
+---
+
+  <script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript" src="bella.js"></script>
+
+--- /task ---
+
+--- task ---
+
+Open the `style.css` file and copy the `.snail` selector, then paste it underneath the `.startCrawl` selector.
 
 Rename it `.butterfly`.
 
@@ -124,6 +231,10 @@ line_highlights: 111, 120, 123
 
 --- /code ---
 
+--- /task ---
+
+--- task ---
+
 Add a new selector called `.startFly`.
 
 --- code ---
@@ -144,6 +255,12 @@ line_highlights: 124 - 128
 
 --- /code ---
 
+--- /task ---
+
+Create a new animation for Bella.
+
+--- task ---
+
 Find the `/* ANIMATIONS */` comment.
 
 Add a new keyframes animation called 'fly' to suit the butterfly character.
@@ -154,7 +271,7 @@ language: css
 filename: style.css
 line_numbers: true
 line_number_start: 50
-line_highlights: 52 - 67
+line_highlights: 52 - 75
 ---
 
 /* ANIMATIONS */
@@ -165,23 +282,38 @@ line_highlights: 52 - 67
   50%,
   80%,
   100% {
-    transform: translateY(0);
+    transform: translateY(-10px);
+  }
+  10% {
+    transform: translateY(-20px);
+  }
+  30% {
+    transform: translateY(-10px);
   }
   40% {
-    transform: translateY(30px);
+    transform: translateY(-5px);
   }
   60% {
+    transform: translateY(-20px);
+  }
+  70% {
     transform: translateY(-15px);
   }
 }
 
 --- /code ---
 
-
+--- /task ---
 
 ### Remove setTimeout
 
 You can remove the setTimeout in imageObserver, as you don't want people to see the spinner image if they don't have to.
+
+--- task ---
+
+Open the `scripts.js` file.
+
+Remove setTimeout.
 
 --- code ---
 ---
@@ -209,6 +341,8 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 // Rising text observer
 
 --- /code ---
+
+--- /task ---
 
 ### Further improve performance
 

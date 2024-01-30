@@ -174,7 +174,47 @@ The animation is set to last for two seconds (`2s`) and use the `ease` transitio
 
 ### Use JavaScript to trigger the animation
 
-The `p` element has the `id="rise"` attribute.
+This animation will not be required on `index.html`.
+
+You should create a new JavaScript file with scripts required by this page.
+
+--- task ---
+
+Create a new JavaScript file that will contain the scripts relevant to `sammy.html`.
+
++ **Click:** the '+ Add file' button
+
+![The 'Add file' button.](images/addFile.png)
+
++ Name your new file `sammy.js` and click the 'Add file' button.
+
+--- /task ---
+
+You need to link your new file from the `sammy.html` page.
+
+--- task ---
+
+Open the `sammy.html` file.
+
+Find the `<script>` element.
+
+Add a new script element with the attribute `src="sammy.js"`
+
+--- code ---
+---
+language: html
+filename: sammy.html
+line_numbers: true
+line_number_start: 27
+line_highlights: 28
+---
+
+  <script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript" src="sammy.js"></script>
+
+--- /task ---
+
+In `sammy.html`, the `p` element has the `id="rise"` attribute.
 
 You will now create a JavaScript intersection observer with a callback that adds the `rise` class to an element with the attribute `id="rise"` if it enters the viewport.
 
@@ -182,19 +222,17 @@ The JavaScript intersection observer will use this attribute to target the `p` e
 
 --- task ---
 
-Create an intersection observer called `riseObserver`.
+Open the file `sammy.js` you created earlier.
 
-**Tip:** This intersection observer is similar to `bounceObserver` that you created in an earlier step. There are two main differences:
-+ `riseObserver` watches for elements with the attribute `id="rise"`
-+ `riseObserver` adds the `class=rise` to intersecting elements.
+Add an intersection observer called `riseObserver`.
 
 --- code ---
 ---
 language: js
-filename: scripts.js
+filename: sammy.js
 line_numbers: true
-line_number_start: 27
-line_highlights: 28-33
+line_number_start: 1
+line_highlights:
 ---
 
 // Rising text observer
@@ -205,13 +243,15 @@ const riseObserver = new IntersectionObserver((entries) => {
 });
 riseObserver.observe(document.getElementById("rise"));
 
-// Heading observer
-
 --- /code ---
+
+**Tip:** This intersection observer is similar to `bounceObserver` that you created in an earlier step. There are two main differences:
++ `riseObserver` watches for elements with the attribute `id="rise"`
++ `riseObserver` adds the `class=rise` to intersecting elements.
 
 **Click the Run button** to see your changes.
 
-Scroll down to see the rising animation when the `p` text enters the viewport.
+**Test:** Scroll down to see the rising animation when the `p` text enters the viewport.
 
 --- /task ---
 

@@ -8,9 +8,3 @@ const bounceObserver = new IntersectionObserver((entries) => {
 bounceObserver.observe(document.getElementById("hideBounce"));
 
 // Image observer
-
-// Rising text observer
-
-// Heading observer
-
-// Snail observer

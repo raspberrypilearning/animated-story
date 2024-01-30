@@ -2,7 +2,7 @@
 
 In this step you will animate the heading and an image.
 
-<iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/animated-story-complete?page=sammy.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
+<iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/animated-story-complete" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 ### Create a trigger
 
@@ -43,17 +43,17 @@ The toggle method is used to turn the effect on or off as the div leaves and ent
 
 --- task ---
 
-Open the `scripts.js` file.
+Open the `sammy.js` file.
 
 Create an intersection observer called `headingObserver`.
 
 --- code ---
 ---
 language: js
-filename: scripts.js
+filename: sammy.js
 line_numbers: true
-line_number_start: 35
-line_highlights: 36-40
+line_number_start: 9
+line_highlights:
 ---
 
 // Heading observer
@@ -61,8 +61,6 @@ const headingObserver = new IntersectionObserver((entries) => {
   document.querySelector("h1").classList.toggle("enabled", !entries[0].isIntersecting);
 });
 headingObserver.observe(document.getElementById("headingTrigger"));
-
-// Snail observer
 
 --- /code ---
 
@@ -259,17 +257,17 @@ If the element enters the viewport (`isIntersecting`), the callback adds the `st
 
 --- task ---
 
-Open the `scripts.js` file.
+Open the `sammy.js` file.
 
 Create an intersection observer called `snailObserver`.
 
 --- code ---
 ---
 language: js
-filename: scripts.js
+filename: sammy.js
 line_numbers: true
-line_number_start: 41
-line_highlights: 42-47
+line_number_start: 16
+line_highlights:
 ---
 
 // Snail observer
@@ -299,10 +297,10 @@ Add an option to the callback so it only triggers when 100% of the snail image i
 --- code ---
 ---
 language: js
-filename: scripts.js
+filename: sammy.js
 line_numbers: true
-line_number_start: 41
-line_highlights: 46-48
+line_number_start: 15
+line_highlights: 20-22
 ---
 
 // Snail observer
