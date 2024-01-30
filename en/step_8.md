@@ -12,11 +12,11 @@ If you have time, you can:
 
 --- task ---
 
-**Click:** the '+ Add file' button
++ **Click:** the '+ Add file' button
 
 ![The 'Add file' button.](images/addFile.png)
 
-Name your new file `bella.html` and click the 'Add file' button.
++ Name your new file `bella.html` and click the 'Add file' button.
 
 --- /task ---
 
