@@ -156,8 +156,6 @@ The `src` and `data-src` attribute values are the same, because `imageObserver` 
 
 --- /collapse ---
 
---- /task ---
-
 ### Style the character image
 
 The snail will appear from the left and move to the middle. It will also 'fade in'.
@@ -175,15 +173,16 @@ Add the `.snail` selector.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 88
-line_highlights: 90-100
+line_number_start: 85
+line_highlights: 87-96
 ---
+
+/* SNAIL */
 
 .snail {
   opacity: 0;
   transform: translateX(-20%);
   transition: all 2s ease-out;
-  transition-delay: 0.4s;
   height: 20vh;
   margin-top: 80vh;
   position: relative;
@@ -221,8 +220,8 @@ Add the `.startCrawl` selector.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 88
-line_highlights: 101-105
+line_number_start: 85
+line_highlights: 97-101
 ---
 
 /* SNAIL */
@@ -231,7 +230,6 @@ line_highlights: 101-105
   opacity: 0;
   transform: translateX(-20%);
   transition: all 2s ease-out;
-  transition-delay: 0.4s;
   height: 20vh;
   margin-top: 80vh;
   position: relative;

@@ -110,8 +110,8 @@ Add the `position` and `width` properties to the `.navigation` selector.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 75
-line_highlights: 85-86
+line_number_start: 72
+line_highlights: 82-83
 ---
 
 /* NAV BAR */
@@ -171,11 +171,10 @@ language: css
 filename: style.css
 line_numbers: true
 line_number_start: 31
-line_highlights: 33
+line_highlights: 32
 ---
 
 #bounce {
-  padding: 0px;
   width: 80vw;
   position: fixed;
   bottom: 0;
@@ -183,9 +182,7 @@ line_highlights: 33
   color: white;
   font-size: 5cqw;
   text-shadow: 0 0 10px black;
-  animation-duration: 1s;
   animation: bounce 1s infinite;
-  opacity: 1;
 }
 
 --- /code ---
@@ -196,11 +193,11 @@ The 'SCROLL DOWN' text should be positioned centrally.
 
 --- /task ---
 
-### Size the font with a calculated query
+### Size the font with a container query
 
 The font size is currently set to a fixed size of 50 pixels (`50px`).
 
-You can use `cqw` instead of `px` to size elements.
+You can use `cqh` instead of `px` to size elements.
 
 --- task ---
 
@@ -211,8 +208,8 @@ Change the `font-size` property of the `p` selector to `3cqh`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 63
-line_highlights: 64
+line_number_start: 60
+line_highlights: 61
 ---
 
 p {
@@ -227,6 +224,20 @@ p {
 Resize the **height** of the editor preview to see your font size change!
 
 --- /task ---
+
+--- collapse ---
+
+---
+title: What is cqh?
+---
+
+Container Query Height (cqh) are units that specify a size relative to the dimensions of an element's container element.
+
+`1cqh` is 1% of the container's height. For example, if the container's height is 300px, then a value of `10cqh` on a property will be 30px.
+
+One benefit of using `cqh` units rather than `px` (pixel units) for sizing elements is that elements will resize along with their container. This usually happens when you resize a browser window, or view a web page on a different screen.
+
+--- /collapse ---
 
 Your website is looking awesome! 
 

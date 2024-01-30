@@ -4,15 +4,9 @@
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 
 If you have time, you can: 
-+ add another page for a second character from the index.html intro page
-+ remove the setTimeout from imageObserver
-+ improve browser performance by using unobserve.
-
-</div>
-<div>
-![](images/image.png){:width="300px"}
-</div>
-</div>
++ add another page for a second character from the `index.html` intro page
++ remove the `setTimeout` from `imageObserver`
++ improve browser performance by using `unobserve`.
 
 ### Add a new page
 
@@ -28,9 +22,13 @@ Name your new file `bella.html` and click the 'Add file' button.
 
 --- task ---
 
-Open the file `sammy.html` and copy all the html (Ctrl + C) 
+Open the file `sammy.html`. 
 
-Open the `bella.html` file and paste the html into it.
+Select all the html (Ctrl + A).
+
+Copy the selected html (Ctrl + C).
+
+Open the `bella.html` file and paste the html into it (Ctrl + V).
 
 --- /task ---
 
@@ -42,9 +40,9 @@ Change the nav bar on **all three** pages to include a new link:
 ---
 language: html
 filename: 
-line_numbers: false
-line_number_start: 
-line_highlights: 
+line_numbers: true
+line_number_start: 12
+line_highlights: 15
 ---
 
       <ul>
@@ -61,18 +59,18 @@ line_highlights:
 
 Open `bella.html`
 
- Change the `<h1>` text:
+Change the `<h1>` text:
 
 --- code ---
 ---
 language: html
-filename: 
-line_numbers: false
-line_number_start: 
+filename: bella.html
+line_numbers: true
+line_number_start: 22
 line_highlights: 
 ---
 
-<h1 id="hideBounce" class="heading">Bella <br />The<br />Butterfly</h1>
+      <h1 id="hideBounce" class="heading">Bella <br />The<br />Butterfly</h1>
 
 --- /code ---
 
@@ -82,20 +80,20 @@ line_highlights:
 
 Add story text about Bella the Butterfly. 
 
-Create a new story to make the page your own!
+You can add your own story to make the page your own!
 
 --- code ---
 ---
 language: html
-filename: 
-line_numbers: false
-line_number_start: 
-line_highlights: 
+filename: bella.html
+line_numbers: true
+line_number_start: 23
+line_highlights: 24
 ---
 
-<p id="rise">
-In a sunlit garden, Bella the Butterfly danced from bloom to bloom, her wings painted in dazzling colors of blue, orange, and pink.<br /><br />Each graceful flutter spread joy as she explored hidden corners, discovering the beauty that filled her tiny world.<br /><br />Encountering fellow butterflies, Bella joined in a butterfly ballet, creating a living masterpiece in the sky.<br /><br />The garden embraced her, transforming each moment into a celebration of life.<br /><br />Like Sammy the Snail, Bella realized that even in the smallest corners of their worlds, there were secrets and wonders waiting to be uncovered.<br /><br />In this sunlit paradise, Sammy and Bella's garden was filled with joy.
-</p>
+      <p id="rise">
+      In a sunlit garden, Bella the Butterfly danced from bloom to bloom, her wings painted in dazzling colors of blue, orange, and pink.<br /><br />Each graceful flutter spread joy as she explored hidden corners, discovering the beauty that filled her tiny world.<br /><br />Encountering fellow butterflies, Bella joined in a butterfly ballet, creating a living masterpiece in the sky.<br /><br />The garden embraced her, transforming each moment into a celebration of life.<br /><br />Like Sammy the Snail, Bella realized that even in the smallest corners of their worlds, there were secrets and wonders waiting to be uncovered.<br /><br />In this sunlit paradise, Sammy and Bella's garden was filled with joy.
+      </p>
 
 --- /code ---
 
@@ -103,18 +101,18 @@ In a sunlit garden, Bella the Butterfly danced from bloom to bloom, her wings pa
 
 --- task ---
 
-Add the image of Bella.
+Change the `<img>` element.
 
 --- code ---
 ---
 language: html
-filename: 
-line_numbers: false
-line_number_start: 
+filename: bella.html
+line_numbers: true
+line_number_start: 27
 line_highlights: 
 ---
 
-<img id="butterfly" class="butterfly" src="butterfly.png" data-src="butterfly.png" alt="A cartoon butterfly" />
+        <img id="butterfly" class="butterfly" src="butterfly.png" data-src="butterfly.png" alt="A cartoon butterfly" />
 
 --- /code ---
 
@@ -142,10 +140,9 @@ Copy the contents of `sammy.js` to `bella.js`.
 
 --- /task ---
 
-
 --- task ---
 
-Change `snailObserver` to `butterflyObserver`.
+Alter `snailObserver` to create `butterflyObserver`.
 
 --- code ---
 ---
@@ -182,9 +179,9 @@ Change the src attribute of the second script element from `src="sammy.js"` to `
 ---
 language: html
 filename: bella.html
-line_numbers: false
-line_number_start:
-line_highlights: 
+line_numbers: true
+line_number_start: 31
+line_highlights: 32
 ---
 
   <script type="text/javascript" src="scripts.js"></script>
@@ -200,15 +197,15 @@ Open the `style.css` file and copy the `.snail` selector, then paste it undernea
 
 Rename it `.butterfly`.
 
-Add two animation properties. 
+Add the animation property. 
 
 --- code ---
 ---
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 106
-line_highlights: 111, 120, 123
+line_number_start: 97
+line_highlights: 102, 111
 ---
 
 .startCrawl {
@@ -220,12 +217,11 @@ line_highlights: 111, 120, 123
   opacity: 0;
   transform: translateX(-20%);
   transition: all 2s ease-out;
-  transition-delay: 0.4s;
   height: 20vh;
+  width: 20vh;
   margin-top: 80vh;
   position: relative;
   padding-left: 0;
-  animation-duration: 3s;
   animation: fly 3s infinite;
 }
 
@@ -244,13 +240,13 @@ Add a new selector called `.startFly`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 124
-line_highlights: 124 - 128
+line_number_start: 114
+line_highlights: 114 - 118
 ---
 
 .startFly {
   opacity: 1;
-  transform: translateX(25%);
+  animation: fly 2s infinite;
 }
 
 /* NAV BAR */
@@ -272,8 +268,8 @@ Add a new keyframes animation called 'fly' to suit the butterfly character.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 50
-line_highlights: 52 - 75
+line_number_start: 42
+line_highlights: 44 - 67
 ---
 
 /* ANIMATIONS */

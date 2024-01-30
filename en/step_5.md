@@ -15,8 +15,8 @@ Add the `background-attachment: fixed` property to the `.garden` selector.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 68
-line_highlights: 72
+line_number_start: 65
+line_highlights: 69
 ---
 
 .garden {
@@ -118,8 +118,8 @@ Add a keyframes animation called `rising`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 45
-line_highlights: 47-55
+line_number_start: 42
+line_highlights: 44-52
 ---
 
 /* ANIMATIONS */
@@ -150,8 +150,8 @@ Create the `.rise` selector.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 45
-line_highlights: 47-50
+line_number_start: 42
+line_highlights: 44-47
 ---
 
 /* ANIMATIONS */

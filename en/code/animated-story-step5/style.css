@@ -29,7 +29,6 @@ section {
 }
 
 #bounce {
-  padding: 0px;
   width: 80vw;
   position: fixed;
   bottom: 0;
@@ -37,9 +36,7 @@ section {
   color: white;
   font-size: 5cqw;
   text-shadow: 0 0 10px black;
-  animation-duration: 1s;
   animation: bounce 1s infinite;
-  opacity: 1;
 }
 
 /* ANIMATIONS */

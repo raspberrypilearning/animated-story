@@ -11,11 +11,6 @@ body {
   flex-direction: column;
 }
 
-#snailContainer { /* TODO - REMOVE THIS, IT'S REDUNDANT */
-    margin: 0;
-    font-size: 0;
-}
-
 main {
   padding-left: 20vw;
 }
@@ -34,7 +29,6 @@ section {
 }
 
 #bounce {
-  padding: 0px;
   width: 80vw;
   position: fixed;
   bottom: 0;
@@ -42,9 +36,7 @@ section {
   color: white;
   font-size: 5cqw;
   text-shadow: 0 0 10px black;
-  animation-duration: 1s; /* TODO - REMOVE THIS, IT'S REDUNDANT */
   animation: bounce 1s infinite;
-  opacity: 1;
 }
 
 /* ANIMATIONS */
@@ -75,6 +67,19 @@ section {
   }
 }
 
+.rise {
+  animation: rising 2s ease;
+}
+
+@keyframes rising {
+  from {
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
 @keyframes bounce {
   0%,
   20%,
@@ -89,19 +94,6 @@ section {
   60% {
     transform: translateY(-15px);
   }
-}
-
-@keyframes rising {
-  from {
-    transform: translateY(20%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-
-.rise {
-  animation: rising 2s ease;
 }
 
 p {
@@ -122,7 +114,6 @@ p {
   opacity: 0;
   transform: translateX(-20%);
   transition: all 2s ease-out;
-  transition-delay: 0.4s; /* TODO - REMOVE THIS, IT'S REDUNDANT */
   height: 20vh;
   margin-top: 80vh;
   position: relative;
