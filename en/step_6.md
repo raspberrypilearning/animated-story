@@ -20,7 +20,7 @@ language: html
 filename: sammy.html
 line_numbers: true
 line_number_start: 17
-line_highlights: 21
+line_highlights: 18
 ---
 
       </section>
@@ -264,7 +264,7 @@ Create an intersection observer called `snailObserver`.
 language: js
 filename: sammy.js
 line_numbers: true
-line_number_start: 16
+line_number_start: 15
 line_highlights:
 ---
 

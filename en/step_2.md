@@ -37,7 +37,7 @@ Some helpful keyboard shortcuts:
 
 --- /task ---
 
-JavaScript can be used to watch ('observe') an array of html elements with a specific `id=` or `class=` attribute and output something to the Console when an observed element appears in the viewport.
+JavaScript can be used to watch ('observe') an array of HTML elements with a specific `id=` or `class=` attribute and output something to the Console when an observed element appears in the viewport.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 A collection of items is called an <span style="color: #0faeb0">**array**</span>.

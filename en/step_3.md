@@ -14,7 +14,7 @@ When a web page loads, all images are loaded and this can use lots of bandwidth.
 The amount of data (bits) that can be transferred over a computer connection is called the <span style="color: #0faeb0">**bandwidth**</span>. Using lots of bandwidth can cost people money, so reducing the use of bandwidth makes websites more user-friendly.
 </p>
 
-The `src` attribute for all image elements in `index.html` is set to to `spinner.gif`. 
+The `src` attribute for all image elements in `index.html` is set to `spinner.gif`. 
 
 This means that when the page loads, the only image that has to be loaded is `spinner.gif`.
 

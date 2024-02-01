@@ -10,11 +10,11 @@ If you have time, you can:
 
 --- task ---
 
-**Click:** the '+ Add file' button.
++ **Click** the '+ Add file' button.
 
 ![The 'Add file' button.](images/addFile.png)
 
-Name your new file `bella.html` and click the 'Add file' button.
++ Name your new file `bella.html` and click the 'Add file' button.
 
 --- /task ---
 
@@ -22,17 +22,17 @@ Name your new file `bella.html` and click the 'Add file' button.
 
 Open the file `sammy.html`. 
 
-Select all the html (Ctrl + A).
+Select all the HTML (Ctrl + A).
 
-Copy the selected html (Ctrl + C).
+Copy the selected HTML (Ctrl + C).
 
-Open the `bella.html` file and paste the html into it (Ctrl + V).
+Open the `bella.html` file and paste the HTML into it (Ctrl + V).
 
 --- /task ---
 
 --- task ---
 
-Change the nav bar on **all three** pages to include a new link:
+Add the new link to the nav bar on **all three** pages.
 
 --- code ---
 ---
@@ -122,7 +122,7 @@ You should create a new JavaScript file with scripts required by this page.
 
 Create a new JavaScript file that will contain the scripts relevant to `bella.html`.
 
-+ **Click:** the '+ Add file' button
++ **Click** the '+ Add file' button
 
 ![The 'Add file' button.](images/addFile.png)
 
@@ -315,9 +315,9 @@ Remove setTimeout.
 ---
 language: js
 filename: scripts.js
-line_numbers: false
-line_number_start:
-line_highlights:
+line_numbers: true
+line_number_start: 10
+line_highlights: 16
 ---
 
 // Image observer

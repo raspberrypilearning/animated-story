@@ -9,7 +9,7 @@ Websites often use <span style="color: #0faeb0">**interactive**</span> features 
 You will:
 + Track the position of elements
 + Animate elements when they come into view
-+ Create your own html page
++ Create your own HTML page
 + Set images to load only when they are needed
 
 --- no-print ---

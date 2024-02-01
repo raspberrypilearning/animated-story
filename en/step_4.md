@@ -56,7 +56,7 @@ Name your new file `sammy.html` and click the 'Add file' button.
 
 --- task ---
 
-Add the html to `sammy.html`.
+Add the HTML to `sammy.html`.
 
 --- code ---
 ---

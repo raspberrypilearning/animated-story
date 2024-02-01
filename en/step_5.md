@@ -42,7 +42,7 @@ Open the `sammy.html` file.
 
 Find the closing `</section>` tag.
 
-Add the html for an h1 heading.
+Add the HTML for an h1 heading.
 
 --- code ---
 ---
@@ -168,7 +168,7 @@ The selector has one `animation` property set to call the keyframes animation `r
 
 The animation is set to last for two seconds (`2s`) and use the `ease` transition.
 
-**Tip:** You can add this anywhere in the css file, but it makes sense to add it close to the code for the keyframes animation.
+**Tip:** You can add this anywhere in the CSS file, but it makes sense to add it close to the code for the keyframes animation.
 
 --- /task ---
 
@@ -182,7 +182,7 @@ You should create a new JavaScript file with scripts required by this page.
 
 Create a new JavaScript file that will contain the scripts relevant to `sammy.html`.
 
-+ **Click:** the '+ Add file' button
++ **Click** the '+ Add file' button
 
 ![The 'Add file' button.](images/addFile.png)
 
