@@ -11,7 +11,7 @@ Open the [Animated story starter project](https://staging-editor.raspberrypi.org
 --- /task ---
 
 Your starter project contains:
-+ an HTML page with `img` and `p` elements
++ an HTML page with images and text
 + a CSS file that contains styling for some of the content
 + the images you will use in the project
 + a JavaScript file that you will develop throughout the project.
@@ -26,25 +26,27 @@ You can use `console.log()` for testing and debugging your code.
 
 Open the Console.
 
-**Tip:** Most browsers will let you right click on a page and 'Inspect' an element. This brings up developer tools, including the Console.
+**Tip:** Most browsers will let you right click on a page and 'Inspect' an element. 
+
+This opens developer tools, including the Console.
 
 Some helpful keyboard shortcuts:
 
-+ Chrome: Cmd + Option + J (on a Mac) or Ctrl + Shift + J (on Windows)
-+ Firefox: Cmd + Option + K (on a Mac) or Ctrl + Shift + J (on Windows)
++ Chrome: Ctrl + Shift + J (on Windows) or Cmd + Option + J (on a Mac)
++ Firefox: Ctrl + Shift + J (on Windows) or Cmd + Option + K (on a Mac)
 + Microsoft Edge: Control + Shift + I
 + Safari: First, enable the 'Develop menu'. To do this, click 'Safari' in the Mac menu bar and select 'Settings.' Click on 'Advanced', tick the checkbox next to 'Show features for web developers' and then close the window. You can now open the console using Cmd + Option + C.
 
 --- /task ---
 
-JavaScript can be used to watch ('observe') an array of HTML elements with a specific `id=` or `class=` attribute and output something to the Console when an observed element appears in the viewport.
+JavaScript can be used to watch ('observe') an array of HTML elements with a specific `id` or `class` attribute and output something to the Console when an observed element appears in the viewport.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 A collection of items is called an <span style="color: #0faeb0">**array**</span>.
 </p>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0">**viewport**</span> is the area of the webpage that is currently visible in the browser.
+The <span style="color: #0faeb0">**viewport**</span> is the area of the web page that is currently visible in the browser.
 </p>
 
 
@@ -56,7 +58,7 @@ Your `bounceObserver` is used to watch ('observe') an array of elements (`entrie
 
 Open the `scripts.js` file.
 
-Create an observer called `bounceObsever`.
+Create an observer called `bounceObserver`.
 
 --- code ---
 ---
@@ -118,7 +120,7 @@ The callback will start by checking `if` the first element in the `entries` arra
 
 The `isIntersecting` method is used to check this.
 
-**TODO** Would an image help here (perhaps showing the page extending beyond bottom of the screen (viewport) with images below the viewport)?
+**TODO ... For QA** Would an image help here (perhaps showing the page extending beyond bottom of the screen (viewport) with images below the viewport)?
 
 --- task ---
 
@@ -178,21 +180,21 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 --- /code ---
  
-Open the Console.
+**Test:** 
 
-Click the **Run** button to see the changes you have made. 
++ Open the Console.
++ Click the **Run** button.
++ Scroll down and watch the Console.
 
-When you scroll down, the message "BOUNCE TRIGGER IN VIEWPORT" will appear in the Console.
+The message "BOUNCE TRIGGER IN VIEWPORT" will appear in the Console.
 
 --- /task ---
 
 **Debug:**
 
-Check your spelling of `IntersectionObserver`. It should have two capital letters.
-
-There must be a semicolon at the end of lines 4, 6 and 7.
-
-Close all your brackets and curly braces.
++ Check your spelling of `IntersectionObserver`. It should have two capital letters.
++ There must be a semicolon at the end of lines 4, 6 and 7.
++ Close all your brackets and curly braces.
 
 --- collapse ---
 
@@ -200,11 +202,11 @@ Close all your brackets and curly braces.
 title: The structure of the bounceObserver intersection observer
 ---
 
-On line 2, `entries` is a collection of all elements on the webpage with the `id="hideBounce"` attribute (there is only one). 
+On line 2, `entries` is a collection of all elements on the web page with the `id="hideBounce"` attribute. 
 
 A collection of items is called an 'array'.
 
-The `bounceObserver` is set to observe when the first (and only) item in the `entries` array comes into the viewport.
+The `bounceObserver` is set to observe when the first (in this case: the only) item in the `entries` array comes into the viewport.
 
 When it does, the observer 'callback' outputs a message to the Console.
 
@@ -216,7 +218,9 @@ The index page has some bouncing text at the bottom telling you to 'SCROLL DOWN'
 
 --- task ---
 
-**Test:** Scroll down. You will see that the 'SCROLL DOWN' text gets in the way of other content. 
+**Test:** Scroll down. 
+
+You will see that the 'SCROLL DOWN' text gets in the way of other content. 
 
 --- /task --- 
 
@@ -252,15 +256,16 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 --- /code ---
 
-Click the **Run** button to see the changes you have made. 
+**Test:** 
 
-When you scroll down, the bouncing text 'SCROLL DOWN' will disappear!
++ Click the **Run** button.
++ Scroll down to see the bouncing text 'SCROLL DOWN' disappear!
 
 --- /task ---
 
 **Debug:**
 
-There must be a semicolon at the end of line 5.
++ There must be a semicolon at the end of line 5.
 
 ## Save your project
 

@@ -64,7 +64,10 @@ headingObserver.observe(document.getElementById("headingTrigger"));
 
 --- /code ---
 
-Click the **Run** button to see the changes you have made.
+**Test:** 
+
++ Click the **Run** button.
++ Scroll down to see your changes.
 
 --- collapse ---
 
@@ -278,7 +281,10 @@ snailObserver.observe(document.getElementById("snail"));
 
 --- /code ---
 
-Click the **Run** button to see the changes you have made.
+**Test:** 
+
++ Click the **Run** button.
++ Scroll down.
 
 As soon as the snail enters the viewport, the animation starts.
 
@@ -325,7 +331,10 @@ Threshold values range from `0` to `1`
 
 --- /collapse ---
 
-Click the **Run** button to see the changes you have made.
+**Test:** 
+
++ Click the **Run** button.
++ Scroll down.
 
 The whole image needs to be in the viewport for the animation to start.
 

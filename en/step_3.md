@@ -24,7 +24,7 @@ This means that when the page loads, the only image that has to be loaded is `sp
 
 Open the `index.html` file.
 
-For each `<img>` element, add a `data-src` attribute and set its value to the correct image.
+In each `<img>` element, add a `data-src` attribute and set its value to the relevant image.
 
 --- code ---
 ---
@@ -68,7 +68,10 @@ line_highlights: 18, 22, 26, 30, 34
 
 --- /code ---
 
-Click the **Run** button to see the changes you have made. 
+**Test:** 
+
++ Click the **Run** button.
++ Scroll down.
 
 All the images are still `spinner.gif`
 
@@ -245,11 +248,11 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 --- /task ---
 
-If an image in the array is in the viewport, the value of its `src` attribute (currently `spinner.gif`) is changed to the value of its `data-src` attribute (the image you want to load).
+If an image in the array is in the viewport, the value of its `src` attribute (currently `spinner.gif`) is changed to the value of its `data-src` attribute (the image file you want to load).
 
 --- task ---
 
-Create the action to replace the spinner image (in `src`) with the image in the `data-src` attribute.
+Create the action to change the value of `src` to the value of `data-src`.
 
 --- code ---
 ---
@@ -292,9 +295,10 @@ If this was not there then the swap might happen too quickly for you to see!
 
 --- /collapse ---
 
-Click the **Run** button to see the changes you have made.
+**Test:** 
 
-Scroll down and watch each image load when it enters the viewport (after a one-second pause).
++ Click the **Run** button.
++ Scroll down and watch each image load when it enters the viewport (after a one-second pause).
 
 --- /task ---
 

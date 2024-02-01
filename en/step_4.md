@@ -6,7 +6,7 @@ In this step, you will add a new web page and navigation bar to your website.
 
 ### Add a navbar
 
-If you have completed the ***Welcome to antarctica*** project, then you will know how to create a navbar.
+If you have completed the ***Welcome to antarctica*** project, you will know how to create a navbar.
 
 --- task ---
 
@@ -36,13 +36,13 @@ line_highlights: 11-16
 
 --- /code ---
 
-Click the **Run** button to see your changes. 
+**Test:** Click the **Run** button. 
 
 The navigation links will appear at the top.
 
 --- /task ---
 
-### Create a new webpage
+### Create a new web page
 
 --- task ---
 
@@ -130,17 +130,17 @@ line_highlights: 82-83
 
 --- /code ---
 
-**Click the Run button** to see your changes.
+**Test:** Click the **Run** button.
 
 The navbar should be positioned on the left.
 
 --- /task ---
 
-The 'SCROLL DOWN' text is not centered any more because the navbar is styled to take up 20% of the width of the viewport (using the `width: 20vw` property).
+The 'SCROLL DOWN' text is not centered any more because the navbar is styled with `width: 20vw`, so takes up 20% of the width of the viewport.
 
 --- task ---
 
-Add a `padding-left` property to the `main` selector.
+Add a `padding-left` property to the styling of `main`.
 
 --- code ---
 ---
@@ -187,17 +187,18 @@ line_highlights: 32
 
 --- /code ---
 
-**Click the Run button** to see your changes.
+**Test:** 
 
++ Click the **Run** button.
 The 'SCROLL DOWN' text should be positioned centrally.
 
 --- /task ---
 
 ### Size the font with a container query
 
-The font size is currently set to a fixed size of 50 pixels (`50px`).
+The font size is currently set to a **fixed** size of 50 pixels (`50px`).
 
-You can use `cqh` instead of `px` to size elements.
+You can use `cqh` instead of `px` to **dynamically** size the font so it always relates to the height of its container element.
 
 --- task ---
 
@@ -219,9 +220,10 @@ p {
 
 --- /code ---
 
-**Click the Run button** to see your changes.
+**Test:** 
 
-Resize the **height** of the editor preview to see your font size change!
++ Click the **Run** button.
++ Resize the **height** of the editor preview to see your font size change!
 
 --- /task ---
 

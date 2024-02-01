@@ -18,7 +18,7 @@ You will:
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Explore the Animated Story. 
+Explore the Animated story. 
 
 + Scroll down on the page to watch the images load
 + Click on the links on the navbar at the side to see the different pages

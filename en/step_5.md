@@ -4,7 +4,7 @@ In this step you will add a cool animation to the text to grab people's attentio
 
 <iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/animated-story-step5" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Fix the garden image position
+### Fix the position of the garden image
 
 --- task ---
 
@@ -28,13 +28,18 @@ line_highlights: 69
 
 --- /code ---
 
-**Click the Run button** to see your changes.
+**Test:** 
 
-Scroll down to see the fixed garden image as a background with other content scrolling in front of it.
++ Click the **Run** button.
++ Scroll down to see the garden image as a fixed background with other content scrolling in front of it.
 
 --- /task ---
 
 ### Add a heading
+
+You can add a heading for the story page using an `<h1>` element .
+
+The `<h1>` element should have the attributes `id="hideBounce"` and `class="heading"`.
 
 --- task ---
 
@@ -42,7 +47,8 @@ Open the `sammy.html` file.
 
 Find the closing `</section>` tag.
 
-Add the HTML for an h1 heading.
+Add an `<h1>` element. 
+
 
 --- code ---
 ---
@@ -62,9 +68,10 @@ line_highlights: 21
 
 --- /code ---
 
-**Click the Run button** to see your changes.
+**Test:** 
 
-Scroll down to see the heading.
++ Click the **Run** button.
++ Scroll down to see the heading.
 
 --- /task ---
 
@@ -95,9 +102,10 @@ line_highlights: 22-24
 
 --- /code ---
 
-**Click the Run button** to see your changes.
+**Test:** 
 
-Scroll down to see the story text.
++ Click the **Run** button.
++ Scroll down to see the story text.
 
 --- /task ---
 
@@ -251,9 +259,10 @@ riseObserver.observe(document.getElementById("rise"));
 + `riseObserver` watches for elements with the attribute `id="rise"`
 + `riseObserver` adds the `class=rise` to intersecting elements.
 
-**Click the Run button** to see your changes.
+**Test:** 
 
-**Test:** Scroll down to see the rising animation when the `p` text enters the viewport.
++ Click the **Run** button.
++ Scroll down to see the rising animation when the `p` text enters the viewport.
 
 --- /task ---
 
