@@ -6,7 +6,7 @@ In this step you will animate the heading and an image.
 
 ### Create a trigger
 
-An empty `<div>` can be used as the trigger for the heading animation.
+An empty `<div>` element can be used to trigger an animation.
 
 --- task ---
 
@@ -33,13 +33,13 @@ line_highlights: 18
 
 ### Toggle the animation
 
-An intersection observer will watch for the `id` of the `<div>` you just made.
+An intersection observer can be used to watch for the `id` you just added to the empty `<div>`.
 
 If the `<div>` **leaves** the viewport, the callback adds the `enabled` class to the `<div>`.
 
-The `enabled` class changes the colours of the heading's font and background. It also sets the `position: sticky` property, so the heading stays in its current location (at the top) when the `enabled` class is added.
+The `.enabled` selector styles the colours of the heading's font and background. It also sets a `position: sticky` property, so the heading stays in its current location (at the top) when the `enabled` class is added.
 
-The toggle method is used to turn the effect on or off as the div leaves and enters the viewport.
+The toggle method is used to turn the effect on or off as the target element (the empty `<div>`) leaves and enters the viewport.
 
 --- task ---
 
@@ -77,13 +77,23 @@ title: Why does the text go behind the heading?
 
 You can use the `z-index` property to make elements appear in front of or behind each other. You can think of z-index as layers. Find the `.heading` selector at the end of the `style.css` file. The selector styles the heading so its z-index is `1`, meaning it's z-index is higher than the other elements', (which are set to `0` by default) meaning it appears in front of them, on the top layer.
 
-**Try** setting the `z-index` property of the `.heading` selector to `-1` and then click the **Run** button to see the changes you have made.  You will see that the story text appears in front of the heading. Set it back to `1` when you are finished.
+**Test:** 
+
++ Set the `z-index` property of the `.heading` selector to `-1`. 
++ Click the **Run** button.
++ Scroll down.
+
+You will see that the story text appears in front of the heading. 
+
+Set z-index back to `1` when you are finished testing.
 
 --- /collapse ---
 
 --- /task ---
 
-**Debug:** Make sure you have `!` before `entries[0].isIntersecting`.
+**Debug:** 
+
++ Make sure you have `!` before `entries[0].isIntersecting`.
 
 --- collapse ---
 
@@ -101,11 +111,13 @@ This page is about one of the story characters: Sammy the snail.
 
 You can add an image of Sammy to the page.
 
+You first need a background for Sammy.
+
 --- task ---
 
 Open the `sammy.html` file.
 
-Add a new section with the attribute `class="garden"`. This creates a background for the snail image to appear on.
+Add a new `<section>` element with the attribute `class="garden"`. 
 
 --- code ---
 ---
@@ -125,11 +137,11 @@ line_highlights: 26-28
 
 --- /task ---
 
-Add the snail image. 
+Add the snail image.
 
 --- task ---
 
-Add the `<img>` element with the attributes `id="snail"` and `class="snail"`.
+Add an `<img>` element with the attributes `id="snail"`, `class="snail"` and alt text to improve accessibility.
 
 --- code ---
 ---
@@ -161,7 +173,7 @@ The `src` and `data-src` attribute values are the same, because `imageObserver` 
 
 ### Style the character image
 
-The snail will appear from the left and move to the middle. It will also 'fade in'.
+The image of Sammy will appear from the left and move to the middle. It will also 'fade in'.
 
 --- task ---
 
@@ -212,7 +224,7 @@ Its height is styled to be 20% of the viewport height (`20vh`). This means it wi
 
 ### Show and move the character image
 
-To animate the image, it will change its opacity to 1, making it fully visible. It will also move right by 25% of the width of its parent element.
+To animate the image, it will change its opacity to 1, making it fully visible. It will also move right by 25% of its own width.
 
 --- task ---
 
@@ -252,9 +264,9 @@ line_highlights: 97-101
 
 ### Trigger the startCrawl animation
 
-An intersection observer will watch for an element with the attribute `id="snail"`.
+This intersection observer will watch for an element with the attribute `id="snail"`.
 
-If the element enters the viewport (`isIntersecting`), the callback adds the `startCrawl` class to the element that has the `id="snail"` attribute.
+If the element enters the viewport (`isIntersecting`), the callback adds the `startCrawl` class to the element.
 
 --- task ---
 
@@ -296,7 +308,7 @@ Options can be added to the callback, so it only triggers when a percentage of t
 
 --- task ---
 
-Add an option to the callback so it only triggers when 100% of the snail image is in the viewport.
+Add an option to the callback so it only triggers when all of the snail image is in the viewport.
 
 --- code ---
 ---

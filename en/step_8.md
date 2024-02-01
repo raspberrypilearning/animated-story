@@ -78,8 +78,6 @@ line_highlights:
 
 Add story text about Bella the Butterfly. 
 
-You can add your own story to make the page your own!
-
 --- code ---
 ---
 language: html
@@ -94,6 +92,8 @@ line_highlights: 24
       </p>
 
 --- /code ---
+
+You can add your own story to make the page your own!
 
 --- /task ---
 
@@ -171,7 +171,7 @@ You need to link the `bella.js` file from `bella.html`.
 
 Open the `bella.html` file.
 
-Change the src attribute of the second script element from `src="sammy.js"` to `src="bella.js"`.
+Change the `src` attribute of the second `<script>` element from `src="sammy.js"` to `src="bella.js"`.
 
 --- code ---
 ---
@@ -195,7 +195,7 @@ Open the `style.css` file and copy the `.snail` selector, then paste it undernea
 
 Rename it `.butterfly`.
 
-Add the animation property. 
+Add the `animation` property. 
 
 --- code ---
 ---
@@ -259,7 +259,7 @@ Create a new animation for Bella.
 
 Find the `/* ANIMATIONS */` comment.
 
-Add a new keyframes animation called 'fly' to suit the butterfly character.
+Add a new `@keyframes` animation called 'fly' to suit the butterfly character.
 
 --- code ---
 ---
@@ -303,13 +303,13 @@ line_highlights: 44 - 67
 
 ### Remove setTimeout
 
-You can remove the setTimeout in imageObserver, as you don't want people to see the spinner image if they don't have to.
+You can remove the `setTimeout` in `imageObserver`, as you don't want people to see the spinner image if they don't have to.
 
 --- task ---
 
 Open the `scripts.js` file.
 
-Remove setTimeout.
+Remove `setTimeout`.
 
 --- code ---
 ---

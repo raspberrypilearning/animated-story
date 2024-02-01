@@ -37,7 +37,7 @@ line_highlights: 69
 
 ### Add a heading
 
-You can add a heading for the story page using an `<h1>` element .
+You can add a heading for the story page using an `<h1>` element.
 
 The `<h1>` element should have the attributes `id="hideBounce"` and `class="heading"`.
 
@@ -48,7 +48,6 @@ Open the `sammy.html` file.
 Find the closing `</section>` tag.
 
 Add an `<h1>` element. 
-
 
 --- code ---
 ---
@@ -79,7 +78,9 @@ line_highlights: 21
 
 --- task ---
 
-Add the story text after the h1 heading.
+Add the story text after the `<h1>` heading.
+
+The story text should be in a `<p>` element, which should have the attribute `id="rise"`
 
 --- code ---
 ---
@@ -206,7 +207,7 @@ Open the `sammy.html` file.
 
 Find the `<script>` element.
 
-Add a new script element with the attribute `src="sammy.js"`
+Add a second `<script>` element with the attribute `src="sammy.js"`
 
 --- code ---
 ---
@@ -224,11 +225,9 @@ line_highlights: 28
 
 --- /task ---
 
-In `sammy.html`, the `p` element has the `id="rise"` attribute.
+In `sammy.html`, the `<p>` element has the `id="rise"` attribute.
 
 You will now create a JavaScript intersection observer with a callback that adds the `rise` class to an element with the attribute `id="rise"` if it enters the viewport.
-
-The JavaScript intersection observer will use this attribute to target the `p` element, so when it enters the viewport the `.rise` class can be added to it.
 
 --- task ---
 
@@ -255,14 +254,17 @@ riseObserver.observe(document.getElementById("rise"));
 
 --- /code ---
 
-**Tip:** This intersection observer is similar to `bounceObserver` that you created in an earlier step. There are two main differences:
+**Tip:** This intersection observer is similar to `bounceObserver` that you created in an earlier step. 
+
+There are two main differences:
+
 + `riseObserver` watches for elements with the attribute `id="rise"`
 + `riseObserver` adds the `class=rise` to intersecting elements.
 
 **Test:** 
 
 + Click the **Run** button.
-+ Scroll down to see the rising animation when the `p` text enters the viewport.
++ Scroll down to see the rising animation when the `<p>` text enters the viewport.
 
 --- /task ---
 
