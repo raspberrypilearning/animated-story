@@ -7,12 +7,6 @@ Snail image: Freeimages.com/openclipart.org
 Garden image: Bing image creator "cartoon garden home for a snail". Generated 4/Jan/2024
 Spinner image: Iphone-spinner-2 via https://icons8.com/
 
-
-
-
-
-
-
 # explore-project-template
 
 ![explore-project-template](banner.png)
