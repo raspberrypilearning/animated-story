@@ -1,3 +1,18 @@
+## Attribution
+Bee image by Clker-Free-Vector-Images via Pixabay.
+Dragon-fly image by pixelcreatures via Pixabay.
+Butterfly image by MahuaSarkar via Pixabay.
+Ladybird image by Glamazon via Pixabay.
+Snail image: Freeimages.com/openclipart.org
+Garden image: Bing image creator "cartoon garden home for a snail". Generated 4/Jan/2024
+Spinner image: Iphone-spinner-2 via https://icons8.com/
+
+
+
+
+
+
+
 # explore-project-template
 
 ![explore-project-template](banner.png)
@@ -11,4 +26,4 @@ For project materials and solutions, see [en/resources](https://github.com/raspb
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Licence
- See [LICENCE.md](LICENCE.md)
+See [LICENCE.md](LICENCE.md)
