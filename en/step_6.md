@@ -35,7 +35,7 @@ line_highlights: 18
 
 An intersection observer can be used to watch for the `id` you just added to the empty `<div>`.
 
-If the `<div>` **leaves** the viewport, the callback adds the `enabled` class to the `<div>`.
+If the `<div>` **leaves** the viewport, the callback adds the `enabled` class to the `<h1>` element.
 
 The `.enabled` selector styles the colours of the heading's font and background. It also sets a `position: sticky` property, so the heading stays in its current location (at the top) when the `enabled` class is added.
 
@@ -156,6 +156,7 @@ line_highlights: 27
       <section class="garden">
         <img id="snail" class="snail" src="snail.svg" data-src="snail.svg" alt="A cartoon snail" />
       </section>
+    </main>
 
 --- /code ---
 
@@ -304,11 +305,11 @@ As soon as the snail enters the viewport, the animation starts.
 
 ### Set a threshold
 
-Options can be added to the callback, so it only triggers when a percentage of the element is intersecting.
+Options can be added to the observer, so it only triggers when a percentage of the element is intersecting.
 
 --- task ---
 
-Add an option to the callback so it only triggers when all of the snail image is in the viewport.
+Add an option to the observer, so it only triggers the callback when all of the snail image is in the viewport.
 
 --- code ---
 ---

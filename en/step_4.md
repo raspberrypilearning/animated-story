@@ -198,7 +198,7 @@ The 'SCROLL DOWN' text should be positioned centrally.
 
 The font size is currently set to a **fixed** size of 50 pixels (`50px`).
 
-You can use `cqh` instead of `px` to **dynamically** size the font so it always relates to the height of its container element.
+You can use `cqh` instead of `px` to calculate the size of the font, so it always relates to the height of its container element.
 
 --- task ---
 

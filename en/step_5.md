@@ -6,6 +6,8 @@ In this step you will add a cool animation to the text to grab people's attentio
 
 ### Fix the position of the garden image
 
+You can 'fix' the position of the garden image so it appears as a background, with other content scrolling in front of it.
+
 --- task ---
 
 Add the `background-attachment: fixed` property to the `.garden` selector.
@@ -31,7 +33,7 @@ line_highlights: 69
 **Test:** 
 
 + Click the **Run** button.
-+ Scroll down to see the garden image as a fixed background with other content scrolling in front of it.
++ Scroll down to see the garden image as a fixed background.
 
 --- /task ---
 

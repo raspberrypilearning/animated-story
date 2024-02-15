@@ -1,6 +1,6 @@
 ## Observing elements
 
-In this step, you will use the 'Intersection observer' to observe an element and use its position to affect a different element.
+In this step, you will  use the 'Intersection observer' to make some text disappear!
 
 <iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/animated-story-step2" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
@@ -16,11 +16,7 @@ Your starter project contains:
 + the images you will use in the project
 + a JavaScript file that you will develop throughout the project.
 
-### Console log
-
-The `console.log()` method is used to output messages that tell you what the JavaScript code is doing.
-
-You can use `console.log()` for testing and debugging your code.
+### Console
 
 --- task ---
 
@@ -39,18 +35,23 @@ Some helpful keyboard shortcuts:
 
 --- /task ---
 
-JavaScript can be used to watch ('observe') an array of HTML elements with a specific `id` or `class` attribute and output something to the Console when an observed element appears in the viewport.
+A JavaScript observer can be used to watch ('observe') an array of HTML elements with a specific `id` or `class` attribute. 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 A collection of items is called an <span style="color: #0faeb0">**array**</span>.
 </p>
 
+One use of an observer is so the browser can detect when an element appears in the viewport.
+
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 The <span style="color: #0faeb0">**viewport**</span> is the area of the web page that is currently visible in the browser.
 </p>
 
+**TODO** Add viewport image here.
 
-### Create a new intersection observer called bounceObserver
+You can output something to the Console to see if your observer is working.
+
+### Create an intersection observer called bounceObserver
 
 Your `bounceObserver` is used to watch ('observe') an array of elements (`entries`).
 
@@ -77,6 +78,10 @@ const bounceObserver = new IntersectionObserver((entries) => {
 // Image observer
 
 --- /code ---
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+Arrow syntax (`=>`) can be used instead of the `function` keyword.
+</p>
 
 **Tip:** Separate the different observers using a line break (in this case, on line 5).
 
@@ -109,7 +114,7 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 **Tip:** The line break on line 3 will contain the callback.
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> The <span style="color: #0faeb0">**callback**</span> is the code that runs when the observer sees an element enter the viewport.
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> The <span style="color: #0faeb0">**callback**</span> is the code that runs when the browser detects ('observes') an element entering the viewport.
 </p>
 
 --- /task ---
@@ -120,7 +125,7 @@ The callback will start by checking `if` the first element in the `entries` arra
 
 The `isIntersecting` method is used to check this.
 
-**TODO ... For QA** Would an image help here (perhaps showing the page extending beyond bottom of the screen (viewport) with images below the viewport)?
+![Illustration of a target element partially intersecting with a browser's viewport. Licence: https://creativecommons.org/licenses/by-sa/3.0/ Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox](images/io.png)
 
 --- task ---
 
@@ -147,13 +152,13 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 --- /code ---
  
-**Tip:** There is only one element in the entries array, so it is addressed directly using `entries[0]`.
+**Tip:** There is only one element in the entries array (at index 0). Therefore, you can access it directly using `entries[0]`.
 
 --- /task ---
 
-### Output something to Console
+### Output a message to the Console
 
-If the condition is met (the element with the attribute `id="hideBounce"` has entered the viewport), you can output a message to the Console for testing.
+If the condition is met (the element with the attribute `id="hideBounce"` has entered the viewport), you can output a message to the Console for testing using `console.log()`.
 
 --- task ---
 
@@ -256,16 +261,21 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 --- /code ---
 
+--- /task ---
+
+--- task ---
+
 **Test:** 
 
 + Click the **Run** button.
 + Scroll down to see the bouncing text 'SCROLL DOWN' disappear!
-
+  
 --- /task ---
 
 **Debug:**
 
 + There must be a semicolon at the end of line 5.
++ Make sure you spell `getElementbyId` correctly - including the two capital letters!
 
 ## Save your project
 

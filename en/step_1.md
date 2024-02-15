@@ -1,16 +1,16 @@
 ## Introduction
 
-In this project, you will use HTML, CSS and JavaScript to create an interactive story with features that are triggered when the user scrolls. 
+In this project, you will use HTML, CSS and JavaScript to create an interactive story with animated text and characters that are triggered when the user scrolls.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Websites often use <span style="color: #0faeb0">**interactive**</span> features to make the online experience more fun and interesting.
+Web pages used to just be static and boring, but modern websites add <span style="color: #0faeb0">**interaction**</span> to grab a viewer's attention and make the online experience more fun and interesting. 
 </p>
 
 You will:
 + Track the position of elements
-+ Animate elements when they come into view
-+ Create your own HTML page
 + Set images to load only when they are needed
++ Create your own HTML page
++ Animate text and image elements when they come into view
 
 --- no-print ---
 --- task ---

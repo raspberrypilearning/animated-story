@@ -6,19 +6,19 @@ In this step, you will improve browser performance by only loading images when t
 
 ### Why lazy load?
 
-Images can have large file sizes. 
+Images can have large file sizes and can use most data when you access a web page.
 
-When a web page loads, all images are loaded and this can use lots of bandwidth.
+When you open a web page, **all** the images on the page are loaded. This can use lots of bandwidth.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The amount of data (bits) that can be transferred over a computer connection is called the <span style="color: #0faeb0">**bandwidth**</span>. Using lots of bandwidth can cost people money, so reducing the use of bandwidth makes websites more user-friendly.
+The amount of data (bits) that can be transferred over a computer connection is called the <span style="color: #0faeb0">**bandwidth**</span>. Using lots of bandwidth can make pages load slowly for people with poor connectivity, or cost more money. Reducing the use of bandwidth makes websites more accessible and user-friendly.
 </p>
+
+### Add a new attribute to each image element
 
 The `src` attribute for all image elements in `index.html` is set to `spinner.gif`. 
 
 This means that when the page loads, the only image that has to be loaded is `spinner.gif`.
-
-### Add a new attribute to each image element
 
 --- task ---
 
@@ -79,7 +79,7 @@ All the images are still `spinner.gif`
 
 ### Observe each image element
 
-You can use JavaScript to observe each `<img>` element.
+You can use JavaScript to observe every image on the page.
 
 --- task ---
 
@@ -98,8 +98,6 @@ line_highlights: 11
 
 // Image observer
 const lazyImages = document.querySelectorAll("img");
-
-// Rising text observer
 
 --- /code ---
 
@@ -136,8 +134,6 @@ const imageObserver = new IntersectionObserver((entries) => {
 
 });
 
-// Rising text observer
-
 --- /code ---
 
 **Tip:** The line break on line 13 will contain the callback.
@@ -173,6 +169,16 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 --- /code ---
 
 --- /task ---
+
+--- collapse ---
+
+---
+title: What is a forEach loop?
+---
+
+In JavaScript, a `forEach` loop is used to go through every item in an array and do something with each one.
+
+--- /collapse ---
 
 ### Create the callback
 
@@ -349,6 +355,8 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 // Rising text observer
 
 --- /code ---
+
+**Tip:** On line 20, the `.target` property of the `entry` refers to the element being observed. It is the element that enters or exits the viewport and the one you want to stop tracking.
 
 --- /task ---
 
