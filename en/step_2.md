@@ -91,7 +91,7 @@ Arrow syntax (`=>`) can be used instead of the `function` keyword.
 
 --- task ---
 
-Call `bounceObserver` to `observe` all elements in the `document` (page) with the attribute `"id="hideBounce"`. 
+Call `bounceObserver` to `observe` the element in the `document` (page) with the attribute `"id="hideBounce"`.
 
 --- code ---
 ---
@@ -121,7 +121,7 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 
 ### Create the callback
 
-The callback will start by checking `if` the first element in the `entries` array (with the attribute `id="hideBounce"`) has entered the viewport. 
+The callback will start by checking `if` the element in the `entries` array (with the attribute `id="hideBounce"`) has entered the viewport.
 
 The `isIntersecting` method is used to check this.
 
