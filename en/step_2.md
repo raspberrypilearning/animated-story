@@ -35,10 +35,10 @@ Some helpful keyboard shortcuts:
 
 --- /task ---
 
-A JavaScript observer can be used to watch ('observe') an array of HTML elements with a specific `id` or `class` attribute. 
+A JavaScript observer can be used to watch ('observe') a collection of HTML elements with a specific `id` or `class` attribute. 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A collection of items is called an <span style="color: #0faeb0">**array**</span>.
+A collection of items is called an <span style="color: #0faeb0">**array**</span>. An array can contain multiple items or just a single item.
 </p>
 
 One use of an observer is so the browser can detect when an element appears in the viewport.
@@ -47,7 +47,7 @@ One use of an observer is so the browser can detect when an element appears in t
 The <span style="color: #0faeb0">**viewport**</span> is the area of the web page that is currently visible in the browser.
 </p>
 
-**TODO** Add viewport image here.
+![Illustration of a browser's viewport displaying only part of a web page. Licence: https://creativecommons.org/licenses/by-sa/3.0/ Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox](images/viewport.png)
 
 You can output something to the Console to see if your observer is working.
 
@@ -91,7 +91,7 @@ Arrow syntax (`=>`) can be used instead of the `function` keyword.
 
 --- task ---
 
-Call `bounceObserver` to `observe` the element in the `document` (page) with the attribute `"id="hideBounce"`.
+Call `bounceObserver` to `observe` the element in the `document` (page) with the attribute `id="hideBounce"`.
 
 --- code ---
 ---
@@ -125,7 +125,7 @@ The callback will start by checking `if` the element in the `entries` array (wit
 
 The `isIntersecting` method is used to check this.
 
-![Illustration of a target element partially intersecting with a browser's viewport. Licence: https://creativecommons.org/licenses/by-sa/3.0/ Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox](images/io.png)
+![Illustration of a target element partially intersecting with a browser's viewport. Licence: https://creativecommons.org/licenses/by-sa/3.0/ Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox](images/viewport-target.png)
 
 --- task ---
 

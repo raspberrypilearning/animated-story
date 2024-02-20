@@ -71,9 +71,9 @@ line_highlights: 18, 22, 26, 30, 34
 **Test:** 
 
 + Click the **Run** button.
-+ Scroll down.
++ Scroll down. Do you see the images you added?
 
-All the images are still `spinner.gif`
+All the images are still `spinner.gif`. This is because the `src` property sets the image to display.
 
 --- /task ---
 
