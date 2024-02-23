@@ -261,7 +261,7 @@ riseObserver.observe(document.querySelector("p"));
 There are two main differences:
 
 + `riseObserver` watches for `<p>` elements
-+ `riseObserver` adds the `class=rise` to intersecting elements.
++ `riseObserver` adds the `rise` class to intersecting elements.
 
 **Test:** 
 
