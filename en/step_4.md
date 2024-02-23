@@ -22,15 +22,13 @@ language: html
 filename: index.html
 line_numbers: true
 line_number_start: 10
-line_highlights: 11-16
+line_highlights: 11-14
 ---
 
   <body>
     <nav class="navigation">
-      <ul>
-        <li><a href="index.html">Intro</a></li>
-        <li><a href="sammy.html">Sammy</a></li>
-      </ul>
+      <a href="index.html">Intro</a>
+      <a href="sammy.html">Sammy</a>
     </nav>
     <main>
 
@@ -54,9 +52,11 @@ Name your new file `sammy.html` and click the 'Add file' button.
 
 --- /task ---
 
+To get you started with this new page, you will use HTML that is similar to the content of `index`.
+
 --- task ---
 
-Add the HTML to `sammy.html`.
+Add this content to your new `sammy.html` file.
 
 --- code ---
 ---
@@ -77,10 +77,8 @@ line_number_start: 1
 
   <body>
     <nav class="navigation">
-      <ul>
-        <li><a href="index.html">Intro</a></li>
-        <li><a href="sammy.html">Sammy</a></li>
-      </ul>
+      <a href="index.html">Intro</a>
+      <a href="sammy.html">Sammy</a>
     </nav>
     <main>
       <section class="garden">
@@ -159,7 +157,9 @@ main {
 
 --- /task ---
 
-You can change the width of an element so it stretches a percentage of the viewport width, rather than 100% of its parent element.
+You can change the width of an element so it stretches a percentage of the viewport width.
+
+![A web page with horizontal arrows spanning the width, showing 20% and 80% proportions of the viewport](images/80-20_viewport.png)
 
 --- task ---
 
@@ -215,7 +215,8 @@ line_highlights: 61
 
 p {
   font-size: 3cqh;
-  padding-left: 9vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 --- /code ---

@@ -25,7 +25,7 @@ line_highlights: 18
 
       </section>
       <div id="headingTrigger"></div>
-      <h1 id="hideBounce" class="heading">Sammy <br />The<br />Snail</h1>
+      <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
 
 --- /code ---
 
@@ -60,7 +60,7 @@ line_highlights:
 const headingObserver = new IntersectionObserver((entries) => {
   document.querySelector("h1").classList.toggle("enabled", !entries[0].isIntersecting);
 });
-headingObserver.observe(document.getElementById("headingTrigger"));
+headingObserver.observe(document.querySelector("#headingTrigger"));
 
 --- /code ---
 
@@ -75,11 +75,11 @@ headingObserver.observe(document.getElementById("headingTrigger"));
 title: Why does the text go behind the heading?
 ---
 
-You can use the `z-index` property to make elements appear in front of or behind each other. You can think of z-index as layers. Find the `.heading` selector at the end of the `style.css` file. The selector styles the heading so its z-index is `1`, meaning it's z-index is higher than the other elements', (which are set to `0` by default) meaning it appears in front of them, on the top layer.
+You can use the `z-index` property to make elements appear in front of or behind each other. You can think of z-index as layers. Find the `h1` selector in the `style.css` file. The selector styles the heading so its z-index is `1`, meaning it's z-index is higher than the other elements', (which are set to `0` by default) meaning it appears in front of them, on the top layer.
 
 **Test:** 
 
-+ Set the `z-index` property of the `.heading` selector to `-1`. 
++ Set the `z-index` property of the `h1` selector to `-1`. 
 + Click the **Run** button.
 + Scroll down.
 
@@ -290,7 +290,7 @@ const snailObserver = new IntersectionObserver((entries) => {
     entries[0].target.classList.add("startCrawl");
   }
 });
-snailObserver.observe(document.getElementById("snail"));
+snailObserver.observe(document.querySelector("#snail"));
 
 --- /code ---
 
@@ -328,7 +328,7 @@ const snailObserver = new IntersectionObserver((entries) => {
 },
 { threshold: 1 }
 );
-snailObserver.observe(document.getElementById("snail"));
+snailObserver.observe(document.querySelector("#snail"));
 
 --- /code ---
 

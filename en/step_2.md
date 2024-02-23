@@ -41,19 +41,17 @@ A JavaScript observer can be used to watch ('observe') a collection of HTML elem
 A collection of items is called an <span style="color: #0faeb0">**array**</span>. An array can contain multiple items or just a single item.
 </p>
 
-One use of an observer is so the browser can detect when an element appears in the viewport.
+One use of an observer is so the browser can detect when an element enters in the viewport.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 The <span style="color: #0faeb0">**viewport**</span> is the area of the web page that is currently visible in the browser.
 </p>
 
-![Illustration of a browser's viewport displaying only part of a web page. Licence: https://creativecommons.org/licenses/by-sa/3.0/ Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox](images/viewport.png)
+![Illustration of a browser's viewport displaying only part of a web page. Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport.png)
 
 You can output something to the Console to see if your observer is working.
 
 ### Create an intersection observer called bounceObserver
-
-Your `bounceObserver` is used to watch ('observe') an array of elements (`entries`).
 
 --- task ---
 
@@ -71,17 +69,13 @@ line_highlights: 2-4
 ---
 
 // Hide bounce observer
-const bounceObserver = new IntersectionObserver((entries) => {
+const bounceObserver = new IntersectionObserver(
 
-});
+);
 
 // Image observer
 
 --- /code ---
-
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Arrow syntax (`=>`) can be used instead of the `function` keyword.
-</p>
 
 **Tip:** Separate the different observers using a line break (in this case, on line 5).
 
@@ -91,7 +85,11 @@ Arrow syntax (`=>`) can be used instead of the `function` keyword.
 
 --- task ---
 
-Call `bounceObserver` to `observe` the element in the `document` (page) with the attribute `id="hideBounce"`.
+Call `bounceObserver` to `observe` the element in the `document` (web page) with the attribute `id="hideBounce"`. 
+
+**Note:** This element is called the 'target' element.
+
+Observed elements are passed to the `entries` array in the Observer.
 
 --- code ---
 ---
@@ -99,33 +97,61 @@ language: js
 filename: scripts.js
 line_numbers: true
 line_number_start: 1
-line_highlights: 5
----
+line_highlights: 2,5
+id
 
 // Hide bounce observer
-const bounceObserver = new IntersectionObserver((entries) => {
+const bounceObserver = new IntersectionObserver((entries)
   
-});
-bounceObserver.observe(document.getElementById("hideBounce"));
+);
+bounceObserver.observe(document.querySelector("#hideBounce"));
 
 // Image observer
 
 --- /code ---
 
-**Tip:** The line break on line 3 will contain the callback.
+**Note:** The line break on line 3 will contain the callback.
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> The <span style="color: #0faeb0">**callback**</span> is the code that runs when the browser detects ('observes') an element entering the viewport.
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> The <span style="color: #0faeb0">**callback**</span> is the code that runs when the browser detects ('observes') a target element.
 </p>
 
 --- /task ---
 
 ### Create the callback
 
-The callback will start by checking `if` the element in the `entries` array (with the attribute `id="hideBounce"`) has entered the viewport.
+--- task ---
+
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+Arrow syntax (`=>`) can be used instead of the `function` keyword.
+</p>
+
+--- code ---
+---
+language: js
+filename: scripts.js
+line_numbers: true
+line_number_start: 1
+line_highlights: 2-4
+---
+
+// Hide bounce observer
+const bounceObserver = new IntersectionObserver((entries) => {
+
+});
+bounceObserver.observe(document.querySelector("#hideBounce"));
+
+// Image observer
+
+--- /code ---
+
+--- /task ---
+
+The callback will start by checking `if` the element in the `entries` array (with the attribute `id="hideBounce"`) (the target element) has entered the viewport.
 
 The `isIntersecting` method is used to check this.
 
-![Illustration of a target element partially intersecting with a browser's viewport. Licence: https://creativecommons.org/licenses/by-sa/3.0/ Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox](images/viewport-target.png)
+This image shows a target element on a web page that has entered the browser's viewport.
+![Illustration of a target element partially intersecting with a browser's viewport. Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport-target.png)
 
 --- task ---
 
@@ -146,7 +172,7 @@ const bounceObserver = new IntersectionObserver((entries) => {
 
   }
 });
-bounceObserver.observe(document.getElementById("hideBounce"));
+bounceObserver.observe(document.querySelector("#hideBounce"));
 
 // Image observer
 
@@ -179,7 +205,7 @@ const bounceObserver = new IntersectionObserver((entries) => {
     console.log("BOUNCE TRIGGER IN VIEWPORT");
   }
 });
-bounceObserver.observe(document.getElementById("hideBounce"));
+bounceObserver.observe(document.querySelector("#hideBounce"));
 
 // Image observer
 
@@ -211,7 +237,7 @@ On line 2, `entries` is a collection of all elements on the web page with the `i
 
 A collection of items is called an 'array'.
 
-The `bounceObserver` is set to observe when the first (in this case: the only) item in the `entries` array comes into the viewport.
+The `bounceObserver` is set to observe when the first (in this case: the only) target element in the `entries` array enters the viewport.
 
 When it does, the observer 'callback' outputs a message to the Console.
 
@@ -252,10 +278,10 @@ line_highlights: 5
 const bounceObserver = new IntersectionObserver((entries) => {
   if (entries[0].isIntersecting) {
     console.log("BOUNCE TRIGGER IN VIEWPORT");
-    document.getElementById("bounce").style.opacity = 0;
+    document.querySelector("#bounce").style.opacity = 0;
   }
 });
-bounceObserver.observe(document.getElementById("hideBounce"));
+bounceObserver.observe(document.querySelector("#hideBounce"));
 
 // Image observer
 
@@ -275,7 +301,7 @@ bounceObserver.observe(document.getElementById("hideBounce"));
 **Debug:**
 
 + There must be a semicolon at the end of line 5.
-+ Make sure you spell `getElementbyId` correctly - including the two capital letters!
++ Make sure you spell `querySelector` correctly - including the capital letter!
 
 ## Save your project
 

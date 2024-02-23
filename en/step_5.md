@@ -41,7 +41,7 @@ line_highlights: 69
 
 You can add a heading for the story page using an `<h1>` element.
 
-The `<h1>` element should have the attributes `id="hideBounce"` and `class="heading"`.
+The `<h1>` element should have the attribute `id="hideBounce"`.
 
 --- task ---
 
@@ -64,7 +64,7 @@ line_highlights: 21
       <section class="garden">
         <div id="bounce">SCROLL DOWN</div>
       </section>
-      <h1 id="hideBounce" class="heading">Sammy <br />The<br />Snail</h1>
+      <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
     </main>
 
 --- /code ---
@@ -82,7 +82,7 @@ line_highlights: 21
 
 Add the story text after the `<h1>` heading.
 
-The story text should be in a `<p>` element, which should have the attribute `id="rise"`
+The story text should be in a `<p>` element.
 
 --- code ---
 ---
@@ -97,8 +97,8 @@ line_highlights: 22-24
       <section class="garden">
         <div id="bounce">SCROLL DOWN</div>
       </section>
-      <h1 id="hideBounce" class="heading">Sammy <br />The<br />Snail</h1>
-      <p id="rise">
+      <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
+      <p>
         On a bright and sunny day in the garden, Sammy the Snail woke up feeling curious. <br /><br />His shiny shell glistened as he slowly ventured beyond his usual path. Sammy wanted to see what lay beyond the familiar leaves and flowers. <br /><br />As he glided along, the tiny garden world seemed to unfold before him. <br /><br />Sammy discovered a patch of dew-kissed grass, sparkling like diamonds in the morning sun. Excitement filled him as he explored tiny tunnels and secret hideaways.<br /><br />The little snail's adventure brought a smile to his face. Sammy realized that even in the smallest corners of the garden, there were secrets to be found. <br /><br />Sammy continued his exploration, eager to uncover more wonders in his wonderful world.
       </p>
     </main>
@@ -150,7 +150,9 @@ line_highlights: 44-52
 
 --- /task ---
 
-Next, create a new selector to style the `<p>` element when it appears in the viewport.
+Next, create a new selector (`.rise`) that uses the `rising` animation.
+
+**Note:** Later, you will use JavaScript to add the `rise` class to the `<p>` element when it enters the viewport.
 
 --- task ---
 
@@ -227,9 +229,7 @@ line_highlights: 28
 
 --- /task ---
 
-In `sammy.html`, the `<p>` element has the `id="rise"` attribute.
-
-You will now create a JavaScript intersection observer with a callback that adds the `rise` class to an element with the attribute `id="rise"` if it enters the viewport.
+You will now create a JavaScript intersection observer with a callback that adds the `rise` class to the `<p>` element when it enters the viewport.
 
 --- task ---
 
@@ -252,7 +252,7 @@ const riseObserver = new IntersectionObserver((entries) => {
     entries[0].target.classList.add("rise");
   }
 });
-riseObserver.observe(document.getElementById("rise"));
+riseObserver.observe(document.querySelector("p"));
 
 --- /code ---
 
@@ -260,7 +260,7 @@ riseObserver.observe(document.getElementById("rise"));
 
 There are two main differences:
 
-+ `riseObserver` watches for elements with the attribute `id="rise"`
++ `riseObserver` watches for `<p>` elements
 + `riseObserver` adds the `class=rise` to intersecting elements.
 
 **Test:** 

@@ -4,12 +4,12 @@ window.onload = function () {
     if (entries[0].isIntersecting) {
       // Using entries and entries[0] here, but could use [entry] and entry (destructuring the entries array)?
       console.log("BOUNCE TRIGGER IN VIEWPORT"); // Show learners the Console?
-      document.getElementById("bounce").style.opacity = 0;
+      document.querySelector("#bounce").style.opacity = 0;
       // Add this DISCONNECT for bounceObserver TO MODEL BEST PRACTICE IN PERFORMANCE:
       // bounceObserver.disconnect();
     }
   });
-  bounceObserver.observe(document.getElementById("hideBounce"));
+  bounceObserver.observe(document.querySelector("#hideBounce"));
 
   // LAZY IMAGE LOADER
   const lazyImages = document.querySelectorAll(".lazy");
@@ -47,16 +47,16 @@ window.onload = function () {
     },
     { rootMargin: "100% 0% 0% 0%" }
   );
-  riseObserver.observe(document.getElementById("riser")); // Is riser being attached to <p> a good idea or move it to lower in <p>? Maybe I need to put p n a div and use the height of the div for the trigger % - the same for .snail?
+  riseObserver.observe(document.querySelector("#riser")); // Is riser being attached to <p> a good idea or move it to lower in <p>? Maybe I need to put p n a div and use the height of the div for the trigger % - the same for .snail?
 
   // HEADING COLOUR CHANGES // Can I combine this with BounceObserver? It uses negation, so can show when enters, it triggers bounce to opacity 1 and then when it leaves view port it triggers colour change. But the other one wants a disconnect. Defo make the link between in and out of VP though.
-  const headingElement = document.getElementById("bounceTrigger");
+  const headingElement = document.querySelector("#bounceTrigger");
   const headingObserver = new IntersectionObserver(([entry]) => {
     headingElement.classList.toggle("enabled", !entry.isIntersecting);
     // EXPLAIN WHY WE WOULD NOT WANT TO USE A DISCONNECT ON headingObserver. Maybe show them:?
     // headingObserver.disconnect();
   });
-  headingObserver.observe(document.getElementById("headingTrigger"));
+  headingObserver.observe(document.querySelector("#headingTrigger"));
 
   // CRAWLING SNAIL
   const snailObserver = new IntersectionObserver(
@@ -69,5 +69,5 @@ window.onload = function () {
     },
     { threshold: 0.5 } // This triggers when half the image is in the viewport
   );
-  snailObserver.observe(document.getElementById("crawl"));
+  snailObserver.observe(document.querySelector("#crawl"));
 };

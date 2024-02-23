@@ -6,7 +6,11 @@ If you have time, you can:
 + remove the `setTimeout` from `imageObserver`
 + improve browser performance by using `unobserve`.
 
-### Add a new page
+--- collapse ---
+
+---
+title: Add the story page for Bella
+---
 
 --- task ---
 
@@ -40,14 +44,12 @@ language: html
 filename: 
 line_numbers: true
 line_number_start: 12
-line_highlights: 15
+line_highlights: 14
 ---
 
-      <ul>
-        <li><a href="index.html">Intro</a></li>
-        <li><a href="sammy.html">Sammy</a></li>
-        <li><a href="bella.html">Bella</a></li>
-      </ul>
+      <a href="index.html">Intro</a>
+      <a href="sammy.html">Sammy</a>  
+      <a href="bella.html">Bella</a>
 
 --- /code ---
 
@@ -68,7 +70,7 @@ line_number_start: 22
 line_highlights: 
 ---
 
-      <h1 id="hideBounce" class="heading">Bella <br />The<br />Butterfly</h1>
+      <h1 id="hideBounce">Bella <br />The<br />Butterfly</h1>
 
 --- /code ---
 
@@ -87,7 +89,7 @@ line_number_start: 23
 line_highlights: 24
 ---
 
-      <p id="rise">
+      <p>
       In a sunlit garden, Bella the Butterfly danced from bloom to bloom, her wings painted in dazzling colors of blue, orange, and pink.<br /><br />Each graceful flutter spread joy as she explored hidden corners, discovering the beauty that filled her tiny world.<br /><br />Encountering fellow butterflies, Bella joined in a butterfly ballet, creating a living masterpiece in the sky.<br /><br />The garden embraced her, transforming each moment into a celebration of life.<br /><br />Like Sammy the Snail, Bella realized that even in the smallest corners of their worlds, there were secrets and wonders waiting to be uncovered.<br /><br />In this sunlit paradise, Sammy and Bella's garden was filled with joy.
       </p>
 
@@ -159,7 +161,7 @@ const butterflyObserver = new IntersectionObserver((entries) => {
 },
 { threshold: 1 }
 );
-butterflyObserver.observe(document.getElementById("butterfly"));
+butterflyObserver.observe(document.querySelector("#butterfly"));
 
 --- /code ---
 
@@ -301,7 +303,14 @@ line_highlights: 44 - 67
 
 --- /task ---
 
-### Remove setTimeout
+--- /collapse ---
+
+
+--- collapse ---
+
+---
+title: Remove setTimeout
+---
 
 You can remove the `setTimeout` in `imageObserver`, as you don't want people to see the spinner image if they don't have to.
 
@@ -338,7 +347,13 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 --- /task ---
 
-### Further improve performance
+--- /collapse ---
+
+--- collapse ---
+
+---
+title: Use unobserve to improve browser performance
+---
 
 You have used the `unobserve` method in `imageObserver`.
 
@@ -363,11 +378,11 @@ line_highlights: 6
 const bounceObserver = new IntersectionObserver((entries) => {
   if (entries[0].isIntersecting) {
     console.log("BOUNCE TRIGGER IN VIEWPORT");
-    document.getElementById("bounce").style.opacity = 0;
+    document.querySelector("#bounce").style.opacity = 0;
     bounceObserver.unobserve(entries[0].target);
   }
 });
-bounceObserver.observe(document.getElementById("hideBounce"));
+bounceObserver.observe(document.querySelector("#hideBounce"));
 
 --- /code---
 
@@ -395,7 +410,7 @@ const riseObserver = new IntersectionObserver((entries) => {
     riseObserver.unobserve(entries[0].target);
   }
 });
-riseObserver.observe(document.getElementById("rise"));
+riseObserver.observe(document.querySelector("p"));
 
 --- /code---
 
@@ -423,7 +438,7 @@ const snailObserver = new IntersectionObserver((entries) => {
 },
 { threshold: 1 }
 );
-snailObserver.observe(document.getElementById("snail"));
+snailObserver.observe(document.querySelector("#snail"));
 
 --- /code---
 
@@ -451,7 +466,7 @@ const riseObserver = new IntersectionObserver((entries) => {
     riseObserver.unobserve(entries[0].target);
   }
 });
-riseObserver.observe(document.getElementById("rise"));
+riseObserver.observe(document.querySelector("p"));
 
 --- /code---
 
@@ -479,18 +494,22 @@ const butterflyObserver = new IntersectionObserver((entries) => {
 },
 { threshold: 1 }
 );
-butterflyObserver.observe(document.getElementById("butterfly"));
+butterflyObserver.observe(document.querySelector("#butterfly"));
 
 --- /code---
 
 --- /task ---
 
+--- /collapse ---
+
 --- collapse ---
 
 ---
-title: Upgraded project
+title: See the upgraded project
 ---
 
-You can view the [upgraded project here](https://editor.raspberrypi.org/en/projects/animated-story-upgraded){:target="_blank"}.
+<iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/animated-story-upgraded" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
+
+You can see the [upgraded project files here](https://editor.raspberrypi.org/en/projects/animated-story-upgraded){:target="_blank"}.
 
 --- /collapse ---

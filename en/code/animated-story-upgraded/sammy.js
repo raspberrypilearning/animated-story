@@ -5,13 +5,13 @@ const riseObserver = new IntersectionObserver((entries) => {
     riseObserver.unobserve(entries[0].target);
   }
 });
-riseObserver.observe(document.getElementById("rise"));
+riseObserver.observe(document.querySelector("p"));
 
 // Heading observer
 const headingObserver = new IntersectionObserver((entries) => {
   document.querySelector("h1").classList.toggle("enabled", !entries[0].isIntersecting);
 });
-headingObserver.observe(document.getElementById("headingTrigger"));
+headingObserver.observe(document.querySelector("#headingTrigger"));
 
 // Snail observer
 const snailObserver = new IntersectionObserver((entries) => {
@@ -22,4 +22,4 @@ const snailObserver = new IntersectionObserver((entries) => {
 },
 { threshold: 1 }
 );
-snailObserver.observe(document.getElementById("snail"));
+snailObserver.observe(document.querySelector("#snail"));

@@ -16,7 +16,16 @@ main {
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
+  color: black;
+  background-color: white;
+  top: 0;
+  left: 1rem;
+  padding-left: 2rem;
+  line-height: 2;
+  margin-top: 1px;
+  z-index: 1;
+  transition: all 300ms;
 }
 
 img {
@@ -72,7 +81,8 @@ section {
 
 p {
   font-size: 3cqh;
-  padding-left: 9vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .garden {
@@ -111,20 +121,8 @@ p {
 
 /* HEADING */
 
-.heading {
-  color: black;
-  background-color: white;
-  top: 0;
-  left: 1rem;
-  padding-left: 2rem;
-  line-height: 2;
-  margin-top: 1px;
-  z-index: 1;
-  transition: all 300ms;
-
-  &.enabled {
-    color: white;
-    background-color: #a70267;
-    position: sticky;
-  }
+.enabled {
+  color: white;
+  background-color: #a70267;
+  position: sticky;
 }

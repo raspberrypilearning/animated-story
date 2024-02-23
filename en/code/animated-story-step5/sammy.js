@@ -4,4 +4,4 @@ const riseObserver = new IntersectionObserver((entries) => {
     entries[0].target.classList.add("rise");
   }
 });
-riseObserver.observe(document.getElementById("rise"));
+riseObserver.observe(document.querySelector("p"));
