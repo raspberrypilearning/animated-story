@@ -97,8 +97,8 @@ language: js
 filename: scripts.js
 line_numbers: true
 line_number_start: 1
-line_highlights: 2,5
-id
+line_highlights: 2, 5
+---
 
 // Hide bounce observer
 const bounceObserver = new IntersectionObserver((entries)
