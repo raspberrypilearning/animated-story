@@ -131,7 +131,7 @@ language: js
 filename: scripts.js
 line_numbers: true
 line_number_start: 1
-line_highlights: 2-4
+line_highlights: 2, 4
 ---
 
 // Hide bounce observer

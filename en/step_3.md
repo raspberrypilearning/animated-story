@@ -164,8 +164,6 @@ const imageObserver = new IntersectionObserver((entries) => {
 });
 lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
-// Rising text observer
-
 --- /code ---
 
 --- /task ---
@@ -208,8 +206,6 @@ const imageObserver = new IntersectionObserver((entries) => {
 });
 lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
-// Rising text observer
-
 --- /code ---
  
  **Tip:** Unlike bounceObserver, imageObserver needs to check every entry in the array, so a `forEach` loop is required.
@@ -245,8 +241,6 @@ const imageObserver = new IntersectionObserver((entries) => {
   );
 });
 lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
-
-// Rising text observer
 
 --- /code ---
 
@@ -285,8 +279,6 @@ const imageObserver = new IntersectionObserver((entries) => {
 });
 lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
-// Rising text observer
-
 --- /code ---
 
 --- collapse ---
@@ -310,11 +302,9 @@ If this was not there then the swap might happen too quickly for you to see!
 
 **Debug:**
 
-Make sure it is `img`, not `<img>` in the brackets on line 11. 
-
-Check there is a comma `,` after line 17. 
-
-There is a semicolon `;` at end of lines 19, 22, 23 and 24.
++ Make sure it is `img`, not `<img>` in the brackets on line 11. 
++ Check there is a comma `,` after line 17. 
++ There is a semicolon `;` at end of lines 19, 22, 23 and 24.
 
 ### Stop observing
 
@@ -351,8 +341,6 @@ const imageObserver = new IntersectionObserver((entries) => {
   );
 });
 lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
-
-// Rising text observer
 
 --- /code ---
 

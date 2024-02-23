@@ -14,7 +14,7 @@ Open the `index.html` file.
 
 Find the `<body>` tag.
 
-Add the `<nav>` tags below it with an unordered list (`ul`) containing two list items (`li`) - one for each link to be shown in the navbar.
+Add the `<nav>` tags below it with the links to be shown in the navbar.
 
 --- code ---
 ---
@@ -39,6 +39,10 @@ line_highlights: 11-14
 The navigation links will appear at the top.
 
 --- /task ---
+
+**Debug:** 
+
++ Make sure you add the `class="navigation"` attribute to the opening `<nav>`.
 
 ### Create a new web page
 
@@ -108,8 +112,8 @@ Add the `position` and `width` properties to the `.navigation` selector.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 72
-line_highlights: 82-83
+line_number_start: 82
+line_highlights: 92-93
 ---
 
 /* NAV BAR */
@@ -170,8 +174,8 @@ Change the width property of the `#bounce` selector to `80vw` (80% of the viewpo
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 31
-line_highlights: 32
+line_number_start: 40
+line_highlights: 41
 ---
 
 #bounce {
@@ -209,8 +213,8 @@ Change the `font-size` property of the `p` selector to `3cqh`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 60
-line_highlights: 61
+line_number_start: 69
+line_highlights: 70
 ---
 
 p {

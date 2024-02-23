@@ -66,7 +66,7 @@ Change the `<h1>` text:
 language: html
 filename: bella.html
 line_numbers: true
-line_number_start: 22
+line_number_start: 21
 line_highlights: 
 ---
 
@@ -85,8 +85,8 @@ Add story text about Bella the Butterfly.
 language: html
 filename: bella.html
 line_numbers: true
-line_number_start: 23
-line_highlights: 24
+line_number_start: 22
+line_highlights: 23
 ---
 
       <p>
@@ -108,7 +108,7 @@ Change the `<img>` element.
 language: html
 filename: bella.html
 line_numbers: true
-line_number_start: 27
+line_number_start: 26
 line_highlights: 
 ---
 
@@ -149,8 +149,8 @@ Alter `snailObserver` to create `butterflyObserver`.
 language: js
 filename: bella.js
 line_numbers: true
-line_number_start: 15
-line_highlights: 15, 16, 18, 23
+line_number_start: 16
+line_highlights: 16, 17, 19, 24
 ---
 
 // Butterfly observer
@@ -180,8 +180,8 @@ Change the `src` attribute of the second `<script>` element from `src="sammy.js"
 language: html
 filename: bella.html
 line_numbers: true
-line_number_start: 31
-line_highlights: 32
+line_number_start: 30
+line_highlights: 31
 ---
 
   <script type="text/javascript" src="scripts.js"></script>
@@ -204,8 +204,8 @@ Add the `animation` property.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 97
-line_highlights: 102, 111
+line_number_start: 107
+line_highlights: 112, 121
 ---
 
 .startCrawl {
@@ -240,8 +240,8 @@ Add a new selector called `.startFly`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 114
-line_highlights: 114 - 118
+line_number_start: 124
+line_highlights: 124 - 128
 ---
 
 .startFly {
@@ -268,8 +268,8 @@ Add a new `@keyframes` animation called 'fly' to suit the butterfly character.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 42
-line_highlights: 44 - 67
+line_number_start: 51
+line_highlights: 53 - 76
 ---
 
 /* ANIMATIONS */

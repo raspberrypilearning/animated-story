@@ -17,8 +17,8 @@ Add the `background-attachment: fixed` property to the `.garden` selector.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 65
-line_highlights: 69
+line_number_start: 75
+line_highlights: 79
 ---
 
 .garden {
@@ -56,8 +56,8 @@ Add an `<h1>` element.
 language: html
 filename: sammy.html
 line_numbers: true
-line_number_start: 17
-line_highlights: 21
+line_number_start: 15
+line_highlights: 19
 ---
 
     <main>
@@ -89,8 +89,8 @@ The story text should be in a `<p>` element.
 language: html
 filename: sammy.html
 line_numbers: true
-line_number_start: 17
-line_highlights: 22-24
+line_number_start: 15
+line_highlights: 20-22
 ---
 
     <main>
@@ -129,8 +129,8 @@ Add a keyframes animation called `rising`.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 42
-line_highlights: 44-52
+line_number_start: 51
+line_highlights: 53-61
 ---
 
 /* ANIMATIONS */
@@ -163,8 +163,8 @@ Create the `.rise` selector.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 42
-line_highlights: 44-47
+line_number_start: 51
+line_highlights: 53-56
 ---
 
 /* ANIMATIONS */
@@ -177,7 +177,7 @@ line_highlights: 44-47
 
 --- /code ---
 
-The selector has one `animation` property set to call the keyframes animation `rising` you created earlier. 
+The selector has one `animation` property set to call the keyframes animation `rising` that you created earlier. 
 
 The animation is set to last for two seconds (`2s`) and use the `ease` transition.
 
@@ -218,8 +218,8 @@ Add a second `<script>` element with the attribute `src="sammy.js"`
 language: html
 filename: sammy.html
 line_numbers: true
-line_number_start: 27
-line_highlights: 28
+line_number_start: 25
+line_highlights: 26
 ---
 
   <script type="text/javascript" src="scripts.js"></script>
