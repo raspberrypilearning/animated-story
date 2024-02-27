@@ -35,6 +35,15 @@ line_highlights: 79
 + Click the **Run** button.
 + Scroll down to see the garden image as a fixed background.
 
+--- collapse ---
+
+---
+title: What should I see?
+---
+![A gif showing a fixed background image as other content scrolls in front of it](images/background-attachment-fixed.gif)
+
+--- /collapse ---
+
 --- /task ---
 
 ### Add a heading
