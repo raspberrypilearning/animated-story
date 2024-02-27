@@ -41,7 +41,7 @@ A JavaScript observer can be used to watch ('observe') a collection of HTML elem
 A collection of items is called an <span style="color: #0faeb0">**array**</span>. An array can contain multiple items or just a single item.
 </p>
 
-One use of an observer is so the browser can detect when an element enters in the viewport.
+One use of an observer is to let the browser detect when an element enters the viewport.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 The <span style="color: #0faeb0">**viewport**</span> is the area of the web page that is currently visible in the browser.

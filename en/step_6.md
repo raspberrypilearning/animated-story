@@ -75,7 +75,13 @@ headingObserver.observe(document.querySelector("#headingTrigger"));
 title: Why does the text go behind the heading?
 ---
 
-You can use the `z-index` property to make elements appear in front of or behind each other. You can think of z-index as layers. Find the `h1` selector in the `style.css` file. The selector styles the heading so its z-index is `1`, meaning it's z-index is higher than the other elements', (which are set to `0` by default) meaning it appears in front of them, on the top layer.
+In CSS, `z-index` is a property that controls the layer order of elements on the z-axis (the axis that comes out of the screen towards the viewer). 
+
+![A smartphone on its side showing the width of the phone screen as the x axis, the length as the y axis and the z axis coming out of the screen.](images/phoneAxes.png)
+
+You can use the `z-index` property to make elements appear in front of or behind each other. 
+
+Find the `h1` selector in the `style.css` file. The selector styles the heading so its z-index is `1`, meaning it's z-index is higher than the other elements', (which are set to `0` by default) meaning it appears in front of them, on the top layer.
 
 **Test:** 
 
