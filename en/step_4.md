@@ -191,10 +191,8 @@ line_highlights: 41
 
 --- /code ---
 
-**Test:** 
-
-+ Click the **Run** button.
-The 'SCROLL DOWN' text should be positioned centrally.
+**Click Run**
++ The 'SCROLL DOWN' text should be positioned centrally.
 
 --- /task ---
 
@@ -225,9 +223,7 @@ p {
 
 --- /code ---
 
-**Test:** 
-
-+ Click the **Run** button.
+**Click Run**
 + Resize the **height** of the editor preview to see your font size change!
 
 --- /task ---

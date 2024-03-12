@@ -30,9 +30,7 @@ line_highlights: 79
 
 --- /code ---
 
-**Test:** 
-
-+ Click the **Run** button.
+**Click Run**
 + Scroll down to see the garden image as a fixed background.
 
 --- collapse ---
@@ -78,9 +76,7 @@ line_highlights: 19
 
 --- /code ---
 
-**Test:** 
-
-+ Click the **Run** button.
+**Click Run**
 + Scroll down to see the heading.
 
 --- /task ---
@@ -114,9 +110,7 @@ line_highlights: 20-22
 
 --- /code ---
 
-**Test:** 
-
-+ Click the **Run** button.
+**Click Run**
 + Scroll down to see the story text.
 
 --- /task ---
@@ -272,9 +266,7 @@ There are two main differences:
 + `riseObserver` watches for `<p>` elements
 + `riseObserver` adds the `rise` class to intersecting elements.
 
-**Test:** 
-
-+ Click the **Run** button.
+**Click Run**
 + Scroll down to see the rising animation when the `<p>` text enters the viewport.
 
 --- /task ---

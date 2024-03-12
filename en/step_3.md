@@ -68,12 +68,10 @@ line_highlights: 18, 22, 26, 30, 34
 
 --- /code ---
 
-**Test:** 
-
-+ Click the **Run** button.
+**Click Run**
 + Scroll down. Do you see the images you added?
 
-All the images are still `spinner.gif`. This is because the `src` property sets the image to display.
+You will not see the images you added. All the images are still `spinner.gif`. This is because it is the `src` property that sets the image to display.
 
 --- /task ---
 
@@ -293,9 +291,7 @@ If this was not there then the swap might happen too quickly for you to see!
 
 --- /collapse ---
 
-**Test:** 
-
-+ Click the **Run** button.
+**Click Run**
 + Scroll down and watch each image load when it enters the viewport (after a one-second pause).
 
 --- /task ---

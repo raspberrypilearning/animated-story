@@ -211,13 +211,9 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 --- /code ---
  
-**Test:** 
-
+**Click Run**
 + Open the Console.
-+ Click the **Run** button.
-+ Scroll down and watch the Console.
-
-The message "BOUNCE TRIGGER IN VIEWPORT" will appear in the Console.
++ Scroll down and see the message "BOUNCE TRIGGER IN VIEWPORT" appear in the Console.
 
 --- /task ---
 
@@ -291,9 +287,7 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 --- task ---
 
-**Test:** 
-
-+ Click the **Run** button.
+**Click Run**
 + Scroll down to see the bouncing text 'SCROLL DOWN' disappear!
   
 --- /task ---

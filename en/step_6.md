@@ -37,7 +37,7 @@ An intersection observer can be used to watch for the `id` you just added to the
 
 If the `<div>` **leaves** the viewport, the callback adds the `enabled` class to the `<h1>` element.
 
-The `.enabled` selector styles the colours of the heading's font and background. It also sets a `position: sticky` property, so the heading stays in its current location (at the top) when the `enabled` class is added.
+The `.enabled` selector styles the colours for the heading's font and background. It also sets a `position: sticky` property, so the heading stays in its current location (at the top) when the `enabled` class is added.
 
 The toggle method is used to turn the effect on or off as the target element (the empty `<div>`) leaves and enters the viewport.
 
@@ -64,10 +64,8 @@ headingObserver.observe(document.querySelector("#headingTrigger"));
 
 --- /code ---
 
-**Test:** 
-
-+ Click the **Run** button.
-+ Scroll down to see your changes.
+**Click Run**
++ Scroll down to see the heading stick and change colour when it reaches the top.
 
 --- collapse ---
 
@@ -86,12 +84,10 @@ Find the `h1` selector in the `style.css` file. The selector styles the heading 
 **Test:** 
 
 + Set the `z-index` property of the `h1` selector to `-1`. 
-+ Click the **Run** button.
-+ Scroll down.
 
-You will see that the story text appears in front of the heading. 
-
-Set z-index back to `1` when you are finished testing.
+**Click Run**
++ Scroll down to see the story text appear in front of the heading. 
++ Set z-index back to `1` when you are finished testing.
 
 --- /collapse ---
 
@@ -300,12 +296,8 @@ snailObserver.observe(document.querySelector("#snail"));
 
 --- /code ---
 
-**Test:** 
-
-+ Click the **Run** button.
-+ Scroll down.
-
-As soon as the snail enters the viewport, the animation starts.
+**Click Run**
++ Scroll down to see the snail animation when it enters the viewport.
 
 --- /task ---
 
@@ -350,11 +342,7 @@ Threshold values range from `0` to `1`
 
 --- /collapse ---
 
-**Test:** 
-
-+ Click the **Run** button.
-+ Scroll down.
-
-The whole image needs to be in the viewport for the animation to start.
+**Click Run**
++ Scroll down to see that the the animation only starts when the whole image is in the viewport.
 
 --- /task ---
