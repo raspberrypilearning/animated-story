@@ -19,8 +19,8 @@ Add a `<div>` element above the `<h1>` element and give it the attribute `id="he
 language: html
 filename: sammy.html
 line_numbers: true
-line_number_start: 18
-line_highlights: 19
+line_number_start: 19
+line_highlights: 120
 ---
 
       </section>
@@ -126,8 +126,8 @@ Add a new `<section>` element with the attribute `class="garden"`.
 language: html
 filename: sammy.html
 line_numbers: true
-line_number_start: 23
-line_highlights: 24-26
+line_number_start: 24
+line_highlights: 25-27
 ---
 
       </p>
@@ -150,8 +150,8 @@ Add an `<img>` element with the attributes `id="snail"`, `class="snail"` and alt
 language: html
 filename: sammy.html
 line_numbers: true
-line_number_start: 25
-line_highlights: 27
+line_number_start: 26
+line_highlights: 28
 ---
 
       </p>

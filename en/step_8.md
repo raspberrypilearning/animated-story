@@ -43,8 +43,8 @@ Add the new link to the nav bar on **all three** pages.
 language: html
 filename: 
 line_numbers: true
-line_number_start: 12
-line_highlights: 14
+line_number_start: 13
+line_highlights: 15
 ---
 
       <a href="index.html">Intro</a>
@@ -66,7 +66,7 @@ Change the `<h1>` text:
 language: html
 filename: bella.html
 line_numbers: true
-line_number_start: 21
+line_number_start: 22
 line_highlights: 
 ---
 
@@ -85,8 +85,8 @@ Add story text about Bella the Butterfly.
 language: html
 filename: bella.html
 line_numbers: true
-line_number_start: 22
-line_highlights: 23
+line_number_start: 23
+line_highlights: 24
 ---
 
       <p>
@@ -108,7 +108,7 @@ Change the `<img>` element.
 language: html
 filename: bella.html
 line_numbers: true
-line_number_start: 26
+line_number_start: 27
 line_highlights: 
 ---
 
@@ -180,8 +180,8 @@ Change the `src` attribute of the second `<script>` element from `src="sammy.js"
 language: html
 filename: bella.html
 line_numbers: true
-line_number_start: 30
-line_highlights: 31
+line_number_start: 31
+line_highlights: 32
 ---
 
   <script type="text/javascript" src="scripts.js"></script>

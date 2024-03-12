@@ -63,8 +63,8 @@ Add an `<h1>` element.
 language: html
 filename: sammy.html
 line_numbers: true
-line_number_start: 15
-line_highlights: 19
+line_number_start: 16
+line_highlights: 20
 ---
 
     <main>
@@ -94,8 +94,8 @@ The story text should be in a `<p>` element.
 language: html
 filename: sammy.html
 line_numbers: true
-line_number_start: 15
-line_highlights: 20-22
+line_number_start: 16
+line_highlights: 21-23
 ---
 
     <main>
@@ -221,8 +221,8 @@ Add a second `<script>` element with the attribute `src="sammy.js"`
 language: html
 filename: sammy.html
 line_numbers: true
-line_number_start: 25
-line_highlights: 26
+line_number_start: 26
+line_highlights: 27
 ---
 
   <script type="text/javascript" src="scripts.js"></script>

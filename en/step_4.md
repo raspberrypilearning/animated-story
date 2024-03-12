@@ -21,8 +21,8 @@ Add the `<nav>` tags below it with the links to be shown in the navbar.
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 10
-line_highlights: 11-14
+line_number_start: 11
+line_highlights: 12-15
 ---
 
   <body>
@@ -77,6 +77,7 @@ line_number_start: 1
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sammy</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="default.css" />
   </head>
 
   <body>
@@ -119,7 +120,7 @@ line_highlights: 92-93
 /* NAV BAR */
 
 .navigation {
-  background-color: #49d4cf;
+  background-color: var(--navigation-background-color);
   top: 0;
   display: flex;
   flex-direction: column;
@@ -183,9 +184,9 @@ line_highlights: 41
   position: fixed;
   bottom: 0;
   text-align: center;
-  color: white;
+  color: var(--text-color);
   font-size: 5cqw;
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 10px var(--text-shadow-color);
   animation: bounce 1s infinite;
 }
 

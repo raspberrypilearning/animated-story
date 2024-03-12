@@ -31,8 +31,8 @@ In each `<img>` element, add a `data-src` attribute and set its value to the rel
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 10
-line_highlights: 18, 22, 26, 30, 34
+line_number_start: 11
+line_highlights: 19, 23, 27, 31, 35
 ---
 
   <body>
