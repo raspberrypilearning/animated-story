@@ -304,7 +304,7 @@ title: The bouncing text does not disappear
 ---
 + There must be a semicolon at the end of line 5.
 + Make sure you spell `querySelector` correctly - including the capital letter!
-+ 
+
 --- /collapse ---
 
 ## Save your project
