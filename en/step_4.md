@@ -34,9 +34,8 @@ line_highlights: 12-15
 
 --- /code ---
 
-**Test:** Click the **Run** button. 
-
-The navigation links will appear at the top.
+**Click Run**
++ The navigation links will appear at the top.
 
 --- /task ---
 
@@ -133,9 +132,8 @@ line_highlights: 92-93
 
 --- /code ---
 
-**Test:** Click the **Run** button.
-
-The navbar should be positioned on the left.
+**Click Run**
++ The navbar should be positioned on the left.
 
 --- /task ---
 
