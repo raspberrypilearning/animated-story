@@ -70,6 +70,15 @@ headingObserver.observe(document.querySelector("#headingTrigger"));
 --- collapse ---
 
 ---
+title: The heading does not stick when it reaches the top
+---
++ Make sure you have `!` before `entries[0].isIntersecting`.
+  
+--- /collapse ---
+
+--- collapse ---
+
+---
 title: Why does the text go behind the heading?
 ---
 
@@ -92,10 +101,6 @@ Find the `h1` selector in the `style.css` file. The selector styles the heading 
 --- /collapse ---
 
 --- /task ---
-
-**Debug:** 
-
-+ Make sure you have `!` before `entries[0].isIntersecting`.
 
 --- collapse ---
 

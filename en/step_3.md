@@ -296,11 +296,16 @@ If this was not there then the swap might happen too quickly for you to see!
 
 --- /task ---
 
-**Debug:**
+--- collapse ---
 
+---
+title: The images are not loading
+---
 + Make sure it is `img`, not `<img>` in the brackets on line 11. 
 + Check there is a comma `,` after line 17. 
 + There is a semicolon `;` at end of lines 19, 22, 23 and 24.
+  
+--- /collapse ---
 
 ### Stop observing
 

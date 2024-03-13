@@ -39,9 +39,15 @@ line_highlights: 12-15
 
 --- /task ---
 
-**Debug:** 
+--- collapse ---
 
+---
+title: The navigation links are not there
+---
 + Make sure you add the `class="navigation"` attribute to the opening `<nav>`.
+  
+--- /collapse ---
+
 
 ### Create a new web page
 

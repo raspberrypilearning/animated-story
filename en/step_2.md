@@ -217,11 +217,16 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 --- /task ---
 
-**Debug:**
+--- collapse ---
 
+---
+title: Nothing appears in the Console
+---
 + Check your spelling of `IntersectionObserver`. It should have two capital letters.
 + There must be a semicolon at the end of lines 4, 6 and 7.
 + Close all your brackets and curly braces.
+  
+--- /collapse ---
 
 --- collapse ---
 
@@ -292,10 +297,15 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
   
 --- /task ---
 
-**Debug:**
+--- collapse ---
 
+---
+title: The bouncing text does not disappear
+---
 + There must be a semicolon at the end of line 5.
 + Make sure you spell `querySelector` correctly - including the capital letter!
++ 
+--- /collapse ---
 
 ## Save your project
 
