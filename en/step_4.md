@@ -6,7 +6,7 @@ In this step, you will add a new web page and navigation bar to your website.
 
 ### Add a navbar
 
-If you have completed the ***Welcome to antarctica*** project, you will know how to create a navbar.
+If you have completed the [Welcome to Antarctica](https://projects.raspberrypi.org/en/projects/welcome-to-antarctica) project., you will know how to create a navbar.
 
 --- task ---
 
@@ -166,7 +166,7 @@ main {
 
 --- /task ---
 
-You can change the width of an element so it stretches a percentage of the viewport width.
+You can change the width of an element so it stretches over a **percentage** of the viewport width.
 
 ![A web page with horizontal arrows spanning the width, showing 20% and 80% proportions of the viewport](images/80-20_viewport.png)
 

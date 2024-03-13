@@ -11,10 +11,10 @@ Open the [Animated story starter project](https://staging-editor.raspberrypi.org
 --- /task ---
 
 Your starter project contains:
-+ an HTML page with images and text
-+ a CSS file that contains styling for some of the content
++ `index.html`: an HTML page with images and text 
++ `style.html` and `default.css`: CSS files that contain styling for some of the content 
 + the images you will use in the project
-+ a JavaScript file that you will develop throughout the project.
++ `scripts.js`: a JavaScript file that you will develop throughout the project.
 
 ### Console
 

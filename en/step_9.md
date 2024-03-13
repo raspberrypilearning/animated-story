@@ -1,22 +1,16 @@
 ## What next?
 
-If you are following the [More Web](https://projects.raspberrypi.org/en/raspberrypi/more-web) path, you can move on to the [Choose your look](https://projects.raspberrypi.org/en/projects/choose-your-look) project. In this project, you will make a (add description here).
-
-**TODO** complete when Design 1 ready.
+If you are following the [More Web](https://projects.raspberrypi.org/en/raspberrypi/more-web) path, you can move on to the [Pick your favourite!](https://projects.raspberrypi.org/en/projects/pick-your-favourite) project. In this project you will create a fan website that lets a user make choices that change the content of the web page! You could make a web page with content about different sports teams, fashion brands, TV shows or anything else you and your friends are fans of!
 
 --- print-only ---
 
-![Choose your look project](images/choose-your-look.png)
-
-**TODO** complete when Design 1 ready.
+![An example of a 'Pick your favourite!' project - a drop-down list at the top of the page shows a choice of dinosaurs. T-Rex is selected and an emoji of a T-rex is shown on screen ](images/pick-your-favourite-dino.png)
 
 --- /print-only ---
 
 --- no-print ---
 
-<iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/choose-your-look-complete" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
-
-**TODO** complete when Design 1 ready.
+<iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/pick-your-favourite-complete" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 --- /no-print ---
 

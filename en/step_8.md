@@ -36,7 +36,26 @@ Open the `bella.html` file and paste the HTML into it (Ctrl + V).
 
 --- task ---
 
-Add the new link to the nav bar on **all three** pages.
+Change the page title.
+
+--- code ---
+---
+language: html
+filename: bella.html
+line_numbers: true
+line_number_start: 6
+line_highlights: 
+---
+
+    <title>Bella</title>
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Add the new link to the nav bar on **all three** HTML pages.
 
 --- code ---
 ---

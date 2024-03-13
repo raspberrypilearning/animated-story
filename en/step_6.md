@@ -20,7 +20,7 @@ language: html
 filename: sammy.html
 line_numbers: true
 line_number_start: 19
-line_highlights: 120
+line_highlights: 20
 ---
 
       </section>
@@ -88,7 +88,33 @@ In CSS, `z-index` is a property that controls the layer order of elements on the
 
 You can use the `z-index` property to make elements appear in front of or behind each other. 
 
-Find the `h1` selector in the `style.css` file. The selector styles the heading so its z-index is `1`, meaning it's z-index is higher than the other elements', (which are set to `0` by default) meaning it appears in front of them, on the top layer.
+Find the `h1` selector in the `style.css` file. 
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 18
+line_highlights: 27
+---
+
+h1 {
+  margin: 0;
+  color: var(--main-color);
+  background-color: var(--background-color);
+  top: 0;
+  left: 1rem;
+  padding-left: 2rem;
+  line-height: 2;
+  margin-top: 1px;
+  z-index: 1;
+  transition: all 300ms;
+}
+
+--- /code ---
+
+The selector styles the heading so its z-index is `1`, meaning it's z-index is higher than the other elements', (which are set to `0` by default) meaning it appears in front of them, on the top layer.
 
 **Test:** 
 
