@@ -527,7 +527,7 @@ butterflyObserver.observe(document.querySelector("#butterfly"));
 title: See the upgraded project
 ---
 
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-upgraded" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-upgraded?page=bella.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 You can see the [upgraded project files here](https://editor.raspberrypi.org/en/projects/animated-story-upgraded){:target="_blank"}.
 
