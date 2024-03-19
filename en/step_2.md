@@ -1,6 +1,6 @@
-## Observing elements
+## Observe elements
 
-In this step, you will  use the 'Intersection observer' to make some text disappear!
+In this step, you will use the 'intersection observer' to make some text disappear!
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step2" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
@@ -13,8 +13,8 @@ Open the [Animated story starter project](https://editor.raspberrypi.org/en/proj
 Your starter project contains:
 + `index.html`: an HTML page with images and text 
 + `style.html` and `default.css`: CSS files that contain styling for some of the content 
-+ the images you will use in the project
-+ `scripts.js`: a JavaScript file that you will develop throughout the project.
++ The images you will use in the project
++ `scripts.js`: a JavaScript file that you will develop throughout the project
 
 ### Console
 
@@ -22,7 +22,7 @@ Your starter project contains:
 
 Open the Console.
 
-**Tip:** Most browsers will let you right click on a page and 'Inspect' an element. 
+**Tip:** Most browsers will let you right-click on a page and 'Inspect' an element. 
 
 This opens developer tools, including the Console.
 
@@ -31,7 +31,7 @@ Some helpful keyboard shortcuts:
 + Chrome: Ctrl + Shift + J (on Windows) or Cmd + Option + J (on a Mac)
 + Firefox: Ctrl + Shift + J (on Windows) or Cmd + Option + K (on a Mac)
 + Microsoft Edge: Control + Shift + I
-+ Safari: First, enable the 'Develop menu'. To do this, click 'Safari' in the Mac menu bar and select 'Settings.' Click on 'Advanced', tick the checkbox next to 'Show features for web developers' and then close the window. You can now open the console using Cmd + Option + C.
++ Safari: First, enable the 'Develop menu'. To do this, click **Safari** in the Mac menu bar and select **Settings**. Click on **Advanced**, tick the checkbox next to 'Show features for web developers' and then close the window. You can now open the console using Cmd + Option + C.
 
 --- /task ---
 
@@ -44,10 +44,10 @@ A collection of items is called an <span style="color: #0faeb0">**array**</span>
 One use of an observer is to let the browser detect when an element enters the viewport.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0">**viewport**</span> is the area of the web page that is currently visible in the browser.
+The <span style="color: #0faeb0">**viewport**</span> is the area of the webpage that is currently visible in the browser.
 </p>
 
-![Illustration of a browser's viewport displaying only part of a web page. Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport.png)
+![Illustration of a browser's viewport displaying only part of a webpage. Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport.png)
 
 You can output something to the Console to see if your observer is working.
 
@@ -85,11 +85,11 @@ const bounceObserver = new IntersectionObserver(
 
 --- task ---
 
-Call `bounceObserver` to `observe` the element in the `document` (web page) with the attribute `id="hideBounce"`. 
+Call `bounceObserver` to `observe` the element in the `document` (webpage) with the attribute `id="hideBounce"`. 
 
 **Note:** This element is called the 'target' element.
 
-Observed elements are passed to the `entries` array in the Observer.
+Observed elements are passed to the `entries` array in the observer.
 
 --- code ---
 ---
@@ -150,7 +150,7 @@ The callback will start by checking `if` the element in the `entries` array (wit
 
 The `isIntersecting` method is used to check this.
 
-This image shows a target element on a web page that has entered the browser's viewport.
+This image shows a target element on a webpage that has entered the browser's viewport.
 ![Illustration of a target element partially intersecting with a browser's viewport. Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport-target.png)
 
 --- task ---
@@ -223,7 +223,7 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 title: Nothing appears in the Console
 ---
 + Check your spelling of `IntersectionObserver`. It should have two capital letters.
-+ There must be a semicolon at the end of lines 4, 6 and 7.
++ There must be a semicolon at the end of lines 4, 6, and 7.
 + Close all your brackets and curly braces.
   
 --- /collapse ---
@@ -234,11 +234,11 @@ title: Nothing appears in the Console
 title: The structure of the bounceObserver intersection observer
 ---
 
-On line 2, `entries` is a collection of all elements on the web page with the `id="hideBounce"` attribute. 
+On line 2, `entries` is a collection of all elements on the webpage with the `id="hideBounce"` attribute. 
 
 A collection of items is called an 'array'.
 
-The `bounceObserver` is set to observe when the first (in this case: the only) target element in the `entries` array enters the viewport.
+The `bounceObserver` is set to observe when the first (in this case, the only) target element in the `entries` array enters the viewport.
 
 When it does, the observer 'callback' outputs a message to the Console.
 
@@ -303,7 +303,7 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 title: The bouncing text does not disappear
 ---
 + There must be a semicolon at the end of line 5.
-+ Make sure you spell `querySelector` correctly - including the capital letter!
++ Make sure you spell `querySelector` correctly, including the capital letter!
 
 --- /collapse ---
 
