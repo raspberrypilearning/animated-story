@@ -6,9 +6,9 @@ In this step, you will improve browser performance by only loading images when t
 
 ### Why lazy load?
 
-Images can have large file sizes and can use most data when you access a web page.
+Images can have large file sizes and can use most data when you access a webpage.
 
-When you open a web page, **all** the images on the page are loaded. This can use lots of bandwidth.
+When you open a webpage, **all** the images on the page are loaded. This can use lots of bandwidth.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 The amount of data (bits) that can be transferred over a computer connection is called the <span style="color: #0faeb0">**bandwidth**</span>. Using lots of bandwidth can make pages load slowly for people with poor connectivity, or cost more money. Reducing the use of bandwidth makes websites more accessible and user-friendly.
@@ -303,7 +303,7 @@ title: The images are not loading
 ---
 + Make sure it is `img`, not `<img>` in the brackets on line 11. 
 + Check there is a comma `,` after line 17. 
-+ There is a semicolon `;` at end of lines 19, 22, 23 and 24.
++ Check there is a semicolon `;` at end of lines 19, 22, 23, and 24.
   
 --- /collapse ---
 
@@ -349,4 +349,4 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 --- /task ---
 
-Next you are going to add a new web page and navigation bar to your website.
+Next you are going to add a new webpage and navigation bar to your website.
