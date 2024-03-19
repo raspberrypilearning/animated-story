@@ -1,12 +1,12 @@
 ## Add a new page
 
-In this step, you will add a new web page and navigation bar to your website.
+In this step, you will add a new webpage and navigation bar (navbar) to your website.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step4" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 ### Add a navbar
 
-If you have completed the [Welcome to Antarctica](https://projects.raspberrypi.org/en/projects/welcome-to-antarctica) project., you will know how to create a navbar.
+If you have completed the [Welcome to Antarctica](https://projects.raspberrypi.org/en/projects/welcome-to-antarctica) project, you will know how to create a navbar.
 
 --- task ---
 
@@ -49,11 +49,11 @@ title: The navigation links are not there
 --- /collapse ---
 
 
-### Create a new web page
+### Create a new webpage
 
 --- task ---
 
-**Click:** the '+ Add file' button.
+**Click** the '+ Add file' button.
 
 ![The 'Add file' button.](images/addFile.png)
 
@@ -109,7 +109,7 @@ To make this website feel more like a book, you can place the navbar on the left
 
 --- task ---
 
-Open the `style.css` file and find the `.navigation` selector
+Open the `style.css` file and find the `.navigation` selector.
 
 Add the `position` and `width` properties to the `.navigation` selector.
 
@@ -168,7 +168,7 @@ main {
 
 You can change the width of an element so it stretches over a **percentage** of the viewport width.
 
-![A web page with horizontal arrows spanning the width, showing 20% and 80% proportions of the viewport](images/80-20_viewport.png)
+![A webpage with horizontal arrows spanning the width, showing 20% and 80% proportions of the viewport.](images/80-20_viewport.png)
 
 --- task ---
 
@@ -239,19 +239,19 @@ p {
 title: What is cqh?
 ---
 
-Container Query Height (cqh) are units that specify a size relative to the dimensions of an element's container element.
+Container query height (cqh) are units that specify a size relative to the dimensions of an element's container element.
 
 `1cqh` is 1% of the container's height. For example, if the container's height is 300px, then a value of `10cqh` on a property will be 30px.
 
-One benefit of using `cqh` units rather than `px` (pixel units) for sizing elements is that elements will resize along with their container. This usually happens when you resize a browser window, or view a web page on a different screen.
+One benefit of using `cqh` units rather than `px` (pixel units) for sizing elements is that elements will resize along with their container. This usually happens when you resize a browser window, or view a webpage on a different screen.
 
 Here is an example:
 
-![A gif showing font sizes changing when the browser changes height and width](images/cqh_cqw.gif)
+![A gif showing font sizes changing when the browser changes height and width.](images/cqh_cqw.gif)
 
-In the example, the font size of the the main story text has been set to use `cqh`, so changes with the browser's height.
+In the example, the font size of the the main story text has been set to use `cqh`, so it changes with the browser's height.
 
-The font size of the text in the nav bar has been set to use `cqw`, so changes with the browser's width.
+The font size of the text in the navbar has been set to use `cqw`, so it changes with the browser's width.
 
 --- /collapse ---
 
