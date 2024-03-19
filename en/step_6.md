@@ -1,6 +1,6 @@
 ## Animate the story
 
-In this step you will animate the heading and an image.
+In this step, you will animate the heading and an image.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-complete?page=sammy.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
@@ -114,7 +114,7 @@ h1 {
 
 --- /code ---
 
-The selector styles the heading so its z-index is `1`, meaning it's z-index is higher than the other elements', (which are set to `0` by default) meaning it appears in front of them, on the top layer.
+The selector styles the heading so its z-index is `1`, meaning it's z-index is higher than the other elements' (which are set to `0` by default). This means the heading appears in front of the other elements, on the top layer.
 
 **Test:** 
 
@@ -131,10 +131,10 @@ The selector styles the heading so its z-index is `1`, meaning it's z-index is h
 --- collapse ---
 
 ---
-title: Using the logical not operator
+title: Use the logical NOT operator
 ---
 
-The logical not `!` operator is used with the `isIntersecting` method in the callback, so the `enabled` class is only added when the div is **not** in the viewport.
+The logical NOT `!` operator is used with the `isIntersecting` method in the callback, so the `enabled` class is only added when the div is **not** in the viewport.
 
 --- /collapse ---
 
@@ -174,7 +174,7 @@ Add the snail image.
 
 --- task ---
 
-Add an `<img>` element with the attributes `id="snail"`, `class="snail"` and alt text to improve accessibility.
+Add an `<img>` element with the attributes `id="snail"`, `class="snail"`, and alt text to improve accessibility.
 
 --- code ---
 ---
@@ -258,7 +258,7 @@ Its height is styled to be 20% of the viewport height (`20vh`). This means it wi
 
 ### Show and move the character image
 
-To animate the image, it will change its opacity to 1, making it fully visible. It will also move right by 25% of its own width.
+To animate the image, you will change its opacity to 1, making it fully visible. It will also move right by 25% of its own width.
 
 --- task ---
 
@@ -374,6 +374,6 @@ Threshold values range from `0` to `1`
 --- /collapse ---
 
 **Click Run**
-+ Scroll down to see that the the animation only starts when the whole image is in the viewport.
++ Scroll down to see that the animation only starts when the whole image is in the viewport.
 
 --- /task ---
