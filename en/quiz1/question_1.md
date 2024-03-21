@@ -1,6 +1,6 @@
 ## Reflection
 
-Well done! You have created a website using HTML, CSS and Javascript.
+Well done! You have created a website using HTML, CSS, and JavaScript.
 
 Answer the three questions below to reflect on what you've learnt.
 
