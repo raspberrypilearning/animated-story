@@ -198,11 +198,11 @@ You should create a new JavaScript file with scripts required by this page.
 
 Create a new JavaScript file that will contain the scripts relevant to `sammy.html`.
 
-+ **Click** the '+ Add file' button
++ **Click** the **+ Add file** button
 
 ![The 'Add file' button.](images/addFile.png)
 
-+ Name your new file `sammy.js` and click the 'Add file' button.
++ Name your new file `sammy.js` and click the **Add file** button.
 
 --- /task ---
 
@@ -271,4 +271,4 @@ There are two main differences:
 
 --- /task ---
 
-Next you will add an animation to the heading and a different animation to an image.
+Next, you will add an animation to the heading and a different animation to an image.
