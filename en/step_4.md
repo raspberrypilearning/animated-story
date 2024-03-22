@@ -53,11 +53,11 @@ title: The navigation links are not there
 
 --- task ---
 
-**Click** the '+ Add file' button.
+**Click** the **+ Add file** button.
 
 ![The 'Add file' button.](images/addFile.png)
 
-Name your new file `sammy.html` and click the 'Add file' button.
+Name your new file `sammy.html` and click the **Add file** button.
 
 --- /task ---
 
@@ -257,4 +257,4 @@ The font size of the text in the navbar has been set to use `cqw`, so it changes
 
 Your website is looking awesome! 
 
-Next you will add a cool animation to the text to grab people's attention!
+Next, you will add a cool animation to the text to grab people's attention!
