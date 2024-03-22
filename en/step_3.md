@@ -6,7 +6,7 @@ In this step, you will improve browser performance by only loading images when t
 
 ### Why lazy load?
 
-Images can have large file sizes and can use most data when you access a webpage.
+Images can have large file sizes and can use a lot of data when you access a webpage.
 
 When you open a webpage, **all** the images on the page are loaded. This can use lots of bandwidth.
 
@@ -349,4 +349,4 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 --- /task ---
 
-Next you are going to add a new webpage and navigation bar to your website.
+Next, you are going to add a new webpage and navigation bar to your website.
