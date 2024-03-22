@@ -114,7 +114,7 @@ h1 {
 
 --- /code ---
 
-The selector styles the heading so its z-index is `1`, meaning it's z-index is higher than the other elements' (which are set to `0` by default). This means the heading appears in front of the other elements, on the top layer.
+The selector styles the heading so its z-index is `1`, meaning its z-index is higher than the other elements' (which are set to `0` by default). This means the heading appears in front of the other elements, on the top layer.
 
 **Test:** 
 
@@ -134,7 +134,7 @@ The selector styles the heading so its z-index is `1`, meaning it's z-index is h
 title: Use the logical NOT operator
 ---
 
-The logical NOT `!` operator is used with the `isIntersecting` method in the callback, so the `enabled` class is only added when the div is **not** in the viewport.
+The logical NOT `!` operator is used with the `isIntersecting` method in the callback, so the `enabled` class is only added when the `<div>` is **not** in the viewport.
 
 --- /collapse ---
 
@@ -368,8 +368,8 @@ title: What are the 'threshold' options?
 ---
 
 Threshold values range from `0` to `1` 
-`1` means that every single pixel of the element has to be in the viewport for the callback to run. 
-`0` is the default value and means that just one pixel must be intersecting for the callback to run.
+- `1` means that every single pixel of the element has to be in the viewport for the callback to run 
+- `0` is the default value and means that just one pixel must be intersecting for the callback to run
 
 --- /collapse ---
 
