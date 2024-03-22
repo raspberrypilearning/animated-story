@@ -20,7 +20,7 @@ You will:
 <div style="flex-basis: 175px; flex-grow: 1">  
 Explore this animated story. 
 
-+ Scroll down on the page to watch the images load
++ Scroll down the page to watch the images load
 + Click on the links on the navbar at the side to see the different pages
 + Scroll down the page to see the different interactive features
 
