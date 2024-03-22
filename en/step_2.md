@@ -264,7 +264,7 @@ You can hide the bouncing 'SCROLL DOWN' text, by changing the value of its `opac
 
 Add an action when the `if` condition is met that changes the value of the `opacity` property of the bouncing text element, which has the attribute `id="bounce"`.
 
-Setting the opacity value to `0` makes it invisible.
+Set the opacity value to `0` to make it invisible.
 
 --- code ---
 ---
@@ -311,4 +311,4 @@ title: The bouncing text does not disappear
 
 Your project is saved automatically. Return to the starter link in the same web browser to see your changes. 
 
-Next you are going to improve browser performance by only loading images when they are needed.
+Next, you are going to improve browser performance by only loading images when they are needed.
