@@ -22,7 +22,7 @@ What does `console.log()` do?
 
   --- feedback ---
   
-The `alert()` method used to display a message box with a specified message to the user.
+The `alert()` method is used to display a message box with a specified message to the user.
  
   --- /feedback ---
 
