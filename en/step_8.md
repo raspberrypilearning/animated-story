@@ -4,7 +4,7 @@ If you have time, you can:
 
 + Add another page for a second character from the `index.html` intro page
 + Remove the `setTimeout` from `imageObserver`
-+ Improve browser performance by using `unobserve`.
++ Improve browser performance by using `unobserve`
 
 --- collapse ---
 
@@ -14,11 +14,11 @@ title: Add the story page for Bella
 
 --- task ---
 
-+ **Click** the '+ Add file' button.
++ **Click** the **+ Add file** button.
 
 ![The 'Add file' button.](images/addFile.png)
 
-+ Name your new file `bella.html` and click the 'Add file' button.
++ Name your new file `bella.html` and click the **Add file** button.
 
 --- /task ---
 
@@ -97,7 +97,7 @@ line_highlights:
 
 --- task ---
 
-Add story text about Bella the Butterfly. 
+Add story text about Bella the butterfly. 
 
 --- code ---
 ---
@@ -143,11 +143,11 @@ You should create a new JavaScript file with the scripts required by this page.
 
 Create a new JavaScript file that will contain the scripts relevant to `bella.html`.
 
-+ **Click** the '+ Add file' button
++ **Click** the **+ Add file** button
 
 ![The 'Add file' button.](images/addFile.png)
 
-+ Name your new file `bella.js` and click the 'Add file' button.
++ Name your new file `bella.js` and click the **Add file** button.
 
 --- /task ---
 
