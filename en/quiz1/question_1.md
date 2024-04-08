@@ -1,6 +1,6 @@
 ## Reflection
 
-Well done! You have created a website using HTML, CSS and Javascript.
+Well done! You have created a website using HTML, CSS, and JavaScript.
 
 Answer the three questions below to reflect on what you've learnt.
 
@@ -22,7 +22,7 @@ What does `console.log()` do?
 
   --- feedback ---
   
-The `alert()` method used to display a message box with a specified message to the user.
+The `alert()` method is used to display a message box with a specified message to the user.
  
   --- /feedback ---
 

@@ -2,9 +2,9 @@
 
 If you have time, you can: 
 
-+ add another page for a second character from the `index.html` intro page
-+ remove the `setTimeout` from `imageObserver`
-+ improve browser performance by using `unobserve`.
++ Add another page for a second character from the `index.html` intro page
++ Remove the `setTimeout` from `imageObserver`
++ Improve browser performance by using `unobserve`
 
 --- collapse ---
 
@@ -14,11 +14,11 @@ title: Add the story page for Bella
 
 --- task ---
 
-+ **Click** the '+ Add file' button.
++ **Click** the **+ Add file** button.
 
 ![The 'Add file' button.](images/addFile.png)
 
-+ Name your new file `bella.html` and click the 'Add file' button.
++ Name your new file `bella.html` and click the **Add file** button.
 
 --- /task ---
 
@@ -26,11 +26,11 @@ title: Add the story page for Bella
 
 Open the file `sammy.html`. 
 
-Select all the HTML (Ctrl + A).
+Select all the HTML (Ctrl + A or Cmd + A).
 
-Copy the selected HTML (Ctrl + C).
+Copy the selected HTML (Ctrl + C or Cmd + C).
 
-Open the `bella.html` file and paste the HTML into it (Ctrl + V).
+Open the `bella.html` file and paste the HTML into it (Ctrl + V or Cmd + V).
 
 --- /task ---
 
@@ -55,7 +55,7 @@ line_highlights:
 
 --- task ---
 
-Add the new link to the nav bar on **all three** HTML pages.
+Add the new link to the navbar on **all three** HTML pages.
 
 --- code ---
 ---
@@ -97,7 +97,7 @@ line_highlights:
 
 --- task ---
 
-Add story text about Bella the Butterfly. 
+Add story text about Bella the butterfly. 
 
 --- code ---
 ---
@@ -137,17 +137,17 @@ line_highlights:
 
 --- /task ---
 
-You should create a new JavaScript file with scripts required by this page.
+You should create a new JavaScript file with the scripts required by this page.
 
 --- task ---
 
 Create a new JavaScript file that will contain the scripts relevant to `bella.html`.
 
-+ **Click** the '+ Add file' button
++ **Click** the **+ Add file** button
 
 ![The 'Add file' button.](images/addFile.png)
 
-+ Name your new file `bella.js` and click the 'Add file' button.
++ Name your new file `bella.js` and click the **Add file** button.
 
 --- /task ---
 

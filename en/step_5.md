@@ -1,6 +1,6 @@
 ## Animate text
 
-In this step you will add a cool animation to the text to grab people's attention!
+In this step, you will add a cool animation to the text to grab people's attention!
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step5?page=sammy.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
@@ -22,7 +22,7 @@ line_highlights: 79
 ---
 
 .garden {
-  background-image: url("garden.jpeg");
+  background-image: url("garden.jpg");
   background-size: cover;
   background-position-y: bottom;
   background-attachment: fixed;
@@ -38,7 +38,7 @@ line_highlights: 79
 ---
 title: What should I see?
 ---
-![A gif showing a fixed background image as other content scrolls in front of it](images/background-attachment-fixed.gif)
+![A gif showing a fixed background image as other content scrolls in front of it.](images/background-attachment-fixed.gif)
 
 --- /collapse ---
 
@@ -198,11 +198,11 @@ You should create a new JavaScript file with scripts required by this page.
 
 Create a new JavaScript file that will contain the scripts relevant to `sammy.html`.
 
-+ **Click** the '+ Add file' button
++ **Click** the **+ Add file** button
 
 ![The 'Add file' button.](images/addFile.png)
 
-+ Name your new file `sammy.js` and click the 'Add file' button.
++ Name your new file `sammy.js` and click the **Add file** button.
 
 --- /task ---
 
@@ -271,4 +271,4 @@ There are two main differences:
 
 --- /task ---
 
-Next you will add an animation to the heading and a different animation to an image.
+Next, you will add an animation to the heading and a different animation to an image.
