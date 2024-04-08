@@ -22,7 +22,7 @@ line_highlights: 79
 ---
 
 .garden {
-  background-image: url("garden.jpeg");
+  background-image: url("garden.jpg");
   background-size: cover;
   background-position-y: bottom;
   background-attachment: fixed;
