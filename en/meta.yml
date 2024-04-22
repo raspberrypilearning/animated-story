@@ -3,7 +3,7 @@ title: Animated story
 hero_image: images/banner.png
 description: Use JavaScript intersection observers to add life to a storybook website!
 version: 4
-listed: false
+listed: true
 copyedit: false
 last_tested: '2021-03-26'
 steps:
