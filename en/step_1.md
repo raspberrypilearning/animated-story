@@ -28,6 +28,22 @@ Explore this animated story.
 </div>
 </div>
 
+--- collapse ---
+
+---
+title: Images in this project
+---
+
+Garden image created using generative AI. Model: Firefly Image 2
+Bee image by Clker-Free-Vector-Images via Pixabay.
+Dragon-fly image by pixelcreatures via Pixabay.
+Butterfly image by MahuaSarkar via Pixabay.
+Ladybird image by Glamazon via Pixabay.
+Snail image: Freeimages.com/openclipart.org
+Spinner image: Iphone-spinner-2 via https://icons8.com/
+
+--- /collapse ---
+
 --- /task ---
 --- /no-print ---
 
