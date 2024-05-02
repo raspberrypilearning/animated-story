@@ -9,15 +9,21 @@ last_tested: '2021-03-26'
 steps:
 - title: Introduction
 - title: Observing elements
+  completion:
+    - engaged
 - title: Lazy-loading images
 - title: Add a new page
 - title: Animate text
 - title: Animate the story
+  completion:
+    - internal
 - title: Reflection
   knowledge_quiz:
     path: quiz1
     version: 1
     questions: 3
     passing_score: 3
+  completion:
+    - external  
 - title: Upgrade your project
 - title: What next?
