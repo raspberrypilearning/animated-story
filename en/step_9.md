@@ -1,6 +1,6 @@
 ## What next?
 
-If you are following the [More web](https://projects.raspberrypi.org/en/raspberrypi/more-web) path, you can move on to the [Pick your favourite!](https://projects.raspberrypi.org/en/projects/pick-your-favourite) project. In this project, you will create a fan website that lets a user make choices that change the content of the webpage! You could make a webpage with content about different sports teams, fashion brands, TV shows, or anything else you and your friends are fans of!
+If you are following the [More web](https://projects.raspberrypi.org/en/pathways/more-web) path, you can move on to the [Pick your favourite!](https://projects.raspberrypi.org/en/projects/pick-your-favourite) project. In this project, you will create a fan website that lets a user make choices that change the content of the webpage! You could make a webpage with content about different sports teams, fashion brands, TV shows, or anything else you and your friends are fans of!
 
 --- print-only ---
 
