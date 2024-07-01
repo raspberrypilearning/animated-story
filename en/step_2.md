@@ -1,6 +1,6 @@
 ## Observe elements
 
-In this step, you will use the 'intersection observer' to make some text disappear!
+In this step, you will use the 'intersection observer' to make some text disappear! The starter project has missing elements at the moment, but don't worry, you will add to it as you work through the project.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step2" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
