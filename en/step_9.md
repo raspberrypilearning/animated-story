@@ -10,7 +10,7 @@ If you are following the [More web](https://projects.raspberrypi.org/en/raspberr
 
 --- no-print ---
 
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/pick-your-favourite-complete" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/pick-your-favourite-dinosaur" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 --- /no-print ---
 
