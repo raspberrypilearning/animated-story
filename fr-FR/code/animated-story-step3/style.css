@@ -77,9 +77,9 @@ p {
   background-position-y: bottom;
 }
 
-/* SNAIL */
+/* ESCARGOT */
 
-/* NAV BAR */
+/* BARRE DE NAVIGATION */
 
 .navigation {
   background-color: var(--navigation-background-color);
@@ -102,7 +102,7 @@ p {
   transition: all 500ms;
 }
 
-/* HEADING */
+/* TITRE */
 
 .enabled {
   color: var(--text-color);
