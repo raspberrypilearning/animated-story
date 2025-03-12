@@ -118,7 +118,7 @@ p {
   background-attachment: fixed;
 }
 
-/* SNAIL */
+/* ESCARGOT */
 
 .snail {
   opacity: 0;
@@ -151,7 +151,7 @@ p {
   animation: fly 2s infinite;
 }
 
-/* NAV BAR */
+/* BARRE DE NAVIGATION */
 
 .navigation {
   background-color: var(--navigation-background-color);
@@ -176,7 +176,7 @@ p {
   transition: all 500ms;
 }
 
-/* HEADING */
+/* TITRE */
 
 .enabled {
   color: var(--text-color);
