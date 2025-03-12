@@ -1,30 +1,30 @@
-## Introduction
+## Inleiding
 
-In this project, you will use HTML, CSS, and JavaScript to create an interactive story with animated text and characters that are triggered when the user scrolls.
+In dit project ga je HTML, CSS en JavaScript gebruiken om een interactief verhaal te maken met geanimeerde tekst en personages die worden geactiveerd wanneer de gebruiker scrolt.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Webpages used to just be static and boring, but modern websites add <span style="color: #0faeb0">**interaction**</span> to grab a viewer's attention and make the online experience more fun and interesting. 
+Webpagina's waren vroeger statisch en saai, maar moderne websites voegen <span style="color: #0faeb0">**interactie**</span> toe om de aandacht van de kijker te trekken en de online ervaring leuker en interessanter te maken. 
 </p>
 
-You will:
+Je gaat:
 
-- Track the position of elements
-- Set images to load only when they are needed
-- Create your own HTML page
-- Animate text and image elements when they come into view
+- De positie van elementen volgen
+- Instellen dat afbeeldingen alleen worden geladen wanneer ze nodig zijn
+- Je eigen HTML-pagina maken
+- Tekst- en beeldelementen animeren wanneer ze in beeld komen
 
 \--- no-print ---
 \--- task ---
 
-### Try it
+### Probeer het uit
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Explore this animated story. 
+Ontdek dit geanimeerde verhaal. 
 
-- Scroll down the page to watch the images load
-- Click on the links on the navbar at the side to see the different pages
-- Scroll down the page to see the different interactive features
+- Scroll naar beneden op de pagina om te zien hoe de afbeeldingen worden geladen
+- Klik op de links op de navigatiebalk aan de zijkant om de verschillende pagina's te zien
+- Scroll naar beneden op de pagina om de verschillende interactieve functies te zien
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-complete" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 </div>
@@ -34,15 +34,15 @@ Explore this animated story.
 
 ---
 
-## title: Images in this project
+## title: Afbeeldingen in dit project
 
-Garden image created using generative AI. Model: Firefly Image 2
-Bee image by Clker-Free-Vector-Images via Pixabay.
-Dragon-fly image by pixelcreatures via Pixabay.
-Butterfly image by MahuaSarkar via Pixabay.
-Ladybird image by Glamazon via Pixabay.
-Snail image: Freeimages.com/openclipart.org
-Spinner image: Iphone-spinner-2 via https://icons8.com/
+Tuinafbeelding gemaakt met behulp van generatieve AI. Model: Firefly Image 2
+Bijenafbeelding door Clker-Free-Vector-Images via Pixabay.
+Afbeelding van een libel door pixelcreatures via Pixabay.
+Vlinderafbeelding van MahuaSarkar via Pixabay.
+Afbeelding van lieveheersbeestje door Glamazon via Pixabay.
+Slakkenafbeelding: Freeimages.com/openclipart.org
+Spinnerafbeelding: Iphone-spinner-2 via https://icons8.com/
 
 \--- /collapse ---
 
