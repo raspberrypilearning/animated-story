@@ -1,18 +1,18 @@
-## Animate the story
+## Animeer het verhaal
 
-In this step, you will animate the heading and an image.
+In deze stap voeg je een animatie toe aan de kop en een afbeelding.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-complete?page=sammy.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Create a trigger
+### Een trigger maken
 
-An empty `<div>` element can be used to trigger an animation.
+Een leeg `<div>`-element kan worden gebruikt om een animatie te activeren.
 
 \--- task ---
 
-Open the `sammy.html` file.
+Open het `sammy.html` bestand.
 
-Add a `<div>` element above the `<h1>` element and give it the attribute `id="headingTrigger"`.
+Voeg een `<div>` element toe boven het `<h1>` element en geef het het kenmerk `id="headingTrigger"`.
 
 ## --- code ---
 
@@ -26,28 +26,28 @@ line_highlights: 20
 ```
   </section>
   <div id="headingTrigger"></div>
-  <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
+  <h1 id="hideBounce">Sammy <br />De<br />Slak</h1>
 ```
 
 \--- /code ---
 
 \--- /task ---
 
-### Toggle the animation
+### Animatie aan-/uitzetten
 
-An intersection observer can be used to watch for the `id` you just added to the empty `<div>`.
+Met een intersection observer kun je de `id` in de gaten houden die je zojuist aan de lege `<div>` hebt toegevoegd.
 
-If the `<div>` **leaves** the viewport, the callback adds the `enabled` class to the `<h1>` element.
+Als `<div>` de viewport **verlaat**, voegt de callback de klasse `enabled` toe aan het element `<h1>`.
 
-The `.enabled` selector styles the colours for the heading's font and background. It also sets a `position: sticky` property, so the heading stays in its current location (at the top) when the `enabled` class is added.
+Met de selector `.enabled` bepaal je de kleuren voor het lettertype en de achtergrond van de koptekst. Het stelt ook de eigenschap `position: sticky` in, waardoor de koptekst op de huidige locatie (bovenaan) blijft staan wanneer de klasse `enabled` wordt toegevoegd.
 
-The toggle method is used to turn the effect on or off as the target element (the empty `<div>`) leaves and enters the viewport.
+Met de toggle-methode kun je het effect in- of uitschakelen wanneer het doelelement (de lege `<div>`) de viewport verlaat of binnenkomt.
 
 \--- task ---
 
-Open the `sammy.js` file.
+Open het `sammy.js` bestand.
 
-Create an intersection observer called `headingObserver`.
+Maak een intersection observer met de naam 'headingObserver\`.
 
 ## --- code ---
 
@@ -58,7 +58,7 @@ line_number_start: 9
 line_highlights:
 -----------------------------------------------------
 
-// Heading observer
+// Kop waarnemer
 const headingObserver = new IntersectionObserver((entries) => {
 document.querySelector("h1").classList.toggle("enabled", !entries[0].isIntersecting);
 });
@@ -66,17 +66,17 @@ headingObserver.observe(document.querySelector("#headingTrigger"));
 
 \--- /code ---
 
-**Click Run**
+**Klik op Run**
 
-- Scroll down to see the heading stick and change colour when it reaches the top.
+- Scroll naar beneden om de koptekst bovenaan te blijven zien staan en veranderen van kleur zodra deze bovenaan staat.
 
 \--- collapse ---
 
 ---
 
-## title: The heading does not stick when it reaches the top
+## title: De kop blijft niet vaststaan wanneer deze de bovenkant bereikt
 
-- Make sure you have `!` before `entries[0].isIntersecting`.
+- Zorg ervoor dat er `!` voor `entries[0].isIntersecting` staat.
 
 \--- /collapse ---
 
@@ -84,15 +84,15 @@ headingObserver.observe(document.querySelector("#headingTrigger"));
 
 ---
 
-## title: Why does the text go behind the heading?
+## title: Waarom staat de tekst achter de kop?
 
-In CSS, `z-index` is a property that controls the layer order of elements on the z-axis (the axis that comes out of the screen towards the viewer).
+In CSS is `z-index` een eigenschap die de volgorde van elementen op de z-as (de as die van het scherm naar de kijker toe wijst) bepaalt.
 
-![A smartphone on its side showing the width of the phone screen as the x axis, the length as the y axis and the z axis coming out of the screen.](images/phoneAxes.png)
+![Een smartphone op zijn kant, waarbij de breedte van het telefoonscherm wordt weergegeven als de x-as, de lengte als de y-as en de z-as die uit het scherm komt.](images/phoneAxes.png)
 
-You can use the `z-index` property to make elements appear in front of or behind each other.
+Je kunt de `z-index` eigenschap gebruiken om elementen voor of achter elkaar te laten verschijnen.
 
-Find the `h1` selector in the `style.css` file.
+Zoek de `h1`-selector in het `style.css`-bestand.
 
 ## --- code ---
 
@@ -118,16 +118,16 @@ transition: all 300ms;
 
 \--- /code ---
 
-The selector styles the heading so its z-index is `1`, meaning its z-index is higher than the other elements' (which are set to `0` by default). This means the heading appears in front of the other elements, on the top layer.
+De selector past de koptekst zo aan dat de z-index '1' is. Dit betekent dat de z-index hoger is dan die van de andere elementen (die standaard op '0' staan). Dit betekent dat de koptekst voor de andere elementen wordt weergegeven, op de bovenste laag.
 
 **Test:**
 
-- Set the `z-index` property of the `h1` selector to `-1`.
+- Stel de eigenschap `z-index` van de `h1`-selector in op `-1`.
 
-**Click Run**
+**Klik op Run**
 
-- Scroll down to see the story text appear in front of the heading.
-- Set z-index back to `1` when you are finished testing.
+- Scroll naar beneden om de tekst van het verhaal voor de kop te zien verschijnen.
+- Zet z-index terug naar `1` wanneer je klaar bent met testen.
 
 \--- /collapse ---
 
@@ -137,25 +137,25 @@ The selector styles the heading so its z-index is `1`, meaning its z-index is hi
 
 ---
 
-## title: Use the logical NOT operator
+## title: Gebruik de logische NOT (niet) operator
 
-The logical NOT `!` operator is used with the `isIntersecting` method in the callback, so the `enabled` class is only added when the `<div>` is **not** in the viewport.
+De logische NOT `!`-operator wordt gebruikt met de `isIntersecting`-methode in de callback, zodat de `enabled`-klasse alleen wordt toegevoegd wanneer `<div>` **niet** in de viewport staat.
 
 \--- /collapse ---
 
-### Add an image for the character
+### Voeg een afbeelding toe voor het personage
 
-This page is about one of the story characters: Sammy the snail.
+Deze pagina gaat over een van de personages uit het verhaal: Sammy de slak.
 
-You can add an image of Sammy to the page.
+Je kunt een afbeelding van Sammy aan de pagina toevoegen.
 
-You first need a background for Sammy.
+Je hebt eerst een achtergrond nodig voor Sammy.
 
 \--- task ---
 
-Open the `sammy.html` file.
+Open het `sammy.html` bestand.
 
-Add a new `<section>` element with the attribute `class="garden"`.
+Voeg een nieuw `<section>`-element toe met het kenmerk `class="garden"`.
 
 ## --- code ---
 
@@ -177,11 +177,11 @@ line_highlights: 25-27
 
 \--- /task ---
 
-Add the snail image.
+Voeg de afbeelding van de slak toe.
 
 \--- task ---
 
-Add an `<img>` element with the attributes `id="snail"`, `class="snail"`, and alt text to improve accessibility.
+Voeg een `<img>` element toe met de kenmerken `id="snail"`, `class="snail"`, en Alt tekst om de toegankelijkheid te verbeteren.
 
 ## --- code ---
 
@@ -208,23 +208,23 @@ line_highlights: 28
 
 ---
 
-## title: Why are 'src' and 'data-src' both set to 'snail.svg'?
+## title: Waarom zijn 'src' en 'data-src' beide ingesteld op 'snail.svg'?
 
-The `src` and `data-src` attribute values are the same, because `imageObserver` will act on this `<img>` element, but we do not want the image to change.
+De waarden van de kenmerken `src` en `data-src` zijn hetzelfde, omdat `imageObserver` op dit `<img>`-element zal reageren, maar we willen niet dat de afbeelding verandert.
 
 \--- /collapse ---
 
-### Style the character image
+### Opmaken van de afbeelding van het personage
 
-The image of Sammy will appear from the left and move to the middle. It will also 'fade in'.
+De afbeelding van Sammy zal van links verschijnen en naar het midden bewegen. Het zal ook 'vervagen'.
 
 \--- task ---
 
-Open the `style.css` file.
+Open het `style.css` bestand.
 
-Find the `/* SNAIL */` comment.
+Zoek het commentaar `/* SLAK */`.
 
-Add the `.snail` selector.
+Voeg de `.snail`-selector toe.
 
 ## --- code ---
 
@@ -235,7 +235,7 @@ line_number_start: 95
 line_highlights: 97-106
 ------------------------------------------------------------
 
-/\* SNAIL \*/
+/\* SLAK \*/
 
 .snail {
 opacity: 0;
@@ -247,7 +247,7 @@ position: relative;
 padding-left: 0;
 }
 
-/\* NAV BAR \*/
+/\* NAV-BALK \*/
 
 \--- /code ---
 
@@ -255,23 +255,23 @@ padding-left: 0;
 
 ---
 
-## title: How is the image styled?
+## title: Hoe wordt de afbeelding opgemaakt?
 
-The `.snail` selector styles the image with `0` opacity, making it invisible. It also moves the image left to 25% of the width of its parent element.
+De '.snail'-selector stijlt de afbeelding met '0' doorzichtigheid, waardoor deze onzichtbaar wordt. Het verplaatst ook de afbeelding naar 25% van de breedte van het bovenliggende element.
 
-Its height is styled to be 20% of the viewport height (`20vh`). This means it will resize as the browser window height changes.
+De hoogte is ingesteld op 20% van de hoogte van de viewport (`20vh`). Dit betekent dat het formaat wordt aangepast wanneer het browservenster van hoogte verandert.
 
 \--- /collapse ---
 
 \--- /task ---
 
-### Show and move the character image
+### Toon en verplaats de afbeelding van het personage
 
-To animate the image, you will change its opacity to 1, making it fully visible. It will also move right by 25% of its own width.
+Om de afbeelding te animeren verander je de ondoorzichtigheid naar 1, waardoor deze volledig zichtbaar is. Het zal ook 25% van zijn eigen breedte naar rechts bewegen.
 
 \--- task ---
 
-Add the `.startCrawl` selector.
+Voeg het `.startCrawl` selector toe.
 
 ## --- code ---
 
@@ -282,7 +282,7 @@ line_number_start: 95
 line_highlights: 107-111
 -------------------------------------------------------------
 
-/\* SNAIL \*/
+/\* SLAK \*/
 
 .snail {
 opacity: 0;
@@ -299,23 +299,23 @@ opacity: 1;
 transform: translateX(25%);
 }
 
-/\* NAV BAR \*/
+/\* NAV-BALK \*/
 
 \--- /code ---
 
 \--- /task ---
 
-### Trigger the startCrawl animation
+### Activeer de startCrawl-animatie
 
-This intersection observer will watch for an element with the attribute `id="snail"`.
+Deze intersection observer zal kijken naar een element met het kenmerk `id="snail"`.
 
-If the element enters the viewport (`isIntersecting`), the callback adds the `startCrawl` class to the element.
+Als het element de viewport binnenkomt (`isIntersecting`), voegt de callback de klasse `startCrawl` toe aan het element.
 
 \--- task ---
 
-Open the `sammy.js` file.
+Open het `sammy.js` bestand.
 
-Create an intersection observer called `snailObserver`.
+Maak een intersection observer met de naam 'snailObserver\`.
 
 ## --- code ---
 
@@ -326,7 +326,7 @@ line_number_start: 15
 line_highlights:
 -----------------------------------------------------
 
-// Snail observer
+// Slakwaarnemer
 const snailObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startCrawl");
@@ -336,19 +336,19 @@ snailObserver.observe(document.querySelector("#snail"));
 
 \--- /code ---
 
-**Click Run**
+**Klik op Run**
 
-- Scroll down to see the snail animation when it enters the viewport.
+- Scroll naar beneden om de snail animatie te zien wanneer deze in de viewport verschijnt.
 
 \--- /task ---
 
-### Set a threshold
+### Stel een drempel in
 
-Options can be added to the observer, so it only triggers when a percentage of the element is intersecting.
+Er kunnen opties aan de observer worden toegevoegd, zodat deze alleen wordt geactiveerd wanneer een bepaald percentage van het element in de viewport is.
 
 \--- task ---
 
-Add an option to the observer, so it only triggers the callback when all of the snail image is in the viewport.
+Voeg een optie toe aan de waarnemer, zodat de callback alleen wordt geactiveerd wanneer de volledige slakafbeelding in de viewport staat.
 
 ## --- code ---
 
@@ -359,7 +359,7 @@ line_number_start: 15
 line_highlights: 20-22
 -----------------------------------------------------------
 
-// Snail observer
+// Slak waarnemer
 const snailObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startCrawl");
@@ -375,17 +375,17 @@ snailObserver.observe(document.querySelector("#snail"));
 
 ---
 
-## title: What are the 'threshold' options?
+## title: Wat zijn de 'threshold' (drempel) opties?
 
-Threshold values range from `0` to `1`
+Drempelwaarden variëren van `0` tot `1`
 
-- `1` means that every single pixel of the element has to be in the viewport for the callback to run
-- `0` is the default value and means that just one pixel must be intersecting for the callback to run
+- `1` betekent dat elke afzonderlijke pixel van het element in de viewport moet staan om de callback te laten werken
+- `0` is de standaardwaarde en betekent dat er slechts één pixel er in hoeft te staan om de callback te laten werken
 
 \--- /collapse ---
 
-**Click Run**
+**Klik op Run**
 
-- Scroll down to see that the animation only starts when the whole image is in the viewport.
+- Scroll naar beneden om te zien dat de animatie pas begint als de hele afbeelding in de viewport staat.
 
 \--- /task ---
