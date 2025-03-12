@@ -1,16 +1,16 @@
-## Animate text
+## Animer le texte
 
-In this step, you will add a cool animation to the text to grab people's attention!
+Dans cette étape, tu vas ajouter une animation cool au texte pour attirer l'attention des gens !
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step5?page=sammy.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Fix the position of the garden image
+### Fixer la position de l'image du jardin
 
-You can 'fix' the position of the garden image so it appears as a background, with other content scrolling in front of it.
+Tu peux « fixer » la position de l'image du jardin comme arrière-plan, de sorte qu'elle reste fixe tandis que le contenu défile devant elle.
 
 \--- task ---
 
-Add the `background-attachment: fixed` property to the `.garden` selector.
+Ajoute la propriété `background-attachment: fixed` au sélecteur `.garden`.
 
 ## --- code ---
 
@@ -30,35 +30,35 @@ background-attachment: fixed;
 
 \--- /code ---
 
-**Click Run**
+**Clique sur Run**
 
-- Scroll down to see the garden image as a fixed background.
+- Fais défiler vers le bas pour voir l’image du jardin comme arrière-plan fixe.
 
 \--- collapse ---
 
 ---
 
-## title: What should I see?
+## title: Que devrais-je voir ?
 
-![A gif showing a fixed background image as other content scrolls in front of it.](images/background-attachment-fixed.gif)
+![Un gif montrant une image d'arrière-plan fixe tandis qu'un autre contenu défile devant lui.](images/background-attachment-fixed.gif)
 
 \--- /collapse ---
 
 \--- /task ---
 
-### Add a heading
+### Ajouter un titre
 
-You can add a heading for the story page using an `<h1>` element.
+Tu peux ajouter un titre pour la page de l'histoire en utilisant un élément `<h1>`.
 
-The `<h1>` element should have the attribute `id="hideBounce"`.
+L'élément `<h1>` doit avoir l'attribut `id="hideBounce"`.
 
 \--- task ---
 
-Open the `sammy.html` file.
+Ouvre le fichier `sammy.html`.
 
-Find the closing `</section>` tag.
+Recherche la balise de fermeture `</section>`.
 
-Add an `<h1>` element.
+Ajoute un élément `<h1>`.
 
 ## --- code ---
 
@@ -72,27 +72,27 @@ line_highlights: 20
 ```
 <main>
   <section class="garden">
-    <div id="bounce">SCROLL DOWN</div>
+    <div id="bounce">DÉFILER VERS LE BAS</div>
   </section>
-  <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
+  <h1 id="hideBounce">Sammy <br />L'escargot<br /></h1>
 </main>
 ```
 
 \--- /code ---
 
-**Click Run**
+**Clique sur Run**
 
-- Scroll down to see the heading.
+- Fais défiler vers le bas pour voir le titre.
 
 \--- /task ---
 
-### Add some story text
+### Ajouter le texte de l'histoire
 
 \--- task ---
 
-Add the story text after the `<h1>` heading.
+Ajoute le texte de l'histoire après le titre `<h1>`.
 
-The story text should be in a `<p>` element.
+Le texte de l'histoire doit être dans un élément `<p>`.
 
 ## --- code ---
 
@@ -106,34 +106,34 @@ line_highlights: 21-23
 ```
 <main>
   <section class="garden">
-    <div id="bounce">SCROLL DOWN</div>
+    <div id="bounce">DÉFILER VERS LE BAS</div>
   </section>
-  <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
+  <h1 id="hideBounce">Sammy <br />L'escargot<br /></h1>
   <p>
-    On a bright and sunny day in the garden, Sammy the Snail woke up feeling curious. <br /><br />His shiny shell glistened as he slowly ventured beyond his usual path. Sammy wanted to see what lay beyond the familiar leaves and flowers. <br /><br />As he slid along, the tiny garden world seemed to unfold before him. <br /><br />Sammy discovered a patch of dew-kissed grass, sparkling like diamonds in the morning sun. Excitement filled him as he explored tiny tunnels and secret hideaways.<br /><br />The little snail's adventure brought a smile to his face. Sammy realised that even in the smallest corners of the garden, there were secrets to be found. <br /><br />Sammy continued his exploration, eager to uncover more wonders in this blossoming world.
+    Par une journée lumineuse et ensoleillée, dans la douceur du jardin, Sammy l'escargot se réveilla, les antennes frémissantes de curiosité. <br /><br />Sa coquille, brillante sous les rayons du soleil, scintillait tandis qu'il s'aventurait lentement au-delà de son chemin habituel. Il désirait découvrir ce qui se cachait au-delà des feuilles et des fleurs qu'il connaissait si bien. <br /><br />Au fur et à mesure de sa progression, le petit monde du jardin semblait se déployer sous ses yeux émerveillés. <br /><br />Sammy aperçut une touffe d'herbe, délicatement baignée de rosée, qui scintillait comme des diamants sous la lumière douce du matin. L'excitation monta en lui lorsqu'il se mit à explorer des tunnels minuscules et des cachettes secrètes, comme un trésor caché dans ce jardin qui semblait sans fin.<br /><br />Un sourire se dessina sur son visage. Sammy comprit alors qu'en dépit de sa petite taille, il y avait toujours des merveilles à découvrir, même dans les recoins les plus discrets du jardin. <br /><br />Poussé par son enthousiasme, il continua son exploration, avide de percer d'autres secrets de ce monde florissant et vibrant.
   </p>
 </main>
 ```
 
 \--- /code ---
 
-**Click Run**
+**Clique sur Run**
 
-- Scroll down to see the story text.
+- Fais défiler vers le bas pour voir le texte de l'histoire.
 
 \--- /task ---
 
-### Animate the text
+### Animer le texte
 
-Create an animation to apply to the story text.
+Crée une animation à appliquer au texte de l'histoire.
 
 \--- task ---
 
-Open the `style.css` file.
+Ouvre le fichier `style.css`.
 
-Find the `/* ANIMATIONS */` comment.
+Trouve le commentaire `/* ANIMATIONS */`.
 
-Add a keyframes animation called `rising`.
+Ajoute une animation d'images clés appelée `rise`.
 
 ## --- code ---
 
@@ -161,13 +161,13 @@ transform: translateY(0%);
 
 \--- /task ---
 
-Next, create a new selector (`.rise`) that uses the `rising` animation.
+Ensuite, crée un nouveau sélecteur (`.rise`) qui utilise l'animation `rising`.
 
-**Note:** Later, you will use JavaScript to add the `rise` class to the `<p>` element when it enters the viewport.
+**Remarque :** plus tard, tu utiliseras JavaScript pour ajouter la classe `rise` à l'élément `<p>` lorsqu'il entre dans la fenêtre d'affichage.
 
 \--- task ---
 
-Create the `.rise` selector.
+Crée le sélecteur `.rise`.
 
 ## --- code ---
 
@@ -188,41 +188,41 @@ animation: rising 2s ease;
 
 \--- /code ---
 
-The selector has one `animation` property set to call the keyframes animation `rising` that you created earlier.
+Le sélecteur a une propriété `animation` configurée pour appeler l'animation `rising` que tu as créé plus tôt.
 
-The animation is set to last for two seconds (`2s`) and use the `ease` transition.
+L'animation est configurée pour durer deux secondes (`2s`) et utiliser la transition `ease`.
 
-**Tip:** You can add this anywhere in the CSS file, but it makes sense to add it close to the code for the keyframes animation.
-
-\--- /task ---
-
-### Use JavaScript to trigger the animation
-
-This animation will not be required on `index.html`.
-
-You should create a new JavaScript file with scripts required by this page.
-
-\--- task ---
-
-Create a new JavaScript file that will contain the scripts relevant to `sammy.html`.
-
-- **Click** the **+ Add file** button
-
-![The 'Add file' button.](images/addFile.png)
-
-- Name your new file `sammy.js` and click the **Add file** button.
+**Astuce :** tu peux ajouter ceci n'importe où dans le fichier CSS, mais il est logique de l'ajouter près du code pour l'animation des images clés.
 
 \--- /task ---
 
-You need to link your new file from the `sammy.html` page.
+### Utiliser JavaScript pour déclencher l'animation
+
+Cette animation ne sera pas nécessaire sur `index.html`.
+
+Tu devrais créer un nouveau fichier JavaScript avec les scripts requis par cette page.
 
 \--- task ---
 
-Open the `sammy.html` file.
+Crée un nouveau fichier JavaScript qui contiendra les scripts pertinents pour `sammy.html`.
 
-Find the `<script>` element.
+- **Clique** sur le bouton **+ Add file**
 
-Add a second `<script>` element with the attribute `src="sammy.js"`
+![Le bouton 'Add file'.](images/addFile.png)
+
+- Nomme ton nouveau fichier `sammy.js` et clique sur le bouton **Add file**.
+
+\--- /task ---
+
+Tu dois lier ton nouveau fichier à partir de la page `sammy.html`.
+
+\--- task ---
+
+Ouvre le fichier `sammy.html`.
+
+Trouve l'élément `<script>`.
+
+Ajoute un second élément `<script>` avec l'attribut `src="sammy.js"`
 
 ## --- code ---
 
@@ -241,13 +241,13 @@ line_highlights: 27
 
 \--- /task ---
 
-You will now create a JavaScript intersection observer with a callback that adds the `rise` class to the `<p>` element when it enters the viewport.
+Tu vas maintenant créer un Intersection Observer JavaScript avec un rappel qui ajoute la classe `rise` à l'élément `<p>` lorsqu'il entre dans la fenêtre d'affichage.
 
 \--- task ---
 
-Open the file `sammy.js` you created earlier.
+Ouvre le fichier `sammy.js` que tu as créé précédemment.
 
-Add an intersection observer called `riseObserver`.
+Ajouter un Intersection Observer appelé `riseObserver`.
 
 ## --- code ---
 
@@ -258,7 +258,7 @@ line_number_start: 1
 line_highlights:
 -----------------------------------------------------
 
-// Rising text observer
+// Observateur de texte ascendant
 const riseObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("rise");
@@ -268,17 +268,17 @@ riseObserver.observe(document.querySelector("p"));
 
 \--- /code ---
 
-**Tip:** This intersection observer is similar to `bounceObserver` that you created in an earlier step.
+**Astuce :** cet Intersection Observer est similaire à `bounceObserver` que tu as créé à une étape précédente.
 
-There are two main differences:
+Il y a deux différences principales :
 
-- `riseObserver` watches for `<p>` elements
-- `riseObserver` adds the `rise` class to intersecting elements.
+- `riseObserver` surveille les éléments `<p>`
+- `riseObserver` ajoute la classe `rise` aux éléments qui se croisent.
 
-**Click Run**
+**Clique sur Run**
 
-- Scroll down to see the rising animation when the `<p>` text enters the viewport.
+- Fais défiler vers le bas pour voir l'animation montante lorsque le texte `<p>` entre dans la fenêtre d'affichage.
 
 \--- /task ---
 
-Next, you will add an animation to the heading and a different animation to an image.
+Ensuite, tu ajouteras une animation à l'entête et une animation différente à une image.
