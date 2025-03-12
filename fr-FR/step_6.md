@@ -1,18 +1,18 @@
-## Animate the story
+## Animer l'histoire
 
-In this step, you will animate the heading and an image.
+Dans cette étape, tu vas animer le titre et une image.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-complete?page=sammy.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Create a trigger
+### Créer un déclencheur
 
-An empty `<div>` element can be used to trigger an animation.
+Un élément `<div>` vide peut être utilisé pour déclencher une animation.
 
 \--- task ---
 
-Open the `sammy.html` file.
+Ouvre le fichier `sammy.html`.
 
-Add a `<div>` element above the `<h1>` element and give it the attribute `id="headingTrigger"`.
+Ajoute un élément `<div>` au-dessus de l'élément `<h1>` et donne-lui l'attribut `id="headingTrigger"`.
 
 ## --- code ---
 
@@ -26,28 +26,28 @@ line_highlights: 20
 ```
   </section>
   <div id="headingTrigger"></div>
-  <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
+  <h1 id="hideBounce">Sammy <br />L'escargot<br /></h1>
 ```
 
 \--- /code ---
 
 \--- /task ---
 
-### Toggle the animation
+### Activer/désactiver l'animation
 
-An intersection observer can be used to watch for the `id` you just added to the empty `<div>`.
+Un Intersection Observer peut être utilisé pour surveiller l'`id` que tu viens d'ajouter au `<div>` vide.
 
-If the `<div>` **leaves** the viewport, the callback adds the `enabled` class to the `<h1>` element.
+Si le `<div>` **quitte** la fenêtre d'affichage, le rappel ajoute la classe `enabled` à l'élément `<h1>`.
 
-The `.enabled` selector styles the colours for the heading's font and background. It also sets a `position: sticky` property, so the heading stays in its current location (at the top) when the `enabled` class is added.
+Le sélecteur `.enabled` définit les couleurs de la police du titre et de l'arrière-plan. Il définit également une propriété `position: sticky`, donc le titre reste dans son emplacement actuel (en haut) lorsque la classe `enabled` est ajoutée.
 
-The toggle method is used to turn the effect on or off as the target element (the empty `<div>`) leaves and enters the viewport.
+La méthode toggle est utilisée pour activer ou désactiver l'effet lorsque l'élément cible (le `<div>` vide) quitte et entre dans la fenêtre d'affichage.
 
 \--- task ---
 
-Open the `sammy.js` file.
+Ouvre le fichier `sammy.js`.
 
-Create an intersection observer called `headingObserver`.
+Crée un Intersection Observer appelé `headingObserver`.
 
 ## --- code ---
 
@@ -58,7 +58,7 @@ line_number_start: 9
 line_highlights:
 -----------------------------------------------------
 
-// Heading observer
+// Observateur de titre
 const headingObserver = new IntersectionObserver((entries) => {
 document.querySelector("h1").classList.toggle("enabled", !entries[0].isIntersecting);
 });
@@ -66,17 +66,17 @@ headingObserver.observe(document.querySelector("#headingTrigger"));
 
 \--- /code ---
 
-**Click Run**
+**Clique sur Run**
 
-- Scroll down to see the heading stick and change colour when it reaches the top.
+- Fais défiler vers le bas pour voir le titre coller et changer de couleur lorsqu'il atteint le haut.
 
 \--- collapse ---
 
 ---
 
-## title: The heading does not stick when it reaches the top
+## title: Le titre ne colle pas quand il atteint le haut
 
-- Make sure you have `!` before `entries[0].isIntersecting`.
+- Assure-toi d'avoir `!` avant `entries[0].isIntersecting`.
 
 \--- /collapse ---
 
@@ -84,15 +84,15 @@ headingObserver.observe(document.querySelector("#headingTrigger"));
 
 ---
 
-## title: Why does the text go behind the heading?
+## title : Pourquoi le texte passe-t-il derrière le titre ?
 
-In CSS, `z-index` is a property that controls the layer order of elements on the z-axis (the axis that comes out of the screen towards the viewer).
+En CSS, `z-index` est une propriété qui contrôle l'ordre des calques des éléments sur l'axe z (l'axe qui sort de l'écran vers l'utilisateur).
 
-![A smartphone on its side showing the width of the phone screen as the x axis, the length as the y axis and the z axis coming out of the screen.](images/phoneAxes.png)
+![Un smartphone sur le côté montrant la largeur de l'écran du téléphone comme axe x, la longueur comme axe y et l'axe z sortant de l'écran.](images/phoneAxes.png)
 
-You can use the `z-index` property to make elements appear in front of or behind each other.
+Tu peux utiliser la propriété `z-index` pour faire apparaître les éléments les uns devant ou derrière les autres.
 
-Find the `h1` selector in the `style.css` file.
+Trouve le sélecteur `h1` dans le fichier `style.css`.
 
 ## --- code ---
 
@@ -118,16 +118,16 @@ transition: all 300ms;
 
 \--- /code ---
 
-The selector styles the heading so its z-index is `1`, meaning its z-index is higher than the other elements' (which are set to `0` by default). This means the heading appears in front of the other elements, on the top layer.
+Le sélecteur stylise le titre de sorte que son z-index est `1`, ce qui signifie que son z-index est plus élevé que les autres éléments (qui sont définis à `0` par défaut). Cela signifie que le titre apparaît devant les autres éléments, sur la couche supérieure.
 
-**Test:**
+**Test :**
 
-- Set the `z-index` property of the `h1` selector to `-1`.
+- Définis la propriété `z-index` du sélecteur `h1` à `-1`.
 
-**Click Run**
+**Clique sur Run**
 
-- Scroll down to see the story text appear in front of the heading.
-- Set z-index back to `1` when you are finished testing.
+- Fais défiler vers le bas pour voir le texte de l’histoire apparaître devant le titre.
+- Remets z-index à `1` lorsque tu as terminé le test.
 
 \--- /collapse ---
 
@@ -137,25 +137,25 @@ The selector styles the heading so its z-index is `1`, meaning its z-index is hi
 
 ---
 
-## title: Use the logical NOT operator
+## title: Utiliser l'opérateur logique NOT
 
-The logical NOT `!` operator is used with the `isIntersecting` method in the callback, so the `enabled` class is only added when the `<div>` is **not** in the viewport.
+L'opérateur logique NOT `!` est utilisé avec la méthode `isIntersecting` dans le rappel, donc la classe `enabled` n'est ajoutée que lorsque `<div>` n'est **pas** dans la fenêtre d'affichage.
 
 \--- /collapse ---
 
-### Add an image for the character
+### Ajouter une image pour le personnage
 
-This page is about one of the story characters: Sammy the snail.
+Cette page concerne l'un des personnages de l'histoire : Sammy L'escargot.
 
-You can add an image of Sammy to the page.
+Tu peux ajouter une image de Sammy à la page.
 
-You first need a background for Sammy.
+Tu as d'abord besoin d'un arrière-plan pour Sammy.
 
 \--- task ---
 
-Open the `sammy.html` file.
+Ouvre le fichier `sammy.html`.
 
-Add a new `<section>` element with the attribute `class="garden"`.
+Ajoute un nouvel élément `<section>` avec l'attribut `class="garden"`.
 
 ## --- code ---
 
@@ -177,11 +177,11 @@ line_highlights: 25-27
 
 \--- /task ---
 
-Add the snail image.
+Ajoute l'image de l'escargot.
 
 \--- task ---
 
-Add an `<img>` element with the attributes `id="snail"`, `class="snail"`, and alt text to improve accessibility.
+Ajoute un élément `<img>` avec les attributs `id="snail"`, `class="snail"`, et un texte alt pour améliorer l'accessibilité.
 
 ## --- code ---
 
@@ -208,23 +208,23 @@ line_highlights: 28
 
 ---
 
-## title: Why are 'src' and 'data-src' both set to 'snail.svg'?
+## title: Pourquoi 'src' et 'data-src' sont tous les deux définis sur 'snail.svg' ?
 
-The `src` and `data-src` attribute values are the same, because `imageObserver` will act on this `<img>` element, but we do not want the image to change.
+Les valeurs de l'attribut `src` et `data-src` sont les mêmes, parce que `imageObserver` agira sur cet élément `<img>`, mais nous ne voulons pas que l'image change.
 
 \--- /collapse ---
 
-### Style the character image
+### Styliser l'image du personnage
 
-The image of Sammy will appear from the left and move to the middle. It will also 'fade in'.
+L'image de Sammy apparaîtra sur la gauche et se déplacera au milieu. Il va également « disparaître ».
 
 \--- task ---
 
-Open the `style.css` file.
+Ouvre le fichier `style.css`.
 
-Find the `/* SNAIL */` comment.
+Trouve le commentaire `/* ESCARGOT */`.
 
-Add the `.snail` selector.
+Ajoute le sélecteur `.snail`.
 
 ## --- code ---
 
@@ -235,7 +235,7 @@ line_number_start: 95
 line_highlights: 97-106
 ------------------------------------------------------------
 
-/\* SNAIL \*/
+/\* ESCARGOT \*/
 
 .snail {
 opacity: 0;
@@ -247,7 +247,7 @@ position: relative;
 padding-left: 0;
 }
 
-/\* NAV BAR \*/
+/\* BARRE DE NAVIGATION \*/
 
 \--- /code ---
 
@@ -255,23 +255,23 @@ padding-left: 0;
 
 ---
 
-## title: How is the image styled?
+## title: Comment l'image est-elle stylisée ?
 
-The `.snail` selector styles the image with `0` opacity, making it invisible. It also moves the image left to 25% of the width of its parent element.
+Le sélecteur `.snail` stylise l'image avec `0` opacité, la rendant invisible. Il déplace également l'image à gauche à 25 % de la largeur de son élément parent.
 
-Its height is styled to be 20% of the viewport height (`20vh`). This means it will resize as the browser window height changes.
+Sa hauteur est de 20 % de la hauteur de la fenêtre d'affichage (`20vh`). Cela signifie qu'il se redimensionnera en fonction de la hauteur de la fenêtre du navigateur.
 
 \--- /collapse ---
 
 \--- /task ---
 
-### Show and move the character image
+### Afficher et déplacer l'image du personnage
 
-To animate the image, you will change its opacity to 1, making it fully visible. It will also move right by 25% of its own width.
+Pour animer l'image, tu changeras son opacité à 1, la rendant pleinement visible. Elle se déplacera également à droite de 25 % de sa propre largeur.
 
 \--- task ---
 
-Add the `.startCrawl` selector.
+Ajoute le sélecteur `.startCrawl`.
 
 ## --- code ---
 
@@ -282,7 +282,7 @@ line_number_start: 95
 line_highlights: 107-111
 -------------------------------------------------------------
 
-/\* SNAIL \*/
+/\* ESCARGOT \*/
 
 .snail {
 opacity: 0;
@@ -299,23 +299,23 @@ opacity: 1;
 transform: translateX(25%);
 }
 
-/\* NAV BAR \*/
+/\* BARRE DE NAVIGATION \*/
 
 \--- /code ---
 
 \--- /task ---
 
-### Trigger the startCrawl animation
+### Déclencher l'animation startCrawl
 
-This intersection observer will watch for an element with the attribute `id="snail"`.
+Cet Intersection Observer surveillera un élément avec l'attribut `id="snail"`.
 
-If the element enters the viewport (`isIntersecting`), the callback adds the `startCrawl` class to the element.
+Si l'élément entre dans la fenêtre d'affichage (`isIntersecting`), le rappel ajoute la classe `startCrawl` à l'élément.
 
 \--- task ---
 
-Open the `sammy.js` file.
+Ouvre le fichier `sammy.js`.
 
-Create an intersection observer called `snailObserver`.
+Crée un Intersection Observer appelé `snailObserver`.
 
 ## --- code ---
 
@@ -326,7 +326,7 @@ line_number_start: 15
 line_highlights:
 -----------------------------------------------------
 
-// Snail observer
+// Observateur d'escargot
 const snailObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startCrawl");
@@ -336,19 +336,19 @@ snailObserver.observe(document.querySelector("#snail"));
 
 \--- /code ---
 
-**Click Run**
+**Clique sur Run**
 
-- Scroll down to see the snail animation when it enters the viewport.
+- Fais défiler vers le bas pour voir l'animation de l'escargot lorsqu'il entre dans la fenêtre d'affichage.
 
 \--- /task ---
 
-### Set a threshold
+### Définir un seuil
 
-Options can be added to the observer, so it only triggers when a percentage of the element is intersecting.
+Des options peuvent être ajoutées à l'observateur, de sorte qu'il ne se déclenche que lorsqu'un pourcentage de l'élément se croise.
 
 \--- task ---
 
-Add an option to the observer, so it only triggers the callback when all of the snail image is in the viewport.
+Ajoute une option à l'observateur, afin qu'il ne déclenche le rappel que lorsque toute l'image de l'escargot est dans la fenêtre d'affichage.
 
 ## --- code ---
 
@@ -359,7 +359,7 @@ line_number_start: 15
 line_highlights: 20-22
 -----------------------------------------------------------
 
-// Snail observer
+// Observateur d'escargot
 const snailObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startCrawl");
@@ -375,17 +375,17 @@ snailObserver.observe(document.querySelector("#snail"));
 
 ---
 
-## title: What are the 'threshold' options?
+## title: Quelles sont les options "threshold" (seuil) ?
 
-Threshold values range from `0` to `1`
+Les valeurs de seuil varient de `0` à `1`
 
-- `1` means that every single pixel of the element has to be in the viewport for the callback to run
-- `0` is the default value and means that just one pixel must be intersecting for the callback to run
+- `1` signifie que chaque pixel de l'élément doit être dans la fenêtre d'affichage pour que le rappel s'exécute
+- `0` est la valeur par défaut et signifie qu'un seul pixel doit se croiser pour que le rappel s'exécute
 
 \--- /collapse ---
 
-**Click Run**
+**Clique sur Run**
 
-- Scroll down to see that the animation only starts when the whole image is in the viewport.
+- Fais défiler vers le bas pour voir que l'animation ne démarre que lorsque l'image entière est dans la fenêtre d'affichage.
 
 \--- /task ---
