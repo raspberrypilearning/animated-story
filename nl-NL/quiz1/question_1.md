@@ -1,44 +1,44 @@
-## Reflection
+## Reflectie
 
-Well done! You have created a website using HTML, CSS, and JavaScript.
+Goed gedaan! Je hebt een website gemaakt met behulp van HTML, CSS en JavaScript.
 
-Answer the three questions below to reflect on what you've learnt.
+Beantwoord de drie onderstaande vragen om terug te kijken op wat je hebt geleerd.
 
-You will be guided towards the correct answer. You can do this activity as many times as you want to.
+Je wordt naar het juiste antwoord geleid. Je kunt deze activiteit zo vaak doen als je wilt.
 
 \--- question ---
 
 ---
 
-## legend: Question 1 of 3
+## legend: Vraag 1 van 3
 
-The `console.log()` method can be used to debug code.
+De `console.log()`-methode kan worden gebruikt om code te debuggen.
 
-What does `console.log()` do?
+Wat doet `console.log()`?
 
 \--- choices ---
 
-- ( ) Displays a pop-up box with text taken from the browser console.
+- ( ) Geeft een pop-upvenster weer met tekst uit de browserconsole.
 
   \--- feedback ---
 
-The `alert()` method is used to display a message box with a specified message to the user.
+De `alert()`-methode wordt gebruikt om een berichtvenster met een specifiek bericht aan de gebruiker weer te geven.
 
 \--- /feedback ---
 
-- ( ) Takes input from the browser console and returns the entered value.
+- ( ) Haalt invoer uit de browserconsole en retourneert de ingevoerde waarde.
 
   \--- feedback ---
 
-The `prompt()` method displays a pop-up box where the user enters text.
+De `prompt()`-methode toont een pop-upvenster waarin de gebruiker tekst kan invoeren.
 
 \--- /feedback ---
 
-- (x) Outputs a message or value to the browser console.
+- (x) Geeft een bericht of waarde door aan de browserconsole.
 
   \--- feedback ---
 
-Correct! The `console.log()` method in JavaScript is used to output messages or values to the browser console, which is useful for debugging and watching your code run.
+Juist! De `console.log()` methode in JavaScript wordt gebruikt voor de uitvoer van berichten of waarden naar de browser console, wat handig is voor het debuggen en bekijken van de uitvoering van je code.
 
 \--- /feedback ---
 
