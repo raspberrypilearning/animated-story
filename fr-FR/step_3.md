@@ -1,30 +1,30 @@
-## Lazy-loading images
+## Images à chargement lent
 
-In this step, you will improve browser performance by only loading images when they are needed.
+Dans cette étape, tu amélioreras les performances du navigateur en chargeant les images uniquement lorsqu’elles sont nécessaires.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step3" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Why lazy load?
+### Pourquoi un chargement lent ?
 
-Images can have large file sizes and can use a lot of data when you access a webpage.
+Les images peuvent avoir des tailles de fichier importantes et peuvent utiliser beaucoup de données lorsque tu accèdes à une page web.
 
-When you open a webpage, **all** the images on the page are loaded. This can use lots of bandwidth.
+Lorsque tu ouvres une page web, **toutes** les images de la page sont chargées. Cela peut utiliser beaucoup de bande passante.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The amount of data (bits) that can be transferred over a computer connection is called the <span style="color: #0faeb0">**bandwidth**</span>. Using lots of bandwidth can make pages load slowly for people with poor connectivity, or cost more money. Reducing the use of bandwidth makes websites more accessible and user-friendly.
+La quantité de données (bits) qui peut être transférée via une connexion informatique est appelée <span style="color: #0faeb0">**bande passante**</span>. L'utilisation d'une bande passante importante peut ralentir le chargement des pages pour les personnes disposant d'une mauvaise connectivité ou entraîner des coûts plus élevés. Réduire l’utilisation de la bande passante rend les sites web plus accessibles et conviviaux.
 </p>
 
-### Add a new attribute to each image element
+### Ajouter un nouvel attribut à chaque élément d'image
 
-The `src` attribute for all image elements in `index.html` is set to `spinner.gif`.
+L'attribut `src` pour tous les éléments d'image dans `index.html` est défini à `spinner.gif`.
 
-This means that when the page loads, the only image that has to be loaded is `spinner.gif`.
+Cela signifie que lorsque la page se charge, la seule image qui doit être chargée est `spinner.gif`.
 
 \--- task ---
 
-Open the `index.html` file.
+Ouvre le fichier `index.html`.
 
-In each `<img>` element, add a `data-src` attribute and set its value to the relevant image.
+Dans chaque élément `<img>`, ajoute un attribut `data-src` et définis sa valeur sur l'image concernée.
 
 ## --- code ---
 
@@ -38,53 +38,53 @@ line_highlights: 19, 23, 27, 31, 35
   <body>
     <main>
       <section class="garden">
-        <div id="bounce">SCROLL DOWN</div>
+        <div id="bounce">DÉFILER VERS LE BAS</div>
       </section>
       <p id="hideBounce">
-        Slowly but steadily, Sammy glides along, leaving behind a shiny trail as he explores the wonders of the garden.
+        Lentement mais sûrement, Sammy glisse, laissant derrière lui une traînée brillante alors qu'il explore les merveilles du jardin.
       </p>
       <img src="spinner.gif" data-src="snail.svg" />
       <p>
-        Meet Buzz Bee, a little explorer with yellow and black stripes who loves buzzing around flowers, collecting sweet nectar to make delicious honey.
+        Rencontre une Abeille bourdonnante, un petit explorateur aux rayures jaunes et noires qui adore bourdonner autour des fleurs, recueillant du nectar sucré pour faire du miel délicieux.
       </p>
       <img src="spinner.gif" data-src="bee.png" />
       <p>
-        Fluttering nearby is Bella, with her vibrant wings painted beautiful colours, she dances from flower to flower, bringing joy wherever she goes.
+        Bella vole à proximité, ses ailes vibrantes peintes de belles couleurs, elle danse de fleur en fleur, apportant de la joie partout où elle va.
       </p>
       <img src="spinner.gif" data-src="butterfly.png" />
       <p>
-        Then there's Lucy, a tiny red ladybug with black spots, who loves playing hide-and-seek in the garden.
+        Et puis il y a Lucy, une petite coccinelle rouge avec des taches noires, qui adore jouer à cache-cache dans le jardin.
       </p>
       <img src="spinner.gif" data-src="ladybug.png" />
       <p>
-        Last but not least, there's Iggy, a mysterious friend who is always ready for a new adventure.
+        Enfin et surtout, il y a Iggy, un ami mystérieux qui est toujours prêt pour une nouvelle aventure.
       </p>
       <img src="spinner.gif" data-src="insect.png" />
       <p>
-        Together, they create a delightful group of friends, ready to embark on exciting journeys!
+        Ensemble, ils créent un charmant groupe d'amis, prêts à se lancer dans des voyages passionnants !
       </p>
     </main>
   </body>
 
 \--- /code ---
 
-**Click Run**
+**Clique sur Run**
 
-- Scroll down. Do you see the images you added?
+- Fais défiler vers le bas. Vois-tu les images que tu as ajoutées ?
 
-You will not see the images you added. All the images are still `spinner.gif`. This is because it is the `src` property that sets the image to display.
+Tu ne verras pas les images que tu as ajoutées. Toutes les images sont encore `spinner.gif`. C'est parce que c'est la propriété `src` qui définit l'image à afficher.
 
 \--- /task ---
 
-### Observe each image element
+### Observer chaque élément image
 
-You can use JavaScript to observe every image on the page.
+Tu peux utiliser JavaScript pour observer chaque image de la page.
 
 \--- task ---
 
-Open the `scripts.js` file.
+Ouvre le fichier `scripts.js`.
 
-Create a constant (`const`) called `lazyImages`.
+Crée une constante (`const`) appelée `lazyImages`.
 
 ## --- code ---
 
@@ -95,28 +95,28 @@ line_number_start: 10
 line_highlights: 11
 --------------------------------------------------------
 
-// Image observer
+// Observateur d'images
 const lazyImages = document.querySelectorAll("img");
 
 \--- /code ---
 
-The constant `lazyImages` holds an array of all `<img>` elements in the page.
+La constante `lazyImages` contient un tableau de tous les éléments `<img>` de la page.
 
-In the code, the page is called the `document`.
+Dans le code, la page est appelée `document`.
 
-**Tip:** Separate the different observers using a line break (in this case, on line 12).
+**Astuce :** sépare les différents observateurs à l’aide d’un saut de ligne (dans ce cas, sur la ligne 12).
 
 \--- /task ---
 
-### Create a new intersection observer called imageObserver
+### Créer un nouvel Intersection Observer appelé imageObserver
 
-`imageObserver` is used to watch ('observe') an array of elements (`entries`).
+`imageObserver` est utilisé pour surveiller (« observer ») un tableau d'éléments (`entries`).
 
 \--- task ---
 
-Open the `scripts.js` file.
+Ouvre le fichier `scripts.js`.
 
-Create an observer called `imageObsever`.
+Créer un observateur appelé `imageObsever`.
 
 ## --- code ---
 
@@ -127,7 +127,7 @@ line_number_start: 10
 line_highlights: 12-14
 -----------------------------------------------------------
 
-// Image observer
+// Observateur d'images
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 
@@ -135,17 +135,17 @@ const imageObserver = new IntersectionObserver((entries) => {
 
 \--- /code ---
 
-**Tip:** The line break on line 13 will contain the callback.
+**Astuce :** le saut de ligne sur la ligne 13 contiendra le rappel.
 
 \--- /task ---
 
-### Tell imageObserver to observe
+### Dire à imageObserver d'observer
 
-Call `imageObserver` to `observe` each `<img>` element in the `document`.
+Appelle `imageObserver` pour `observer` chaque élément `<img>` dans le `document`.
 
 \--- task ---
 
-Use a `forEach` loop to observe each image element (held in the `lazyImages` array).
+Utilise une boucle `forEach` pour observer chaque élément d'image (contenue dans le tableau `lazyImages`).
 
 ## --- code ---
 
@@ -156,7 +156,7 @@ line_number_start: 10
 line_highlights: 15
 --------------------------------------------------------
 
-// Image observer
+// Observateur d'images
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 
@@ -171,19 +171,19 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 ---
 
-## title: What is a forEach loop?
+## title: Qu'est-ce qu'une boucle forEach ?
 
-In JavaScript, a `forEach` loop is used to go through every item in an array and do something with each one.
+En JavaScript, une boucle `forEach` est utilisée pour parcourir chaque élément d'un tableau et faire quelque chose avec chacun d'eux.
 
 \--- /collapse ---
 
-### Create the callback
+### Créer le rappel (callback)
 
-The callback needs to check every image it has observed.
+Le rappel doit vérifier chaque image qu'il a observée.
 
 \--- task ---
 
-Use a `forEach` loop to call the action relevant to each image that the observer has 'observed'.
+Utilise une boucle `forEach` pour appeler l'action pertinente pour chaque image que l'observateur a « observée ».
 
 ## --- code ---
 
@@ -194,7 +194,7 @@ line_number_start: 10
 line_highlights: 13-17
 -----------------------------------------------------------
 
-// Image observer
+// Observateur d'images
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 entries.forEach(
@@ -210,17 +210,17 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 \--- /code ---
 
-**Tip:** Unlike bounceObserver, imageObserver needs to check every entry in the array, so a `forEach` loop is required.
+**Astuce :** contrairement à bounceObserver, imageObserver doit vérifier chaque entrée du tableau, donc une boucle `forEach` est nécessaire.
 
-**Tip:** The line break on line 15 will contain the action to be carried out on each observed image (`entry`).
+**Astuce :** le saut de ligne à la ligne 15 contiendra l'action à effectuer sur chaque image observée (`entry`).
 
 \--- /task ---
 
-The `isIntersecting` method is used to check if an `<img>` element (`entry`) has entered the viewport.
+La méthode `isIntersecting` est utilisée pour vérifier si un élément `<img>` (`entry`) est entré dans la fenêtre d'affichage.
 
 \--- task ---
 
-Create a conditional statement to check if an observed entry in the array is in the viewport.
+Crée une instruction conditionnelle pour vérifier si une entrée observée dans le tableau se trouve dans la fenêtre d’affichage.
 
 ## --- code ---
 
@@ -231,7 +231,7 @@ line_number_start: 10
 line_highlights: 15-17
 -----------------------------------------------------------
 
-// Image observer
+// Observateur d'images
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 entries.forEach(
@@ -249,15 +249,15 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 \--- /code ---
 
-**Tip:** The line break on line 16 will contain the action to be carried out on an image (`entry`) that has entered the viewport.
+**Astuce :** le saut de ligne sur la ligne 16 contiendra l'action à effectuer sur une image (`entry`) qui est entrée dans la fenêtre d'affichage.
 
 \--- /task ---
 
-If an image in the array is in the viewport, the value of its `src` attribute (currently `spinner.gif`) is changed to the value of its `data-src` attribute (the image file you want to load).
+Si une image du tableau se trouve dans la fenêtre d'affichage, la valeur de son attribut `src` (actuellement `spinner.gif`) est modifiée par la valeur de son attribut `data-src` (le fichier image que tu souhaites charger).
 
 \--- task ---
 
-Create the action to change the value of `src` to the value of `data-src`.
+Crée l'action pour changer la valeur de `src` en valeur de `data-src`.
 
 ## --- code ---
 
@@ -268,7 +268,7 @@ line_number_start: 10
 line_highlights: 16-19
 -----------------------------------------------------------
 
-// Image observer
+// Observateur d'images
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 entries.forEach(
@@ -290,17 +290,17 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 ---
 
-## title: Why is there a setTimeout?
+## title: Pourquoi y a-t-il un setTimeout ?
 
-The imageObserver uses `setTimeout` with a value of `1000` (ms). This adds a one-second pause before the value of the `src` attribute is swapped for the value of the `data-src` attribute.
+L'imageObserver utilise `setTimeout` avec une valeur de `1000` (ms). Cela ajoute une pause d'une seconde avant que la valeur de l'attribut `src` ne soit échangée pour la valeur de l'attribut `data-src`.
 
-If this was not there then the swap might happen too quickly for you to see!
+Si ce n’était pas le cas, l’échange pourrait se produire trop rapidement pour que tu puisses le voir !
 
 \--- /collapse ---
 
-**Click Run**
+**Clique sur Run**
 
-- Scroll down and watch each image load when it enters the viewport (after a one-second pause).
+- Fais défiler vers le bas et regarde chaque chargement d'image lorsqu'elle entre dans la fenêtre d'affichage (après une pause d'une seconde).
 
 \--- /task ---
 
@@ -308,23 +308,23 @@ If this was not there then the swap might happen too quickly for you to see!
 
 ---
 
-## title: The images are not loading
+## title: Les images ne se chargent pas
 
-- Make sure it is `img`, not `<img>` in the brackets on line 11.
-- Check there is a comma `,` after line 17.
-- Check there is a semicolon `;` at end of lines 19, 22, 23, and 24.
+- Assure-toi qu'il s'agit de `img`, et non de `<img>`entre chevrons à la ligne 11.
+- Vérifie qu'il y a une virgule `,` après la ligne 17.
+- Vérifie qu'il y a un point-virgule `;` à la fin des lignes 19, 22, 23 et 24.
 
 \--- /collapse ---
 
-### Stop observing
+### Arrêter l'observation
 
-You should stop observing the image elements after their `src` attribute is changed to the value of their `data-src` attribute.
+Tu devrais arrêter d'observer les éléments de l'image après que leur attribut `src` soit changé à la valeur de leur attribut `data-src`.
 
-This avoids memory or performance issues.
+Cela évite les problèmes de mémoire ou de performances.
 
 \--- task ---
 
-Add the `unobserve()` method to the callback.
+Ajoute la méthode `unobserve()` au rappel.
 
 ## --- code ---
 
@@ -335,7 +335,7 @@ line_number_start: 10
 line_highlights: 20
 --------------------------------------------------------
 
-// Image observer
+// Observateur d'images
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 entries.forEach(
@@ -354,8 +354,8 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 \--- /code ---
 
-**Tip:** On line 20, the `.target` property of the `entry` refers to the element being observed. It is the element that enters or exits the viewport and the one you want to stop tracking.
+**Astuce :** à la ligne 20, la propriété `.target` de `entry` fait référence à l’élément observé. Il s'agit de l'élément qui entre ou sort de la fenêtre d'affichage et celui que tu souhaites arrêter de suivre.
 
 \--- /task ---
 
-Next, you are going to add a new webpage and navigation bar to your website.
+Ensuite, tu vas ajouter une nouvelle page web et une barre de navigation à ton site web.
