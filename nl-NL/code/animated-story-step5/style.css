@@ -48,7 +48,7 @@ section {
   animation: bounce 1s infinite;
 }
 
-/* ANIMATIONS */
+/* ANIMATIES */
 
 .rise {
   animation: rising 2s ease;
@@ -92,9 +92,9 @@ p {
   background-attachment: fixed;
 }
 
-/* SNAIL */
+/* SLAK */
 
-/* NAV BAR */
+/* NAV-BALK */
 
 .navigation {
   background-color: var(--navigation-background-color);
@@ -119,7 +119,7 @@ p {
   transition: all 500ms;
 }
 
-/* HEADING */
+/* KOP */
 
 .enabled {
   color: var(--text-color);
