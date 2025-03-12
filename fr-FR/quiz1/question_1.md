@@ -1,44 +1,44 @@
-## Reflection
+## Réflexion
 
-Well done! You have created a website using HTML, CSS, and JavaScript.
+Bien joué ! Tu as créé un site web en utilisant HTML, CSS et JavaScript.
 
-Answer the three questions below to reflect on what you've learnt.
+Réponds aux trois questions ci-dessous pour réfléchir à ce que tu as appris.
 
-You will be guided towards the correct answer. You can do this activity as many times as you want to.
+Tu seras guidé vers la bonne réponse. Tu peux faire cette activité autant de fois que tu le souhaites.
 
 \--- question ---
 
 ---
 
-## legend: Question 1 of 3
+## legend: Question 1 sur 3
 
-The `console.log()` method can be used to debug code.
+La méthode `console.log()` peut être utilisée pour déboguer le code.
 
-What does `console.log()` do?
+Que fait `console.log()` ?
 
 \--- choices ---
 
-- ( ) Displays a pop-up box with text taken from the browser console.
+- ( ) Affiche une fenêtre pop-up avec du texte extrait de la console du navigateur.
 
   \--- feedback ---
 
-The `alert()` method is used to display a message box with a specified message to the user.
+La méthode `alert()` est utilisée pour afficher une boîte de message avec un message spécifié pour l'utilisateur.
 
 \--- /feedback ---
 
-- ( ) Takes input from the browser console and returns the entered value.
+- ( ) Prend l'entrée depuis la console du navigateur et renvoie la valeur entrée.
 
   \--- feedback ---
 
-The `prompt()` method displays a pop-up box where the user enters text.
+La méthode `prompt()` affiche une boîte pop-up où l'utilisateur entre du texte.
 
 \--- /feedback ---
 
-- (x) Outputs a message or value to the browser console.
+- (x) Affiche un message ou une valeur dans la console du navigateur.
 
   \--- feedback ---
 
-Correct! The `console.log()` method in JavaScript is used to output messages or values to the browser console, which is useful for debugging and watching your code run.
+Correct ! La méthode `console.log()` en JavaScript est utilisée pour générer des messages ou des valeurs vers la console du navigateur, ce qui est utile pour déboguer et regarder ton code s'exécuter.
 
 \--- /feedback ---
 
