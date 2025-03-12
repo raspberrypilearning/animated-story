@@ -2,33 +2,33 @@
 
 ---
 
-## legend: Question 2 of 3
+## legend: Vraag 2 van 3
 
-What is the purpose of an 'observer' in JavaScript?
+Wat is het doel van een 'observer' in JavaScript?
 
 \--- choices ---
 
-- ( ) To see keyboard events.
+- ( ) Om toetsenbordgebeurtenissen te bekijken.
 
   \--- feedback ---
 
-  Take another look. The intersection observer is not designed to handle keyboard events. It is specifically used for observing changes in the visibility of elements.
+  Kijk nog een keer. De intersection observer is niet ontworpen om toetsenbordgebeurtenissen te verwerken. Het wordt specifiek gebruikt voor het observeren van veranderingen in de zichtbaarheid van elementen.
 
   \--- /feedback ---
 
-- (x) To watch changes in the intersection of an element with its containing parent or viewport.
+- (x) Om wijzigingen in de intersection van een element met het bovenliggende element of de viewport te bekijken.
 
   \--- feedback ---
 
-  Correct! The intersection observer is used to observe changes in how an element intersects with its containing parent or viewport. This then provides a way to react to elements entering or exiting the visible area.
+  Juist! Met de intersection observer kun je veranderingen waarnemen in de manier waarop een element kruist met het bovenliggende element of de viewport waarin het zich bevindt. Dit biedt vervolgens een manier om te reageren op elementen die het zichtbare gebied binnenkomen of verlaten.
 
   \--- /feedback ---
 
-- ( ) To read the document object model (DOM) structure.
+- ( ) Om de structuur van het document object model (DOM) te lezen.
 
   \--- feedback ---
 
-  Take another look. The intersection observer is not intended for checking the DOM structure; its purpose is to track the visibility of elements.
+  Kijk nog een keer. De intersection observer is niet bedoeld om de DOM-structuur te controleren; het doel is om de zichtbaarheid van elementen bij te houden.
 
   \--- /feedback ---
 
