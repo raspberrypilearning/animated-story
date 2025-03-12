@@ -1,64 +1,64 @@
-## Observe elements
+## Observer les éléments
 
-In this step, you will use the 'intersection observer' to make some text disappear!
+Dans cette étape, tu utiliseras « l’Intersection Observer » pour faire disparaître du texte !
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step2" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 \--- task ---
 
-Open the [Animated story starter project](https://editor.raspberrypi.org/en/projects/animated-story-starter){:target="_blank"}.
+Ouvre le [projet de démarrage Histoire animée](https://editor.raspberrypi.org/fr-FR/projects/animated-story-starter){:target="_blank"}.
 
 \--- /task ---
 
-Your starter project contains:
+Ton projet de démarrage contient :
 
-- `index.html`: an HTML page with images and text
-- `style.html` and `default.css`: CSS files that contain styling for some of the content
-- The images you will use in the project
-- `scripts.js`: a JavaScript file that you will develop throughout the project
+- `index.html` : une page HTML avec des images et du texte
+- `style.html` et `default.css` : fichiers CSS qui contiennent le style de certains contenus
+- Les images que tu utiliseras dans le projet
+- `scripts.js`: un fichier JavaScript que tu vas développer tout au long du projet
 
 ### Console
 
 \--- task ---
 
-Open the Console.
+Ouvre la console.
 
-**Tip:** Most browsers will let you right-click on a page and 'Inspect' an element.
+**Astuce :** la plupart des navigateurs te permettent de cliquer avec le bouton droit sur une page et d'« inspecter » un élément.
 
-This opens developer tools, including the Console.
+Cela ouvre les outils de développement, y compris la console.
 
-Some helpful keyboard shortcuts:
+Quelques raccourcis clavier utiles :
 
-- Chrome: Ctrl + Shift + J (on Windows) or Cmd + Option + J (on a Mac)
-- Firefox: Ctrl + Shift + J (on Windows) or Cmd + Option + K (on a Mac)
-- Microsoft Edge: Control + Shift + I
-- Safari: First, enable the 'Develop menu'. To do this, click **Safari** in the Mac menu bar and select **Settings**. Click on **Advanced**, tick the checkbox next to 'Show features for web developers' and then close the window. You can now open the console using Cmd + Option + C.
+- Chrome : Ctrl + Maj + J (sur Windows) ou Cmd + Option + J (sur Mac)
+- Firefox : Ctrl + Maj + J (sur Windows) ou Cmd + Option + K (sur Mac)
+- Microsoft Edge : Ctrl + Maj + I
+- Safari : Tout d'abord, active le menu « Développer le menu ». Pour ce faire, clique sur **Safari** dans la barre de menus Mac et sélectionne **Paramètres**. Clique sur **Avancé**, coche la case à côté de « Afficher les fonctionnalités pour les développeurs web », puis ferme la fenêtre. Tu peux maintenant ouvrir la console en utilisant Cmd + Option + C.
 
 \--- /task ---
 
-A JavaScript observer can be used to watch ('observe') a collection of HTML elements with a specific `id` or `class` attribute.
+Un observateur JavaScript peut être utilisé pour surveiller (« observer ») une collection d'éléments HTML avec un `id` spécifique ou un attribut `class`.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A collection of items is called an <span style="color: #0faeb0">**array**</span>. An array can contain multiple items or just a single item.
+Une collection d'éléments est appelée un <span style="color: #0faeb0">**tableau**</span>. Un tableau peut contenir plusieurs éléments ou juste un seul élément.
 </p>
 
-One use of an observer is to let the browser detect when an element enters the viewport.
+L’une des utilisations d’un observateur est de permettre au navigateur de détecter lorsqu’un élément entre dans la fenêtre d’affichage.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0">**viewport**</span> is the area of the webpage that is currently visible in the browser.
+La <span style="color: #0faeb0">**fenêtre d'affichage**</span> est la zone de la page web qui est actuellement visible dans le navigateur.
 </p>
 
-![Illustration of a browser's viewport displaying only part of a webpage. Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport.png)
+![Illustration d'une fenêtre d'affichage d'un navigateur affichant seulement une partie d'une page web. Credit : https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence : https://creativecommons.org/licenses/by-sa/3.0/](images/viewport.png)
 
-You can output something to the Console to see if your observer is working.
+Tu peux afficher quelque chose dans la console pour voir si ton observateur fonctionne.
 
-### Create an intersection observer called bounceObserver
+### Créer un Intersection Observer appelé bounceObserver
 
 \--- task ---
 
-Open the `scripts.js` file.
+Ouvre le fichier `scripts.js`.
 
-Create an observer called `bounceObserver`.
+Crée un observateur appelé `bounceObserver`.
 
 ## --- code ---
 
@@ -69,28 +69,28 @@ line_number_start: 1
 line_highlights: 2-4
 ---------------------------------------------------------
 
-// Hide bounce observer
+// Masquer le bounce observer
 const bounceObserver = new IntersectionObserver(
 
 );
 
-// Image observer
+// Observateur d'image
 
 \--- /code ---
 
-**Tip:** Separate the different observers using a line break (in this case, on line 5).
+**Astuce :** sépare les différents observateurs à l’aide d’un saut de ligne (dans ce cas, sur la ligne 5).
 
 \--- /task ---
 
-### Tell bounceObserver to observe
+### Dire à bounceObserver d'observer
 
 \--- task ---
 
-Call `bounceObserver` to `observe` the element in the `document` (webpage) with the attribute `id="hideBounce"`.
+Appelle `bounceObserver` pour `observer` l'élément dans le `document` (page web) avec l'attribut `id="hideBounce"`.
 
-**Note:** This element is called the 'target' element.
+**Remarque :** cet élément est appelé élément « cible ».
 
-Observed elements are passed to the `entries` array in the observer.
+Les éléments observés sont transmis au tableau `entries` dans l'observateur.
 
 ## --- code ---
 
@@ -101,29 +101,29 @@ line_number_start: 1
 line_highlights: 2, 5
 ----------------------------------------------------------
 
-// Hide bounce observer
+// Masquer le bounce observer
 const bounceObserver = new IntersectionObserver((entries)
 
 );
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// Observateur d'image
 
 \--- /code ---
 
-**Note:** The line break on line 3 will contain the callback.
+**Remarque :** le saut de ligne sur la ligne 3 contiendra le rappel.
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> The <span style="color: #0faeb0">**callback**</span> is the code that runs when the browser detects ('observes') a target element.
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> Le <span style="color: #0faeb0">**callback**</span> est le code qui s'exécute lorsque le navigateur détecte (« observe ») un élément cible.
 </p>
 
 \--- /task ---
 
-### Create the callback
+### Créer le rappel (callback)
 
 \--- task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Arrow syntax (`=>`) can be used instead of the `function` keyword.
+La syntaxe des flèches (`=>`) peut être utilisée à la place du mot-clé `function`.
 </p>
 
 ## --- code ---
@@ -135,28 +135,28 @@ line_number_start: 1
 line_highlights: 2, 4
 ----------------------------------------------------------
 
-// Hide bounce observer
+// Masquer le bounce observer
 const bounceObserver = new IntersectionObserver((entries) => {
 
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// Observateur d'image
 
 \--- /code ---
 
 \--- /task ---
 
-The callback will start by checking `if` the element in the `entries` array (with the attribute `id="hideBounce"`) (the target element) has entered the viewport.
+Le callback commencera par vérifier `if` (si) l'élément dans le tableau `entries` (avec l'attribut `id="hideBounce"`) (l'élément cible) est entré dans la fenêtre d'affichage.
 
-The `isIntersecting` method is used to check this.
+La méthode `isIntersecting` est utilisée pour vérifier cela.
 
-This image shows a target element on a webpage that has entered the browser's viewport.
-![Illustration of a target element partially intersecting with a browser's viewport. Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport-target.png)
+Cette image montre un élément cible sur une page web qui est entré dans la fenêtre d'affichage du navigateur.
+![Illustration d'un élément cible coupant partiellement la fenêtre d'affichage d'un navigateur. Crédit : https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence : https://creativecommons.org/licenses/by-sa/3.0/](images/viewport-target.png)
 
 \--- task ---
 
-Start the callback with a conditional statement.
+Démarre le rappel avec une instruction conditionnelle.
 
 ## --- code ---
 
@@ -167,7 +167,7 @@ line_number_start: 1
 line_highlights: 3-5
 ---------------------------------------------------------
 
-// Hide bounce observer
+// Masquer le bounce observer
 const bounceObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 
@@ -175,21 +175,21 @@ if (entries[0].isIntersecting) {
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// Observateur d'image
 
 \--- /code ---
 
-**Tip:** There is only one element in the entries array (at index 0). Therefore, you can access it directly using `entries[0]`.
+**Astuce :** il n’y a qu’un seul élément dans le tableau des entrées (à l’index 0). Tu peux donc y accéder directement en utilisant `entries[0]`.
 
 \--- /task ---
 
-### Output a message to the Console
+### Afficher un message dans la console
 
-If the condition is met (the element with the attribute `id="hideBounce"` has entered the viewport), you can output a message to the Console for testing using `console.log()`.
+Si la condition est remplie (l'élément avec l'attribut `id="hideBounce"` est entré dans la fenêtre), tu peux afficher un message dans la console pour tester en utilisant `console. og()`.
 
 \--- task ---
 
-Add an action when the `if` condition is met that outputs a test message to the Console.
+Ajoute une action lorsque la condition `if` est remplie qui génère un message de test vers la console.
 
 ## --- code ---
 
@@ -200,22 +200,22 @@ line_number_start: 1
 line_highlights: 4
 -------------------------------------------------------
 
-// Hide bounce observer
+// Masquer le bounce observer
 const bounceObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
-console.log("BOUNCE TRIGGER IN VIEWPORT");
+console.log("BOUNCE TRIGGER DANS LA FENÊTRE D'AFFICHAGE");
 }
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// Observateur d'image
 
 \--- /code ---
 
-**Click Run**
+**Clique sur Run**
 
-- Open the Console.
-- Scroll down and see the message "BOUNCE TRIGGER IN VIEWPORT" appear in the Console.
+- Ouvre la console.
+- Fais défiler vers le bas et vois le message « BOUNCE TRIGGER DANS LA FENÊTRE D'AFFICHAGE » apparaître dans la console.
 
 \--- /task ---
 
@@ -223,11 +223,11 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 ---
 
-## title: Nothing appears in the Console
+## title: Rien n'apparaît dans la console
 
-- Check your spelling of `IntersectionObserver`. It should have two capital letters.
-- There must be a semicolon at the end of lines 4, 6, and 7.
-- Close all your brackets and curly braces.
+- Vérifie l'orthographe de `IntersectionObserver`. Il devrait avoir deux lettres majuscules.
+- Il doit y avoir un point-virgule à la fin des lignes 4, 6 et 7.
+- Ferme toutes les parenthèses et les accolades.
 
 \--- /collapse ---
 
@@ -235,39 +235,39 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 ---
 
-## title: The structure of the bounceObserver intersection observer
+## title: La structure de l'Intersection Observer bounceObserver
 
-On line 2, `entries` is a collection of all elements on the webpage with the `id="hideBounce"` attribute.
+À la ligne 2, `entries` est une collection de tous les éléments de la page web avec l'attribut `id="hideBounce"`.
 
-A collection of items is called an 'array'.
+Une collection d'éléments est appelée un « tableau ».
 
-The `bounceObserver` is set to observe when the first (in this case, the only) target element in the `entries` array enters the viewport.
+Le `bounceObserver` est configuré pour observer quand le premier (dans ce cas, le seul) élément cible du tableau `entries` entre dans la fenêtre d'affichage.
 
-When it does, the observer 'callback' outputs a message to the Console.
+Lorsque cela se produit, l'observateur « callback » envoie un message à la console.
 
 \--- /collapse ---
 
-### Hide text
+### Masquer le texte
 
-The index page has some bouncing text at the bottom telling you to 'SCROLL DOWN'.
+Au bas de la page d'index se trouve un texte rebondissant indiquant d'effectuer l'action « DÉFILER VERS LE BAS ».
 
 \--- task ---
 
-**Test:** Scroll down.
+**Test :** fais défiler vers le bas.
 
-You will see that the 'SCROLL DOWN' text gets in the way of other content.
+Tu verras que le texte « DÉFILER VERS LE BAS » gêne le reste du contenu.
 
 \--- /task ---
 
-You can do more than output messages to the Console.
+Tu peux faire plus qu'envoyer des messages à la console.
 
-You can hide the bouncing 'SCROLL DOWN' text, by changing the value of its `opacity` property.
+Tu peux masquer le texte rebondissant « DÉFILER VERS LE BAS » en modifiant la valeur de sa propriété `opacity`.
 
 \--- task ---
 
-Add an action when the `if` condition is met that changes the value of the `opacity` property of the bouncing text element, which has the attribute `id="bounce"`.
+Ajoute une action quand la condition `if` est remplie qui change la valeur de la propriété `opacity` de l'élément de texte rebondissant, qui a l'attribut `id="bounce"`.
 
-Set the opacity value to `0` to make it invisible.
+Définis la valeur d'opacité sur `0` pour la rendre invisible.
 
 ## --- code ---
 
@@ -278,16 +278,16 @@ line_number_start: 1
 line_highlights: 5
 -------------------------------------------------------
 
-// Hide bounce observer
+// Masquer le bounce observer
 const bounceObserver = new IntersectionObserver((entries) => {
-if (entries[0].isIntersecting) {
-console.log("BOUNCE TRIGGER IN VIEWPORT");
+if (entries[0]. sIntersecting) {
+console. og("BOUNCE TRIGGER DANS LA FENËTRE D'AFFICHAGE");
 document.querySelector("#bounce").style.opacity = 0;
 }
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// Observateur d'image
 
 \--- /code ---
 
@@ -295,9 +295,9 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 \--- task ---
 
-**Click Run**
+**Clique sur Run**
 
-- Scroll down to see the bouncing text 'SCROLL DOWN' disappear!
+- Fais défiler vers le bas pour voir le texte rebondissant « DÉFILER VERS LE BAS » disparaître !
 
 \--- /task ---
 
@@ -305,15 +305,15 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 ---
 
-## title: The bouncing text does not disappear
+## title: Le texte rebondissant ne disparaît pas
 
-- There must be a semicolon at the end of line 5.
-- Make sure you spell `querySelector` correctly, including the capital letter!
+- Il doit y avoir un point-virgule à la fin de la ligne 5.
+- Assure-toi d’écrire correctement `querySelector`, y compris la lettre majuscule !
 
 \--- /collapse ---
 
-## Save your project
+## Enregistre ton projet
 
-Your project is saved automatically. Return to the starter link in the same web browser to see your changes.
+Ton projet est enregistré automatiquement. Retourne au lien de démarrage dans le même navigateur web pour voir tes modifications.
 
-Next, you are going to improve browser performance by only loading images when they are needed.
+Ensuite, tu vas améliorer les performances du navigateur en ne chargeant que les images quand elles sont nécessaires.
