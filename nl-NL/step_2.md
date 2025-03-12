@@ -1,64 +1,64 @@
-## Observe elements
+## Elementen observeren
 
-In this step, you will use the 'intersection observer' to make some text disappear!
+In deze stap ga je de 'intersection observer' gebruiken om wat tekst te laten verdwijnen!
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step2" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 \--- task ---
 
-Open the [Animated story starter project](https://editor.raspberrypi.org/en/projects/animated-story-starter){:target="_blank"}.
+Open het [Geanimeerd verhaal starter project](https://editor.raspberrypi.org/en/projects/animated-story-starter){:target="_blank"}.
 
 \--- /task ---
 
-Your starter project contains:
+Je startproject bevat:
 
-- `index.html`: an HTML page with images and text
-- `style.html` and `default.css`: CSS files that contain styling for some of the content
-- The images you will use in the project
-- `scripts.js`: a JavaScript file that you will develop throughout the project
+- `index.html`: een HTML-pagina met afbeeldingen en tekst
+- `style.html` en `default.css`: CSS-bestanden die styling bevatten voor een deel van de inhoud
+- De afbeeldingen die je in het project gaat gebruiken
+- `scripts.js`: een JavaScript-bestand dat je tijdens het project zult ontwikkelen
 
 ### Console
 
 \--- task ---
 
-Open the Console.
+Open de console.
 
-**Tip:** Most browsers will let you right-click on a page and 'Inspect' an element.
+**Tip:** De meeste browsers bieden je de mogelijkheid om met de rechtermuisknop op een pagina te klikken en een element te 'Inspecteren'.
 
-This opens developer tools, including the Console.
+Hiermee worden ontwikkelaarstools geopend, inclusief de Console.
 
-Some helpful keyboard shortcuts:
+Enkele handige sneltoetsen:
 
-- Chrome: Ctrl + Shift + J (on Windows) or Cmd + Option + J (on a Mac)
-- Firefox: Ctrl + Shift + J (on Windows) or Cmd + Option + K (on a Mac)
-- Microsoft Edge: Control + Shift + I
-- Safari: First, enable the 'Develop menu'. To do this, click **Safari** in the Mac menu bar and select **Settings**. Click on **Advanced**, tick the checkbox next to 'Show features for web developers' and then close the window. You can now open the console using Cmd + Option + C.
+- Chrome: Ctrl + Shift + J (op Windows) of Cmd + Option + J (op een Mac)
+- Firefox: Ctrl + Shift + J (op Windows) of Cmd + Option + K (op een Mac)
+- Microsoft Edge: Ctrl + Shift + I
+- Safari: Schakel eerst het menu 'Ontwikkelen' in. Om dit te doen, klik je op **Safari** in het menu van Mac en selecteer **Instellingen**. Klik op **Geavanceerd**, vink het selectievakje aan naast 'Toon functies voor webontwikkelaars' en sluit vervolgens het venster. Je kunt de console nu openen met Cmd + Optie + C.
 
 \--- /task ---
 
-A JavaScript observer can be used to watch ('observe') a collection of HTML elements with a specific `id` or `class` attribute.
+Met een JavaScript-observer kun je een verzameling HTML-elementen met een specifiek `id`- of `class`-kenmerk bekijken ('observeren').
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A collection of items is called an <span style="color: #0faeb0">**array**</span>. An array can contain multiple items or just a single item.
+Een verzameling items wordt een <span style="color: #0faeb0">**array**</span> genoemd. Een array kan meerdere items of slechts één item bevatten.
 </p>
 
-One use of an observer is to let the browser detect when an element enters the viewport.
+Een observer kan bijvoorbeeld worden gebruikt om de browser te laten detecteren wanneer een element de viewport binnenkomt.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0">**viewport**</span> is the area of the webpage that is currently visible in the browser.
+De <span style="color: #0faeb0">**viewport**</span> is het gebied van de webpagina dat momenteel zichtbaar is in de browser.
 </p>
 
-![Illustration of a browser's viewport displaying only part of a webpage. Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport.png)
+![Illustratie van de viewpoort van een browser die slechts een deel van een webpagina weergeeft. Bron: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licentie: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport.png)
 
-You can output something to the Console to see if your observer is working.
+Je kunt iets uitvoeren naar de console om te zien of je observer werkt.
 
-### Create an intersection observer called bounceObserver
+### Maak een intersection observer met de naam bounceObserver
 
 \--- task ---
 
-Open the `scripts.js` file.
+Open het `scripts.js` bestand.
 
-Create an observer called `bounceObserver`.
+Maak een observer met de naam `bounceObserver`.
 
 ## --- code ---
 
@@ -69,28 +69,28 @@ line_number_start: 1
 line_highlights: 2-4
 ---------------------------------------------------------
 
-// Hide bounce observer
+// Verberg bounce observer
 const bounceObserver = new IntersectionObserver(
 
 );
 
-// Image observer
+// Afbeeldingswaarnemer
 
 \--- /code ---
 
-**Tip:** Separate the different observers using a line break (in this case, on line 5).
+**Tip:** Scheid de verschillende waarnemers door middel van een regelafbreking (in dit geval, op regel 5).
 
 \--- /task ---
 
-### Tell bounceObserver to observe
+### Vertel bounceObserver om te observeren
 
 \--- task ---
 
-Call `bounceObserver` to `observe` the element in the `document` (webpage) with the attribute `id="hideBounce"`.
+Roep `bounceObserver` aan om het element in het `document` (webpagina) met het kenmerk `id="hideBounce"` te `observeren`.
 
-**Note:** This element is called the 'target' element.
+**Opmerking:** Dit element wordt het 'target'-element genoemd.
 
-Observed elements are passed to the `entries` array in the observer.
+Geobserveerde elementen worden doorgegeven aan het `entries`-array in de observer.
 
 ## --- code ---
 
@@ -101,29 +101,29 @@ line_number_start: 1
 line_highlights: 2, 5
 ----------------------------------------------------------
 
-// Hide bounce observer
+// Verberg bounce observer
 const bounceObserver = new IntersectionObserver((entries)
 
 );
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// Afbeeldingswaarnemer
 
 \--- /code ---
 
-**Note:** The line break on line 3 will contain the callback.
+**Let op:** De regelafbreking op regel 3 bevat de callback.
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> The <span style="color: #0faeb0">**callback**</span> is the code that runs when the browser detects ('observes') a target element.
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> De <span style="color: #0faeb0">**callback**</span> is de code die wordt uitgevoerd wanneer de browser een doelelement detecteert ('observeert').
 </p>
 
 \--- /task ---
 
-### Create the callback
+### De callback maken
 
 \--- task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Arrow syntax (`=>`) can be used instead of the `function` keyword.
+Pijl-syntaxis (`=>`) kan worden gebruikt in plaats van het trefwoord `function`.
 </p>
 
 ## --- code ---
@@ -135,28 +135,28 @@ line_number_start: 1
 line_highlights: 2, 4
 ----------------------------------------------------------
 
-// Hide bounce observer
+// Verberg bounce observer
 const bounceObserver = new IntersectionObserver((entries) => {
 
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// Afbeeldingswaarnemer
 
 \--- /code ---
 
 \--- /task ---
 
-The callback will start by checking `if` the element in the `entries` array (with the attribute `id="hideBounce"`) (the target element) has entered the viewport.
+De callback zal beginnen met het checken van `if (of)` het element in de `entries` array (met het kenmerk `id="hideBounce"`) (het target element de viewport is binnengekomen.
 
-The `isIntersecting` method is used to check this.
+Om dit te controleren wordt de `isIntersecting`-methode gebruikt.
 
-This image shows a target element on a webpage that has entered the browser's viewport.
-![Illustration of a target element partially intersecting with a browser's viewport. Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport-target.png)
+Deze afbeelding toont een targetelement op een webpagina dat in de viewport van de browser is binnengekomen.
+![Illustratie van een targetelement dat gedeeltelijk de viewport van een browser kruist. Bron: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licentie: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport-target.png)
 
 \--- task ---
 
-Start the callback with a conditional statement.
+Start de callback met een voorwaardelijke instructie.
 
 ## --- code ---
 
@@ -167,7 +167,7 @@ line_number_start: 1
 line_highlights: 3-5
 ---------------------------------------------------------
 
-// Hide bounce observer
+// Verberg bounce observer
 const bounceObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 
@@ -175,21 +175,21 @@ if (entries[0].isIntersecting) {
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// Afbeeldingswaarnemer
 
 \--- /code ---
 
-**Tip:** There is only one element in the entries array (at index 0). Therefore, you can access it directly using `entries[0]`.
+**Tip:** Er is slechts één element in de entries-array (op index 0). Daarom kun je er rechtstreeks toegang toe krijgen met behulp van `entries[0]`.
 
 \--- /task ---
 
-### Output a message to the Console
+### Een bericht naar de console sturen
 
-If the condition is met (the element with the attribute `id="hideBounce"` has entered the viewport), you can output a message to the Console for testing using `console.log()`.
+Als aan de voorwaarde is voldaan (het element met het kenmerk `id="hideBounce"` is in de viewport terechtgekomen), kun je met behulp van `console.log()` een bericht naar de console sturen om te testen.
 
 \--- task ---
 
-Add an action when the `if` condition is met that outputs a test message to the Console.
+Voeg een actie toe die een testbericht naar de console stuurt wanneer aan de `if`-voorwaarde wordt voldaan.
 
 ## --- code ---
 
@@ -200,22 +200,22 @@ line_number_start: 1
 line_highlights: 4
 -------------------------------------------------------
 
-// Hide bounce observer
+// Verberg bounce observer
 const bounceObserver = new IntersectionObserver((entries) => {
-if (entries[0].isIntersecting) {
+if (entries[0]. sIntersecting) {
 console.log("BOUNCE TRIGGER IN VIEWPORT");
 }
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// Afbeeldingswaarnemer
 
 \--- /code ---
 
-**Click Run**
+**Klik op Run**
 
-- Open the Console.
-- Scroll down and see the message "BOUNCE TRIGGER IN VIEWPORT" appear in the Console.
+- Open de console.
+- Scroll naar beneden en zie het bericht "BOUNCE TRIGGER IN VIEWPORT" verschijnen in de console.
 
 \--- /task ---
 
@@ -223,11 +223,11 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 ---
 
-## title: Nothing appears in the Console
+## title: Er verschijnt niets in de console
 
-- Check your spelling of `IntersectionObserver`. It should have two capital letters.
-- There must be a semicolon at the end of lines 4, 6, and 7.
-- Close all your brackets and curly braces.
+- Controleer de spelling van `IntersectionObserver`. Er moeten twee hoofdletters in staan.
+- Er moet een puntkomma aan het einde van regel 4, 6 en 7 staan.
+- Sluit alle haakjes en accolades.
 
 \--- /collapse ---
 
@@ -235,39 +235,39 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 ---
 
-## title: The structure of the bounceObserver intersection observer
+## title: De structuur van de bounceObserver intersection observer
 
-On line 2, `entries` is a collection of all elements on the webpage with the `id="hideBounce"` attribute.
+Op regel 2 is `entries` een verzameling van alle elementen op de webpagina met het kenmerk `id="hideBounce"`.
 
-A collection of items is called an 'array'.
+Een verzameling items wordt een 'array' genoemd.
 
-The `bounceObserver` is set to observe when the first (in this case, the only) target element in the `entries` array enters the viewport.
+De `bounceObserver` is ingesteld om te observeren wanneer het eerste (in dit geval het enige) targetelement in de `entries`-array de viewport binnenkomt.
 
-When it does, the observer 'callback' outputs a message to the Console.
+Wanneer dit het geval is, stuurt de observer 'callback' een bericht naar de console.
 
 \--- /collapse ---
 
-### Hide text
+### Verberg Tekst
 
-The index page has some bouncing text at the bottom telling you to 'SCROLL DOWN'.
+Onderaan de indexpagina staat een stuiterende tekst die aangeeft om de actie 'OMLAAG SCROLLEN' uit te voeren.
 
 \--- task ---
 
-**Test:** Scroll down.
+**Test:** Scroll naar beneden.
 
-You will see that the 'SCROLL DOWN' text gets in the way of other content.
+Je zult zien dat de tekst 'OMLAAG SCROLLEN' over de andere inhoud heen staat.
 
 \--- /task ---
 
-You can do more than output messages to the Console.
+Je kunt meer doen dan alleen berichten naar de console sturen.
 
-You can hide the bouncing 'SCROLL DOWN' text, by changing the value of its `opacity` property.
+Je kunt de stuiterende 'OMLAAG SCROLLEN'-tekst verbergen door de waarde van de eigenschap 'opacity' te wijzigen.
 
 \--- task ---
 
-Add an action when the `if` condition is met that changes the value of the `opacity` property of the bouncing text element, which has the attribute `id="bounce"`.
+Voeg een actie toe wanneer aan de `if`-voorwaarde wordt voldaan. Deze actie wijzigt de waarde van de `opacity`-eigenschap van het stuiterende tekstelement, dat het kenmerk `id="bounce"` heeft.
 
-Set the opacity value to `0` to make it invisible.
+Zet de opacity waarde op `0` om deze onzichtbaar te maken.
 
 ## --- code ---
 
@@ -278,7 +278,7 @@ line_number_start: 1
 line_highlights: 5
 -------------------------------------------------------
 
-// Hide bounce observer
+// Verberg bounce-observator
 const bounceObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 console.log("BOUNCE TRIGGER IN VIEWPORT");
@@ -287,7 +287,7 @@ document.querySelector("#bounce").style.opacity = 0;
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// Afbeeldingswaarnemer
 
 \--- /code ---
 
@@ -295,9 +295,9 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 \--- task ---
 
-**Click Run**
+**Klik op Run**
 
-- Scroll down to see the bouncing text 'SCROLL DOWN' disappear!
+- Scroll naar beneden om de stuiterende tekst 'OMLAAG SCROLLEN' te zien verdwijnen!
 
 \--- /task ---
 
@@ -305,15 +305,15 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 ---
 
-## title: The bouncing text does not disappear
+## title: De stuiterende tekst verdwijnt niet
 
-- There must be a semicolon at the end of line 5.
-- Make sure you spell `querySelector` correctly, including the capital letter!
+- Er moet een puntkomma staan aan het eind van regel 5.
+- Zorg ervoor dat je `querySelector` correct spelt, inclusief de hoofdletter!
 
 \--- /collapse ---
 
-## Save your project
+## Sla je project op
 
-Your project is saved automatically. Return to the starter link in the same web browser to see your changes.
+Je project wordt automatisch opgeslagen. Ga terug naar de startlink in dezelfde webbrowser om je wijzigingen te zien.
 
-Next, you are going to improve browser performance by only loading images when they are needed.
+Vervolgens ga je de browserprestaties verbeteren door afbeeldingen alleen te laden wanneer ze nodig zijn.
