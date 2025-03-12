@@ -2,33 +2,33 @@
 
 ---
 
-## legend: Question 3 of 3
+## legend: Vraag 3 van 3
 
-How does the intersection observer react when an observed element enters or exits the viewport?
+Hoe reageert de intersection observer als een waargenomen element de viewport binnenkomt of verlaat?
 
 \--- choices ---
 
-- ( ) It reacts by changing the viewport width and height.
+- ( ) Het reageert door de breedte en hoogte van de viewport te wijzigen.
 
   \--- feedback ---
 
-  The intersection observer does not manipulate the viewport size directly. It handles visibility changes by reacting with one or more actions.
+  De intersection observer past de viewportgrootte niet rechtstreeks aan. Het verwerkt zichtbaarheidswijzigingen door te reageren met een of meer acties.
 
   \--- /feedback ---
 
-- ( ) It reacts by changing the CSS styles of the observed element.
+- ( ) Het reageert door de CSS-stijlen van het waargenomen element te wijzigen.
 
   \--- feedback ---
 
-  Not quite. The intersection observer does not modify CSS styles directly. Instead, it runs a specific action to allow you to handle the visibility changes.
+  Niet helemaal. De intersection observer wijzigt de CSS-stijlen niet rechtstreeks. In plaats daarvan wordt er een specifieke actie uitgevoerd waarmee je de zichtbaarheidswijzigingen kunt verwerken.
 
   \--- /feedback ---
 
-- (x) It reacts by invoking a callback function.
+- (x) Het reageert door een callback-functie aan te roepen.
 
   \--- feedback ---
 
-  Correct! The intersection observer notifies changes by invoking a callback function that you write when setting up the observer. This callback is triggered when the observed element enters or exits the viewport.
+  Juist! De intersection observer meldt wijzigingen door een callbackfunctie aan te roepen die je schrijft bij het instellen van de observer. Deze callback wordt geactiveerd wanneer het waargenomen element de viewport binnenkomt of verlaat.
 
   \--- /feedback ---
 
