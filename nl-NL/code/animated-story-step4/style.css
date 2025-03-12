@@ -48,7 +48,7 @@ section {
   animation: bounce 1s infinite;
 }
 
-/* ANIMATIONS */
+/* ANIMATIES */
 
 @keyframes bounce {
   0%,
@@ -78,9 +78,9 @@ p {
   background-position-y: bottom;
 }
 
-/* SNAIL */
+/* SLAK */
 
-/* NAV BAR */
+/* NAV-BALK */
 
 .navigation {
   background-color: var(--navigation-background-color);
@@ -105,7 +105,7 @@ p {
   transition: all 500ms;
 }
 
-/* HEADING */
+/* KOP */
 
 .enabled {
   color: var(--text-color);
