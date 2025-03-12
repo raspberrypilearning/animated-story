@@ -48,7 +48,7 @@ section {
   animation: bounce 1s infinite;
 }
 
-/* ANIMATIONS */
+/* ANIMATIES */
 
 @keyframes fly {
   0%,
@@ -118,7 +118,7 @@ p {
   background-attachment: fixed;
 }
 
-/* SNAIL */
+/* SLAK */
 
 .snail {
   opacity: 0;
@@ -151,7 +151,7 @@ p {
   animation: fly 2s infinite;
 }
 
-/* NAV BAR */
+/* NAV-BALK */
 
 .navigation {
   background-color: var(--navigation-background-color);
@@ -176,7 +176,7 @@ p {
   transition: all 500ms;
 }
 
-/* HEADING */
+/* KOP */
 
 .enabled {
   color: var(--text-color);
