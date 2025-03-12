@@ -1,7 +1,7 @@
 ---
-title: Animated story
+title: Histoire animée
 hero_image: images/banner.png
-description: Use JavaScript intersection observers to add life to a storybook website!
+description: Utilise les Intersection Observer en JavaScript pour ajouter de la vie à un site web de conte de fées !
 version: 4
 listed: true
 copyedit: false
@@ -10,21 +10,21 @@ steps:
   - 
     title: Introduction
   - 
-    title: Observing elements
+    title: Observation des éléments
   - 
-    title: Lazy-loading images
+    title: Images à chargement lent
     completion:
       - engaged
   - 
-    title: Add a new page
+    title: Ajouter une nouvelle page
   - 
-    title: Animate text
+    title: Animer le texte
   - 
-    title: Animate the story
+    title: Animer l'histoire
     completion:
       - internal
   - 
-    title: Reflection
+    title: Réflexion
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +33,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Améliorer ton projet
   - 
-    title: What next?
+    title: Et ensuite ?
