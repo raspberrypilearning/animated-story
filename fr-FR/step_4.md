@@ -1,20 +1,20 @@
-## Add a new page
+## Ajouter une nouvelle page
 
-In this step, you will add a new webpage and navigation bar (navbar) to your website.
+Dans cette étape, tu vas ajouter une nouvelle page web et une nouvelle barre de navigation (navbar) à ton site web.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step4" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Add a navbar
+### Ajouter une barre de navigation
 
-If you have completed the [Welcome to Antarctica](https://projects.raspberrypi.org/en/projects/welcome-to-antarctica) project, you will know how to create a navbar.
+Si tu as terminé le projet [Bienvenue en Antarctique](https://projects.raspberrypi.org/fr-FR/projects/welcome-to-antarctica), tu sauras comment créer une barre de navigation.
 
 \--- task ---
 
-Open the `index.html` file.
+Ouvre le fichier `index.html`.
 
-Find the `<body>` tag.
+Trouve la balise `<body>`.
 
-Add the `<nav>` tags below it with the links to be shown in the navbar.
+Ajoute les balises `<nav>` au-dessous avec les liens à afficher dans la barre de navigation.
 
 ## --- code ---
 
@@ -27,16 +27,15 @@ line_highlights: 12-15
 
   <body>
     <nav class="navigation">
-      <a href="index.html">Intro</a>
-      <a href="sammy.html">Sammy</a>
-    </nav>
+<a href="index.html">Intro</a>
+      <a href="sammy.html">Sammy</a>    </nav>
     <main>
 
 \--- /code ---
 
-**Click Run**
+**Clique sur Run**
 
-- The navigation links will appear at the top.
+- Les liens de navigation apparaîtront en haut.
 
 \--- /task ---
 
@@ -44,29 +43,29 @@ line_highlights: 12-15
 
 ---
 
-## title: The navigation links are not there
+## title: Les liens de navigation ne sont pas là
 
-- Make sure you add the `class="navigation"` attribute to the opening `<nav>`.
+- Assure-toi d'ajouter l'attribut `class="navigation"` à la balise d'ouverture `<nav>`.
 
 \--- /collapse ---
 
-### Create a new webpage
+### Créer une nouvelle page web
 
 \--- task ---
 
-**Click** the **+ Add file** button.
+**Clique** sur le bouton **+ Add file**.
 
-![The 'Add file' button.](images/addFile.png)
+![Le bouton 'Add a file'.](images/addFile.png)
 
-Name your new file `sammy.html` and click the **Add file** button.
+Nomme ton nouveau fichier `sammy.html` et clique sur le bouton **Add file**.
 
 \--- /task ---
 
-To get you started with this new page, you will use HTML that is similar to the content of `index`.
+Pour commencer avec cette nouvelle page, tu utiliseras du HTML similaire au contenu de `index`.
 
 \--- task ---
 
-Add this content to your new `sammy.html` file.
+Ajoute ce contenu à ton nouveau fichier `sammy.html`.
 
 ## --- code ---
 
@@ -89,12 +88,11 @@ line_number_start: 1
 
   <body>
     <nav class="navigation">
-      <a href="index.html">Intro</a>
-      <a href="sammy.html">Sammy</a>
-    </nav>
+<a href="index.html">Intro</a>
+      <a href="sammy.html">Sammy</a>    </nav>
     <main>
       <section class="garden">
-        <div id="bounce">SCROLL DOWN</div>
+        <div id="bounce">DÉFILER VERS LE BAS</div>
       </section>
     </main>
   </body>
@@ -105,15 +103,15 @@ line_number_start: 1
 
 \--- /task ---
 
-### Position the navbar on the left
+### Positionner la barre de navigation à gauche
 
-To make this website feel more like a book, you can place the navbar on the left.
+Pour que ce site web ressemble davantage à un livre, tu peux placer la barre de navigation sur la gauche.
 
 \--- task ---
 
-Open the `style.css` file and find the `.navigation` selector.
+Ouvre le fichier `style.css` et recherche le sélecteur `.navigation`.
 
-Add the `position` and `width` properties to the `.navigation` selector.
+Ajoute les propriétés `position` et `width` au sélecteur `.navigation`.
 
 ## --- code ---
 
@@ -124,7 +122,7 @@ line_number_start: 82
 line_highlights: 92-93
 -----------------------------------------------------------
 
-/\* NAV BAR \*/
+/\* BARRE DE NAVIGATION \*/
 
 .navigation {
 background-color: var(--navigation-background-color);
@@ -140,17 +138,17 @@ width: 20vw;
 
 \--- /code ---
 
-**Click Run**
+**Clique sur Run**
 
-- The navbar should be positioned on the left.
+- La barre de navigation doit être positionnée sur la gauche.
 
 \--- /task ---
 
-The 'SCROLL DOWN' text is not centered any more because the navbar is styled with `width: 20vw`, so takes up 20% of the width of the viewport.
+Le texte « DÉFILER VERS LE BAS » n'est plus centré car la barre de navigation est stylisée avec `width: 20vw`, ce qui représente 20 % de la largeur de la fenêtre d'affichage.
 
 \--- task ---
 
-Add a `padding-left` property to the styling of `main`.
+Ajoute une propriété `padding-left` au style `main`.
 
 ## --- code ---
 
@@ -169,13 +167,13 @@ padding-left: 20vw;
 
 \--- /task ---
 
-You can change the width of an element so it stretches over a **percentage** of the viewport width.
+Tu peux modifier la largeur d'un élément pour qu'il s'étende sur un **pourcentage** de la largeur de la fenêtre.
 
-![A webpage with horizontal arrows spanning the width, showing 20% and 80% proportions of the viewport.](images/80-20_viewport.png)
+![Une page web avec des flèches horizontales sur toute la largeur, indiquant les proportions de 20 % et 80 % de la fenêtre d'affichage.](images/80-20_viewport.png)
 
 \--- task ---
 
-Change the width property of the `#bounce` selector to `80vw` (80% of the viewport width).
+Modifie la propriété width du sélecteur `#bounce` en `80vw` (80 % de la largeur de la fenêtre).
 
 ## --- code ---
 
@@ -199,21 +197,21 @@ animation: bounce 1s infinite;
 
 \--- /code ---
 
-**Click Run**
+**Clique sur Run**
 
-- The 'SCROLL DOWN' text should be positioned centrally.
+- Le texte « DÉFILER VERS LE BAS » doit être positionné au centre.
 
 \--- /task ---
 
-### Size the font with a container query
+### Dimensionner la police avec une requête de conteneur
 
-The font size is currently set to a **fixed** size of 50 pixels (`50px`).
+La taille de la police est actuellement définie à une taille **fixe** de 50 pixels (`50px`).
 
-You can use `cqh` instead of `px` to calculate the size of the font, so it always relates to the height of its container element.
+Tu peux utiliser `cqh` au lieu de `px` pour calculer la taille de la police, de sorte qu'elle soit toujours liée à la hauteur de son élément conteneur.
 
 \--- task ---
 
-Change the `font-size` property of the `p` selector to `3cqh`.
+Modifie la propriété `font-size` du sélecteur `p` en `3cqh`.
 
 ## --- code ---
 
@@ -232,9 +230,9 @@ padding-right: 5vw;
 
 \--- /code ---
 
-**Click Run**
+**Clique sur Run**
 
-- Resize the **height** of the editor preview to see your font size change!
+- Redimensionne la **hauteur** de l'aperçu de l'éditeur pour voir le changement de taille de la police !
 
 \--- /task ---
 
@@ -242,24 +240,24 @@ padding-right: 5vw;
 
 ---
 
-## title: What is cqh?
+## title: Qu'est-ce que cqh ?
 
-Container query height (cqh) are units that specify a size relative to the dimensions of an element's container element.
+Le Container query height (cqh) est une unité qui spécifie une taille relative aux dimensions de l'élément conteneur d'un élément.
 
-`1cqh` is 1% of the container's height. For example, if the container's height is 300px, then a value of `10cqh` on a property will be 30px.
+`1cqh` représente 1 % de la hauteur du conteneur. Par exemple, si la hauteur du conteneur est de 300px, alors une valeur de `10cqh` sur une propriété sera de 30px.
 
-One benefit of using `cqh` units rather than `px` (pixel units) for sizing elements is that elements will resize along with their container. This usually happens when you resize a browser window, or view a webpage on a different screen.
+L’un des avantages de l’utilisation des unités `cqh` plutôt que `px` (unités de pixels) pour dimensionner les éléments est que les éléments seront redimensionnés avec leur conteneur. Cela se produit généralement lorsque tu redimensionnes une fenêtre de navigateur ou affiches une page web sur un autre écran.
 
-Here is an example:
+Voici un exemple :
 
-![A gif showing font sizes changing when the browser changes height and width.](images/cqh_cqw.gif)
+![Un gif montrant les tailles de police changeant lorsque le navigateur modifie la hauteur et la largeur.](images/cqh_cqw.gif)
 
-In the example, the font size of the the main story text has been set to use `cqh`, so it changes with the browser's height.
+Dans l'exemple, la taille de la police du texte de l'histoire principale a été définie pour utiliser `cqh`, elle change donc avec la hauteur du navigateur.
 
-The font size of the text in the navbar has been set to use `cqw`, so it changes with the browser's width.
+La taille de la police du texte dans la barre de navigation a été définie pour utiliser `cqw`, elle change donc avec la largeur du navigateur.
 
 \--- /collapse ---
 
-Your website is looking awesome!
+Ton site web est génial !
 
-Next, you will add a cool animation to the text to grab people's attention!
+Ensuite, tu ajouteras une animation cool au texte pour attirer l'attention des gens !
