@@ -1,42 +1,42 @@
-## Upgrade your project
+## Améliorer ton projet
 
-If you have time, you can:
+Si tu as le temps, tu peux :
 
-- Add another page for a second character from the `index.html` intro page
-- Remove the `setTimeout` from `imageObserver`
-- Improve browser performance by using `unobserve`
+- Ajouter une autre page pour un deuxième personnage de la page d'introduction `index.html`
+- Supprimer le `setTimeout` de `imageObserver`
+- Améliorer les performances du navigateur en utilisant `unobserve`
 
 \--- collapse ---
 
 ---
 
-## title: Add the story page for Bella
+## title: Ajouter la page d'histoire pour Bella
 
 \--- task ---
 
-- **Click** the **+ Add file** button.
+- **Clique** sur le bouton **+ Add file**.
 
-![The 'Add file' button.](images/addFile.png)
+![Le bouton 'Add file'.](images/addFile.png)
 
-- Name your new file `bella.html` and click the **Add file** button.
+- Nomme ton nouveau fichier `bella.html` et clique sur le bouton **Add file**.
 
 \--- /task ---
 
 \--- task ---
 
-Open the file `sammy.html`.
+Ouvre le fichier `sammy.html`.
 
-Select all the HTML (Ctrl + A or Cmd + A).
+Sélectionne tout le code HTML (Ctrl + A ou Cmd + A).
 
-Copy the selected HTML (Ctrl + C or Cmd + C).
+Copie le code HTML sélectionné (Ctrl + C ou Cmd + C).
 
-Open the `bella.html` file and paste the HTML into it (Ctrl + V or Cmd + V).
+Ouvre le fichier `bella.html` et colle le code HTML dans celui-ci (Ctrl + V ou Cmd + V).
 
 \--- /task ---
 
 \--- task ---
 
-Change the page title.
+Modifie le titre de la page.
 
 ## --- code ---
 
@@ -57,7 +57,7 @@ line_highlights:
 
 \--- task ---
 
-Add the new link to the navbar on **all three** HTML pages.
+Ajoute le nouveau lien à la barre de navigation sur **les trois** pages HTML.
 
 ## --- code ---
 
@@ -70,8 +70,8 @@ line_highlights: 15
 
 ```
   <a href="index.html">Intro</a>
-  <a href="sammy.html">Sammy</a>  
-  <a href="bella.html">Bella</a>
+      <a href="sammy.html">Sammy</a>
+      <a href="bella.html">Bella</a>
 ```
 
 \--- /code ---
@@ -80,9 +80,9 @@ line_highlights: 15
 
 \--- task ---
 
-Open `bella.html`
+Ouvre `bella.html`
 
-Change the `<h1>` text:
+Modifie le texte `<h1>` :
 
 ## --- code ---
 
@@ -94,7 +94,7 @@ line_highlights:
 -----------------------------------------------------
 
 ```
-  <h1 id="hideBounce">Bella <br />The<br />Butterfly</h1>
+  <h1 id="hideBounce">Bella <br />Le<br />Papillon</h1>
 ```
 
 \--- /code ---
@@ -103,7 +103,7 @@ line_highlights:
 
 \--- task ---
 
-Add story text about Bella the butterfly.
+Ajoute le texte de l'histoire de Bella le papillon.
 
 ## --- code ---
 
@@ -116,19 +116,19 @@ line_highlights: 24
 
 ```
   <p>
-  In a sunlit garden, Bella the Butterfly danced from bloom to bloom, her wings painted in dazzling colors of blue, orange, and pink.<br /><br />Each graceful flutter spread joy as she explored hidden corners, discovering the beauty that filled her tiny world.<br /><br />Encountering fellow butterflies, Bella joined in a butterfly ballet, creating a living masterpiece in the sky.<br /><br />The garden embraced her, transforming each moment into a celebration of life.<br /><br />Like Sammy the Snail, Bella realised that even in the smallest corners of their worlds, there were secrets and wonders waiting to be uncovered.<br /><br />In this sunlit paradise, Sammy and Bella's garden was filled with joy.
+  Dans un jardin baigné de soleil, Bella le papillon virevoltait de fleur en fleur, ses ailes éclatantes de bleu, d'orange et de rose capturant la lumière avec une grâce hypnotisante.<br /><br />À chaque battement léger, elle semait la joie, explorant les recoins secrets et découvrant les trésors cachés d’un monde foisonnant de beauté.<br /><br />Lorsqu’elle croisa d’autres papillons, Bella se joignit à un ballet aérien, créant un chef-d'œuvre vivant, dansant avec eux dans un ciel radieux.<br /><br />Le jardin l’enveloppait, et chaque instant se transformait en une célébration vibrante de la vie.<br /><br />Comme Sammy l'escargot, Bella comprit que même dans les coins les plus discrets de leur univers, des merveilles insoupçonnées attendaient d’être révélées.<br /><br />Dans ce havre lumineux, le jardin de Sammy et Bella baignait dans une joie infinie.
   </p>
 ```
 
 \--- /code ---
 
-You can add your own story to make the page your own!
+Tu peux ajouter ta propre histoire pour personnaliser la page !
 
 \--- /task ---
 
 \--- task ---
 
-Change the `<img>` element.
+Modifie l'élément `<img>`.
 
 ## --- code ---
 
@@ -147,31 +147,31 @@ line_highlights:
 
 \--- /task ---
 
-You should create a new JavaScript file with the scripts required by this page.
+Tu devrais créer un nouveau fichier JavaScript avec les scripts requis par cette page.
 
 \--- task ---
 
-Create a new JavaScript file that will contain the scripts relevant to `bella.html`.
+Crée un nouveau fichier JavaScript qui contiendra les scripts pertinents pour `bella.html`.
 
-- **Click** the **+ Add file** button
+- **Clique** sur le bouton **+ Add file**
 
-![The 'Add file' button.](images/addFile.png)
+![Le bouton 'Add file'.](images/addFile.png)
 
-- Name your new file `bella.js` and click the **Add file** button.
+- Nomme ton nouveau fichier `bella.js` et clique sur le bouton **Add file**.
 
 \--- /task ---
 
 \--- task ---
 
-Open the `sammy.js` file.
+Ouvre le fichier `sammy.js`.
 
-Copy the contents of `sammy.js` to `bella.js`.
+Copie le contenu de `sammy.js` vers `bella.js`.
 
 \--- /task ---
 
 \--- task ---
 
-Alter `snailObserver` to create `butterflyObserver`.
+Modifie `snailObserver` pour créer `butterflyObserver`.
 
 ## --- code ---
 
@@ -182,7 +182,7 @@ line_number_start: 16
 line_highlights: 16, 17, 19, 24
 --------------------------------------------------------------------
 
-// Butterfly observer
+// Observateur de papillons
 const butterflyObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startFly");
@@ -196,13 +196,13 @@ butterflyObserver.observe(document.querySelector("#butterfly"));
 
 \--- /task ---
 
-You need to link the `bella.js` file from `bella.html`.
+Tu dois lier le fichier `bella.js` à partir de `bella.html`.
 
 \--- task ---
 
-Open the `bella.html` file.
+Ouvre le fichier `bella.html`.
 
-Change the `src` attribute of the second `<script>` element from `src="sammy.js"` to `src="bella.js"`.
+Modifie l'attribut `src` du deuxième élément `<script>` de `src="sammy.js"` en `src="bella.js"`.
 
 ## --- code ---
 
@@ -223,11 +223,11 @@ line_highlights: 32
 
 \--- task ---
 
-Open the `style.css` file and copy the `.snail` selector, then paste it underneath the `.startCrawl` selector.
+Ouvre le fichier `style.css` et copie le sélecteur `.snail`, puis colle-le sous le sélecteur `.startCrawl`.
 
-Rename it `.butterfly`.
+Renomme-le `.butterfly`.
 
-Add the `animation` property.
+Ajoute la propriété `animation`.
 
 ## --- code ---
 
@@ -255,7 +255,7 @@ padding-left: 0;
 animation: fly 3s infinite;
 }
 
-/\* NAV BAR \*/
+/\* BARRE DE NAVIGATION \*/
 
 \--- /code ---
 
@@ -263,7 +263,7 @@ animation: fly 3s infinite;
 
 \--- task ---
 
-Add a new selector called `.startFly`.
+Ajoute un nouveau sélecteur appelé `.startFly`.
 
 ## --- code ---
 
@@ -279,19 +279,19 @@ opacity: 1;
 animation: fly 2s infinite;
 }
 
-/\* NAV BAR \*/
+/\* BARRE DE NAVIGATION \*/
 
 \--- /code ---
 
 \--- /task ---
 
-Create a new animation for Bella.
+Crée une nouvelle animation pour Bella.
 
 \--- task ---
 
-Find the `/* ANIMATIONS */` comment.
+Trouve le commentaire `/* ANIMATIONS */`.
 
-Add a new `@keyframes` animation called 'fly' to suit the butterfly character.
+Ajoute une nouvelle animation `@keyframes` appelée 'fly' pour correspondre au personnage du papillon.
 
 ## --- code ---
 
@@ -339,15 +339,15 @@ transform: translateY(-15px);
 
 ---
 
-## title: Remove setTimeout
+## title: Supprimer setTimeout
 
-You can remove the `setTimeout` in `imageObserver`, as you don't want people to see the spinner image if they don't have to.
+Tu peux supprimer le `setTimeout` dans `imageObserver`, car tu ne veux pas que les gens voient l'image spinner s'ils n'y sont pas obligés.
 
 \--- task ---
 
-Open the `scripts.js` file.
+Ouvre le fichier `scripts.js`.
 
-Remove `setTimeout`.
+Supprime `setTimeout`.
 
 ## --- code ---
 
@@ -358,7 +358,7 @@ line_number_start: 10
 line_highlights: 16
 --------------------------------------------------------
 
-// Image observer
+// Observateur d'images
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 entries.forEach(
@@ -382,17 +382,17 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 ---
 
-## title: Use unobserve to improve browser performance
+## title: Utilise unobserve pour améliorer les performances du navigateur
 
-You have used the `unobserve` method in `imageObserver`.
+Tu as utilisé la méthode `unobserve` dans `imageObserver`.
 
-Add the `unobserve` method to other intersection observer callbacks.
+Ajoute la méthode `unobserve` à d'autres rappels d'Intersection Observer.
 
 \--- task ---
 
-Open the `scripts.js` file.
+Ouvre le fichier `scripts.js`.
 
-Add the `unobserve` method to the callback in `bounceObserver`.
+Ajoute la méthode `unobserve` à la fonction de rappel dans `bounceObserver`.
 
 ## --- code ---
 
@@ -403,11 +403,11 @@ line_number_start: 1
 line_highlights: 6
 -------------------------------------------------------
 
-// Hide bounce observer
+// Masquer le bounce observer
 const bounceObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
-console.log("BOUNCE TRIGGER IN VIEWPORT");
-document.querySelector("#bounce").style.opacity = 0;
+console.log("BOUNCE TRIGGER DANS LA FENÊTRE D'AFFICHAGE");
+document.querySelector("#rebond").style.opacity = 0;
 bounceObserver.unobserve(entries[0].target);
 }
 });
@@ -419,9 +419,9 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 \--- task ---
 
-Open the `sammy.js` file.
+Ouvre le fichier `sammy.js`.
 
-Add the `unobserve` method to the callback in `riseObserver`.
+Ajoute la méthode `unobserve` à la fonction de rappel dans `riseObserver`.
 
 ## --- code ---
 
@@ -432,7 +432,7 @@ line_number_start: 1
 line_highlights: 5
 -------------------------------------------------------
 
-// Rising text observer
+// Observateur de texte ascendant
 const riseObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("rise");
@@ -447,7 +447,7 @@ riseObserver.observe(document.querySelector("p"));
 
 \--- task ---
 
-Add the `unobserve` method to the callback in `snailObserver`.
+Ajoute la méthode `unobserve` à la fonction de rappel dans `snailObserver`.
 
 ## --- code ---
 
@@ -458,7 +458,7 @@ line_number_start: 16
 line_highlights: 20
 --------------------------------------------------------
 
-// Snail observer
+// Observateur d'escargot
 const snailObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startCrawl");
@@ -475,9 +475,9 @@ snailObserver.observe(document.querySelector("#snail"));
 
 \--- task ---
 
-Open the `bella.js` file.
+Ouvre le fichier `bella.js`.
 
-Add the `unobserve` method to the callback in `riseObserver`.
+Ajoute la méthode `unobserve` à la fonction de rappel dans `riseObserver`.
 
 ## --- code ---
 
@@ -488,7 +488,7 @@ line_number_start: 1
 line_highlights: 5
 -------------------------------------------------------
 
-// Rising text observer
+// Observateur de texte ascendant
 const riseObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("rise");
@@ -503,7 +503,7 @@ riseObserver.observe(document.querySelector("p"));
 
 \--- task ---
 
-Add the `unobserve` method to the callback in `butterflyObserver`.
+Ajoute la méthode `unobserve` à la fonction de rappel dans `butterflyObserver`.
 
 ## --- code ---
 
@@ -514,7 +514,7 @@ line_number_start: 16
 line_highlights: 20
 --------------------------------------------------------
 
-// Butterfly observer
+// Observateur de papillons
 const butterflyObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startFly");
@@ -535,10 +535,10 @@ butterflyObserver.observe(document.querySelector("#butterfly"));
 
 ---
 
-## title: See the upgraded project
+## title: Voir le projet amélioré
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-upgraded?page=bella.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-You can see the [upgraded project files here](https://editor.raspberrypi.org/en/projects/animated-story-upgraded){:target="_blank"}.
+Tu peux voir les [fichiers du projet amélioré ici](https://editor.raspberrypi.org/fr-FR/projects/animated-story-upgraded){:target="_blank"}.
 
 \--- /collapse ---
