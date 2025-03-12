@@ -92,7 +92,7 @@ p {
   background-attachment: fixed;
 }
 
-/* SNAIL */
+/* ESCARGOT */
 
 .snail {
   opacity: 0;
@@ -109,7 +109,7 @@ p {
   transform: translateX(25%);
 }
 
-/* NAV BAR */
+/* BARRE DE NAVIGATION */
 
 .navigation {
   background-color: var(--navigation-background-color);
@@ -134,7 +134,7 @@ p {
   transition: all 500ms;
 }
 
-/* HEADING */
+/* TITRE */
 
 .enabled {
   color: var(--text-color);
