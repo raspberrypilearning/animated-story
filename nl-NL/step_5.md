@@ -1,16 +1,16 @@
-## Animate text
+## Tekst animeren
 
-In this step, you will add a cool animation to the text to grab people's attention!
+In deze stap voeg je een leuke animatie toe aan de tekst om de aandacht van mensen te trekken!
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step5?page=sammy.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Fix the position of the garden image
+### De positie van de tuinafbeelding vastzetten
 
-You can 'fix' the position of the garden image so it appears as a background, with other content scrolling in front of it.
+Je kunt de positie van de tuinafbeelding 'fixeren', zodat deze als achtergrond wordt weergegeven, terwijl andere content ervoor scrolt.
 
 \--- task ---
 
-Add the `background-attachment: fixed` property to the `.garden` selector.
+Voeg de eigenschap `background-attachment: fixed` toe aan de `.garden`-selector.
 
 ## --- code ---
 
@@ -30,35 +30,35 @@ background-attachment: fixed;
 
 \--- /code ---
 
-**Click Run**
+**Klik op Run**
 
-- Scroll down to see the garden image as a fixed background.
+- Scroll naar beneden om de tuinafbeelding als vaste achtergrond te zien.
 
 \--- collapse ---
 
 ---
 
-## title: What should I see?
+## title: Wat moet ik zien?
 
-![A gif showing a fixed background image as other content scrolls in front of it.](images/background-attachment-fixed.gif)
+![Een gif die een vaste achtergrondafbeelding laat zien terwijl andere inhoud ervoor scrolt.](images/background-attachment-fixed.gif)
 
 \--- /collapse ---
 
 \--- /task ---
 
-### Add a heading
+### Voeg een kop toe
 
-You can add a heading for the story page using an `<h1>` element.
+Je kunt een koptekst voor de verhaalpagina toevoegen met behulp van een `<h1>`-element.
 
-The `<h1>` element should have the attribute `id="hideBounce"`.
+Het element `<h1>` moet het kenmerk `id="hideBounce"` hebben.
 
 \--- task ---
 
-Open the `sammy.html` file.
+Open het `sammy.html` bestand.
 
-Find the closing `</section>` tag.
+Zoek de afsluitende `</section>` tag.
 
-Add an `<h1>` element.
+Voeg een `<h1>`-element toe.
 
 ## --- code ---
 
@@ -72,27 +72,27 @@ line_highlights: 20
 ```
 <main>
   <section class="garden">
-    <div id="bounce">SCROLL DOWN</div>
+    <div id="bounce">OMLAAG SCROLLEN</div>
   </section>
-  <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
+  <h1 id="hideBounce">Sammy <br />De<br />Slak</h1>
 </main>
 ```
 
 \--- /code ---
 
-**Click Run**
+**Klik op Run**
 
-- Scroll down to see the heading.
+- Scroll naar beneden om de kop te zien.
 
 \--- /task ---
 
-### Add some story text
+### Voeg wat tekst voor het verhaal toe
 
 \--- task ---
 
-Add the story text after the `<h1>` heading.
+Voeg de verhaaltekst toe na de `<h1>` kop.
 
-The story text should be in a `<p>` element.
+De verhaaltekst moet in een `<p>` element zitten.
 
 ## --- code ---
 
@@ -106,34 +106,34 @@ line_highlights: 21-23
 ```
 <main>
   <section class="garden">
-    <div id="bounce">SCROLL DOWN</div>
+    <div id="bounce">OMLAAG SCROLLEN</div>
   </section>
-  <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
+  <h1 id="hideBounce">Sammy <br />De<br />Slak</h1>
   <p>
-    On a bright and sunny day in the garden, Sammy the Snail woke up feeling curious. <br /><br />His shiny shell glistened as he slowly ventured beyond his usual path. Sammy wanted to see what lay beyond the familiar leaves and flowers. <br /><br />As he slid along, the tiny garden world seemed to unfold before him. <br /><br />Sammy discovered a patch of dew-kissed grass, sparkling like diamonds in the morning sun. Excitement filled him as he explored tiny tunnels and secret hideaways.<br /><br />The little snail's adventure brought a smile to his face. Sammy realised that even in the smallest corners of the garden, there were secrets to be found. <br /><br />Sammy continued his exploration, eager to uncover more wonders in this blossoming world.
+    Op een heldere en zonnige dag in de tuin werd Sammy de Slak wakker met een nieuwsgierig gevoel. <br /><br />Zijn glanzende schild glinsterde terwijl hij langzaam zijn gebruikelijke pad verliet. Sammy wilde zien wat er achter de bekende bladeren en bloemen lag. <br /><br />Terwijl hij verder gleed, leek de kleine tuinwereld zich voor hem te ontvouwen. <br /><br />Sammy ontdekte een stukje gras, met dauw die schitterde als diamanten in de ochtendzon. Opgewonden keek hij verder terwijl hij kleine tunnels en geheime schuilplaatsen verkende.<br /><br />Het avontuur bracht een glimlach op het gezicht van onze kleine slak. Sammy realiseerde zich dat er zelfs in de kleinste hoekjes van de tuin geheimen te vinden waren. <br /><br />Sammy zette zijn verkenning voort, gretig om meer wonderen te ontdekken in deze bloeiende wereld.
   </p>
 </main>
 ```
 
 \--- /code ---
 
-**Click Run**
+**Klik op Run**
 
-- Scroll down to see the story text.
+- Scroll naar beneden om de verhaaltekst te zien.
 
 \--- /task ---
 
-### Animate the text
+### Animeer de tekst
 
-Create an animation to apply to the story text.
+Maak een animatie die je kunt toepassen op de verhaaltekst.
 
 \--- task ---
 
-Open the `style.css` file.
+Open het `style.css` bestand.
 
-Find the `/* ANIMATIONS */` comment.
+Zoek het commentaar `/* ANIMATIES */`.
 
-Add a keyframes animation called `rising`.
+Voeg een keyframes animatie toe met de naam 'rising'.
 
 ## --- code ---
 
@@ -144,7 +144,7 @@ line_number_start: 51
 line_highlights: 53-61
 -----------------------------------------------------------
 
-/\* ANIMATIONS \*/
+/\* ANIMATIES \*/
 
 @keyframes rising {
 from {
@@ -161,13 +161,13 @@ transform: translateY(0%);
 
 \--- /task ---
 
-Next, create a new selector (`.rise`) that uses the `rising` animation.
+Maak vervolgens een nieuwe selector (`.rise`) die de `rising`-animatie gebruikt.
 
-**Note:** Later, you will use JavaScript to add the `rise` class to the `<p>` element when it enters the viewport.
+**Opmerking:** Later zul je JavaScript gebruiken om de `rise` klasse toe te voegen aan het `<p>` element wanneer het de viewport binnenkomt.
 
 \--- task ---
 
-Create the `.rise` selector.
+Maak de `.rise`-selector.
 
 ## --- code ---
 
@@ -178,7 +178,7 @@ line_number_start: 51
 line_highlights: 53-56
 -----------------------------------------------------------
 
-/\* ANIMATIONS \*/
+/\* ANIMATIES \*/
 
 .rise {
 animation: rising 2s ease;
@@ -188,41 +188,41 @@ animation: rising 2s ease;
 
 \--- /code ---
 
-The selector has one `animation` property set to call the keyframes animation `rising` that you created earlier.
+De selector heeft één `animation` eigenschap ingesteld om de keyframes animatie `rising` aan te roepen die je eerder hebt gemaakt.
 
-The animation is set to last for two seconds (`2s`) and use the `ease` transition.
+De animatie duurt twee seconden (`2s`) en maakt gebruik van de overgang `ease`.
 
-**Tip:** You can add this anywhere in the CSS file, but it makes sense to add it close to the code for the keyframes animation.
-
-\--- /task ---
-
-### Use JavaScript to trigger the animation
-
-This animation will not be required on `index.html`.
-
-You should create a new JavaScript file with scripts required by this page.
-
-\--- task ---
-
-Create a new JavaScript file that will contain the scripts relevant to `sammy.html`.
-
-- **Click** the **+ Add file** button
-
-![The 'Add file' button.](images/addFile.png)
-
-- Name your new file `sammy.js` and click the **Add file** button.
+**Tip:** Je kunt dit overal in het CSS-bestand toevoegen, maar het is handig om het dicht bij de code voor de keyframe-animatie toe te voegen.
 
 \--- /task ---
 
-You need to link your new file from the `sammy.html` page.
+### Gebruik JavaScript om de animatie te activeren
+
+Deze animatie is niet nodig op `index.html`.
+
+Je moet een nieuw JavaScript-bestand maken met scripts die voor deze pagina vereist zijn.
 
 \--- task ---
 
-Open the `sammy.html` file.
+Maak een nieuw JavaScript-bestand dat de scripts bevat die relevant zijn voor `sammy.html`.
 
-Find the `<script>` element.
+- **Klik** op de knop **+ Add file**
 
-Add a second `<script>` element with the attribute `src="sammy.js"`
+![De knop 'Add file'.](images/addFile.png)
+
+- Geef jouw nieuwe bestand de naam `sammy.js` en klik op de knop **Add file**.
+
+\--- /task ---
+
+Je moet je nieuwe bestand koppelen vanaf de `sammy.html` pagina.
+
+\--- task ---
+
+Open het `sammy.html` bestand.
+
+Zoek het `<script>` element.
+
+Voeg een tweede `<script>` element toe met het kenmerk `src="sammy.js"`
 
 ## --- code ---
 
@@ -241,13 +241,13 @@ line_highlights: 27
 
 \--- /task ---
 
-You will now create a JavaScript intersection observer with a callback that adds the `rise` class to the `<p>` element when it enters the viewport.
+Je maakt nu een JavaScript intersection observer met een callback die de `rise` klasse toevoegt aan het `<p>` element wanneer het de viewport binnenkomt.
 
 \--- task ---
 
-Open the file `sammy.js` you created earlier.
+Open het bestand `sammy.js` dat je eerder hebt gemaakt.
 
-Add an intersection observer called `riseObserver`.
+Voeg een intersection observer toe met de naam `riseObserver`.
 
 ## --- code ---
 
@@ -258,7 +258,7 @@ line_number_start: 1
 line_highlights:
 -----------------------------------------------------
 
-// Rising text observer
+// Stijgende tekst waarnemer
 const riseObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("rise");
@@ -268,17 +268,17 @@ riseObserver.observe(document.querySelector("p"));
 
 \--- /code ---
 
-**Tip:** This intersection observer is similar to `bounceObserver` that you created in an earlier step.
+**Tip:** Deze intersection observer is vergelijkbaar met `bounceObserver` die je in een eerdere stap hebt gemaakt.
 
-There are two main differences:
+Er zijn twee belangrijke verschillen:
 
-- `riseObserver` watches for `<p>` elements
-- `riseObserver` adds the `rise` class to intersecting elements.
+- `riseObserver` let op `<p>` elementen
+- `riseObserver` voegt de `rise`-klasse toe aan kruisende elementen.
 
-**Click Run**
+**Klik op Run**
 
-- Scroll down to see the rising animation when the `<p>` text enters the viewport.
+- Scroll naar beneden om de rising animatie te zien wanneer de tekst `<p>` in het venster verschijnt.
 
 \--- /task ---
 
-Next, you will add an animation to the heading and a different animation to an image.
+Vervolgens kun je een animatie toevoegen aan de kop en een andere animatie aan een afbeelding.
