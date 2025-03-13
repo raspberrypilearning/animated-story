@@ -1,6 +1,6 @@
 ## Wat kun je verder nog doen?
 
-Als je het [Meer web](https://projects.raspberrypi.org/nl/pathways/meere-web) pad volgt, kun je doorgaan naar het [Kies je favoriet](https://projects.raspberrypi.org/en/projects/pick-your-favourite) project. In dit project maak je een fan website waarmee een gebruiker keuzes kan maken die de inhoud van de webpagina veranderen! Je kunt een webpagina maken met content over verschillende sportteams, modemerken, tv-programma's of iets anders waar jij en je vrienden fan van zijn!
+If you are following the [More web](https://projects.raspberrypi.org/en/pathways/more-web) path, you can move on to the [Pick your favourite!](https://projects.raspberrypi.org/en/projects/pick-your-favourite) project. In dit project maak je een fan website waarmee een gebruiker keuzes kan maken die de inhoud van de webpagina veranderen! Je kunt een webpagina maken met content over verschillende sportteams, modemerken, tv-programma's of iets anders waar jij en je vrienden fan van zijn!
 
 \--- print-only ---
 
