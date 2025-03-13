@@ -1,8 +1,8 @@
 --- question ---
 
 ---
-
-## legend: Question 3 sur 3
+legend: Question 3 sur 3
+---
 
 Comment l'Intersection Observer réagit-il lorsqu'un élément observé entre ou sort de la fenêtre d'affichage ?
 

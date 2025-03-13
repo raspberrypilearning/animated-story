@@ -9,8 +9,8 @@ Tu seras guidé vers la bonne réponse. Tu peux faire cette activité autant de 
 --- question ---
 
 ---
-
-## legend: Question 1 sur 3
+legend: Question 1 sur 3
+---
 
 La méthode `console.log()` peut être utilisée pour déboguer le code.
 

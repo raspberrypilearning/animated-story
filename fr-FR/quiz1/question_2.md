@@ -1,8 +1,8 @@
 --- question ---
 
 ---
-
-## legend: Question 2 sur 3
+legend: Question 2 sur 3
+---
 
 Quel est le but d'un « observateur » en JavaScript ?
 
