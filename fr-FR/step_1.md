@@ -14,6 +14,7 @@ Tu vas :
 - Animer les éléments de texte et d'image lorsqu'ils apparaissent
 
 \--- no-print ---
+
 \--- task ---
 
 ### Essaie-le
@@ -47,8 +48,11 @@ Image de spinner : Iphone-spinner-2 via https://icons8.com/
 \--- /collapse ---
 
 \--- /task ---
+
 \--- /no-print ---
 
 \--- print-only ---
+
 ![Completed project](images/animated-story.png)
+
 \--- /print-only ---
