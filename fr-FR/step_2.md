@@ -1,6 +1,6 @@
 ## Observer les éléments
 
-Dans cette étape, tu utiliseras « l’Intersection Observer » pour faire disparaître du texte !
+In this step, you will use the 'intersection observer' to make some text disappear! The starter project has missing elements at the moment, but don't worry, you will add to it as you work through the project.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step2" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
@@ -13,7 +13,7 @@ Ouvre le [projet de démarrage Histoire animée](https://editor.raspberrypi.org/
 Ton projet de démarrage contient :
 
 - `index.html` : une page HTML avec des images et du texte
-- `style.html` et `default.css` : fichiers CSS qui contiennent le style de certains contenus
+- `style.css` and `default.css`: CSS files that contain styling for some of the content
 - Les images que tu utiliseras dans le projet
 - `scripts.js`: un fichier JavaScript que tu vas développer tout au long du projet
 
@@ -23,7 +23,15 @@ Ton projet de démarrage contient :
 
 Ouvre la console.
 
-**Astuce :** la plupart des navigateurs te permettent de cliquer avec le bouton droit sur une page et d'« inspecter » un élément.
+\--- /task ---
+
+\--- collapse ---
+
+---
+
+## title: Opening the Console
+
+Most browsers will let you right-click on a page and 'Inspect' an element.
 
 Cela ouvre les outils de développement, y compris la console.
 
@@ -34,7 +42,7 @@ Quelques raccourcis clavier utiles :
 - Microsoft Edge : Ctrl + Maj + I
 - Safari : Tout d'abord, active le menu « Développer le menu ». Pour ce faire, clique sur **Safari** dans la barre de menus Mac et sélectionne **Paramètres**. Clique sur **Avancé**, coche la case à côté de « Afficher les fonctionnalités pour les développeurs web », puis ferme la fenêtre. Tu peux maintenant ouvrir la console en utilisant Cmd + Option + C.
 
-\--- /task ---
+\--- /collapse ---
 
 Un observateur JavaScript peut être utilisé pour surveiller (« observer ») une collection d'éléments HTML avec un `id` spécifique ou un attribut `class`.
 
