@@ -201,8 +201,8 @@ line_highlights: 28
 --- collapse ---
 
 ---
-
-## title: Pourquoi 'src' et 'data-src' sont tous les deux définis sur 'snail.svg' ?
+title: Pourquoi 'src' et 'data-src' sont tous les deux définis sur 'snail.svg' ?
+---
 
 Les valeurs de l'attribut `src` et `data-src` sont les mêmes, parce que `imageObserver` agira sur cet élément `<img>`, mais nous ne voulons pas que l'image change.
 
