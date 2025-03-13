@@ -13,6 +13,7 @@ You will:
 + Animate text and image elements when they come into view
 
 --- no-print ---
+
 --- task ---
 
 ### Try it
@@ -45,8 +46,11 @@ Spinner image: Iphone-spinner-2 via https://icons8.com/
 --- /collapse ---
 
 --- /task ---
+
 --- /no-print ---
 
 --- print-only ---
+
 ![Completed project](images/animated-story.png)
+
 --- /print-only ---
