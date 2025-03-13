@@ -14,6 +14,7 @@ Je gaat:
 - Tekst- en beeldelementen animeren wanneer ze in beeld komen
 
 \--- no-print ---
+
 \--- task ---
 
 ### Probeer het uit
@@ -47,8 +48,11 @@ Spinnerafbeelding: Iphone-spinner-2 via https://icons8.com/
 \--- /collapse ---
 
 \--- /task ---
+
 \--- /no-print ---
 
 \--- print-only ---
+
 ![Completed project](images/animated-story.png)
+
 \--- /print-only ---
