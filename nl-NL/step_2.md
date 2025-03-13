@@ -1,6 +1,6 @@
 ## Elementen observeren
 
-In deze stap ga je de 'intersection observer' gebruiken om wat tekst te laten verdwijnen!
+In this step, you will use the 'intersection observer' to make some text disappear! The starter project has missing elements at the moment, but don't worry, you will add to it as you work through the project.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step2" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
@@ -13,7 +13,7 @@ Open het [Geanimeerd verhaal starter project](https://editor.raspberrypi.org/en/
 Je startproject bevat:
 
 - `index.html`: een HTML-pagina met afbeeldingen en tekst
-- `style.html` en `default.css`: CSS-bestanden die styling bevatten voor een deel van de inhoud
+- `style.css` and `default.css`: CSS files that contain styling for some of the content
 - De afbeeldingen die je in het project gaat gebruiken
 - `scripts.js`: een JavaScript-bestand dat je tijdens het project zult ontwikkelen
 
@@ -23,7 +23,15 @@ Je startproject bevat:
 
 Open de console.
 
-**Tip:** De meeste browsers bieden je de mogelijkheid om met de rechtermuisknop op een pagina te klikken en een element te 'Inspecteren'.
+\--- /task ---
+
+\--- collapse ---
+
+---
+
+## title: Opening the Console
+
+Most browsers will let you right-click on a page and 'Inspect' an element.
 
 Hiermee worden ontwikkelaarstools geopend, inclusief de Console.
 
@@ -34,7 +42,7 @@ Enkele handige sneltoetsen:
 - Microsoft Edge: Ctrl + Shift + I
 - Safari: Schakel eerst het menu 'Ontwikkelen' in. Om dit te doen, klik je op **Safari** in het menu van Mac en selecteer **Instellingen**. Klik op **Geavanceerd**, vink het selectievakje aan naast 'Toon functies voor webontwikkelaars' en sluit vervolgens het venster. Je kunt de console nu openen met Cmd + Optie + C.
 
-\--- /task ---
+\--- /collapse ---
 
 Met een JavaScript-observer kun je een verzameling HTML-elementen met een specifiek `id`- of `class`-kenmerk bekijken ('observeren').
 
