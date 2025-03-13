@@ -1,6 +1,6 @@
 ## Observer les éléments
 
-In this step, you will use the 'intersection observer' to make some text disappear! The starter project has missing elements at the moment, but don't worry, you will add to it as you work through the project.
+Dans cette étape, tu utiliseras « l’Intersection Observer » pour faire disparaître du texte ! The starter project has missing elements at the moment, but don't worry, you will add to it as you work through the project.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step2" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
@@ -13,7 +13,7 @@ Ouvre le [projet de démarrage Histoire animée](https://editor.raspberrypi.org/
 Ton projet de démarrage contient :
 
 - `index.html` : une page HTML avec des images et du texte
-- `style.css` and `default.css`: CSS files that contain styling for some of the content
+- `style.css` et `default.css` : fichiers CSS qui contiennent le style de certains contenus
 - Les images que tu utiliseras dans le projet
 - `scripts.js`: un fichier JavaScript que tu vas développer tout au long du projet
 
@@ -29,9 +29,9 @@ Ouvre la console.
 
 ---
 
-## title: Opening the Console
+## title: Ouvre la console
 
-Most browsers will let you right-click on a page and 'Inspect' an element.
+La plupart des navigateurs te permettent de cliquer avec le bouton droit sur une page et d'« inspecter » un élément.
 
 Cela ouvre les outils de développement, y compris la console.
 
