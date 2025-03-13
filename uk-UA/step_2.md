@@ -1,6 +1,6 @@
 ## Observe elements
 
-In this step, you will use the 'intersection observer' to make some text disappear!
+In this step, you will use the 'intersection observer' to make some text disappear! The starter project has missing elements at the moment, but don't worry, you will add to it as you work through the project.
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step2" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
@@ -13,7 +13,7 @@ Open the [Animated story starter project](https://editor.raspberrypi.org/en/proj
 Your starter project contains:
 
 - `index.html`: an HTML page with images and text
-- `style.html` and `default.css`: CSS files that contain styling for some of the content
+- `style.css` and `default.css`: CSS files that contain styling for some of the content
 - The images you will use in the project
 - `scripts.js`: a JavaScript file that you will develop throughout the project
 
@@ -23,7 +23,15 @@ Your starter project contains:
 
 Open the Console.
 
-**Tip:** Most browsers will let you right-click on a page and 'Inspect' an element.
+\--- /task ---
+
+\--- collapse ---
+
+---
+
+## title: Opening the Console
+
+Most browsers will let you right-click on a page and 'Inspect' an element.
 
 This opens developer tools, including the Console.
 
@@ -34,7 +42,7 @@ Some helpful keyboard shortcuts:
 - Microsoft Edge: Control + Shift + I
 - Safari: First, enable the 'Develop menu'. To do this, click **Safari** in the Mac menu bar and select **Settings**. Click on **Advanced**, tick the checkbox next to 'Show features for web developers' and then close the window. You can now open the console using Cmd + Option + C.
 
-\--- /task ---
+\--- /collapse ---
 
 A JavaScript observer can be used to watch ('observe') a collection of HTML elements with a specific `id` or `class` attribute.
 
