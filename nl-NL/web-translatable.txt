@@ -1,13 +1,13 @@
-Rising text observer
+Stijgende tekst waarnemer
 
-Heading observer
+Kop waarnemer
 
-Snail observer
+Slak waarnemer
 
-Hide bounce observer
+Verberg bounce observer
 
-Image observer
+Afbeeldingswaarnemer
 
 BOUNCE TRIGGER IN VIEWPORT
 
-Butterfly observer
+Vlinderwaarnemer
