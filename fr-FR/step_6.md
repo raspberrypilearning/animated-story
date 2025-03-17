@@ -227,7 +227,7 @@ filename: style.css
 line_numbers: true
 line_number_start: 95
 line_highlights: 97-106
-----
+---
 
 /* ESCARGOT */
 
