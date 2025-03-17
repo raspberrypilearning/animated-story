@@ -1,3 +1,3 @@
-// Hide bounce observer
+// Verberg bounce observer
 
-// Image observer
+// Afbeeldingswaarnemer

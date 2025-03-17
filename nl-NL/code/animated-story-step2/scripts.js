@@ -1,4 +1,4 @@
-// Hide bounce observer
+// Verberg bounce observer
 const bounceObserver = new IntersectionObserver((entries) => {
   if (entries[0].isIntersecting) {
     console.log('BOUNCE TRIGGER IN VIEWPORT');
@@ -7,4 +7,4 @@ const bounceObserver = new IntersectionObserver((entries) => {
 });
 bounceObserver.observe(document.querySelector('#hideBounce'));
 
-// Image observer
+// Afbeeldingswaarnemer

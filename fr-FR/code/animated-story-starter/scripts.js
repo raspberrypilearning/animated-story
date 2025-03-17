@@ -1,3 +1,3 @@
-// Hide bounce observer
+// Masquer le bounce observer
 
-// Image observer
+// Observateur d'image
