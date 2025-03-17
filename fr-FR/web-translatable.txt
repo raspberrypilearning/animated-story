@@ -1,13 +1,13 @@
-Rising text observer
+Observateur de texte ascendant
 
-Heading observer
+Observateur de titre
 
-Snail observer
+Observateur d'escargot
 
-Hide bounce observer
+Masquer le bounce observer
 
-Image observer
+Observateur d'image
 
-BOUNCE TRIGGER IN VIEWPORT
+BOUNCE TRIGGER DANS LA FENÊTRE D\'AFFICHAGE
 
-Butterfly observer
+Observateur de papillons
