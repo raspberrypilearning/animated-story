@@ -190,7 +190,7 @@ line_highlights: 13-17
 
 // Afbeeldingswaarnemer
 const lazyImages = document.querySelectorAll("img");
-const imageObserver = new IntersectionObserver((entries) => {\
+const imageObserver = new IntersectionObserver((entries) => {  
 entries.forEach(
 (entry) => {
 
@@ -227,9 +227,9 @@ line_highlights: 15-17
 
 // Afbeeldingswaarnemer
 const lazyImages = document.querySelectorAll("img");
-const imageObserver = new IntersectionObserver((entries) => {\
+const imageObserver = new IntersectionObserver((entries) => {  
 entries.forEach(
-(entry) => {\
+(entry) => {  
 if (entry.isIntersecting) {
 
 ```
