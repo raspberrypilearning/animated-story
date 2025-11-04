@@ -2,33 +2,33 @@
 
 ---
 
-## legend: Question 2 of 3
+## legend: 问题 2/3
 
-What is the purpose of an 'observer' in JavaScript?
+JavaScript 中“observer”的用途是什么？
 
 \--- choices ---
 
-- ( ) To see keyboard events.
+- ( ) 查看键盘事件。
 
   \--- feedback ---
 
-  Take another look. The intersection observer is not designed to handle keyboard events. It is specifically used for observing changes in the visibility of elements.
+  再看一看。 交叉观察器不是设计来处理键盘事件的。 它专门用于观察元素可见性的变化。
 
   \--- /feedback ---
 
-- (x) To watch changes in the intersection of an element with its containing parent or viewport.
+- (x) 观察元素与其包含父元素或视口的交叉点的变化。
 
   \--- feedback ---
 
-  Correct! The intersection observer is used to observe changes in how an element intersects with its containing parent or viewport. This then provides a way to react to elements entering or exiting the visible area.
+  正确！ 交叉观察器用于观察元素与其包含的父元素或视口相交方式的变化。 这提供了一种对进入或退出可见区域的元素做出反应的方法。
 
   \--- /feedback ---
 
-- ( ) To read the document object model (DOM) structure.
+- ( ) 读取文档对象模型（DOM）结构。
 
   \--- feedback ---
 
-  Take another look. The intersection observer is not intended for checking the DOM structure; its purpose is to track the visibility of elements.
+  再看一看。 交叉观察器不用于检查 DOM 结构；其目的是跟踪元素的可见性。
 
   \--- /feedback ---
 
