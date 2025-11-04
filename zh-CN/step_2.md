@@ -1,27 +1,27 @@
-## Observe elements
+## 观察元素
 
-In this step, you will use the 'intersection observer' to make some text disappear! The starter project has missing elements at the moment, but don't worry, you will add to it as you work through the project.
+在此步骤中，你将使用“交叉观察器”使一些文本消失！ 启动项目目前缺少一些元素，但不用担心，你可以在项目进行过程中添加它们。
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step2" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 \--- task ---
 
-Open the [Animated story starter project](https://editor.raspberrypi.org/en/projects/animated-story-starter){:target="_blank"}.
+打开 [动画故事入门项目](https://editor.raspberrypi.org/en/projects/animated-story-starter){:target="_blank"}。
 
 \--- /task ---
 
-Your starter project contains:
+你的入门项目包含：
 
-- `index.html`: an HTML page with images and text
-- `style.css` and `default.css`: CSS files that contain styling for some of the content
-- The images you will use in the project
-- `scripts.js`: a JavaScript file that you will develop throughout the project
+- `index.html`：包含图像和文本的 HTML 页面
+- `style.css` 和 `default.css`：包含部分内容样式的 CSS 文件
+- 你将在项目中使用的图像
+- `scripts.js`：您将在整个项目中开发的 JavaScript 文件
 
-### Console
+### 控制台
 
 \--- task ---
 
-Open the Console.
+打开控制台。
 
 \--- /task ---
 
@@ -29,44 +29,44 @@ Open the Console.
 
 ---
 
-## title: Opening the Console
+## title: 打开控制台
 
-Most browsers will let you right-click on a page and 'Inspect' an element.
+大多数浏览器都会允许你右键单击页面并“检查”元素。
 
-This opens developer tools, including the Console.
+这将打开开发人员工具，包括控制台。
 
-Some helpful keyboard shortcuts:
+一些有用的键盘快捷键：
 
-- Chrome: Ctrl + Shift + J (on Windows) or Cmd + Option + J (on a Mac)
-- Firefox: Ctrl + Shift + J (on Windows) or Cmd + Option + K (on a Mac)
-- Microsoft Edge: Control + Shift + I
-- Safari: First, enable the 'Develop menu'. To do this, click **Safari** in the Mac menu bar and select **Settings**. Click on **Advanced**, tick the checkbox next to 'Show features for web developers' and then close the window. You can now open the console using Cmd + Option + C.
+- Chrome：Ctrl + Shift + J（在 Windows 上）或 Cmd + Option + J（在 Mac 上）
+- Firefox：Ctrl + Shift + J（在 Windows 上）或 Cmd + Option + K（在 Mac 上）
+- Microsoft Edge：Control + Shift + I
+- Safari：首先，启用“开发菜单”。 为此，请单击 Mac 菜单栏中的 **Safari**，然后选择 **设置**。 单击**高级**，勾选“显示 Web 开发人员的功能”旁边的复选框，然后关闭窗口。 你现在可以使用 Cmd + Option + C 打开控制台。
 
 \--- /collapse ---
 
-A JavaScript observer can be used to watch ('observe') a collection of HTML elements with a specific `id` or `class` attribute.
+JavaScript 观察器可用于监视（“观察”）具有特定 `id` 或 `class` 属性的 HTML 元素集合。
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A collection of items is called an <span style="color: #0faeb0">**array**</span>. An array can contain multiple items or just a single item.
+项目集合称为 <span style="color: #0faeb0">**数组**</span>。 数组可以包含多个项目或仅包含一个项目。
 </p>
 
-One use of an observer is to let the browser detect when an element enters the viewport.
+观察器的一个用途是让浏览器检测元素何时进入视口。
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The <span style="color: #0faeb0">**viewport**</span> is the area of the webpage that is currently visible in the browser.
+ <span style="color: #0faeb0">**视口**</span> 是网页当前在浏览器中可见的区域。
 </p>
 
-![Illustration of a browser's viewport displaying only part of a webpage. Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport.png)
+![浏览器视口仅显示网页的一部分的图示。 来源：https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox 许可证：https://creativecommons.org/licenses/by-sa/3.0/](images/viewport.png)
 
-You can output something to the Console to see if your observer is working.
+你可以向控制台输出一些内容来查看您的观察器是否正在工作。
 
-### Create an intersection observer called bounceObserver
+### 创建一个名为 bounceObserver 的交叉观察器
 
 \--- task ---
 
-Open the `scripts.js` file.
+打开 `scripts.js` 文件。
 
-Create an observer called `bounceObserver`.
+创建一个名为 `bounceObserver` 的观察器。
 
 ## --- code ---
 
@@ -77,28 +77,28 @@ line_number_start: 1
 line_highlights: 2-4
 ---------------------------------------------------------
 
-// Hide bounce observer
+// 隐藏弹跳观察者
 const bounceObserver = new IntersectionObserver(
 
 );
 
-// Image observer
+// 图像观察器
 
 \--- /code ---
 
-**Tip:** Separate the different observers using a line break (in this case, on line 5).
+\*\*提示：\*\*使用换行符分隔不同的观察器（在本例中为第 5 行）。
 
 \--- /task ---
 
-### Tell bounceObserver to observe
+### 告诉 bounceObserver 进行观察
 
 \--- task ---
 
-Call `bounceObserver` to `observe` the element in the `document` (webpage) with the attribute `id="hideBounce"`.
+调用 `bounceObserver` 来 `观察` 文档（网页）中带有 `id="hideBounce"` 属性的元素。
 
-**Note:** This element is called the 'target' element.
+\*\*注意：\*\*此元素称为“目标”元素。
 
-Observed elements are passed to the `entries` array in the observer.
+观察到的元素被传递给观察器中的 `entries` 数组。
 
 ## --- code ---
 
@@ -109,29 +109,29 @@ line_number_start: 1
 line_highlights: 2, 5
 ----------------------------------------------------------
 
-// Hide bounce observer
+// 隐藏弹跳观察者
 const bounceObserver = new IntersectionObserver((entries)
 
 );
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// 图像观察器
 
 \--- /code ---
 
-**Note:** The line break on line 3 will contain the callback.
+\*\*注意：\*\*第 3 行的换行符将包含回调。
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> The <span style="color: #0faeb0">**callback**</span> is the code that runs when the browser detects ('observes') a target element.
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"> <span style="color: #0faeb0">**回调**</span> 是浏览器检测（“观察”）目标元素时运行的代码。
 </p>
 
 \--- /task ---
 
-### Create the callback
+### 创建回调
 
 \--- task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-Arrow syntax (`=>`) can be used instead of the `function` keyword.
+箭头语法（`=>`）可以用来代替 `function` 关键字。
 </p>
 
 ## --- code ---
@@ -143,28 +143,28 @@ line_number_start: 1
 line_highlights: 2, 4
 ----------------------------------------------------------
 
-// Hide bounce observer
+// 隐藏弹跳观察者
 const bounceObserver = new IntersectionObserver((entries) => {
 
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// 图像观察器
 
 \--- /code ---
 
 \--- /task ---
 
-The callback will start by checking `if` the element in the `entries` array (with the attribute `id="hideBounce"`) (the target element) has entered the viewport.
+回调将首先检查 `entries` 数组中的元素（带有属性 `id="hideBounce"`）（目标元素）是否已进入视口。
 
-The `isIntersecting` method is used to check this.
+使用 `isIntersecting` 方法来检查这一点。
 
-This image shows a target element on a webpage that has entered the browser's viewport.
-![Illustration of a target element partially intersecting with a browser's viewport. Credit: https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox Licence: https://creativecommons.org/licenses/by-sa/3.0/](images/viewport-target.png)
+此图像显示了已进入浏览器视口的网页上的目标元素。
+![目标元素与浏览器视口部分相交的图示。 来源：https://hacks.mozilla.org/2017/08/intersection-observer-comes-to-firefox 许可证：https://creativecommons.org/licenses/by-sa/3.0/](images/viewport-target.png)
 
 \--- task ---
 
-Start the callback with a conditional statement.
+使用条件语句启动回调。
 
 ## --- code ---
 
@@ -175,7 +175,7 @@ line_number_start: 1
 line_highlights: 3-5
 ---------------------------------------------------------
 
-// Hide bounce observer
+// 隐藏弹跳观察者
 const bounceObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 
@@ -183,21 +183,21 @@ if (entries[0].isIntersecting) {
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// 图像观察器
 
 \--- /code ---
 
-**Tip:** There is only one element in the entries array (at index 0). Therefore, you can access it directly using `entries[0]`.
+\*\*提示：\*\*条目数组中只有一个元素（索引为 0）。 因此，你可以使用 `entries[0]` 直接访问它。
 
 \--- /task ---
 
-### Output a message to the Console
+### 向控制台输出消息
 
-If the condition is met (the element with the attribute `id="hideBounce"` has entered the viewport), you can output a message to the Console for testing using `console.log()`.
+如果满足条件（属性为 `id="hideBounce"` 的元素进入了视口），则可以使用 `console.log()` 向控制台输出消息进行测试。
 
 \--- task ---
 
-Add an action when the `if` condition is met that outputs a test message to the Console.
+当满足 `if` 条件时添加一个操作，向控制台输出测试消息。
 
 ## --- code ---
 
@@ -208,22 +208,22 @@ line_number_start: 1
 line_highlights: 4
 -------------------------------------------------------
 
-// Hide bounce observer
+// 隐藏弹跳观察器
 const bounceObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
-console.log("BOUNCE TRIGGER IN VIEWPORT");
+console.log("视口中的弹跳触发器");
 }
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// 图像观察器
 
 \--- /code ---
 
-**Click Run**
+**点击运行**
 
-- Open the Console.
-- Scroll down and see the message "BOUNCE TRIGGER IN VIEWPORT" appear in the Console.
+- 打开控制台。
+- 向下滚动并查看控制台中出现的“视口中的弹跳触发器”消息。
 
 \--- /task ---
 
@@ -231,11 +231,11 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 ---
 
-## title: Nothing appears in the Console
+## title: 控制台中没有显示任何内容
 
-- Check your spelling of `IntersectionObserver`. It should have two capital letters.
-- There must be a semicolon at the end of lines 4, 6, and 7.
-- Close all your brackets and curly braces.
+- 检查 `IntersectionObserver` 的拼写。 它应该有两个大写字母。
+- 第 4、6 和 7 行末尾必须有一个分号。
+- 闭合所有括号和花括号。
 
 \--- /collapse ---
 
@@ -243,39 +243,39 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 ---
 
-## title: The structure of the bounceObserver intersection observer
+## title: bounceObserver 交叉观察器的结构
 
-On line 2, `entries` is a collection of all elements on the webpage with the `id="hideBounce"` attribute.
+在第 2 行中，`entries` 是网页上所有具有 `id="hideBounce"` 属性的元素的集合。
 
-A collection of items is called an 'array'.
+项目的集合称为“数组”。
 
-The `bounceObserver` is set to observe when the first (in this case, the only) target element in the `entries` array enters the viewport.
+设置 `bounceObserver` 来观察 `entries` 数组中第一个（在本例中是唯一一个）目标元素何时进入视口。
 
-When it does, the observer 'callback' outputs a message to the Console.
+当它发生时，观察者“回调”会向控制台输出一条消息。
 
 \--- /collapse ---
 
-### Hide text
+### 隐藏文本
 
-The index page has some bouncing text at the bottom telling you to 'SCROLL DOWN'.
+索引页底部有一些弹跳文本，告诉您“向下滚动”。
 
 \--- task ---
 
-**Test:** Scroll down.
+\*\*测试：\*\*向下滚动。
 
-You will see that the 'SCROLL DOWN' text gets in the way of other content.
+你会看到“向下滚动”文本妨碍了其他内容。
 
 \--- /task ---
 
-You can do more than output messages to the Console.
+除了向控制台输出消息之外，你还可以做更多的事情。
 
-You can hide the bouncing 'SCROLL DOWN' text, by changing the value of its `opacity` property.
+你可以通过更改其 `opacity` 属性的值来隐藏弹跳的“向下滚动”文本。
 
 \--- task ---
 
-Add an action when the `if` condition is met that changes the value of the `opacity` property of the bouncing text element, which has the attribute `id="bounce"`.
+当满足 `if` 条件时添加一个操作，该操作会更改弹跳文本元素的 `opacity` 属性的值，该元素具有属性 `id="bounce"`。
 
-Set the opacity value to `0` to make it invisible.
+将不透明度值设置为 `0` 以使其不可见。
 
 ## --- code ---
 
@@ -286,16 +286,16 @@ line_number_start: 1
 line_highlights: 5
 -------------------------------------------------------
 
-// Hide bounce observer
+// 隐藏弹跳观察器
 const bounceObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
-console.log("BOUNCE TRIGGER IN VIEWPORT");
+console.log("视口中的弹跳触发器");
 document.querySelector("#bounce").style.opacity = 0;
 }
 });
 bounceObserver.observe(document.querySelector("#hideBounce"));
 
-// Image observer
+// 图像观察器
 
 \--- /code ---
 
@@ -303,9 +303,9 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 \--- task ---
 
-**Click Run**
+**点击运行**
 
-- Scroll down to see the bouncing text 'SCROLL DOWN' disappear!
+- 向下滚动即可看到弹跳文本“向下滚动”消失！
 
 \--- /task ---
 
@@ -313,15 +313,15 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 ---
 
-## title: The bouncing text does not disappear
+## title: 弹跳文字不消失
 
-- There must be a semicolon at the end of line 5.
-- Make sure you spell `querySelector` correctly, including the capital letter!
+- 第 5 行末尾必须有一个分号。
+- 请确保你正确拼写 `querySelector`, 包括大写字母！
 
 \--- /collapse ---
 
-## Save your project
+## 保存你的项目
 
-Your project is saved automatically. Return to the starter link in the same web browser to see your changes.
+你的项目已自动保存。 返回同一 Web 浏览器中的启动链接以查看你的更改。
 
-Next, you are going to improve browser performance by only loading images when they are needed.
+接下来，你将通过仅在需要时加载图像来提高浏览器性能。
