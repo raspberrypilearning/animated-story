@@ -1,42 +1,42 @@
-## Upgrade your project
+## 升级你的项目
 
-If you have time, you can:
+如果你有时间，你可以：
 
-- Add another page for a second character from the `index.html` intro page
-- Remove the `setTimeout` from `imageObserver`
-- Improve browser performance by using `unobserve`
+- 从 `index.html` 简介页面添加另一个页面，用于第二个角色
+- 从 `imageObserver` 中删除 `setTimeout`
+- 使用 `unobserve` 提高浏览器性能
 
 \--- collapse ---
 
 ---
 
-## title: Add the story page for Bella
+## title: 添加贝拉的故事页面
 
 \--- task ---
 
-- **Click** the **+ Add file** button.
+- **单击**“+ 添加文件”按钮。
 
-![The 'Add file' button.](images/addFile.png)
+![“添加文件”按钮。](images/addFile.png)
 
-- Name your new file `bella.html` and click the **Add file** button.
+- 将新文件命名为 `bella.html` 并单击**添加文件**按钮。
 
 \--- /task ---
 
 \--- task ---
 
-Open the file `sammy.html`.
+打开文件 `sammy.html`。
 
-Select all the HTML (Ctrl + A or Cmd + A).
+选择所有 HTML（Ctrl + A 或 Cmd + A）。
 
-Copy the selected HTML (Ctrl + C or Cmd + C).
+复制选定的 HTML（Ctrl + C 或 Cmd + C）。
 
-Open the `bella.html` file and paste the HTML into it (Ctrl + V or Cmd + V).
+打开 `bella.html` 文件并将 HTML 粘贴到其中（Ctrl + V 或 Cmd + V）。
 
 \--- /task ---
 
 \--- task ---
 
-Change the page title.
+更改页面标题。
 
 ## --- code ---
 
@@ -48,7 +48,7 @@ line_highlights:
 -----------------------------------------------------
 
 ```
-<title>Bella</title>
+<title>贝拉</title>
 ```
 
 \--- /code ---
@@ -57,7 +57,7 @@ line_highlights:
 
 \--- task ---
 
-Add the new link to the navbar on **all three** HTML pages.
+将新链接添加到所有三个 HTML 页面的导航栏。
 
 ## --- code ---
 
@@ -69,9 +69,9 @@ line_highlights: 15
 --------------------------------------------------------
 
 ```
-  <a href="index.html">Intro</a>
-  <a href="sammy.html">Sammy</a>  
-  <a href="bella.html">Bella</a>
+  <a href="index.html">简介</a>
+  <a href="sammy.html">萨米</a>  
+  <a href="bella.html">贝拉</a>
 ```
 
 \--- /code ---
@@ -80,9 +80,9 @@ line_highlights: 15
 
 \--- task ---
 
-Open `bella.html`
+打开 `bella.html`
 
-Change the `<h1>` text:
+更改 `<h1>` 文本：
 
 ## --- code ---
 
@@ -94,7 +94,7 @@ line_highlights:
 -----------------------------------------------------
 
 ```
-  <h1 id="hideBounce">Bella <br />The<br />Butterfly</h1>
+  <h1 id="hideBounce">贝拉<br /><br />蝴蝶</h1>
 ```
 
 \--- /code ---
@@ -103,7 +103,7 @@ line_highlights:
 
 \--- task ---
 
-Add story text about Bella the butterfly.
+添加有关蝴蝶贝拉的故事文本。
 
 ## --- code ---
 
@@ -116,19 +116,19 @@ line_highlights: 24
 
 ```
   <p>
-  In a sunlit garden, Bella the Butterfly danced from bloom to bloom, her wings painted in dazzling colors of blue, orange, and pink.<br /><br />Each graceful flutter spread joy as she explored hidden corners, discovering the beauty that filled her tiny world.<br /><br />Encountering fellow butterflies, Bella joined in a butterfly ballet, creating a living masterpiece in the sky.<br /><br />The garden embraced her, transforming each moment into a celebration of life.<br /><br />Like Sammy the Snail, Bella realised that even in the smallest corners of their worlds, there were secrets and wonders waiting to be uncovered.<br /><br />In this sunlit paradise, Sammy and Bella's garden was filled with joy.
+  在阳光明媚的花园里，蝴蝶贝拉在花丛间翩翩起舞，她的翅膀涂上了耀眼的蓝色、橙色和粉色。<br /><br />每次优雅的扑扇都带来快乐，她探索着隐秘的角落，发现了充满她小小世界的美丽。<br /><br />遇到其他蝴蝶后，贝拉加入了蝴蝶芭蕾，在天空中创造出一幅活生生的杰作。<br /><br />花园拥抱着她，将每一刻都变成了对生命的庆祝。<br /><br />就像蜗牛萨米一样，贝拉意识到即使在它们世界最小的角落里，也有秘密和奇迹等待着被发掘。<br /><br />在这个阳光明媚的天堂里，萨米和贝拉的花园充满了欢乐。
   </p>
 ```
 
 \--- /code ---
 
-You can add your own story to make the page your own!
+你可以添加自己的故事，使该页面成为你自己的页面！
 
 \--- /task ---
 
 \--- task ---
 
-Change the `<img>` element.
+更改 `<img>` 元素。
 
 ## --- code ---
 
@@ -147,31 +147,31 @@ line_highlights:
 
 \--- /task ---
 
-You should create a new JavaScript file with the scripts required by this page.
+你应该创建一个包含此页面所需脚本的新 JavaScript 文件。
 
 \--- task ---
 
-Create a new JavaScript file that will contain the scripts relevant to `bella.html`.
+创建一个新的 JavaScript 文件，其中包含与 `bella.html` 相关的脚本。
 
-- **Click** the **+ Add file** button
+- **点击**“+ 添加文件”按钮
 
-![The 'Add file' button.](images/addFile.png)
+![“添加文件”按钮。](images/addFile.png)
 
-- Name your new file `bella.js` and click the **Add file** button.
+- 将新文件命名为 `bella.js` 并单击**添加文件**按钮。
 
 \--- /task ---
 
 \--- task ---
 
-Open the `sammy.js` file.
+打开 `sammy.js` 文件。
 
-Copy the contents of `sammy.js` to `bella.js`.
+将 `sammy.js` 的内容复制到“bella.js”。
 
 \--- /task ---
 
 \--- task ---
 
-Alter `snailObserver` to create `butterflyObserver`.
+更改 `snailObserver` 来创建 `butterflyObserver`。
 
 ## --- code ---
 
@@ -182,7 +182,7 @@ line_number_start: 16
 line_highlights: 16, 17, 19, 24
 --------------------------------------------------------------------
 
-// Butterfly observer
+// 蝴蝶观察器
 const butterflyObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startFly");
@@ -196,13 +196,13 @@ butterflyObserver.observe(document.querySelector("#butterfly"));
 
 \--- /task ---
 
-You need to link the `bella.js` file from `bella.html`.
+你需要从 `bella.html` 链接 `bella.js` 文件。
 
 \--- task ---
 
-Open the `bella.html` file.
+打开 `bella.html` 文件。
 
-Change the `src` attribute of the second `<script>` element from `src="sammy.js"` to `src="bella.js"`.
+将第二个 `<script>` 元素的 `src` 属性从 `src="sammy.js"` 更改为 `src="bella.js"`。
 
 ## --- code ---
 
@@ -223,11 +223,11 @@ line_highlights: 32
 
 \--- task ---
 
-Open the `style.css` file and copy the `.snail` selector, then paste it underneath the `.startCrawl` selector.
+打开 `style.css` 文件并复制 `.snail` 选择器，然后将其粘贴到 `.startCrawl` 选择器下方。
 
-Rename it `.butterfly`.
+将其重命名为 `.butterfly`。
 
-Add the `animation` property.
+添加 `animation`属性。
 
 ## --- code ---
 
@@ -255,7 +255,7 @@ padding-left: 0;
 animation: fly 3s infinite;
 }
 
-/\* NAV BAR \*/
+/\* 导航栏 \*/
 
 \--- /code ---
 
@@ -263,7 +263,7 @@ animation: fly 3s infinite;
 
 \--- task ---
 
-Add a new selector called `.startFly`.
+添加一个名为 `.startFly` 的新选择器。
 
 ## --- code ---
 
@@ -279,19 +279,19 @@ opacity: 1;
 animation: fly 2s infinite;
 }
 
-/\* NAV BAR \*/
+/\* 导航栏 \*/
 
 \--- /code ---
 
 \--- /task ---
 
-Create a new animation for Bella.
+为贝拉创建一个新的动画。
 
 \--- task ---
 
-Find the `/* ANIMATIONS */` comment.
+找到 `/* 动画 */` 注释。
 
-Add a new `@keyframes` animation called 'fly' to suit the butterfly character.
+添加一个名为 `fly` 的新 `@keyframes` 动画以适合蝴蝶角色。
 
 ## --- code ---
 
@@ -302,7 +302,7 @@ line_number_start: 51
 line_highlights: 53 - 76
 -------------------------------------------------------------
 
-/\* ANIMATIONS \*/
+/\* 动画 \*/
 
 @keyframes fly {
 0%,
@@ -339,15 +339,15 @@ transform: translateY(-15px);
 
 ---
 
-## title: Remove setTimeout
+## title: 删除 setTimeout
 
-You can remove the `setTimeout` in `imageObserver`, as you don't want people to see the spinner image if they don't have to.
+你可以删除 `imageObserver` 中的 `setTimeout`，因为你不希望人们在没有必要的情况下看到旋转图像。
 
 \--- task ---
 
-Open the `scripts.js` file.
+打开 `scripts.js` 文件。
 
-Remove `setTimeout`.
+删除 `setTimeout`。
 
 ## --- code ---
 
@@ -358,7 +358,7 @@ line_number_start: 10
 line_highlights: 16
 --------------------------------------------------------
 
-// Image observer
+// 图像观察器
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 entries.forEach(
@@ -382,17 +382,17 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 ---
 
-## title: Use unobserve to improve browser performance
+## title: 使用 unobserve 提高浏览器性能
 
-You have used the `unobserve` method in `imageObserver`.
+你已在 `imageObserver` 中使用了 `unobserve` 方法。
 
-Add the `unobserve` method to other intersection observer callbacks.
+将 `unobserve` 方法添加到其他交叉口观察器回调中。
 
 \--- task ---
 
-Open the `scripts.js` file.
+打开 `scripts.js` 文件。
 
-Add the `unobserve` method to the callback in `bounceObserver`.
+将 `unobserve` 方法添加到 `bounceObserver` 的回调方法中。
 
 ## --- code ---
 
@@ -403,10 +403,10 @@ line_number_start: 1
 line_highlights: 6
 -------------------------------------------------------
 
-// Hide bounce observer
+// 隐藏弹跳观察器
 const bounceObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
-console.log("BOUNCE TRIGGER IN VIEWPORT");
+console.log("视口中的弹跳触发器");
 document.querySelector("#bounce").style.opacity = 0;
 bounceObserver.unobserve(entries[0].target);
 }
@@ -419,9 +419,9 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 \--- task ---
 
-Open the `sammy.js` file.
+打开 `sammy.js` 文件。
 
-Add the `unobserve` method to the callback in `riseObserver`.
+将 `unobserve` 方法添加到 `riseObserver` 的回调中。
 
 ## --- code ---
 
@@ -432,7 +432,7 @@ line_number_start: 1
 line_highlights: 5
 -------------------------------------------------------
 
-// Rising text observer
+// 上升文本观察器
 const riseObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("rise");
@@ -447,7 +447,7 @@ riseObserver.observe(document.querySelector("p"));
 
 \--- task ---
 
-Add the `unobserve` method to the callback in `snailObserver`.
+将 `unobserve` 方法添加到 `snailObserver` 回调中。
 
 ## --- code ---
 
@@ -458,7 +458,7 @@ line_number_start: 16
 line_highlights: 20
 --------------------------------------------------------
 
-// Snail observer
+// 蜗牛观察器
 const snailObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startCrawl");
@@ -475,9 +475,9 @@ snailObserver.observe(document.querySelector("#snail"));
 
 \--- task ---
 
-Open the `bella.js` file.
+打开 `bella.js` 文件。
 
-Add the `unobserve` method to the callback in `riseObserver`.
+将 `unobserve` 方法添加到 `riseObserver` 的回调中。
 
 ## --- code ---
 
@@ -488,7 +488,7 @@ line_number_start: 1
 line_highlights: 5
 -------------------------------------------------------
 
-// Rising text observer
+// 上升文本观察器
 const riseObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("rise");
@@ -503,7 +503,7 @@ riseObserver.observe(document.querySelector("p"));
 
 \--- task ---
 
-Add the `unobserve` method to the callback in `butterflyObserver`.
+将 `unobserve` 方法添加到 `butterflyObserver` 回调中。
 
 ## --- code ---
 
@@ -514,7 +514,7 @@ line_number_start: 16
 line_highlights: 20
 --------------------------------------------------------
 
-// Butterfly observer
+// 蝴蝶观察器
 const butterflyObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startFly");
@@ -535,10 +535,10 @@ butterflyObserver.observe(document.querySelector("#butterfly"));
 
 ---
 
-## title: See the upgraded project
+## title: 查看升级后的项目
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-upgraded?page=bella.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-You can see the [upgraded project files here](https://editor.raspberrypi.org/en/projects/animated-story-upgraded){:target="_blank"}.
+你可以在此处查看 [升级后的项目文件](https://editor.raspberrypi.org/en/projects/animated-story-upgraded){:target="_blank"}。
 
 \--- /collapse ---
