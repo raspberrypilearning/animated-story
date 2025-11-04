@@ -48,7 +48,7 @@ section {
   animation: bounce 1s infinite;
 }
 
-/* ANIMATIONS */
+/* 动画 */
 
 @keyframes bounce {
   0%,
@@ -78,9 +78,9 @@ p {
   background-position-y: bottom;
 }
 
-/* SNAIL */
+/* 蜗牛 */
 
-/* NAV BAR */
+/* 导航栏 */
 
 .navigation {
   background-color: var(--navigation-background-color);
@@ -105,7 +105,7 @@ p {
   transition: all 500ms;
 }
 
-/* HEADING */
+/* 页首 */
 
 .enabled {
   color: var(--text-color);
