@@ -1,20 +1,20 @@
-## Add a new page
+## 添加新页面
 
-In this step, you will add a new webpage and navigation bar (navbar) to your website.
+在此步骤中，你将向你的网站添加一个新的页面和导航栏（navbar）。
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step4" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Add a navbar
+### 添加导航栏
 
-If you have completed the [Welcome to Antarctica](https://projects.raspberrypi.org/en/projects/welcome-to-antarctica) project, you will know how to create a navbar.
+如果你已经完成了 [欢迎来到南极洲](https://projects.raspberrypi.org/en/projects/welcome-to-antarctica) 项目， 你将知道如何创建导航栏。
 
 \--- task ---
 
-Open the `index.html` file.
+打开 `index.html` 文件。
 
-Find the `<body>` tag.
+找到 `<body>` 标签。
 
-Add the `<nav>` tags below it with the links to be shown in the navbar.
+在其下方添加 `<nav>` 标签，其中包含要在导航栏中显示的链接。
 
 ## --- code ---
 
@@ -27,16 +27,16 @@ line_highlights: 12-15
 
   <body>
     <nav class="navigation">
-      <a href="index.html">Intro</a>
-      <a href="sammy.html">Sammy</a>
+      <a href="index.html">简介</a>
+      <a href="sammy.html">萨米</a>
     </nav>
     <main>
 
 \--- /code ---
 
-**Click Run**
+**点击运行**
 
-- The navigation links will appear at the top.
+- 导航链接将出现在顶部。
 
 \--- /task ---
 
@@ -44,29 +44,29 @@ line_highlights: 12-15
 
 ---
 
-## title: The navigation links are not there
+## title: 导航链接不存在
 
-- Make sure you add the `class="navigation"` attribute to the opening `<nav>`.
+- 请确保您将`class="navigation`属性添加到开头的\`<nav>'。
 
 \--- /collapse ---
 
-### Create a new webpage
+### 创建一个新页面
 
 \--- task ---
 
-**Click** the **+ Add file** button.
+**单击**“+ 添加文件”按钮。
 
-![The 'Add file' button.](images/addFile.png)
+![“添加文件”按钮。](images/addFile.png)
 
-Name your new file `sammy.html` and click the **Add file** button.
+将新文件命名为 `sammy.html` 并单击**添加文件**按钮。
 
 \--- /task ---
 
-To get you started with this new page, you will use HTML that is similar to the content of `index`.
+为了让你开始使用这个新页面，你将使用与 `index` 内容类似的 HTML。
 
 \--- task ---
 
-Add this content to your new `sammy.html` file.
+将此内容添加到你的新 `sammy.html` 文件中。
 
 ## --- code ---
 
@@ -82,19 +82,19 @@ line_number_start: 1
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sammy</title>
+    <title>萨米</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="default.css" />
   </head>
 
   <body>
     <nav class="navigation">
-      <a href="index.html">Intro</a>
-      <a href="sammy.html">Sammy</a>
+      <a href="index.html">简介</a>
+      <a href="sammy.html">萨米</a>
     </nav>
     <main>
       <section class="garden">
-        <div id="bounce">SCROLL DOWN</div>
+        <div id="bounce">向下滚动</div>
       </section>
     </main>
   </body>
@@ -105,15 +105,15 @@ line_number_start: 1
 
 \--- /task ---
 
-### Position the navbar on the left
+### 将导航栏放在左侧
 
-To make this website feel more like a book, you can place the navbar on the left.
+为了让这个网站更像一本书，你可以将导航栏放在左侧。
 
 \--- task ---
 
-Open the `style.css` file and find the `.navigation` selector.
+打开 `style.css` 文件并找到 `.navigation` 选择器。
 
-Add the `position` and `width` properties to the `.navigation` selector.
+将 `position` 和 `width` 属性添加到 `.navigation` 选择器。
 
 ## --- code ---
 
@@ -124,7 +124,7 @@ line_number_start: 82
 line_highlights: 92-93
 -----------------------------------------------------------
 
-/\* NAV BAR \*/
+/\* 导航栏 \*/
 
 .navigation {
 background-color: var(--navigation-background-color);
@@ -140,17 +140,17 @@ width: 20vw;
 
 \--- /code ---
 
-**Click Run**
+**点击运行**
 
-- The navbar should be positioned on the left.
+- 导航栏应位于左侧。
 
 \--- /task ---
 
-The 'SCROLL DOWN' text is not centered any more because the navbar is styled with `width: 20vw`, so takes up 20% of the width of the viewport.
+“向下滚动”文本不再居中，因为导航栏的样式为 `width: 20vw`，因此占据了视口宽度的 20%。
 
 \--- task ---
 
-Add a `padding-left` property to the styling of `main`.
+为 `main` 的样式添加 `padding-left` 属性。
 
 ## --- code ---
 
@@ -169,13 +169,13 @@ padding-left: 20vw;
 
 \--- /task ---
 
-You can change the width of an element so it stretches over a **percentage** of the viewport width.
+你可以更改元素的宽度，使其延伸至视口宽度的**百分比**。
 
-![A webpage with horizontal arrows spanning the width, showing 20% and 80% proportions of the viewport.](images/80-20_viewport.png)
+![带有横跨宽度的水平箭头的网页，显示视口的 20% 和 80% 比例。](images/80-20_viewport.png)
 
 \--- task ---
 
-Change the width property of the `#bounce` selector to `80vw` (80% of the viewport width).
+将 `#bounce` 选择器的宽度属性更改为 `80vw`（视口宽度的 80%）。
 
 ## --- code ---
 
@@ -199,21 +199,21 @@ animation: bounce 1s infinite;
 
 \--- /code ---
 
-**Click Run**
+**点击运行**
 
-- The 'SCROLL DOWN' text should be positioned centrally.
+- “向下滚动”文本应位于中央。
 
 \--- /task ---
 
-### Size the font with a container query
+### 使用容器查询调整字体大小
 
-The font size is currently set to a **fixed** size of 50 pixels (`50px`).
+字体大小当前设置为**固定**大小 50 像素（`50px`）。
 
-You can use `cqh` instead of `px` to calculate the size of the font, so it always relates to the height of its container element.
+你可以使用 `cqh` 而不是 `px` 来计算字体的大小，因此它始终与其容器元素的高度相关。
 
 \--- task ---
 
-Change the `font-size` property of the `p` selector to `3cqh`.
+将 `p` 选择器的 `font-size` 属性更改为 `3cqh`。
 
 ## --- code ---
 
@@ -232,9 +232,9 @@ padding-right: 5vw;
 
 \--- /code ---
 
-**Click Run**
+**点击运行**
 
-- Resize the **height** of the editor preview to see your font size change!
+- 调整编辑器预览的**高度**以查看字体大小的变化！
 
 \--- /task ---
 
@@ -242,24 +242,24 @@ padding-right: 5vw;
 
 ---
 
-## title: What is cqh?
+## title: 什么是 cqh？
 
-Container query height (cqh) are units that specify a size relative to the dimensions of an element's container element.
+容器查询高度 (cqh) 是指定相对于元素容器元素尺寸的大小的单位。
 
-`1cqh` is 1% of the container's height. For example, if the container's height is 300px, then a value of `10cqh` on a property will be 30px.
+`1cqh` 是容器高度的 1%。 例如，如果容器的高度为 300px，则属性上的值 `10cqh` 将为 30px。
 
-One benefit of using `cqh` units rather than `px` (pixel units) for sizing elements is that elements will resize along with their container. This usually happens when you resize a browser window, or view a webpage on a different screen.
+使用 `cqh` 单位而不是 `px`（像素单位）来调整元素大小的一个好处是元素将随其容器一起调整大小。 这通常发生在你调整浏览器窗口大小或在不同屏幕上查看网页时。
 
-Here is an example:
+下面是一个示例：
 
-![A gif showing font sizes changing when the browser changes height and width.](images/cqh_cqw.gif)
+![一张 gif 动图，显示浏览器改变高度和宽度时字体大小也随之变化。](images/cqh_cqw.gif)
 
-In the example, the font size of the the main story text has been set to use `cqh`, so it changes with the browser's height.
+在示例中，主要故事文本的字体大小已设置为使用 `cqh`，因此它会随着浏览器的高度而变化。
 
-The font size of the text in the navbar has been set to use `cqw`, so it changes with the browser's width.
+导航栏中文本的字体大小已设置为使用 `cqw`，因此它会随着浏览器的宽度而变化。
 
 \--- /collapse ---
 
-Your website is looking awesome!
+你的网站看起来棒极了！
 
-Next, you will add a cool animation to the text to grab people's attention!
+接下来，你将为文本添加一个很酷的动画来吸引人们的注意力！
