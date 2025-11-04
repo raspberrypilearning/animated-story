@@ -1,18 +1,18 @@
-## Animate the story
+## 为故事添加动画
 
-In this step, you will animate the heading and an image.
+在此步骤中，你将为标题和图像制作动画。
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-complete?page=sammy.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Create a trigger
+### 创建触发器
 
-An empty `<div>` element can be used to trigger an animation.
+空的 `<div>` 元素可用于触发动画。
 
 \--- task ---
 
-Open the `sammy.html` file.
+打开 `sammy.html` 文件。
 
-Add a `<div>` element above the `<h1>` element and give it the attribute `id="headingTrigger"`.
+在 `<h1>` 元素上方添加 `<div>` 元素，并赋予其属性 `id="headingTrigger"`。
 
 ## --- code ---
 
@@ -26,28 +26,28 @@ line_highlights: 20
 ```
   </section>
   <div id="headingTrigger"></div>
-  <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
+  <h1 id="hideBounce">萨米 <br /><br />蜗牛</h1>
 ```
 
 \--- /code ---
 
 \--- /task ---
 
-### Toggle the animation
+### 切换动画
 
-An intersection observer can be used to watch for the `id` you just added to the empty `<div>`.
+可以使用交叉观察器来观察刚刚添加到空的 `<div>` 中的 `id`。
 
-If the `<div>` **leaves** the viewport, the callback adds the `enabled` class to the `<h1>` element.
+如果 `<div>` **离开**视口，回调会将 `enabled` 类添加到 `<h1>` 元素。
 
-The `.enabled` selector styles the colours for the heading's font and background. It also sets a `position: sticky` property, so the heading stays in its current location (at the top) when the `enabled` class is added.
+`.enabled` 选择器设置标题字体和背景的颜色样式。 它还设置了 `position: sticky` 属性，因此当添加 `enabled` 类时，标题将停留在其当前位置（顶部）。
 
-The toggle method is used to turn the effect on or off as the target element (the empty `<div>`) leaves and enters the viewport.
+当目标元素（空的 `<div>`）离开和进入视口时，使用 toggle 方法打开或关闭效果。
 
 \--- task ---
 
-Open the `sammy.js` file.
+打开 `sammy.js` 文件。
 
-Create an intersection observer called `headingObserver`.
+创建一个名为 `headingObserver` 的交叉观察器。
 
 ## --- code ---
 
@@ -58,7 +58,7 @@ line_number_start: 9
 line_highlights:
 -----------------------------------------------------
 
-// Heading observer
+// 标题观察器
 const headingObserver = new IntersectionObserver((entries) => {
 document.querySelector("h1").classList.toggle("enabled", !entries[0].isIntersecting);
 });
@@ -66,17 +66,17 @@ headingObserver.observe(document.querySelector("#headingTrigger"));
 
 \--- /code ---
 
-**Click Run**
+**点击运行**
 
-- Scroll down to see the heading stick and change colour when it reaches the top.
+- 向下滚动即可看到标题栏，到达顶部时会改变颜色。
 
 \--- collapse ---
 
 ---
 
-## title: The heading does not stick when it reaches the top
+## title: 标题到达顶部时不会粘住
 
-- Make sure you have `!` before `entries[0].isIntersecting`.
+- 确保在 `entries[0].isIntersecting` 之前有 `!`。
 
 \--- /collapse ---
 
@@ -84,15 +84,15 @@ headingObserver.observe(document.querySelector("#headingTrigger"));
 
 ---
 
-## title: Why does the text go behind the heading?
+## title: 为什么文本位于标题后面？
 
-In CSS, `z-index` is a property that controls the layer order of elements on the z-axis (the axis that comes out of the screen towards the viewer).
+在 CSS 中，`z-index` 是一个控制元素在 z 轴（从屏幕向观看者延伸的轴）上的图层顺序的属性。
 
-![A smartphone on its side showing the width of the phone screen as the x axis, the length as the y axis and the z axis coming out of the screen.](images/phoneAxes.png)
+![侧放的智能手机，以手机屏幕的宽度为 x 轴，长度为 y 轴，z 轴伸出屏幕。](images/phoneAxes.png)
 
-You can use the `z-index` property to make elements appear in front of or behind each other.
+你可以使用 `z-index` 属性使元素出现在彼此的前面或后面。
 
-Find the `h1` selector in the `style.css` file.
+在 `style.css` 文件中找到 `h1` 选择器。
 
 ## --- code ---
 
@@ -118,16 +118,16 @@ transition: all 300ms;
 
 \--- /code ---
 
-The selector styles the heading so its z-index is `1`, meaning its z-index is higher than the other elements' (which are set to `0` by default). This means the heading appears in front of the other elements, on the top layer.
+选择器设置标题的样式，使其 z-index 为 `1`，这意味着其 z-index 高于其他元素（默认设置为 `0`）。 这意味着标题出现在顶层的其他元素的前面。
 
-**Test:**
+**测试：**
 
-- Set the `z-index` property of the `h1` selector to `-1`.
+- 将 `h1` 选择器的 `z-index` 属性设置为 `-1`。
 
-**Click Run**
+**点击运行**
 
-- Scroll down to see the story text appear in front of the heading.
-- Set z-index back to `1` when you are finished testing.
+- 向下滚动即可看到标题前面的故事文本。
+- 测试完成后，将 z-index 设置回 `1`。
 
 \--- /collapse ---
 
@@ -137,25 +137,25 @@ The selector styles the heading so its z-index is `1`, meaning its z-index is hi
 
 ---
 
-## title: Use the logical NOT operator
+## title: 使用逻辑非运算符
 
-The logical NOT `!` operator is used with the `isIntersecting` method in the callback, so the `enabled` class is only added when the `<div>` is **not** in the viewport.
+逻辑 NOT `!` 运算符与回调中的 `isIntersecting` 方法一起使用，因此仅当 `<div>` 不在视口中时才会添加 `enabled` 类。
 
 \--- /collapse ---
 
-### Add an image for the character
+### 为角色添加图像
 
-This page is about one of the story characters: Sammy the snail.
+本页介绍的是故事人物之一：蜗牛萨米。
 
-You can add an image of Sammy to the page.
+你可以将 Sammy 的图像添加到页面。
 
-You first need a background for Sammy.
+首先你需要了解一下 Sammy 的背景。
 
 \--- task ---
 
-Open the `sammy.html` file.
+打开 `sammy.html` 文件。
 
-Add a new `<section>` element with the attribute `class="garden"`.
+添加一个新的 `<section>` 元素，其属性为 `class="garden"`。
 
 ## --- code ---
 
@@ -177,11 +177,11 @@ line_highlights: 25-27
 
 \--- /task ---
 
-Add the snail image.
+添加蜗牛图像。
 
 \--- task ---
 
-Add an `<img>` element with the attributes `id="snail"`, `class="snail"`, and alt text to improve accessibility.
+添加一个 `<img>` 元素，其属性为 `id="snail"`、`class="snail"` 和 alt text，以提高无障碍性。
 
 ## --- code ---
 
@@ -208,23 +208,23 @@ line_highlights: 28
 
 ---
 
-## title: Why are 'src' and 'data-src' both set to 'snail.svg'?
+## title: 为什么 `src` 和 `data-src` 都设置为 `snail.svg`？
 
-The `src` and `data-src` attribute values are the same, because `imageObserver` will act on this `<img>` element, but we do not want the image to change.
+`src` 和 `data-src` 属性值相同，因为 `imageObserver` 会作用于这个 `<img>` 元素，但我们不希望图像发生改变。
 
 \--- /collapse ---
 
-### Style the character image
+### 为角色图像添加样式
 
-The image of Sammy will appear from the left and move to the middle. It will also 'fade in'.
+萨米 (Sammy) 的图像将从左侧出现并移动到中间。 它也会“淡入”。
 
 \--- task ---
 
-Open the `style.css` file.
+打开 `style.css` 文件。
 
-Find the `/* SNAIL */` comment.
+找到 `/* 蜗牛 */` 注释。
 
-Add the `.snail` selector.
+添加 `.snail` 选择器。
 
 ## --- code ---
 
@@ -235,7 +235,7 @@ line_number_start: 95
 line_highlights: 97-106
 ------------------------------------------------------------
 
-/\* SNAIL \*/
+/\* 蜗牛 \*/
 
 .snail {
 opacity: 0;
@@ -247,7 +247,7 @@ position: relative;
 padding-left: 0;
 }
 
-/\* NAV BAR \*/
+/\* 导航栏 \*/
 
 \--- /code ---
 
@@ -255,23 +255,23 @@ padding-left: 0;
 
 ---
 
-## title: How is the image styled?
+## title: 图像的样式如何？
 
-The `.snail` selector styles the image with `0` opacity, making it invisible. It also moves the image left to 25% of the width of its parent element.
+`.snail` 选择器将图像的不透明度设置为 `0`，使其不可见。 它还将图像向左移动到其父元素宽度的 25%。
 
-Its height is styled to be 20% of the viewport height (`20vh`). This means it will resize as the browser window height changes.
+其高度被设置为视口高度的 20%（`20vh`）。 这意味着它将随着浏览器窗口高度的变化而调整大小。
 
 \--- /collapse ---
 
 \--- /task ---
 
-### Show and move the character image
+### 显示和移动角色图像
 
-To animate the image, you will change its opacity to 1, making it fully visible. It will also move right by 25% of its own width.
+要使图像动起来，你需要将其不透明度更改为 1，使其完全可见。 它还将向右移动其自身宽度的 25%。
 
 \--- task ---
 
-Add the `.startCrawl` selector.
+添加 `.startCrawl` 选择器。
 
 ## --- code ---
 
@@ -282,7 +282,7 @@ line_number_start: 95
 line_highlights: 107-111
 -------------------------------------------------------------
 
-/\* SNAIL \*/
+/\* 蜗牛 \*/
 
 .snail {
 opacity: 0;
@@ -299,23 +299,23 @@ opacity: 1;
 transform: translateX(25%);
 }
 
-/\* NAV BAR \*/
+/\* 导航栏 \*/
 
 \--- /code ---
 
 \--- /task ---
 
-### Trigger the startCrawl animation
+### 触发startCrawl动画
 
-This intersection observer will watch for an element with the attribute `id="snail"`.
+该交叉观察器将观察具有属性 `id="snail"`的元素。
 
-If the element enters the viewport (`isIntersecting`), the callback adds the `startCrawl` class to the element.
+如果元素进入视口（`isIntersecting`），回调会将`startCrawl`类添加到元素。
 
 \--- task ---
 
-Open the `sammy.js` file.
+打开 `sammy.js` 文件。
 
-Create an intersection observer called `snailObserver`.
+创建一个名为 `snailObserver` 的交叉观察器。
 
 ## --- code ---
 
@@ -326,7 +326,7 @@ line_number_start: 15
 line_highlights:
 -----------------------------------------------------
 
-// Snail observer
+// 蜗牛观察器
 const snailObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startCrawl");
@@ -336,19 +336,19 @@ snailObserver.observe(document.querySelector("#snail"));
 
 \--- /code ---
 
-**Click Run**
+**点击运行**
 
-- Scroll down to see the snail animation when it enters the viewport.
+- 向下滚动即可看到蜗牛进入视口时的动画。
 
 \--- /task ---
 
-### Set a threshold
+### 设定阈值
 
-Options can be added to the observer, so it only triggers when a percentage of the element is intersecting.
+可以向观察器添加选项，因此只有当一定比例的元素相交时才会触发。
 
 \--- task ---
 
-Add an option to the observer, so it only triggers the callback when all of the snail image is in the viewport.
+向观察器添加一个选项，这样只有当所有蜗牛图像都在视口中时才会触发回调。
 
 ## --- code ---
 
@@ -359,7 +359,7 @@ line_number_start: 15
 line_highlights: 20-22
 -----------------------------------------------------------
 
-// Snail observer
+// 蜗牛观察器
 const snailObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("startCrawl");
@@ -375,17 +375,17 @@ snailObserver.observe(document.querySelector("#snail"));
 
 ---
 
-## title: What are the 'threshold' options?
+## title: 什么是“阈值”选项？
 
-Threshold values range from `0` to `1`
+阈值范围从 `0` 到 `1`。
 
-- `1` means that every single pixel of the element has to be in the viewport for the callback to run
-- `0` is the default value and means that just one pixel must be intersecting for the callback to run
+- `1` 表示元素的每个像素都必须位于视口中才能运行回调
+- `0` 是默认值，表示只需一个像素相交即可运行回调
 
 \--- /collapse ---
 
-**Click Run**
+**点击运行**
 
-- Scroll down to see that the animation only starts when the whole image is in the viewport.
+- 向下滚动可以看到仅当整个图像位于视口中时才开始播放动画。
 
 \--- /task ---
