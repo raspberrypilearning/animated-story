@@ -1,44 +1,44 @@
-## Reflection
+## 回顾与思考
 
-Well done! You have created a website using HTML, CSS, and JavaScript.
+太棒了！ 你已经使用 HTML、CSS 和 JavaScript 创建了一个网站。
 
-Answer the three questions below to reflect on what you've learnt.
+回答以下三个问题来帮助自己回顾并思考所学的内容。
 
-You will be guided towards the correct answer. You can do this activity as many times as you want to.
+我们会引导你找到正确答案。 你可以根据需要多次尝试。
 
 \--- question ---
 
 ---
 
-## legend: Question 1 of 3
+## legend: 问题 1/3
 
-The `console.log()` method can be used to debug code.
+`console.log()` 方法可用于调试代码。
 
-What does `console.log()` do?
+`console.log()` 起什么作用？
 
 \--- choices ---
 
-- ( ) Displays a pop-up box with text taken from the browser console.
+- ( ) 显示一个弹出框，其中包含从浏览器控制台获取的文本。
 
   \--- feedback ---
 
-The `alert()` method is used to display a message box with a specified message to the user.
+`alert()` 方法用于向用户显示带有指定消息的消息框。
 
 \--- /feedback ---
 
-- ( ) Takes input from the browser console and returns the entered value.
+- ( ) 从浏览器控制台获取输入并返回输入的值。
 
   \--- feedback ---
 
-The `prompt()` method displays a pop-up box where the user enters text.
+`prompt()` 方法显示一个弹出框，供用户输入文本。
 
 \--- /feedback ---
 
-- (x) Outputs a message or value to the browser console.
+- (x) 向浏览器控制台输出消息或值。
 
   \--- feedback ---
 
-Correct! The `console.log()` method in JavaScript is used to output messages or values to the browser console, which is useful for debugging and watching your code run.
+正确！ JavaScript 中的 `console.log()` 方法用于将消息或值输出到浏览器控制台，这对于调试和观察代码运行很有用。
 
 \--- /feedback ---
 
