@@ -2,7 +2,7 @@
 
 ---
 
-## legend: Question 3 of 3
+## legend: Питання 3 з 3
 
 How does the intersection observer react when an observed element enters or exits the viewport?
 
@@ -20,7 +20,7 @@ How does the intersection observer react when an observed element enters or exit
 
   \--- feedback ---
 
-  Not quite. The intersection observer does not modify CSS styles directly. Instead, it runs a specific action to allow you to handle the visibility changes.
+  Не зовсім так. The intersection observer does not modify CSS styles directly. Instead, it runs a specific action to allow you to handle the visibility changes.
 
   \--- /feedback ---
 
@@ -28,7 +28,7 @@ How does the intersection observer react when an observed element enters or exit
 
   \--- feedback ---
 
-  Correct! The intersection observer notifies changes by invoking a callback function that you write when setting up the observer. This callback is triggered when the observed element enters or exits the viewport.
+  Правильно! The intersection observer notifies changes by invoking a callback function that you write when setting up the observer. This callback is triggered when the observed element enters or exits the viewport.
 
   \--- /feedback ---
 
