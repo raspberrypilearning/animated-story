@@ -320,7 +320,7 @@ bounceObserver.observe(document.querySelector("#hideBounce"));
 
 \--- /collapse ---
 
-## Save your project
+## Збережіть свій проект
 
 Your project is saved automatically. Return to the starter link in the same web browser to see your changes.
 
