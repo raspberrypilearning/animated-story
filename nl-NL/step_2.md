@@ -13,7 +13,7 @@ Open het [Geanimeerd verhaal starter project](https://editor.raspberrypi.org/en/
 Je startproject bevat:
 
 - `index.html`: een HTML-pagina met afbeeldingen en tekst
-- `style.css` and `default.css`: CSS files that contain styling for some of the content
+- `style.html` en `default.css`: CSS-bestanden die styling bevatten voor een deel van de inhoud
 - De afbeeldingen die je in het project gaat gebruiken
 - `scripts.js`: een JavaScript-bestand dat je tijdens het project zult ontwikkelen
 
@@ -31,7 +31,7 @@ Open de console.
 
 ## title: Opening the Console
 
-Most browsers will let you right-click on a page and 'Inspect' an element.
+**Tip:** De meeste browsers bieden je de mogelijkheid om met de rechtermuisknop op een pagina te klikken en een element te 'Inspecteren'.
 
 Hiermee worden ontwikkelaarstools geopend, inclusief de Console.
 
