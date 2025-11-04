@@ -53,6 +53,8 @@ Spinnerafbeelding: Iphone-spinner-2 via https://icons8.com/
 
 \--- print-only ---
 
+\--- print-only ---
 ![Completed project](images/animated-story.png)
+\--- /print-only ---
 
 \--- /print-only ---
