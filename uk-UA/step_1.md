@@ -1,4 +1,4 @@
-## Introduction
+## Вступ
 
 In this project, you will use HTML, CSS, and JavaScript to create an interactive story with animated text and characters that are triggered when the user scrolls.
 
@@ -6,7 +6,7 @@ In this project, you will use HTML, CSS, and JavaScript to create an interactive
 Webpages used to just be static and boring, but modern websites add <span style="color: #0faeb0">**interaction**</span> to grab a viewer's attention and make the online experience more fun and interesting. 
 </p>
 
-You will:
+У цьому проєкті ти:
 
 - Track the position of elements
 - Set images to load only when they are needed
@@ -17,7 +17,7 @@ You will:
 
 \--- task ---
 
-### Try it
+### Спробуй
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
