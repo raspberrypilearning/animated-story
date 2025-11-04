@@ -2,7 +2,7 @@
 
 ---
 
-## legend: Question 2 of 3
+## legend: Питання 2 з 3
 
 What is the purpose of an 'observer' in JavaScript?
 
@@ -20,7 +20,7 @@ What is the purpose of an 'observer' in JavaScript?
 
   \--- feedback ---
 
-  Correct! The intersection observer is used to observe changes in how an element intersects with its containing parent or viewport. This then provides a way to react to elements entering or exiting the visible area.
+  Правильно! The intersection observer is used to observe changes in how an element intersects with its containing parent or viewport. This then provides a way to react to elements entering or exiting the visible area.
 
   \--- /feedback ---
 
