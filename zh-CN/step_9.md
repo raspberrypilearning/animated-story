@@ -1,10 +1,10 @@
-## What next?
+## 接下来是什么？
 
-If you are following the [More web](https://projects.raspberrypi.org/en/pathways/more-web) path, you can move on to the [Pick your favourite!](https://projects.raspberrypi.org/en/projects/pick-your-favourite) project. In this project, you will create a fan website that lets a user make choices that change the content of the webpage! You could make a webpage with content about different sports teams, fashion brands, TV shows, or anything else you and your friends are fans of!
+如果你正在遵循 [更多 Web](https://projects.raspberrypi.org/en/pathways/more-web) 路径， 你可以转到 [选择你最喜欢的！](https://projects.raspberrypi.org/en/projects/pick-your-favourite) 项目。 在这个项目中，你将创建一个粉丝网站，让用户可以通过做出选择来改变网页的内容！ 你可以制作一个网页，其中包含有关不同体育队伍、时尚品牌、电视节目或你和你的朋友所喜欢的任何其他内容的内容！
 
 \--- print-only ---
 
-![An example of a 'Pick your favourite!' project - a drop-down list at the top of the page shows a choice of dinosaurs. T-rex is selected and an emoji of a T-rex is shown on screen.](images/pick-your-favourite-dino.png)
+![“选择你最喜欢的！”项目示例 - 页面顶部的下拉列表显示了恐龙的选择。 选择了霸王龙，屏幕上就会显示霸王龙的表情符号。](images/pick-your-favourite-dino.png)
 
 \--- /print-only ---
 
@@ -14,4 +14,4 @@ If you are following the [More web](https://projects.raspberrypi.org/en/pathways
 
 \--- /no-print ---
 
-If you want to have more fun exploring HTML, CSS, and JavaScript, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=html-css-javascript).
+如果你想在探索 HTML，CSS，JavaScript 中获得更多乐趣，那么你可以尝试[这些项目](https://projects.raspberrypi.org/en/projects?software%5B%5D=html-css-javascript)。
