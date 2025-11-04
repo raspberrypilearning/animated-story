@@ -2,33 +2,33 @@
 
 ---
 
-## legend: Question 3 of 3
+## legend: 问题 3/3
 
-How does the intersection observer react when an observed element enters or exits the viewport?
+当观察元素进入或退出视口时，交叉观察器如何反应？
 
 \--- choices ---
 
-- ( ) It reacts by changing the viewport width and height.
+- ( ) 它通过改变视口宽度和高度来做出反应。
 
   \--- feedback ---
 
-  The intersection observer does not manipulate the viewport size directly. It handles visibility changes by reacting with one or more actions.
+  交叉观察器不会直接操纵视口大小。 它通过对一个或多个动作做出反应来处理可见性变化。
 
   \--- /feedback ---
 
-- ( ) It reacts by changing the CSS styles of the observed element.
+- ( ) 它通过改变被观察元素的 CSS 样式来做出反应。
 
   \--- feedback ---
 
-  Not quite. The intersection observer does not modify CSS styles directly. Instead, it runs a specific action to allow you to handle the visibility changes.
+  不完全对。 交叉观察器不会直接修改 CSS 样式。 相反，它会运行特定的操作来允许您处理可见性变化。
 
   \--- /feedback ---
 
-- (x) It reacts by invoking a callback function.
+- (x) 它通过调用回调函数做出反应。
 
   \--- feedback ---
 
-  Correct! The intersection observer notifies changes by invoking a callback function that you write when setting up the observer. This callback is triggered when the observed element enters or exits the viewport.
+  正确！ 交叉观察器通过调用你在设置观察器时编写的回调函数来通知变化。 当被观察元素进入或退出视口时触发此回调。
 
   \--- /feedback ---
 
