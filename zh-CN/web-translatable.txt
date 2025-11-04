@@ -1,13 +1,13 @@
-Rising text observer
+上升文本观察器
 
-Heading observer
+页首观察器
 
-Snail observer
+蜗牛观察器
 
-Hide bounce observer
+隐藏弹跳观察器
 
-Image observer
+图像观察器
 
-BOUNCE TRIGGER IN VIEWPORT
+视口中的回弹触发器
 
-Butterfly observer
+蝴蝶观察器
