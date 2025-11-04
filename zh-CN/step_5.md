@@ -1,16 +1,16 @@
-## Animate text
+## 动画文本
 
-In this step, you will add a cool animation to the text to grab people's attention!
+在此步骤中，你将向文本添加酷炫的动画来吸引人们的注意力！
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step5?page=sammy.html" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Fix the position of the garden image
+### 固定花园图像的位置
 
-You can 'fix' the position of the garden image so it appears as a background, with other content scrolling in front of it.
+你以“固定”花园图像的位置，使其显示为背景，其他内容在其前面滚动。
 
 \--- task ---
 
-Add the `background-attachment: fixed` property to the `.garden` selector.
+将 `background-attachment: fixed` 属性添加到 `.garden` 选择器。
 
 ## --- code ---
 
@@ -30,35 +30,35 @@ background-attachment: fixed;
 
 \--- /code ---
 
-**Click Run**
+**点击运行**
 
-- Scroll down to see the garden image as a fixed background.
+- 向下滚动即可看到作为固定背景的花园图像。
 
 \--- collapse ---
 
 ---
 
-## title: What should I see?
+## title: 我应该看什么？
 
-![A gif showing a fixed background image as other content scrolls in front of it.](images/background-attachment-fixed.gif)
+![一张 gif 图片，显示背景图像固定，其他内容在其前面滚动。](images/background-attachment-fixed.gif)
 
 \--- /collapse ---
 
 \--- /task ---
 
-### Add a heading
+### 添加标题
 
-You can add a heading for the story page using an `<h1>` element.
+你可以使用 `<h1>` 元素为故事页面添加标题。
 
-The `<h1>` element should have the attribute `id="hideBounce"`.
+`<h1>` 元素应该具有属性 `id="hideBounce"`。
 
 \--- task ---
 
-Open the `sammy.html` file.
+打开 `sammy.html` 文件。
 
-Find the closing `</section>` tag.
+找到结束的 `</section>` 标签。
 
-Add an `<h1>` element.
+添加 `<h1>` 元素。
 
 ## --- code ---
 
@@ -72,27 +72,27 @@ line_highlights: 20
 ```
 <main>
   <section class="garden">
-    <div id="bounce">SCROLL DOWN</div>
+    <div id="bounce">向下滚动</div>
   </section>
-  <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
+  <h1 id="hideBounce">萨米 <br />蜗牛<br /></h1>
 </main>
 ```
 
 \--- /code ---
 
-**Click Run**
+**点击运行**
 
-- Scroll down to see the heading.
+- 向下滚动即可看到标题。
 
 \--- /task ---
 
-### Add some story text
+### 添加一些故事文本
 
 \--- task ---
 
-Add the story text after the `<h1>` heading.
+在 `<h1>` 标题后添加故事文本。
 
-The story text should be in a `<p>` element.
+故事文本应该位于 `<p>` 元素中。
 
 ## --- code ---
 
@@ -106,34 +106,34 @@ line_highlights: 21-23
 ```
 <main>
   <section class="garden">
-    <div id="bounce">SCROLL DOWN</div>
+    <div id="bounce">向下滚动</div>
   </section>
-  <h1 id="hideBounce">Sammy <br />The<br />Snail</h1>
+  <h1 id="hideBounce">萨米 <br />蜗牛<br /></h1>
   <p>
-    On a bright and sunny day in the garden, Sammy the Snail woke up feeling curious. <br /><br />His shiny shell glistened as he slowly ventured beyond his usual path. Sammy wanted to see what lay beyond the familiar leaves and flowers. <br /><br />As he slid along, the tiny garden world seemed to unfold before him. <br /><br />Sammy discovered a patch of dew-kissed grass, sparkling like diamonds in the morning sun. Excitement filled him as he explored tiny tunnels and secret hideaways.<br /><br />The little snail's adventure brought a smile to his face. Sammy realised that even in the smallest corners of the garden, there were secrets to be found. <br /><br />Sammy continued his exploration, eager to uncover more wonders in this blossoming world.
+    在一个阳光明媚的花园里，蜗牛萨米醒来后感到很好奇。 <br /><br />他慢慢地冒险，走出了平常的路径，闪亮的壳闪闪发光。萨米想看看熟悉的树叶和花朵背后有什么。 <br /><br />他滑行时，小小的花园世界仿佛在他面前展开。 <br /><br />萨米发现了一片沾满露水的草地，在晨曦中像钻石一样闪闪发光。他兴奋不已，探索着小隧道和秘密藏身之处。<br /><br />小蜗牛的冒险让他露出了笑容。萨米意识到，即使在花园最小的角落，也隐藏着秘密。 <br /><br />萨米继续他的探索，渴望在这个繁花似锦的世界中发现更多奇迹。
   </p>
 </main>
 ```
 
 \--- /code ---
 
-**Click Run**
+**点击运行**
 
-- Scroll down to see the story text.
+- 向下滚动即可查看故事文本。
 
 \--- /task ---
 
-### Animate the text
+### 为文本添加动画效果
 
-Create an animation to apply to the story text.
+创建动画以应用于故事文本。
 
 \--- task ---
 
-Open the `style.css` file.
+打开 `style.css` 文件。
 
-Find the `/* ANIMATIONS */` comment.
+找到 `/* 动画 */` 注释。
 
-Add a keyframes animation called `rising`.
+添加一个名为 `rising` 的关键帧动画。
 
 ## --- code ---
 
@@ -144,7 +144,7 @@ line_number_start: 51
 line_highlights: 53-61
 -----------------------------------------------------------
 
-/\* ANIMATIONS \*/
+/\* 动画 \*/
 
 @keyframes rising {
 from {
@@ -161,13 +161,13 @@ transform: translateY(0%);
 
 \--- /task ---
 
-Next, create a new selector (`.rise`) that uses the `rising` animation.
+接下来，创建一个使用 `rising` 动画的新选择器（`.rise`）。
 
-**Note:** Later, you will use JavaScript to add the `rise` class to the `<p>` element when it enters the viewport.
+\*\*注意：\*\*稍后，当 `<p>` 元素进入视口时，你将使用 JavaScript 将 `rise` 类添加到 `<p>` 元素。
 
 \--- task ---
 
-Create the `.rise` selector.
+创建 `.rise` 选择器。
 
 ## --- code ---
 
@@ -178,7 +178,7 @@ line_number_start: 51
 line_highlights: 53-56
 -----------------------------------------------------------
 
-/\* ANIMATIONS \*/
+/\* 动画 \*/
 
 .rise {
 animation: rising 2s ease;
@@ -188,41 +188,41 @@ animation: rising 2s ease;
 
 \--- /code ---
 
-The selector has one `animation` property set to call the keyframes animation `rising` that you created earlier.
+选择器设置了一个 `animation` 属性来调用你之前创建的关键帧动画 `rising`。
 
-The animation is set to last for two seconds (`2s`) and use the `ease` transition.
+动画设置为持续两秒（`2s`）并使用 `ease` 过渡。
 
-**Tip:** You can add this anywhere in the CSS file, but it makes sense to add it close to the code for the keyframes animation.
-
-\--- /task ---
-
-### Use JavaScript to trigger the animation
-
-This animation will not be required on `index.html`.
-
-You should create a new JavaScript file with scripts required by this page.
-
-\--- task ---
-
-Create a new JavaScript file that will contain the scripts relevant to `sammy.html`.
-
-- **Click** the **+ Add file** button
-
-![The 'Add file' button.](images/addFile.png)
-
-- Name your new file `sammy.js` and click the **Add file** button.
+\*\*提示：\*\*你可以在 CSS 文件中的任何位置添加它，但将其添加到关键帧动画的代码附近是有意义的。
 
 \--- /task ---
 
-You need to link your new file from the `sammy.html` page.
+### 使用 JavaScript 触发动画
+
+`index.html` 上不需要此动画。
+
+你应该创建一个包含此页面所需脚本的新 JavaScript 文件。
 
 \--- task ---
 
-Open the `sammy.html` file.
+创建一个新的 JavaScript 文件，其中包含与 `sammy.html` 相关的脚本。
 
-Find the `<script>` element.
+- **点击**“+ 添加文件”按钮
 
-Add a second `<script>` element with the attribute `src="sammy.js"`
+![“添加文件”按钮。](images/addFile.png)
+
+- 将新文件命名为 `sammy.js` 并单击**添加文件**按钮。
+
+\--- /task ---
+
+你需要从 `sammy.html` 页面链接你的新文件。
+
+\--- task ---
+
+打开 `sammy.html` 文件。
+
+找到 `<script>` 元素。
+
+添加第二个 `<script>` 元素，其属性为 `src="sammy.js"`
 
 ## --- code ---
 
@@ -241,13 +241,13 @@ line_highlights: 27
 
 \--- /task ---
 
-You will now create a JavaScript intersection observer with a callback that adds the `rise` class to the `<p>` element when it enters the viewport.
+现在，你将创建一个带有回调的 JavaScript 交叉观察器，当它进入视口时，该回调会将 `rise` 类添加到 `<p>` 元素。
 
 \--- task ---
 
-Open the file `sammy.js` you created earlier.
+打开你之前创建的文件 `sammy.js`。
 
-Add an intersection observer called `riseObserver`.
+添加一个名为 `riseObserver` 的交叉观察器。
 
 ## --- code ---
 
@@ -258,7 +258,7 @@ line_number_start: 1
 line_highlights:
 -----------------------------------------------------
 
-// Rising text observer
+// 上升文本观察器
 const riseObserver = new IntersectionObserver((entries) => {
 if (entries[0].isIntersecting) {
 entries[0].target.classList.add("rise");
@@ -268,17 +268,17 @@ riseObserver.observe(document.querySelector("p"));
 
 \--- /code ---
 
-**Tip:** This intersection observer is similar to `bounceObserver` that you created in an earlier step.
+\*\*提示：\*\*此交叉观察器与你在之前步骤中创建的 `bounceObserver` 类似。
 
-There are two main differences:
+主要有两个区别：
 
-- `riseObserver` watches for `<p>` elements
-- `riseObserver` adds the `rise` class to intersecting elements.
+- `riseObserver` 监视 `<p>` 元素
+- `riseObserver` 为相交元素添加 `rise` 类。
 
-**Click Run**
+**点击运行**
 
-- Scroll down to see the rising animation when the `<p>` text enters the viewport.
+- 向下滚动即可看到 `<p>` 文本进入视口时的上升动画。
 
 \--- /task ---
 
-Next, you will add an animation to the heading and a different animation to an image.
+接下来，你将向标题添加动画，并向图像添加不同的动画。
