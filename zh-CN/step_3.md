@@ -1,30 +1,30 @@
-## Lazy-loading images
+## 懒加载图像
 
-In this step, you will improve browser performance by only loading images when they are needed.
+在此步骤中，你将通过仅在需要时加载图像来提高浏览器性能。
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/animated-story-step3" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Why lazy load?
+### 为什么要懒加载？
 
-Images can have large file sizes and can use a lot of data when you access a webpage.
+图像文件可能很大，并且在你访问网页时会使用大量数据。
 
-When you open a webpage, **all** the images on the page are loaded. This can use lots of bandwidth.
+当你打开网页时，页面上的**所有**图像都会被加载。 这会占用大量带宽。
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-The amount of data (bits) that can be transferred over a computer connection is called the <span style="color: #0faeb0">**bandwidth**</span>. Using lots of bandwidth can make pages load slowly for people with poor connectivity, or cost more money. Reducing the use of bandwidth makes websites more accessible and user-friendly.
+通过计算机连接可以传输的数据量（bits）称为 <span style="color: #0faeb0">**带宽**</span>。 对于网络连接较差的用户来说，使用大量带宽可能会使页面加载速度变慢，或者花费更多钱。 减少带宽的使用使得网站更易于访问和用户友好。
 </p>
 
-### Add a new attribute to each image element
+### 为每个图像元素添加新属性
 
-The `src` attribute for all image elements in `index.html` is set to `spinner.gif`.
+`index.html` 中所有图像元素的 `src` 属性都设置为 `spinner.gif`。
 
-This means that when the page loads, the only image that has to be loaded is `spinner.gif`.
+这意味着当页面加载时，唯一需要加载的图像是 `spinner.gif`。
 
 \--- task ---
 
-Open the `index.html` file.
+打开 `index.html` 文件。
 
-In each `<img>` element, add a `data-src` attribute and set its value to the relevant image.
+在每个 `<img>` 元素中，添加一个 `data-src` 属性并将其值设置为相关图像。
 
 ## --- code ---
 
@@ -38,53 +38,53 @@ line_highlights: 19, 23, 27, 31, 35
   <body>
     <main>
       <section class="garden">
-        <div id="bounce">SCROLL DOWN</div>
+        <div id="bounce">向下滚动</div>
       </section>
       <p id="hideBounce">
-        Slowly but steadily, Sammy glides along, leaving behind a shiny trail as he explores the wonders of the garden.
+        萨米缓慢而稳定地滑行，在探索花园奇观的过程中留下了闪亮的痕迹。
       </p>
       <img src="spinner.gif" data-src="snail.svg" />
       <p>
-        Meet Buzz Bee, a little explorer with yellow and black stripes who loves buzzing around flowers, collecting sweet nectar to make delicious honey.
+        来认识一下嗡嗡蜂吧，它是一只身穿黄黑条纹的小探险家，喜欢在花丛中嗡嗡飞舞，采集甜蜜的花蜜来酿造美味的蜂蜜。
       </p>
       <img src="spinner.gif" data-src="bee.png" />
       <p>
-        Fluttering nearby is Bella, with her vibrant wings painted beautiful colours, she dances from flower to flower, bringing joy wherever she goes.
+        贝拉在附近飞舞，她鲜艳的翅膀涂上了美丽的色彩，她在花丛间翩翩起舞，所到之处都带来欢乐。
       </p>
       <img src="spinner.gif" data-src="butterfly.png" />
       <p>
-        Then there's Lucy, a tiny red ladybug with black spots, who loves playing hide-and-seek in the garden.
+        还有露西，一只身上有黑色斑点的小红瓢虫，喜欢在花园里玩捉迷藏。
       </p>
       <img src="spinner.gif" data-src="ladybug.png" />
       <p>
-        Last but not least, there's Iggy, a mysterious friend who is always ready for a new adventure.
+        最后，同样重要的是，还有伊吉，一个随时准备迎接新冒险的神秘朋友。
       </p>
       <img src="spinner.gif" data-src="insect.png" />
       <p>
-        Together, they create a delightful group of friends, ready to embark on exciting journeys!
+        他们一起组成了一群令人愉快的朋友，准备踏上激动人心的旅程！
       </p>
     </main>
   </body>
 
 \--- /code ---
 
-**Click Run**
+**点击运行**
 
-- Scroll down. Do you see the images you added?
+- 向下滚动。 你看到你添加的图像了吗？
 
-You will not see the images you added. All the images are still `spinner.gif`. This is because it is the `src` property that sets the image to display.
+你将看不到你添加的图像。 所有图像仍然是 `spinner.gif`。 这是因为 `src` 属性设置了要显示的图像。
 
 \--- /task ---
 
-### Observe each image element
+### 观察每个图像元素
 
-You can use JavaScript to observe every image on the page.
+你可以使用 JavaScript 观察页面上的每个图像。
 
 \--- task ---
 
-Open the `scripts.js` file.
+打开 `scripts.js` 文件。
 
-Create a constant (`const`) called `lazyImages`.
+创建一个名为 `lazyImages` 的常量（`const`）。
 
 ## --- code ---
 
@@ -95,28 +95,28 @@ line_number_start: 10
 line_highlights: 11
 --------------------------------------------------------
 
-// Image observer
+// 图像观察者
 const lazyImages = document.querySelectorAll("img");
 
 \--- /code ---
 
-The constant `lazyImages` holds an array of all `<img>` elements in the page.
+常量 `lazyImages` 保存页面中所有 `<img>` 元素的数组。
 
-In the code, the page is called the `document`.
+在代码中，该页面被称为 `文档`。
 
-**Tip:** Separate the different observers using a line break (in this case, on line 12).
+\*\*提示：\*\*使用换行符分隔不同的观察者（在本例中为第 12 行）。
 
 \--- /task ---
 
-### Create a new intersection observer called imageObserver
+### 创建一个名为 imageObserver 的新交叉观察器
 
-`imageObserver` is used to watch ('observe') an array of elements (`entries`).
+`imageObserver` 用于监视（'观察'）元素数组（`entries`）。
 
 \--- task ---
 
-Open the `scripts.js` file.
+打开 `scripts.js` 文件。
 
-Create an observer called `imageObsever`.
+创建一个名为 `imageObsever` 的观察者。
 
 ## --- code ---
 
@@ -127,7 +127,7 @@ line_number_start: 10
 line_highlights: 12-14
 -----------------------------------------------------------
 
-// Image observer
+// 图像观察器
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 
@@ -135,17 +135,17 @@ const imageObserver = new IntersectionObserver((entries) => {
 
 \--- /code ---
 
-**Tip:** The line break on line 13 will contain the callback.
+**提示**：第 13 行的换行符将包含回调。
 
 \--- /task ---
 
-### Tell imageObserver to observe
+### 告诉 imageObserver j进行观察
 
-Call `imageObserver` to `observe` each `<img>` element in the `document`.
+调用 `imageObserver` 来 `观察` `document` 中的每个 `<img>` 元素。
 
 \--- task ---
 
-Use a `forEach` loop to observe each image element (held in the `lazyImages` array).
+使用 `forEach` 循环观察每个图像元素（保存在 `lazyImages` 数组中）。
 
 ## --- code ---
 
@@ -156,7 +156,7 @@ line_number_start: 10
 line_highlights: 15
 --------------------------------------------------------
 
-// Image observer
+// 图像观察器
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 
@@ -171,19 +171,19 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 ---
 
-## title: What is a forEach loop?
+## title: 什么是 forEach 循环？
 
-In JavaScript, a `forEach` loop is used to go through every item in an array and do something with each one.
+在 JavaScript 中，使用 `forEach` 循环来遍历数组中的每个项目并对每个项目执行某些操作。
 
 \--- /collapse ---
 
-### Create the callback
+### 创建回调
 
-The callback needs to check every image it has observed.
+回调需要检查它观察到的每个图像。
 
 \--- task ---
 
-Use a `forEach` loop to call the action relevant to each image that the observer has 'observed'.
+使用 `forEach` 循环来调用与观察者“观察到”的每个图像相关的动作。
 
 ## --- code ---
 
@@ -194,7 +194,7 @@ line_number_start: 10
 line_highlights: 13-17
 -----------------------------------------------------------
 
-// Image observer
+// 图像观察器
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 entries.forEach(
@@ -210,17 +210,17 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 \--- /code ---
 
-**Tip:** Unlike bounceObserver, imageObserver needs to check every entry in the array, so a `forEach` loop is required.
+**提示**：与 bounceObserver 不同，imageObserver 需要检查数组中的每个条目，因此需要一个 `forEach` 循环。
 
-**Tip:** The line break on line 15 will contain the action to be carried out on each observed image (`entry`).
+**提示**：第 15 行的换行符将包含对每个观察到的图像（`entry`）执行的操作。
 
 \--- /task ---
 
-The `isIntersecting` method is used to check if an `<img>` element (`entry`) has entered the viewport.
+`isIntersecting` 方法用于检查 `<img>` 元素（`entry`）是否已进入视口。
 
 \--- task ---
 
-Create a conditional statement to check if an observed entry in the array is in the viewport.
+创建一个条件语句来检查数组中观察到的条目是否在视口中。
 
 ## --- code ---
 
@@ -231,7 +231,7 @@ line_number_start: 10
 line_highlights: 15-17
 -----------------------------------------------------------
 
-// Image observer
+// 图像观察器
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 entries.forEach(
@@ -249,15 +249,15 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 \--- /code ---
 
-**Tip:** The line break on line 16 will contain the action to be carried out on an image (`entry`) that has entered the viewport.
+**提示**：第 16 行的换行符将包含对进入视口的图像（`entry`）执行的操作。
 
 \--- /task ---
 
-If an image in the array is in the viewport, the value of its `src` attribute (currently `spinner.gif`) is changed to the value of its `data-src` attribute (the image file you want to load).
+如果数组中的图像位于视口中，则其 `src` 属性的值（当前为 `spinner.gif`）将更改为其 `data-src` 属性的值（要加载的图像文件）。
 
 \--- task ---
 
-Create the action to change the value of `src` to the value of `data-src`.
+创建将 `src` 的值更改为 `data-src` 的值的操作。
 
 ## --- code ---
 
@@ -268,7 +268,7 @@ line_number_start: 10
 line_highlights: 16-19
 -----------------------------------------------------------
 
-// Image observer
+// 图像观察者
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 entries.forEach(
@@ -290,17 +290,17 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 ---
 
-## title: Why is there a setTimeout?
+## title: 为什么会有setTimeout？
 
-The imageObserver uses `setTimeout` with a value of `1000` (ms). This adds a one-second pause before the value of the `src` attribute is swapped for the value of the `data-src` attribute.
+imageObserver 使用 `setTimeout`，其值为 `1000`（毫秒）。 这会在 `src` 属性的值与 `data-src` 属性的值交换之前添加一秒钟的暂停。
 
-If this was not there then the swap might happen too quickly for you to see!
+如果没有这个，那么交换可能会发生得太快而你看不到！
 
 \--- /collapse ---
 
-**Click Run**
+**点击运行**
 
-- Scroll down and watch each image load when it enters the viewport (after a one-second pause).
+- 向下滚动并观察每个图像进入视口时的加载情况（暂停一秒钟后）。
 
 \--- /task ---
 
@@ -308,23 +308,23 @@ If this was not there then the swap might happen too quickly for you to see!
 
 ---
 
-## title: The images are not loading
+## title: 图像未加载
 
-- Make sure it is `img`, not `<img>` in the brackets on line 11.
-- Check there is a comma `,` after line 17.
-- Check there is a semicolon `;` at end of lines 19, 22, 23, and 24.
+- 确保第 11 行括号中的是 `img`，而不是 `<img>`。
+- 检查第 17 行后是否有逗号 `,` 。
+- 检查第 19、22、23 和 24 行末尾是否有分号 `;`。
 
 \--- /collapse ---
 
-### Stop observing
+### 停止观察
 
-You should stop observing the image elements after their `src` attribute is changed to the value of their `data-src` attribute.
+当图像元素的 `src` 属性更改为其 `data-src` 属性的值后，你应该停止观察图像元素。
 
-This avoids memory or performance issues.
+这避免了内存或性能问题。
 
 \--- task ---
 
-Add the `unobserve()` method to the callback.
+将 `unobserve()` 方法添加到回调中。
 
 ## --- code ---
 
@@ -335,7 +335,7 @@ line_number_start: 10
 line_highlights: 20
 --------------------------------------------------------
 
-// Image observer
+// 图像观察器
 const lazyImages = document.querySelectorAll("img");
 const imageObserver = new IntersectionObserver((entries) => {
 entries.forEach(
@@ -354,8 +354,8 @@ lazyImages.forEach((lazyImage) => imageObserver.observe(lazyImage));
 
 \--- /code ---
 
-**Tip:** On line 20, the `.target` property of the `entry` refers to the element being observed. It is the element that enters or exits the viewport and the one you want to stop tracking.
+**提示**：在第 20 行，`entry` 的 `.target` 属性指的是被观察的元素。 它是进入或退出视口的元素，也是你想要停止跟踪的元素。
 
 \--- /task ---
 
-Next, you are going to add a new webpage and navigation bar to your website.
+接下来，你将向你的网站添加一个新的网页和导航栏。
