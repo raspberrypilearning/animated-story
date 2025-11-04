@@ -1,4 +1,4 @@
-## Upgrade your project
+## Вдоскональ свій проєкт
 
 If you have time, you can:
 
