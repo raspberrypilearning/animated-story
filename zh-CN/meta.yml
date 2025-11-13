@@ -1,0 +1,28 @@
+---
+title: 动画故事
+hero_image: images/banner.png
+description: 使用 JavaScript 交叉观察器为故事书网站增添活力！
+version: 4
+listed: true
+copyedit: false
+last_tested: '2021-03-26'
+steps:
+- title: 简介
+- title: 观察元素
+- title: 懒加载图像
+  completion:
+    - engaged
+- title: 添加新页面
+- title: 动画文本
+- title: 为故事添加动画
+  completion:
+    - internal
+- title: 回顾与思考
+  knowledge_quiz:
+    path: quiz1
+    version: 1
+    questions: 3
+    passing_score: 3
+  completion:
+    - external
+- title: 升级你的项目
