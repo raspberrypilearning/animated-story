@@ -96,7 +96,7 @@ const bounceObserver = new IntersectionObserver(
 
 调用 `bounceObserver` 来 `观察` 文档（网页）中带有 `id="hideBounce"` 属性的元素。
 
-\*\*注意：\*\*此元素称为“目标”元素。
+**注意：**此元素称为“目标”元素。
 
 观察到的元素被传递给观察器中的 `entries` 数组。
 
